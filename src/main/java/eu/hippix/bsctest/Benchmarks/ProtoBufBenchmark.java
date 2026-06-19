@@ -6,7 +6,8 @@ import io.protostuff.LinkedBuffer;
 import io.protostuff.ProtostuffIOUtil;
 import io.protostuff.Schema;
 import io.protostuff.runtime.RuntimeSchema;
-import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 
 import java.io.IOException;
 
@@ -17,14 +18,10 @@ public class ProtoBufBenchmark extends AbstractBenchmark<byte[]> {
     private LinkedBuffer buffer = null;
     private Schema schema = null;
 
-    @Setup(Level.Trial)
+    @Override
     public void setup(BenchmarkState<byte[]> state) throws IOException {
-        System.out.println("Setup started");
-        Class<?> itemClass = state.getObjectClass();
-        schema = RuntimeSchema.getSchema(itemClass);
+        schema = RuntimeSchema.getSchema(state.getObjectClass());
         buffer = LinkedBuffer.allocate(LinkedBuffer.DEFAULT_BUFFER_SIZE);
-        state.prepare(this, itemClass);
-        System.out.println("Setup done");
     }
 
     @Override

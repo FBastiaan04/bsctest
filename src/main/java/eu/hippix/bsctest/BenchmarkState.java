@@ -46,6 +46,8 @@ public class BenchmarkState<T> {
         for (var item : objectList) {
             encodedList.add(implementation.serializeItem(item));
         }
+
         System.out.println("Prepared");
+        implementation.measureBandwidth(this);
     }
 }

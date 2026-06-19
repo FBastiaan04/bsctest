@@ -3,7 +3,8 @@ package eu.hippix.bsctest.Benchmarks;
 import com.google.gson.Gson;
 import eu.hippix.bsctest.AbstractBenchmark;
 import eu.hippix.bsctest.BenchmarkState;
-import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 
 import java.io.IOException;
 
@@ -11,10 +12,9 @@ import java.io.IOException;
 public class GsonBenchmark extends AbstractBenchmark<String> {
     private Gson gson = null;
 
-    @Setup(Level.Trial)
+    @Override
     public void setup(BenchmarkState<String> state) throws IOException {
         gson = new Gson();
-        state.prepare(this, state.getObjectClass());
     }
 
     @Override

@@ -2,18 +2,11 @@ package eu.hippix.bsctest.Benchmarks;
 
 import com.alibaba.fastjson2.JSON;
 import eu.hippix.bsctest.AbstractBenchmark;
-import eu.hippix.bsctest.BenchmarkState;
-import org.openjdk.jmh.annotations.*;
-
-import java.io.IOException;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Benchmark)
 public class FastJsonBenchmark extends AbstractBenchmark<byte[]> {
-
-    @Setup(Level.Trial)
-    public void setup(BenchmarkState<byte[]> state) throws IOException {
-        state.prepare(this, state.getObjectClass());
-    }
 
     @Override
     protected byte[] serializeItem(Object item) {

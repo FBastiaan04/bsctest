@@ -3,7 +3,9 @@ package eu.hippix.bsctest.Benchmarks;
 import eu.hippix.bsctest.AbstractBenchmark;
 import eu.hippix.bsctest.BenchmarkState;
 import org.apache.fory.Fory;
-import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.annotations.Param;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 
 import java.io.IOException;
 
@@ -15,26 +17,21 @@ public class ForyBenchmark extends AbstractBenchmark<byte[]> {
     @Param({"true", "false"})
     public boolean enableXLang;
 
-    @Setup(Level.Trial)
+    @Override
     public void setup(BenchmarkState<byte[]> state) throws IOException {
         Class<?> objectClass = state.getObjectClass();
 
         fory = Fory.builder()
                 .requireClassRegistration(true)
-//                .withClassLoader(objectClass.getClassLoader())
+                .withClassLoader(objectClass.getClassLoader())
                 .withXlang(enableXLang)
                 .withCodegen(true)
                 .build();
 
-        // ThreadLocalFory lets you register a setup callback per thread
-//        fory.registerCallback((f) -> {
         fory.register(objectClass);
         for (var clazz : objectClass.getDeclaredClasses()) {
             fory.register(clazz);
         }
-//        });
-
-        state.prepare(this, objectClass);
     }
 
     @Override

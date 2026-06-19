@@ -32,8 +32,8 @@ public class App {
                     .measurementTime(TimeValue.seconds(5))
                     .forks(3)
                     .jvmArgsAppend("-Xms16g", "-Xmx16g", "-XX:+UseG1GC")
-                    .output("output/"+benchmark.getSimpleName()+".txt")
-                    .addProfiler(JavaFlightRecorderProfiler.class)
+                    .output("output/logs/"+benchmark.getSimpleName()+".txt")
+                    .addProfiler(JavaFlightRecorderProfiler.class, "dir=./output/jfr/")
                     .build();
 
             new Runner(opt).run();

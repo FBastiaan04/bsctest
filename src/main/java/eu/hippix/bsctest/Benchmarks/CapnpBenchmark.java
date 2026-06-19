@@ -4,9 +4,7 @@ import eu.hippix.bsctest.AbstractBenchmark;
 import eu.hippix.bsctest.BenchmarkState;
 import eu.hippix.bsctest.data.capnp.BestbuyCapnp;
 import org.capnproto.*;
-import org.openjdk.jmh.annotations.Level;
 import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 
 import java.io.IOException;
@@ -37,7 +35,7 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
     // Deals with recursive classes
     private final Map<Class<?>, FieldAccessor> foundClasses = new HashMap<>();
 
-    @Setup(Level.Trial)
+    @Override
     public void setup(BenchmarkState<ByteBuffer[]> state) throws IOException {
         Class<?> objectClass = state.getObjectClass();
         String benchmarkName = objectClass.getSimpleName();
@@ -49,7 +47,6 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
         } catch (Throwable e) {
             throw new RuntimeException(e);
         }
-        state.prepare(this, objectClass);
     }
 
     @Override

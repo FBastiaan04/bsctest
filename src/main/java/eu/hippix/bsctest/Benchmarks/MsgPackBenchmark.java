@@ -6,9 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import eu.hippix.bsctest.AbstractBenchmark;
 import eu.hippix.bsctest.BenchmarkState;
 import org.msgpack.jackson.dataformat.MessagePackFactory;
-import org.openjdk.jmh.annotations.Level;
 import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 
 import java.io.IOException;
@@ -18,11 +16,10 @@ public class MsgPackBenchmark extends AbstractBenchmark<byte[]> {
 
     ObjectMapper objectMapper;
 
-    @Setup(Level.Trial)
+    @Override
     public void setup(BenchmarkState<byte[]> state) throws IOException {
         objectMapper = new ObjectMapper(new MessagePackFactory());
         objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
-        state.prepare(this, state.getObjectClass());
     }
 
     @Override
