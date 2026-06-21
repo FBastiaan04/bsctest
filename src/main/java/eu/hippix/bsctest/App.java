@@ -18,6 +18,7 @@ public class App {
             MsgPackBenchmark.class,
             ProtoBufBenchmark.class,
             ForyBenchmark.class,
+            JacksonBenchmark.class,
     };
 
     public static void main(String[] args) throws Throwable {
