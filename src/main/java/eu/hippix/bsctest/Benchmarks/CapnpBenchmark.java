@@ -147,7 +147,7 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
                     primitiveType = long.class;
                 } else if (fieldType == Double.class) {
                     primitiveType = double.class;
-                } else if (fieldType == String.class) { // struct
+                } else if (fieldType == String.class) {
                     primitiveType = String.class;
                 } else {
                     innerBuilder = Class.forName(rootBuilderClass.getDeclaringClass().getName() + "$" + fieldType.getSimpleName() + "$Builder");
@@ -180,23 +180,21 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
 
         private void serialize(Object item, Object builder) throws Throwable {
             if (fieldAccessors == null) return;
-            var fieldIdx = 0;
             for (FieldAccessor acc : fieldAccessors) {
                 Object value = acc.sourceField.get(item);
-                fieldIdx++;
                 switch (value) {
                     case null -> {}
-                    case Boolean b -> acc.capnpSetter.invoke(builder, (boolean)b);
-                    case Integer i -> acc.capnpSetter.invoke(builder, (int)i);
-                    case Long l -> acc.capnpSetter.invoke(builder, (long)l);
-                    case Double d -> acc.capnpSetter.invoke(builder, (double)d);
-                    case String s -> acc.capnpSetter.invoke(builder, s);
+                    case Boolean b -> acc.capnpSetter.invokeExact(builder, (boolean)b);
+                    case Integer i -> acc.capnpSetter.invokeExact(builder, (int)i);
+                    case Long l -> acc.capnpSetter.invokeExact(builder, (long)l);
+                    case Double d -> acc.capnpSetter.invokeExact(builder, (double)d);
+                    case String s -> acc.capnpSetter.invokeExact(builder, s);
                     case List<?> l -> {
-                        ListBuilder subBuilder = (ListBuilder)acc.capnpSetter.invoke(builder, l.size());
+                        ListBuilder subBuilder = (ListBuilder)acc.capnpSetter.invokeExact(builder, l.size());
                         acc.serializeList(l, subBuilder);
                     }
                     default -> {
-                        var fieldStructBuilder = acc.capnpSetter.invoke(builder);
+                        var fieldStructBuilder = acc.capnpSetter.invokeExact(builder);
                         acc.serialize(value, fieldStructBuilder);
                     }
                 }
@@ -254,9 +252,9 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
         }
 
         public void deserializeField(Object result, Object reader) throws Throwable {
-            if (capnpChecker != null && !(boolean)capnpChecker.invoke(reader))
+            if (capnpChecker != null && !(boolean)capnpChecker.invokeExact(reader))
                 return;
-            sourceField.set(result, deserialize(capnpGetter.invoke(reader)));
+            sourceField.set(result, deserialize(capnpGetter.invokeExact(reader)));
             BestbuyCapnp.Bestbuy.Reader r0 = null;
         }
 
@@ -312,7 +310,7 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
                     return resultListList;
                 }
                 case StructReader ignored -> {
-                    var resultStruct = constructor.invoke();
+                    var resultStruct = constructor.invokeExact();
                     for (var acc : fieldAccessors) {
                         acc.deserializeField(resultStruct, capnpValue);
                     }
