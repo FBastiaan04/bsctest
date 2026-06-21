@@ -32,390 +32,299 @@ public final class WalmartCapnp {
       public final Reader asReader() {
         return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
       }
-      public final boolean hasSize() {
-        return !_pointerFieldIsNull(0);
-      }
-      public final org.capnproto.Text.Builder getSize() {
-        return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-      }
-      public final void setSize(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 0, value);
-      }
-      public final void setSize(String value) {
-        _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSize(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 0, size);
-      }
-      public final boolean hasAffiliateAddToCartUrl() {
-        return !_pointerFieldIsNull(1);
-      }
-      public final org.capnproto.Text.Builder getAffiliateAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-      }
-      public final void setAffiliateAddToCartUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 1, value);
-      }
-      public final void setAffiliateAddToCartUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAffiliateAddToCartUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 1, size);
-      }
-      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Builder getBestMarketplacePrice() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory, 2, null, 0);
-      }
-      public final void setBestMarketplacePrice(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory,2, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Builder initBestMarketplacePrice() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory,2, 0);
-      }
-      public final boolean hasLongDescription() {
-        return !_pointerFieldIsNull(3);
-      }
-      public final org.capnproto.Text.Builder getLongDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
-      }
-      public final void setLongDescription(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 3, value);
-      }
-      public final void setLongDescription(String value) {
-        _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initLongDescription(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 3, size);
-      }
-      public final boolean getFreight() {
-        return _getBooleanField(0);
-      }
-      public final void setFreight(boolean value) {
-        _setBooleanField(0, value);
-      }
-
-      public final boolean hasAddToCartUrl() {
-        return !_pointerFieldIsNull(4);
-      }
-      public final org.capnproto.Text.Builder getAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-      }
-      public final void setAddToCartUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 4, value);
-      }
-      public final void setAddToCartUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAddToCartUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 4, size);
-      }
-      public final boolean hasGender() {
-        return !_pointerFieldIsNull(5);
-      }
-      public final org.capnproto.Text.Builder getGender() {
-        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-      }
-      public final void setGender(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 5, value);
-      }
-      public final void setGender(String value) {
-        _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initGender(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 5, size);
-      }
-      public final boolean hasSellerInfo() {
-        return !_pointerFieldIsNull(6);
-      }
-      public final org.capnproto.Text.Builder getSellerInfo() {
-        return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-      }
-      public final void setSellerInfo(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 6, value);
-      }
-      public final void setSellerInfo(String value) {
-        _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSellerInfo(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 6, size);
-      }
       public final double getStandardShipRate() {
-        return _getDoubleField(1);
+        return _getDoubleField(0);
       }
       public final void setStandardShipRate(double value) {
-        _setDoubleField(1, value);
+        _setDoubleField(0, value);
       }
 
-      public final boolean hasLargeImage() {
-        return !_pointerFieldIsNull(7);
+      public final boolean hasCategoryPath() {
+        return !_pointerFieldIsNull(0);
       }
-      public final org.capnproto.Text.Builder getLargeImage() {
-        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+      public final org.capnproto.Text.Builder getCategoryPath() {
+        return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
       }
-      public final void setLargeImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 7, value);
+      public final void setCategoryPath(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 0, value);
       }
-      public final void setLargeImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
+      public final void setCategoryPath(String value) {
+        _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initLargeImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 7, size);
+      public final org.capnproto.Text.Builder initCategoryPath(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 0, size);
       }
-      public final boolean hasBrandName() {
-        return !_pointerFieldIsNull(8);
+      public final boolean hasGender() {
+        return !_pointerFieldIsNull(1);
       }
-      public final org.capnproto.Text.Builder getBrandName() {
-        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
+      public final org.capnproto.Text.Builder getGender() {
+        return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
       }
-      public final void setBrandName(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 8, value);
+      public final void setGender(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 1, value);
       }
-      public final void setBrandName(String value) {
-        _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
+      public final void setGender(String value) {
+        _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initBrandName(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 8, size);
+      public final org.capnproto.Text.Builder initGender(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 1, size);
       }
-      public final boolean hasCustomerRating() {
-        return !_pointerFieldIsNull(9);
+      public final boolean getRollBack() {
+        return _getBooleanField(64);
       }
-      public final org.capnproto.Text.Builder getCustomerRating() {
-        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+      public final void setRollBack(boolean value) {
+        _setBooleanField(64, value);
       }
-      public final void setCustomerRating(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 9, value);
+
+      public final boolean hasColor() {
+        return !_pointerFieldIsNull(2);
       }
-      public final void setCustomerRating(String value) {
-        _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder getColor() {
+        return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder initCustomerRating(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 9, size);
+      public final void setColor(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 2, value);
       }
-      public final int getNumReviews() {
-        return _getIntField(1);
+      public final void setColor(String value) {
+        _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
       }
-      public final void setNumReviews(int value) {
-        _setIntField(1, value);
+      public final org.capnproto.Text.Builder initColor(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 2, size);
+      }
+      public final boolean getAvailableOnline() {
+        return _getBooleanField(65);
+      }
+      public final void setAvailableOnline(boolean value) {
+        _setBooleanField(65, value);
       }
 
       public final boolean hasUpc() {
-        return !_pointerFieldIsNull(10);
+        return !_pointerFieldIsNull(3);
       }
       public final org.capnproto.Text.Builder getUpc() {
-        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
       }
       public final void setUpc(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 10, value);
+        _setPointerField(org.capnproto.Text.factory, 3, value);
       }
       public final void setUpc(String value) {
-        _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initUpc(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 10, size);
+        return _initPointerField(org.capnproto.Text.factory, 3, size);
       }
-      public final boolean hasCategoryPath() {
-        return !_pointerFieldIsNull(11);
+      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Builder getBestMarketplacePrice() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory, 4, null, 0);
       }
-      public final org.capnproto.Text.Builder getCategoryPath() {
-        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+      public final void setBestMarketplacePrice(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory,4, value);
       }
-      public final void setCategoryPath(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 11, value);
+      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Builder initBestMarketplacePrice() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory,4, 0);
       }
-      public final void setCategoryPath(String value) {
-        _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
+      public final boolean hasName() {
+        return !_pointerFieldIsNull(5);
       }
-      public final org.capnproto.Text.Builder initCategoryPath(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 11, size);
+      public final org.capnproto.Text.Builder getName() {
+        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
       }
-      public final boolean hasCustomerRatingImage() {
-        return !_pointerFieldIsNull(12);
+      public final void setName(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 5, value);
       }
-      public final org.capnproto.Text.Builder getCustomerRatingImage() {
-        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+      public final void setName(String value) {
+        _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
       }
-      public final void setCustomerRatingImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 12, value);
+      public final org.capnproto.Text.Builder initName(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 5, size);
       }
-      public final void setCustomerRatingImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
+      public final boolean hasCategoryNode() {
+        return !_pointerFieldIsNull(6);
       }
-      public final org.capnproto.Text.Builder initCustomerRatingImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 12, size);
+      public final org.capnproto.Text.Builder getCategoryNode() {
+        return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
       }
-      public final boolean hasShortDescription() {
-        return !_pointerFieldIsNull(13);
+      public final void setCategoryNode(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 6, value);
       }
-      public final org.capnproto.Text.Builder getShortDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+      public final void setCategoryNode(String value) {
+        _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
       }
-      public final void setShortDescription(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 13, value);
+      public final org.capnproto.Text.Builder initCategoryNode(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 6, size);
       }
-      public final void setShortDescription(String value) {
-        _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
+      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Builder getAttributes() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory, 7, null, 0);
       }
-      public final org.capnproto.Text.Builder initShortDescription(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 13, size);
+      public final void setAttributes(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory,7, value);
       }
-      public final boolean getAvailableOnline() {
-        return _getBooleanField(1);
+      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Builder initAttributes() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory,7, 0);
       }
-      public final void setAvailableOnline(boolean value) {
-        _setBooleanField(1, value);
+      public final boolean hasAddToCartUrl() {
+        return !_pointerFieldIsNull(8);
       }
-
-      public final boolean getShipToStore() {
-        return _getBooleanField(2);
+      public final org.capnproto.Text.Builder getAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
       }
-      public final void setShipToStore(boolean value) {
-        _setBooleanField(2, value);
+      public final void setAddToCartUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 8, value);
       }
-
-      public final boolean hasAge() {
-        return !_pointerFieldIsNull(14);
+      public final void setAddToCartUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder getAge() {
-        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+      public final org.capnproto.Text.Builder initAddToCartUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 8, size);
       }
-      public final void setAge(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 14, value);
-      }
-      public final void setAge(String value) {
-        _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAge(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 14, size);
-      }
-      public final boolean hasStock() {
-        return !_pointerFieldIsNull(15);
-      }
-      public final org.capnproto.Text.Builder getStock() {
-        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
-      }
-      public final void setStock(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 15, value);
-      }
-      public final void setStock(String value) {
-        _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initStock(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 15, size);
-      }
-      public final boolean hasModelNumber() {
-        return !_pointerFieldIsNull(16);
-      }
-      public final org.capnproto.Text.Builder getModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
-      }
-      public final void setModelNumber(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 16, value);
-      }
-      public final void setModelNumber(String value) {
-        _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initModelNumber(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 16, size);
-      }
-      public final boolean hasMediumImage() {
-        return !_pointerFieldIsNull(17);
-      }
-      public final org.capnproto.Text.Builder getMediumImage() {
-        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
-      }
-      public final void setMediumImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 17, value);
-      }
-      public final void setMediumImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initMediumImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 17, size);
-      }
-      public final boolean hasIsbn() {
-        return !_pointerFieldIsNull(18);
-      }
-      public final org.capnproto.Text.Builder getIsbn() {
-        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
-      }
-      public final void setIsbn(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 18, value);
-      }
-      public final void setIsbn(String value) {
-        _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initIsbn(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 18, size);
-      }
-      public final boolean hasProductTrackingUrl() {
-        return !_pointerFieldIsNull(19);
-      }
-      public final org.capnproto.Text.Builder getProductTrackingUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
-      }
-      public final void setProductTrackingUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 19, value);
-      }
-      public final void setProductTrackingUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initProductTrackingUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 19, size);
-      }
-      public final boolean getNinetySevenCentShipping() {
-        return _getBooleanField(3);
-      }
-      public final void setNinetySevenCentShipping(boolean value) {
-        _setBooleanField(3, value);
-      }
-
       public final boolean hasThumbnailImage() {
-        return !_pointerFieldIsNull(20);
+        return !_pointerFieldIsNull(9);
       }
       public final org.capnproto.Text.Builder getThumbnailImage() {
-        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
       }
       public final void setThumbnailImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 20, value);
+        _setPointerField(org.capnproto.Text.factory, 9, value);
       }
       public final void setThumbnailImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initThumbnailImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 20, size);
+        return _initPointerField(org.capnproto.Text.factory, 9, size);
       }
-      public final boolean getRollBack() {
-        return _getBooleanField(4);
+      public final boolean hasVariants() {
+        return !_pointerFieldIsNull(10);
       }
-      public final void setRollBack(boolean value) {
-        _setBooleanField(4, value);
+      public final org.capnproto.PrimitiveList.Int.Builder getVariants() {
+        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 10, null, 0);
+      }
+      public final void setVariants(org.capnproto.PrimitiveList.Int.Reader value) {
+        _setPointerField(org.capnproto.PrimitiveList.Int.factory, 10, value);
+      }
+      public final org.capnproto.PrimitiveList.Int.Builder initVariants(int size) {
+        return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 10, size);
+      }
+      public final boolean hasLargeImage() {
+        return !_pointerFieldIsNull(11);
+      }
+      public final org.capnproto.Text.Builder getLargeImage() {
+        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+      }
+      public final void setLargeImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 11, value);
+      }
+      public final void setLargeImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initLargeImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 11, size);
+      }
+      public final boolean getNinetySevenCentShipping() {
+        return _getBooleanField(66);
+      }
+      public final void setNinetySevenCentShipping(boolean value) {
+        _setBooleanField(66, value);
       }
 
-      public final double getTwoThreeDayShippingRate() {
+      public final boolean hasProductTrackingUrl() {
+        return !_pointerFieldIsNull(12);
+      }
+      public final org.capnproto.Text.Builder getProductTrackingUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+      }
+      public final void setProductTrackingUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 12, value);
+      }
+      public final void setProductTrackingUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initProductTrackingUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 12, size);
+      }
+      public final double getOvernightShippingRate() {
         return _getDoubleField(2);
       }
-      public final void setTwoThreeDayShippingRate(double value) {
+      public final void setOvernightShippingRate(double value) {
         _setDoubleField(2, value);
       }
 
-      public final boolean getPreOrder() {
-        return _getBooleanField(5);
+      public final boolean hasBrandName() {
+        return !_pointerFieldIsNull(13);
       }
-      public final void setPreOrder(boolean value) {
-        _setBooleanField(5, value);
+      public final org.capnproto.Text.Builder getBrandName() {
+        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+      }
+      public final void setBrandName(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 13, value);
+      }
+      public final void setBrandName(String value) {
+        _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initBrandName(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 13, size);
+      }
+      public final double getMsrp() {
+        return _getDoubleField(3);
+      }
+      public final void setMsrp(double value) {
+        _setDoubleField(3, value);
       }
 
       public final int getParentItemId() {
-        return _getIntField(6);
+        return _getIntField(3);
       }
       public final void setParentItemId(int value) {
-        _setIntField(6, value);
+        _setIntField(3, value);
       }
 
       public final boolean getFreeShipToStore() {
-        return _getBooleanField(6);
+        return _getBooleanField(67);
       }
       public final void setFreeShipToStore(boolean value) {
-        _setBooleanField(6, value);
+        _setBooleanField(67, value);
+      }
+
+      public final boolean hasMediumImage() {
+        return !_pointerFieldIsNull(14);
+      }
+      public final org.capnproto.Text.Builder getMediumImage() {
+        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+      }
+      public final void setMediumImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 14, value);
+      }
+      public final void setMediumImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initMediumImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 14, size);
+      }
+      public final boolean getClearance() {
+        return _getBooleanField(68);
+      }
+      public final void setClearance(boolean value) {
+        _setBooleanField(68, value);
+      }
+
+      public final boolean hasSellerInfo() {
+        return !_pointerFieldIsNull(15);
+      }
+      public final org.capnproto.Text.Builder getSellerInfo() {
+        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+      }
+      public final void setSellerInfo(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 15, value);
+      }
+      public final void setSellerInfo(String value) {
+        _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSellerInfo(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 15, size);
+      }
+      public final boolean getFreeShippingOver50Dollars() {
+        return _getBooleanField(69);
+      }
+      public final void setFreeShippingOver50Dollars(boolean value) {
+        _setBooleanField(69, value);
       }
 
       public final double getSalePrice() {
@@ -425,150 +334,241 @@ public final class WalmartCapnp {
         _setDoubleField(4, value);
       }
 
+      public final boolean hasLongDescription() {
+        return !_pointerFieldIsNull(16);
+      }
+      public final org.capnproto.Text.Builder getLongDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
+      }
+      public final void setLongDescription(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 16, value);
+      }
+      public final void setLongDescription(String value) {
+        _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initLongDescription(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 16, size);
+      }
+      public final boolean hasShortDescription() {
+        return !_pointerFieldIsNull(17);
+      }
+      public final org.capnproto.Text.Builder getShortDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+      }
+      public final void setShortDescription(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 17, value);
+      }
+      public final void setShortDescription(String value) {
+        _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initShortDescription(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 17, size);
+      }
+      public final double getTwoThreeDayShippingRate() {
+        return _getDoubleField(5);
+      }
+      public final void setTwoThreeDayShippingRate(double value) {
+        _setDoubleField(5, value);
+      }
+
       public final int getMaxItemsInOrder() {
-        return _getIntField(7);
+        return _getIntField(12);
       }
       public final void setMaxItemsInOrder(int value) {
-        _setIntField(7, value);
+        _setIntField(12, value);
       }
 
-      public final int getItemId() {
-        return _getIntField(10);
+      public final boolean hasModelNumber() {
+        return !_pointerFieldIsNull(18);
       }
-      public final void setItemId(int value) {
-        _setIntField(10, value);
+      public final org.capnproto.Text.Builder getModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
       }
-
-      public final double getMsrp() {
-        return _getDoubleField(6);
+      public final void setModelNumber(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 18, value);
       }
-      public final void setMsrp(double value) {
-        _setDoubleField(6, value);
+      public final void setModelNumber(String value) {
+        _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
       }
-
-      public final boolean getBundle() {
-        return _getBooleanField(7);
+      public final org.capnproto.Text.Builder initModelNumber(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 18, size);
       }
-      public final void setBundle(boolean value) {
-        _setBooleanField(7, value);
+      public final boolean getMarketplace() {
+        return _getBooleanField(70);
+      }
+      public final void setMarketplace(boolean value) {
+        _setBooleanField(70, value);
       }
 
       public final boolean getSpecialBuy() {
-        return _getBooleanField(8);
+        return _getBooleanField(71);
       }
       public final void setSpecialBuy(boolean value) {
-        _setBooleanField(8, value);
+        _setBooleanField(71, value);
       }
 
-      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Builder getAttributes() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory, 21, null, 0);
+      public final int getItemId() {
+        return _getIntField(13);
       }
-      public final void setAttributes(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory,21, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Builder initAttributes() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory,21, 0);
-      }
-      public final boolean getFreeShippingOver50Dollars() {
-        return _getBooleanField(9);
-      }
-      public final void setFreeShippingOver50Dollars(boolean value) {
-        _setBooleanField(9, value);
+      public final void setItemId(int value) {
+        _setIntField(13, value);
       }
 
-      public final boolean hasVariants() {
-        return !_pointerFieldIsNull(22);
+      public final boolean hasSize() {
+        return !_pointerFieldIsNull(19);
       }
-      public final org.capnproto.PrimitiveList.Int.Builder getVariants() {
-        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 22, null, 0);
+      public final org.capnproto.Text.Builder getSize() {
+        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
       }
-      public final void setVariants(org.capnproto.PrimitiveList.Int.Reader value) {
-        _setPointerField(org.capnproto.PrimitiveList.Int.factory, 22, value);
+      public final void setSize(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 19, value);
       }
-      public final org.capnproto.PrimitiveList.Int.Builder initVariants(int size) {
-        return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 22, size);
+      public final void setSize(String value) {
+        _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
       }
-      public final boolean hasName() {
-        return !_pointerFieldIsNull(23);
-      }
-      public final org.capnproto.Text.Builder getName() {
-        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
-      }
-      public final void setName(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 23, value);
-      }
-      public final void setName(String value) {
-        _setPointerField(org.capnproto.Text.factory, 23, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initName(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 23, size);
-      }
-      public final double getOvernightShippingRate() {
-        return _getDoubleField(7);
-      }
-      public final void setOvernightShippingRate(double value) {
-        _setDoubleField(7, value);
-      }
-
-      public final boolean hasCategoryNode() {
-        return !_pointerFieldIsNull(24);
-      }
-      public final org.capnproto.Text.Builder getCategoryNode() {
-        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
-      }
-      public final void setCategoryNode(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 24, value);
-      }
-      public final void setCategoryNode(String value) {
-        _setPointerField(org.capnproto.Text.factory, 24, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initCategoryNode(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 24, size);
-      }
-      public final boolean hasColor() {
-        return !_pointerFieldIsNull(25);
-      }
-      public final org.capnproto.Text.Builder getColor() {
-        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
-      }
-      public final void setColor(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 25, value);
-      }
-      public final void setColor(String value) {
-        _setPointerField(org.capnproto.Text.factory, 25, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initColor(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 25, size);
+      public final org.capnproto.Text.Builder initSize(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 19, size);
       }
       public final boolean hasProductUrl() {
-        return !_pointerFieldIsNull(26);
+        return !_pointerFieldIsNull(20);
       }
       public final org.capnproto.Text.Builder getProductUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
       }
       public final void setProductUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 26, value);
+        _setPointerField(org.capnproto.Text.factory, 20, value);
       }
       public final void setProductUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 26, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initProductUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 20, size);
+      }
+      public final boolean hasStock() {
+        return !_pointerFieldIsNull(21);
+      }
+      public final org.capnproto.Text.Builder getStock() {
+        return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
+      }
+      public final void setStock(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 21, value);
+      }
+      public final void setStock(String value) {
+        _setPointerField(org.capnproto.Text.factory, 21, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initStock(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 21, size);
+      }
+      public final boolean getBundle() {
+        return _getBooleanField(72);
+      }
+      public final void setBundle(boolean value) {
+        _setBooleanField(72, value);
+      }
+
+      public final boolean hasCustomerRatingImage() {
+        return !_pointerFieldIsNull(22);
+      }
+      public final org.capnproto.Text.Builder getCustomerRatingImage() {
+        return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
+      }
+      public final void setCustomerRatingImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 22, value);
+      }
+      public final void setCustomerRatingImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 22, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initCustomerRatingImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 22, size);
+      }
+      public final boolean hasAffiliateAddToCartUrl() {
+        return !_pointerFieldIsNull(23);
+      }
+      public final org.capnproto.Text.Builder getAffiliateAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
+      }
+      public final void setAffiliateAddToCartUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 23, value);
+      }
+      public final void setAffiliateAddToCartUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 23, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAffiliateAddToCartUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 23, size);
+      }
+      public final int getNumReviews() {
+        return _getIntField(14);
+      }
+      public final void setNumReviews(int value) {
+        _setIntField(14, value);
+      }
+
+      public final boolean hasCustomerRating() {
+        return !_pointerFieldIsNull(24);
+      }
+      public final org.capnproto.Text.Builder getCustomerRating() {
+        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
+      }
+      public final void setCustomerRating(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 24, value);
+      }
+      public final void setCustomerRating(String value) {
+        _setPointerField(org.capnproto.Text.factory, 24, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initCustomerRating(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 24, size);
+      }
+      public final boolean hasAge() {
+        return !_pointerFieldIsNull(25);
+      }
+      public final org.capnproto.Text.Builder getAge() {
+        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
+      }
+      public final void setAge(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 25, value);
+      }
+      public final void setAge(String value) {
+        _setPointerField(org.capnproto.Text.factory, 25, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAge(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 25, size);
+      }
+      public final boolean getShipToStore() {
+        return _getBooleanField(73);
+      }
+      public final void setShipToStore(boolean value) {
+        _setBooleanField(73, value);
+      }
+
+      public final boolean getFreight() {
+        return _getBooleanField(74);
+      }
+      public final void setFreight(boolean value) {
+        _setBooleanField(74, value);
+      }
+
+      public final boolean getPreOrder() {
+        return _getBooleanField(75);
+      }
+      public final void setPreOrder(boolean value) {
+        _setBooleanField(75, value);
+      }
+
+      public final boolean hasIsbn() {
+        return !_pointerFieldIsNull(26);
+      }
+      public final org.capnproto.Text.Builder getIsbn() {
+        return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
+      }
+      public final void setIsbn(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 26, value);
+      }
+      public final void setIsbn(String value) {
+        _setPointerField(org.capnproto.Text.factory, 26, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initIsbn(int size) {
         return _initPointerField(org.capnproto.Text.factory, 26, size);
       }
-      public final boolean getMarketplace() {
-        return _getBooleanField(10);
-      }
-      public final void setMarketplace(boolean value) {
-        _setBooleanField(10, value);
-      }
-
-      public final boolean getClearance() {
-        return _getBooleanField(11);
-      }
-      public final void setClearance(boolean value) {
-        _setBooleanField(11, value);
-      }
-
     }
 
     public static final class Reader extends org.capnproto.StructReader {
@@ -576,277 +576,277 @@ public final class WalmartCapnp {
         super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
       }
 
-      public boolean hasSize() {
-        return !_pointerFieldIsNull(0);
-      }
-      public org.capnproto.Text.Reader getSize() {
-        return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-      }
-
-      public boolean hasAffiliateAddToCartUrl() {
-        return !_pointerFieldIsNull(1);
-      }
-      public org.capnproto.Text.Reader getAffiliateAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-      }
-
-      public boolean hasBestMarketplacePrice() {
-        return !_pointerFieldIsNull(2);
-      }
-      public eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Reader getBestMarketplacePrice() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory,2,null, 0);
-      }
-
-      public boolean hasLongDescription() {
-        return !_pointerFieldIsNull(3);
-      }
-      public org.capnproto.Text.Reader getLongDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
-      }
-
-      public final boolean getFreight() {
-        return _getBooleanField(0);
-      }
-
-      public boolean hasAddToCartUrl() {
-        return !_pointerFieldIsNull(4);
-      }
-      public org.capnproto.Text.Reader getAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-      }
-
-      public boolean hasGender() {
-        return !_pointerFieldIsNull(5);
-      }
-      public org.capnproto.Text.Reader getGender() {
-        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-      }
-
-      public boolean hasSellerInfo() {
-        return !_pointerFieldIsNull(6);
-      }
-      public org.capnproto.Text.Reader getSellerInfo() {
-        return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-      }
-
       public final double getStandardShipRate() {
-        return _getDoubleField(1);
-      }
-
-      public boolean hasLargeImage() {
-        return !_pointerFieldIsNull(7);
-      }
-      public org.capnproto.Text.Reader getLargeImage() {
-        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
-      }
-
-      public boolean hasBrandName() {
-        return !_pointerFieldIsNull(8);
-      }
-      public org.capnproto.Text.Reader getBrandName() {
-        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
-      }
-
-      public boolean hasCustomerRating() {
-        return !_pointerFieldIsNull(9);
-      }
-      public org.capnproto.Text.Reader getCustomerRating() {
-        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-      }
-
-      public final int getNumReviews() {
-        return _getIntField(1);
-      }
-
-      public boolean hasUpc() {
-        return !_pointerFieldIsNull(10);
-      }
-      public org.capnproto.Text.Reader getUpc() {
-        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
+        return _getDoubleField(0);
       }
 
       public boolean hasCategoryPath() {
-        return !_pointerFieldIsNull(11);
+        return !_pointerFieldIsNull(0);
       }
       public org.capnproto.Text.Reader getCategoryPath() {
-        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
       }
 
-      public boolean hasCustomerRatingImage() {
-        return !_pointerFieldIsNull(12);
+      public boolean hasGender() {
+        return !_pointerFieldIsNull(1);
       }
-      public org.capnproto.Text.Reader getCustomerRatingImage() {
-        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
-      }
-
-      public boolean hasShortDescription() {
-        return !_pointerFieldIsNull(13);
-      }
-      public org.capnproto.Text.Reader getShortDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
-      }
-
-      public final boolean getAvailableOnline() {
-        return _getBooleanField(1);
-      }
-
-      public final boolean getShipToStore() {
-        return _getBooleanField(2);
-      }
-
-      public boolean hasAge() {
-        return !_pointerFieldIsNull(14);
-      }
-      public org.capnproto.Text.Reader getAge() {
-        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-      }
-
-      public boolean hasStock() {
-        return !_pointerFieldIsNull(15);
-      }
-      public org.capnproto.Text.Reader getStock() {
-        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
-      }
-
-      public boolean hasModelNumber() {
-        return !_pointerFieldIsNull(16);
-      }
-      public org.capnproto.Text.Reader getModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
-      }
-
-      public boolean hasMediumImage() {
-        return !_pointerFieldIsNull(17);
-      }
-      public org.capnproto.Text.Reader getMediumImage() {
-        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
-      }
-
-      public boolean hasIsbn() {
-        return !_pointerFieldIsNull(18);
-      }
-      public org.capnproto.Text.Reader getIsbn() {
-        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
-      }
-
-      public boolean hasProductTrackingUrl() {
-        return !_pointerFieldIsNull(19);
-      }
-      public org.capnproto.Text.Reader getProductTrackingUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
-      }
-
-      public final boolean getNinetySevenCentShipping() {
-        return _getBooleanField(3);
-      }
-
-      public boolean hasThumbnailImage() {
-        return !_pointerFieldIsNull(20);
-      }
-      public org.capnproto.Text.Reader getThumbnailImage() {
-        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+      public org.capnproto.Text.Reader getGender() {
+        return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
       }
 
       public final boolean getRollBack() {
-        return _getBooleanField(4);
+        return _getBooleanField(64);
       }
 
-      public final double getTwoThreeDayShippingRate() {
+      public boolean hasColor() {
+        return !_pointerFieldIsNull(2);
+      }
+      public org.capnproto.Text.Reader getColor() {
+        return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
+      }
+
+      public final boolean getAvailableOnline() {
+        return _getBooleanField(65);
+      }
+
+      public boolean hasUpc() {
+        return !_pointerFieldIsNull(3);
+      }
+      public org.capnproto.Text.Reader getUpc() {
+        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+      }
+
+      public boolean hasBestMarketplacePrice() {
+        return !_pointerFieldIsNull(4);
+      }
+      public eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.Reader getBestMarketplacePrice() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.BestMarketplacePrice.factory,4,null, 0);
+      }
+
+      public boolean hasName() {
+        return !_pointerFieldIsNull(5);
+      }
+      public org.capnproto.Text.Reader getName() {
+        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+      }
+
+      public boolean hasCategoryNode() {
+        return !_pointerFieldIsNull(6);
+      }
+      public org.capnproto.Text.Reader getCategoryNode() {
+        return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+      }
+
+      public boolean hasAttributes() {
+        return !_pointerFieldIsNull(7);
+      }
+      public eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Reader getAttributes() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory,7,null, 0);
+      }
+
+      public boolean hasAddToCartUrl() {
+        return !_pointerFieldIsNull(8);
+      }
+      public org.capnproto.Text.Reader getAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
+      }
+
+      public boolean hasThumbnailImage() {
+        return !_pointerFieldIsNull(9);
+      }
+      public org.capnproto.Text.Reader getThumbnailImage() {
+        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+      }
+
+      public final boolean hasVariants() {
+        return !_pointerFieldIsNull(10);
+      }
+      public final org.capnproto.PrimitiveList.Int.Reader getVariants() {
+        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 10, null, 0);
+      }
+
+      public boolean hasLargeImage() {
+        return !_pointerFieldIsNull(11);
+      }
+      public org.capnproto.Text.Reader getLargeImage() {
+        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+      }
+
+      public final boolean getNinetySevenCentShipping() {
+        return _getBooleanField(66);
+      }
+
+      public boolean hasProductTrackingUrl() {
+        return !_pointerFieldIsNull(12);
+      }
+      public org.capnproto.Text.Reader getProductTrackingUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+      }
+
+      public final double getOvernightShippingRate() {
         return _getDoubleField(2);
       }
 
-      public final boolean getPreOrder() {
-        return _getBooleanField(5);
+      public boolean hasBrandName() {
+        return !_pointerFieldIsNull(13);
+      }
+      public org.capnproto.Text.Reader getBrandName() {
+        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+      }
+
+      public final double getMsrp() {
+        return _getDoubleField(3);
       }
 
       public final int getParentItemId() {
-        return _getIntField(6);
+        return _getIntField(3);
       }
 
       public final boolean getFreeShipToStore() {
-        return _getBooleanField(6);
+        return _getBooleanField(67);
+      }
+
+      public boolean hasMediumImage() {
+        return !_pointerFieldIsNull(14);
+      }
+      public org.capnproto.Text.Reader getMediumImage() {
+        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+      }
+
+      public final boolean getClearance() {
+        return _getBooleanField(68);
+      }
+
+      public boolean hasSellerInfo() {
+        return !_pointerFieldIsNull(15);
+      }
+      public org.capnproto.Text.Reader getSellerInfo() {
+        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+      }
+
+      public final boolean getFreeShippingOver50Dollars() {
+        return _getBooleanField(69);
       }
 
       public final double getSalePrice() {
         return _getDoubleField(4);
       }
 
+      public boolean hasLongDescription() {
+        return !_pointerFieldIsNull(16);
+      }
+      public org.capnproto.Text.Reader getLongDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
+      }
+
+      public boolean hasShortDescription() {
+        return !_pointerFieldIsNull(17);
+      }
+      public org.capnproto.Text.Reader getShortDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+      }
+
+      public final double getTwoThreeDayShippingRate() {
+        return _getDoubleField(5);
+      }
+
       public final int getMaxItemsInOrder() {
-        return _getIntField(7);
+        return _getIntField(12);
       }
 
-      public final int getItemId() {
-        return _getIntField(10);
+      public boolean hasModelNumber() {
+        return !_pointerFieldIsNull(18);
       }
-
-      public final double getMsrp() {
-        return _getDoubleField(6);
-      }
-
-      public final boolean getBundle() {
-        return _getBooleanField(7);
-      }
-
-      public final boolean getSpecialBuy() {
-        return _getBooleanField(8);
-      }
-
-      public boolean hasAttributes() {
-        return !_pointerFieldIsNull(21);
-      }
-      public eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.Reader getAttributes() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.WalmartCapnp.Walmart.Attributes.factory,21,null, 0);
-      }
-
-      public final boolean getFreeShippingOver50Dollars() {
-        return _getBooleanField(9);
-      }
-
-      public final boolean hasVariants() {
-        return !_pointerFieldIsNull(22);
-      }
-      public final org.capnproto.PrimitiveList.Int.Reader getVariants() {
-        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 22, null, 0);
-      }
-
-      public boolean hasName() {
-        return !_pointerFieldIsNull(23);
-      }
-      public org.capnproto.Text.Reader getName() {
-        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
-      }
-
-      public final double getOvernightShippingRate() {
-        return _getDoubleField(7);
-      }
-
-      public boolean hasCategoryNode() {
-        return !_pointerFieldIsNull(24);
-      }
-      public org.capnproto.Text.Reader getCategoryNode() {
-        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
-      }
-
-      public boolean hasColor() {
-        return !_pointerFieldIsNull(25);
-      }
-      public org.capnproto.Text.Reader getColor() {
-        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
-      }
-
-      public boolean hasProductUrl() {
-        return !_pointerFieldIsNull(26);
-      }
-      public org.capnproto.Text.Reader getProductUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
+      public org.capnproto.Text.Reader getModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
       }
 
       public final boolean getMarketplace() {
-        return _getBooleanField(10);
+        return _getBooleanField(70);
       }
 
-      public final boolean getClearance() {
-        return _getBooleanField(11);
+      public final boolean getSpecialBuy() {
+        return _getBooleanField(71);
+      }
+
+      public final int getItemId() {
+        return _getIntField(13);
+      }
+
+      public boolean hasSize() {
+        return !_pointerFieldIsNull(19);
+      }
+      public org.capnproto.Text.Reader getSize() {
+        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+      }
+
+      public boolean hasProductUrl() {
+        return !_pointerFieldIsNull(20);
+      }
+      public org.capnproto.Text.Reader getProductUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+      }
+
+      public boolean hasStock() {
+        return !_pointerFieldIsNull(21);
+      }
+      public org.capnproto.Text.Reader getStock() {
+        return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
+      }
+
+      public final boolean getBundle() {
+        return _getBooleanField(72);
+      }
+
+      public boolean hasCustomerRatingImage() {
+        return !_pointerFieldIsNull(22);
+      }
+      public org.capnproto.Text.Reader getCustomerRatingImage() {
+        return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
+      }
+
+      public boolean hasAffiliateAddToCartUrl() {
+        return !_pointerFieldIsNull(23);
+      }
+      public org.capnproto.Text.Reader getAffiliateAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
+      }
+
+      public final int getNumReviews() {
+        return _getIntField(14);
+      }
+
+      public boolean hasCustomerRating() {
+        return !_pointerFieldIsNull(24);
+      }
+      public org.capnproto.Text.Reader getCustomerRating() {
+        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
+      }
+
+      public boolean hasAge() {
+        return !_pointerFieldIsNull(25);
+      }
+      public org.capnproto.Text.Reader getAge() {
+        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
+      }
+
+      public final boolean getShipToStore() {
+        return _getBooleanField(73);
+      }
+
+      public final boolean getFreight() {
+        return _getBooleanField(74);
+      }
+
+      public final boolean getPreOrder() {
+        return _getBooleanField(75);
+      }
+
+      public boolean hasIsbn() {
+        return !_pointerFieldIsNull(26);
+      }
+      public org.capnproto.Text.Reader getIsbn() {
+        return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
       }
 
     }
@@ -879,38 +879,38 @@ public final class WalmartCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final double getStandardShipRate() {
+        public final double getTwoThreeDayShippingRate() {
           return _getDoubleField(0);
         }
-        public final void setStandardShipRate(double value) {
+        public final void setTwoThreeDayShippingRate(double value) {
           _setDoubleField(0, value);
         }
 
-        public final double getPrice() {
-          return _getDoubleField(1);
-        }
-        public final void setPrice(double value) {
-          _setDoubleField(1, value);
-        }
-
         public final boolean getAvailableOnline() {
-          return _getBooleanField(128);
+          return _getBooleanField(64);
         }
         public final void setAvailableOnline(boolean value) {
-          _setBooleanField(128, value);
+          _setBooleanField(64, value);
+        }
+
+        public final double getStandardShipRate() {
+          return _getDoubleField(2);
+        }
+        public final void setStandardShipRate(double value) {
+          _setDoubleField(2, value);
         }
 
         public final boolean getClearance() {
-          return _getBooleanField(129);
+          return _getBooleanField(65);
         }
         public final void setClearance(boolean value) {
-          _setBooleanField(129, value);
+          _setBooleanField(65, value);
         }
 
-        public final double getTwoThreeDayShippingRate() {
+        public final double getPrice() {
           return _getDoubleField(3);
         }
-        public final void setTwoThreeDayShippingRate(double value) {
+        public final void setPrice(double value) {
           _setDoubleField(3, value);
         }
 
@@ -936,23 +936,23 @@ public final class WalmartCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final double getStandardShipRate() {
+        public final double getTwoThreeDayShippingRate() {
           return _getDoubleField(0);
         }
 
-        public final double getPrice() {
-          return _getDoubleField(1);
+        public final boolean getAvailableOnline() {
+          return _getBooleanField(64);
         }
 
-        public final boolean getAvailableOnline() {
-          return _getBooleanField(128);
+        public final double getStandardShipRate() {
+          return _getDoubleField(2);
         }
 
         public final boolean getClearance() {
-          return _getBooleanField(129);
+          return _getBooleanField(65);
         }
 
-        public final double getTwoThreeDayShippingRate() {
+        public final double getPrice() {
           return _getDoubleField(3);
         }
 
@@ -996,1414 +996,1414 @@ public final class WalmartCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasRackSpaces() {
+        public final boolean hasVehicleType() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getRackSpaces() {
+        public final org.capnproto.Text.Builder getVehicleType() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
-        public final void setRackSpaces(org.capnproto.Text.Reader value) {
+        public final void setVehicleType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 0, value);
         }
-        public final void setRackSpaces(String value) {
+        public final void setVehicleType(String value) {
           _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRackSpaces(int size) {
+        public final org.capnproto.Text.Builder initVehicleType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final boolean hasAmps() {
+        public final boolean hasBrightness() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.Text.Builder getAmps() {
+        public final org.capnproto.Text.Builder getBrightness() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
-        public final void setAmps(org.capnproto.Text.Reader value) {
+        public final void setBrightness(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 1, value);
         }
-        public final void setAmps(String value) {
+        public final void setBrightness(String value) {
           _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAmps(int size) {
+        public final org.capnproto.Text.Builder initBrightness(int size) {
           return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
-        public final boolean hasPattern() {
+        public final boolean hasLightBulbType() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.Text.Builder getPattern() {
+        public final org.capnproto.Text.Builder getLightBulbType() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final void setPattern(org.capnproto.Text.Reader value) {
+        public final void setLightBulbType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 2, value);
         }
-        public final void setPattern(String value) {
+        public final void setLightBulbType(String value) {
           _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPattern(int size) {
+        public final org.capnproto.Text.Builder initLightBulbType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
-        public final boolean hasTrimColor() {
+        public final boolean hasShape() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.Text.Builder getTrimColor() {
+        public final org.capnproto.Text.Builder getShape() {
           return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
-        public final void setTrimColor(org.capnproto.Text.Reader value) {
+        public final void setShape(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 3, value);
         }
-        public final void setTrimColor(String value) {
+        public final void setShape(String value) {
           _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTrimColor(int size) {
+        public final org.capnproto.Text.Builder initShape(int size) {
           return _initPointerField(org.capnproto.Text.factory, 3, size);
         }
-        public final boolean hasEdgeFinish() {
+        public final boolean hasGender() {
           return !_pointerFieldIsNull(4);
         }
-        public final org.capnproto.Text.Builder getEdgeFinish() {
+        public final org.capnproto.Text.Builder getGender() {
           return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
-        public final void setEdgeFinish(org.capnproto.Text.Reader value) {
+        public final void setGender(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 4, value);
         }
-        public final void setEdgeFinish(String value) {
+        public final void setGender(String value) {
           _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initEdgeFinish(int size) {
+        public final org.capnproto.Text.Builder initGender(int size) {
           return _initPointerField(org.capnproto.Text.factory, 4, size);
         }
-        public final boolean hasWallMountable() {
+        public final boolean hasRackDepth() {
           return !_pointerFieldIsNull(5);
         }
-        public final org.capnproto.Text.Builder getWallMountable() {
+        public final org.capnproto.Text.Builder getRackDepth() {
           return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
-        public final void setWallMountable(org.capnproto.Text.Reader value) {
+        public final void setRackDepth(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 5, value);
         }
-        public final void setWallMountable(String value) {
+        public final void setRackDepth(String value) {
           _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWallMountable(int size) {
+        public final org.capnproto.Text.Builder initRackDepth(int size) {
           return _initPointerField(org.capnproto.Text.factory, 5, size);
         }
-        public final boolean hasWeight() {
+        public final boolean hasDepth() {
           return !_pointerFieldIsNull(6);
         }
-        public final org.capnproto.Text.Builder getWeight() {
+        public final org.capnproto.Text.Builder getDepth() {
           return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
         }
-        public final void setWeight(org.capnproto.Text.Reader value) {
+        public final void setDepth(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 6, value);
         }
-        public final void setWeight(String value) {
+        public final void setDepth(String value) {
           _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWeight(int size) {
+        public final org.capnproto.Text.Builder initDepth(int size) {
           return _initPointerField(org.capnproto.Text.factory, 6, size);
         }
-        public final boolean hasCableLength() {
+        public final boolean hasVolts() {
           return !_pointerFieldIsNull(7);
         }
-        public final org.capnproto.Text.Builder getCableLength() {
+        public final org.capnproto.Text.Builder getVolts() {
           return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
         }
-        public final void setCableLength(org.capnproto.Text.Reader value) {
+        public final void setVolts(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 7, value);
         }
-        public final void setCableLength(String value) {
+        public final void setVolts(String value) {
           _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCableLength(int size) {
+        public final org.capnproto.Text.Builder initVolts(int size) {
           return _initPointerField(org.capnproto.Text.factory, 7, size);
         }
-        public final boolean hasBinColor() {
+        public final boolean hasBins() {
           return !_pointerFieldIsNull(8);
         }
-        public final org.capnproto.Text.Builder getBinColor() {
+        public final org.capnproto.Text.Builder getBins() {
           return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
-        public final void setBinColor(org.capnproto.Text.Reader value) {
+        public final void setBins(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 8, value);
         }
-        public final void setBinColor(String value) {
+        public final void setBins(String value) {
           _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBinColor(int size) {
+        public final org.capnproto.Text.Builder initBins(int size) {
           return _initPointerField(org.capnproto.Text.factory, 8, size);
         }
-        public final boolean hasTopColor() {
+        public final boolean hasInkColor() {
           return !_pointerFieldIsNull(9);
         }
-        public final org.capnproto.Text.Builder getTopColor() {
+        public final org.capnproto.Text.Builder getInkColor() {
           return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
         }
-        public final void setTopColor(org.capnproto.Text.Reader value) {
+        public final void setInkColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 9, value);
         }
-        public final void setTopColor(String value) {
+        public final void setInkColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTopColor(int size) {
+        public final org.capnproto.Text.Builder initInkColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 9, size);
         }
-        public final boolean hasPersonalizable() {
+        public final boolean hasOutletPosition() {
           return !_pointerFieldIsNull(10);
         }
-        public final org.capnproto.Text.Builder getPersonalizable() {
+        public final org.capnproto.Text.Builder getOutletPosition() {
           return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
         }
-        public final void setPersonalizable(org.capnproto.Text.Reader value) {
+        public final void setOutletPosition(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 10, value);
         }
-        public final void setPersonalizable(String value) {
+        public final void setOutletPosition(String value) {
           _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPersonalizable(int size) {
+        public final org.capnproto.Text.Builder initOutletPosition(int size) {
           return _initPointerField(org.capnproto.Text.factory, 10, size);
         }
-        public final boolean hasShadeColor() {
+        public final boolean hasNumberOfDriveBays() {
           return !_pointerFieldIsNull(11);
         }
-        public final org.capnproto.Text.Builder getShadeColor() {
+        public final org.capnproto.Text.Builder getNumberOfDriveBays() {
           return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
-        public final void setShadeColor(org.capnproto.Text.Reader value) {
+        public final void setNumberOfDriveBays(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 11, value);
         }
-        public final void setShadeColor(String value) {
+        public final void setNumberOfDriveBays(String value) {
           _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShadeColor(int size) {
+        public final org.capnproto.Text.Builder initNumberOfDriveBays(int size) {
           return _initPointerField(org.capnproto.Text.factory, 11, size);
         }
-        public final boolean hasDiameter() {
+        public final boolean hasCollege() {
           return !_pointerFieldIsNull(12);
         }
-        public final org.capnproto.Text.Builder getDiameter() {
+        public final org.capnproto.Text.Builder getCollege() {
           return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
         }
-        public final void setDiameter(org.capnproto.Text.Reader value) {
+        public final void setCollege(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 12, value);
         }
-        public final void setDiameter(String value) {
+        public final void setCollege(String value) {
           _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDiameter(int size) {
+        public final org.capnproto.Text.Builder initCollege(int size) {
           return _initPointerField(org.capnproto.Text.factory, 12, size);
         }
-        public final boolean hasBackPanelColor() {
+        public final boolean hasCableLength() {
           return !_pointerFieldIsNull(13);
         }
-        public final org.capnproto.Text.Builder getBackPanelColor() {
+        public final org.capnproto.Text.Builder getCableLength() {
           return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
         }
-        public final void setBackPanelColor(org.capnproto.Text.Reader value) {
+        public final void setCableLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 13, value);
         }
-        public final void setBackPanelColor(String value) {
+        public final void setCableLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBackPanelColor(int size) {
+        public final org.capnproto.Text.Builder initCableLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 13, size);
         }
-        public final boolean hasType() {
+        public final boolean hasBaseFinish() {
           return !_pointerFieldIsNull(14);
         }
-        public final org.capnproto.Text.Builder getType() {
+        public final org.capnproto.Text.Builder getBaseFinish() {
           return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
         }
-        public final void setType(org.capnproto.Text.Reader value) {
+        public final void setBaseFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 14, value);
         }
-        public final void setType(String value) {
+        public final void setBaseFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initType(int size) {
+        public final org.capnproto.Text.Builder initBaseFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 14, size);
         }
-        public final boolean hasTopPanelDoors() {
+        public final boolean hasSeatMaterial() {
           return !_pointerFieldIsNull(15);
         }
-        public final org.capnproto.Text.Builder getTopPanelDoors() {
+        public final org.capnproto.Text.Builder getSeatMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
         }
-        public final void setTopPanelDoors(org.capnproto.Text.Reader value) {
+        public final void setSeatMaterial(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 15, value);
         }
-        public final void setTopPanelDoors(String value) {
+        public final void setSeatMaterial(String value) {
           _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTopPanelDoors(int size) {
+        public final org.capnproto.Text.Builder initSeatMaterial(int size) {
           return _initPointerField(org.capnproto.Text.factory, 15, size);
         }
-        public final boolean hasRightBookendColor() {
+        public final boolean hasTableTop() {
           return !_pointerFieldIsNull(16);
         }
-        public final org.capnproto.Text.Builder getRightBookendColor() {
+        public final org.capnproto.Text.Builder getTableTop() {
           return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
         }
-        public final void setRightBookendColor(org.capnproto.Text.Reader value) {
+        public final void setTableTop(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 16, value);
         }
-        public final void setRightBookendColor(String value) {
+        public final void setTableTop(String value) {
           _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRightBookendColor(int size) {
+        public final org.capnproto.Text.Builder initTableTop(int size) {
           return _initPointerField(org.capnproto.Text.factory, 16, size);
         }
-        public final boolean hasOpening() {
+        public final boolean hasStudSize() {
           return !_pointerFieldIsNull(17);
         }
-        public final org.capnproto.Text.Builder getOpening() {
+        public final org.capnproto.Text.Builder getStudSize() {
           return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
         }
-        public final void setOpening(org.capnproto.Text.Reader value) {
+        public final void setStudSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 17, value);
         }
-        public final void setOpening(String value) {
+        public final void setStudSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOpening(int size) {
+        public final org.capnproto.Text.Builder initStudSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 17, size);
         }
-        public final boolean hasWoodenFrameFinish() {
+        public final boolean hasSideFinish() {
           return !_pointerFieldIsNull(18);
         }
-        public final org.capnproto.Text.Builder getWoodenFrameFinish() {
+        public final org.capnproto.Text.Builder getSideFinish() {
           return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
         }
-        public final void setWoodenFrameFinish(org.capnproto.Text.Reader value) {
+        public final void setSideFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 18, value);
         }
-        public final void setWoodenFrameFinish(String value) {
+        public final void setSideFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWoodenFrameFinish(int size) {
+        public final org.capnproto.Text.Builder initSideFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 18, size);
         }
-        public final boolean hasTabletopSize() {
+        public final boolean hasTrimColor() {
           return !_pointerFieldIsNull(19);
         }
-        public final org.capnproto.Text.Builder getTabletopSize() {
+        public final org.capnproto.Text.Builder getTrimColor() {
           return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
         }
-        public final void setTabletopSize(org.capnproto.Text.Reader value) {
+        public final void setTrimColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 19, value);
         }
-        public final void setTabletopSize(String value) {
+        public final void setTrimColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTabletopSize(int size) {
+        public final org.capnproto.Text.Builder initTrimColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 19, size);
         }
-        public final boolean hasRackDepth() {
+        public final boolean hasItemsIncluded() {
           return !_pointerFieldIsNull(20);
         }
-        public final org.capnproto.Text.Builder getRackDepth() {
+        public final org.capnproto.Text.Builder getItemsIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
         }
-        public final void setRackDepth(org.capnproto.Text.Reader value) {
+        public final void setItemsIncluded(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 20, value);
         }
-        public final void setRackDepth(String value) {
+        public final void setItemsIncluded(String value) {
           _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRackDepth(int size) {
+        public final org.capnproto.Text.Builder initItemsIncluded(int size) {
           return _initPointerField(org.capnproto.Text.factory, 20, size);
         }
-        public final boolean hasFeatures() {
+        public final boolean hasOptionalSeatbelt() {
           return !_pointerFieldIsNull(21);
         }
-        public final org.capnproto.Text.Builder getFeatures() {
+        public final org.capnproto.Text.Builder getOptionalSeatbelt() {
           return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
         }
-        public final void setFeatures(org.capnproto.Text.Reader value) {
+        public final void setOptionalSeatbelt(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 21, value);
         }
-        public final void setFeatures(String value) {
+        public final void setOptionalSeatbelt(String value) {
           _setPointerField(org.capnproto.Text.factory, 21, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFeatures(int size) {
+        public final org.capnproto.Text.Builder initOptionalSeatbelt(int size) {
           return _initPointerField(org.capnproto.Text.factory, 21, size);
         }
-        public final boolean hasNumberOfRackUnits() {
+        public final boolean hasLegColor() {
           return !_pointerFieldIsNull(22);
         }
-        public final org.capnproto.Text.Builder getNumberOfRackUnits() {
+        public final org.capnproto.Text.Builder getLegColor() {
           return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
         }
-        public final void setNumberOfRackUnits(org.capnproto.Text.Reader value) {
+        public final void setLegColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 22, value);
         }
-        public final void setNumberOfRackUnits(String value) {
+        public final void setLegColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 22, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfRackUnits(int size) {
+        public final org.capnproto.Text.Builder initLegColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 22, size);
         }
-        public final boolean hasCabinetColor() {
+        public final boolean hasFrontAndBackPanel() {
           return !_pointerFieldIsNull(23);
         }
-        public final org.capnproto.Text.Builder getCabinetColor() {
+        public final org.capnproto.Text.Builder getFrontAndBackPanel() {
           return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
         }
-        public final void setCabinetColor(org.capnproto.Text.Reader value) {
+        public final void setFrontAndBackPanel(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 23, value);
         }
-        public final void setCabinetColor(String value) {
+        public final void setFrontAndBackPanel(String value) {
           _setPointerField(org.capnproto.Text.factory, 23, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCabinetColor(int size) {
+        public final org.capnproto.Text.Builder initFrontAndBackPanel(int size) {
           return _initPointerField(org.capnproto.Text.factory, 23, size);
         }
-        public final boolean hasCut() {
+        public final boolean hasDoorType() {
           return !_pointerFieldIsNull(24);
         }
-        public final org.capnproto.Text.Builder getCut() {
+        public final org.capnproto.Text.Builder getDoorType() {
           return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
         }
-        public final void setCut(org.capnproto.Text.Reader value) {
+        public final void setDoorType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 24, value);
         }
-        public final void setCut(String value) {
+        public final void setDoorType(String value) {
           _setPointerField(org.capnproto.Text.factory, 24, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCut(int size) {
+        public final org.capnproto.Text.Builder initDoorType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 24, size);
         }
-        public final boolean hasArms() {
+        public final boolean hasDimensionsWXDXH() {
           return !_pointerFieldIsNull(25);
         }
-        public final org.capnproto.Text.Builder getArms() {
+        public final org.capnproto.Text.Builder getDimensionsWXDXH() {
           return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
         }
-        public final void setArms(org.capnproto.Text.Reader value) {
+        public final void setDimensionsWXDXH(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 25, value);
         }
-        public final void setArms(String value) {
+        public final void setDimensionsWXDXH(String value) {
           _setPointerField(org.capnproto.Text.factory, 25, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initArms(int size) {
+        public final org.capnproto.Text.Builder initDimensionsWXDXH(int size) {
           return _initPointerField(org.capnproto.Text.factory, 25, size);
         }
-        public final boolean hasActualColor() {
+        public final boolean hasCharacter() {
           return !_pointerFieldIsNull(26);
         }
-        public final org.capnproto.Text.Builder getActualColor() {
+        public final org.capnproto.Text.Builder getCharacter() {
           return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
         }
-        public final void setActualColor(org.capnproto.Text.Reader value) {
+        public final void setCharacter(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 26, value);
         }
-        public final void setActualColor(String value) {
+        public final void setCharacter(String value) {
           _setPointerField(org.capnproto.Text.factory, 26, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initActualColor(int size) {
+        public final org.capnproto.Text.Builder initCharacter(int size) {
           return _initPointerField(org.capnproto.Text.factory, 26, size);
         }
-        public final boolean hasSideFinish() {
+        public final boolean hasComponents() {
           return !_pointerFieldIsNull(27);
         }
-        public final org.capnproto.Text.Builder getSideFinish() {
+        public final org.capnproto.Text.Builder getComponents() {
           return _getPointerField(org.capnproto.Text.factory, 27, null, 0, 0);
         }
-        public final void setSideFinish(org.capnproto.Text.Reader value) {
+        public final void setComponents(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 27, value);
         }
-        public final void setSideFinish(String value) {
+        public final void setComponents(String value) {
           _setPointerField(org.capnproto.Text.factory, 27, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSideFinish(int size) {
+        public final org.capnproto.Text.Builder initComponents(int size) {
           return _initPointerField(org.capnproto.Text.factory, 27, size);
         }
-        public final boolean hasNflTeam() {
+        public final boolean hasAspectRatio() {
           return !_pointerFieldIsNull(28);
         }
-        public final org.capnproto.Text.Builder getNflTeam() {
+        public final org.capnproto.Text.Builder getAspectRatio() {
           return _getPointerField(org.capnproto.Text.factory, 28, null, 0, 0);
         }
-        public final void setNflTeam(org.capnproto.Text.Reader value) {
+        public final void setAspectRatio(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 28, value);
         }
-        public final void setNflTeam(String value) {
+        public final void setAspectRatio(String value) {
           _setPointerField(org.capnproto.Text.factory, 28, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNflTeam(int size) {
+        public final org.capnproto.Text.Builder initAspectRatio(int size) {
           return _initPointerField(org.capnproto.Text.factory, 28, size);
         }
-        public final boolean hasVolts() {
+        public final boolean hasOffsetDistance() {
           return !_pointerFieldIsNull(29);
         }
-        public final org.capnproto.Text.Builder getVolts() {
+        public final org.capnproto.Text.Builder getOffsetDistance() {
           return _getPointerField(org.capnproto.Text.factory, 29, null, 0, 0);
         }
-        public final void setVolts(org.capnproto.Text.Reader value) {
+        public final void setOffsetDistance(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 29, value);
         }
-        public final void setVolts(String value) {
+        public final void setOffsetDistance(String value) {
           _setPointerField(org.capnproto.Text.factory, 29, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initVolts(int size) {
+        public final org.capnproto.Text.Builder initOffsetDistance(int size) {
           return _initPointerField(org.capnproto.Text.factory, 29, size);
         }
-        public final boolean hasMlbTeam() {
+        public final boolean hasTeam() {
           return !_pointerFieldIsNull(30);
         }
-        public final org.capnproto.Text.Builder getMlbTeam() {
+        public final org.capnproto.Text.Builder getTeam() {
           return _getPointerField(org.capnproto.Text.factory, 30, null, 0, 0);
         }
-        public final void setMlbTeam(org.capnproto.Text.Reader value) {
+        public final void setTeam(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 30, value);
         }
-        public final void setMlbTeam(String value) {
+        public final void setTeam(String value) {
           _setPointerField(org.capnproto.Text.factory, 30, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMlbTeam(int size) {
+        public final org.capnproto.Text.Builder initTeam(int size) {
           return _initPointerField(org.capnproto.Text.factory, 30, size);
         }
-        public final boolean hasHasMirror() {
+        public final boolean hasProfile() {
           return !_pointerFieldIsNull(31);
         }
-        public final org.capnproto.Text.Builder getHasMirror() {
+        public final org.capnproto.Text.Builder getProfile() {
           return _getPointerField(org.capnproto.Text.factory, 31, null, 0, 0);
         }
-        public final void setHasMirror(org.capnproto.Text.Reader value) {
+        public final void setProfile(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 31, value);
         }
-        public final void setHasMirror(String value) {
+        public final void setProfile(String value) {
           _setPointerField(org.capnproto.Text.factory, 31, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHasMirror(int size) {
+        public final org.capnproto.Text.Builder initProfile(int size) {
           return _initPointerField(org.capnproto.Text.factory, 31, size);
         }
-        public final boolean hasSizeWXDXH() {
+        public final boolean hasLegs() {
           return !_pointerFieldIsNull(32);
         }
-        public final org.capnproto.Text.Builder getSizeWXDXH() {
+        public final org.capnproto.Text.Builder getLegs() {
           return _getPointerField(org.capnproto.Text.factory, 32, null, 0, 0);
         }
-        public final void setSizeWXDXH(org.capnproto.Text.Reader value) {
+        public final void setLegs(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 32, value);
         }
-        public final void setSizeWXDXH(String value) {
+        public final void setLegs(String value) {
           _setPointerField(org.capnproto.Text.factory, 32, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSizeWXDXH(int size) {
+        public final org.capnproto.Text.Builder initLegs(int size) {
           return _initPointerField(org.capnproto.Text.factory, 32, size);
         }
-        public final boolean hasAssembly() {
+        public final boolean hasStorageAccessories() {
           return !_pointerFieldIsNull(33);
         }
-        public final org.capnproto.Text.Builder getAssembly() {
+        public final org.capnproto.Text.Builder getStorageAccessories() {
           return _getPointerField(org.capnproto.Text.factory, 33, null, 0, 0);
         }
-        public final void setAssembly(org.capnproto.Text.Reader value) {
+        public final void setStorageAccessories(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 33, value);
         }
-        public final void setAssembly(String value) {
+        public final void setStorageAccessories(String value) {
           _setPointerField(org.capnproto.Text.factory, 33, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAssembly(int size) {
+        public final org.capnproto.Text.Builder initStorageAccessories(int size) {
           return _initPointerField(org.capnproto.Text.factory, 33, size);
         }
-        public final boolean hasSportsLeague() {
+        public final boolean hasRearDoor() {
           return !_pointerFieldIsNull(34);
         }
-        public final org.capnproto.Text.Builder getSportsLeague() {
+        public final org.capnproto.Text.Builder getRearDoor() {
           return _getPointerField(org.capnproto.Text.factory, 34, null, 0, 0);
         }
-        public final void setSportsLeague(org.capnproto.Text.Reader value) {
+        public final void setRearDoor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 34, value);
         }
-        public final void setSportsLeague(String value) {
+        public final void setRearDoor(String value) {
           _setPointerField(org.capnproto.Text.factory, 34, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSportsLeague(int size) {
+        public final org.capnproto.Text.Builder initRearDoor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 34, size);
         }
-        public final boolean hasFinish() {
+        public final boolean hasTrim() {
           return !_pointerFieldIsNull(35);
         }
-        public final org.capnproto.Text.Builder getFinish() {
+        public final org.capnproto.Text.Builder getTrim() {
           return _getPointerField(org.capnproto.Text.factory, 35, null, 0, 0);
         }
-        public final void setFinish(org.capnproto.Text.Reader value) {
+        public final void setTrim(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 35, value);
         }
-        public final void setFinish(String value) {
+        public final void setTrim(String value) {
           _setPointerField(org.capnproto.Text.factory, 35, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFinish(int size) {
+        public final org.capnproto.Text.Builder initTrim(int size) {
           return _initPointerField(org.capnproto.Text.factory, 35, size);
         }
-        public final boolean hasCustomInterface() {
+        public final boolean hasDimensions() {
           return !_pointerFieldIsNull(36);
         }
-        public final org.capnproto.Text.Builder getCustomInterface() {
+        public final org.capnproto.Text.Builder getDimensions() {
           return _getPointerField(org.capnproto.Text.factory, 36, null, 0, 0);
         }
-        public final void setCustomInterface(org.capnproto.Text.Reader value) {
+        public final void setDimensions(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 36, value);
         }
-        public final void setCustomInterface(String value) {
+        public final void setDimensions(String value) {
           _setPointerField(org.capnproto.Text.factory, 36, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCustomInterface(int size) {
+        public final org.capnproto.Text.Builder initDimensions(int size) {
           return _initPointerField(org.capnproto.Text.factory, 36, size);
         }
-        public final boolean hasGlide() {
+        public final boolean hasCustomInterface() {
           return !_pointerFieldIsNull(37);
         }
-        public final org.capnproto.Text.Builder getGlide() {
+        public final org.capnproto.Text.Builder getCustomInterface() {
           return _getPointerField(org.capnproto.Text.factory, 37, null, 0, 0);
         }
-        public final void setGlide(org.capnproto.Text.Reader value) {
+        public final void setCustomInterface(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 37, value);
         }
-        public final void setGlide(String value) {
+        public final void setCustomInterface(String value) {
           _setPointerField(org.capnproto.Text.factory, 37, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initGlide(int size) {
+        public final org.capnproto.Text.Builder initCustomInterface(int size) {
           return _initPointerField(org.capnproto.Text.factory, 37, size);
         }
-        public final boolean hasNcaaTeam() {
+        public final boolean hasBinDimensions() {
           return !_pointerFieldIsNull(38);
         }
-        public final org.capnproto.Text.Builder getNcaaTeam() {
+        public final org.capnproto.Text.Builder getBinDimensions() {
           return _getPointerField(org.capnproto.Text.factory, 38, null, 0, 0);
         }
-        public final void setNcaaTeam(org.capnproto.Text.Reader value) {
+        public final void setBinDimensions(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 38, value);
         }
-        public final void setNcaaTeam(String value) {
+        public final void setBinDimensions(String value) {
           _setPointerField(org.capnproto.Text.factory, 38, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNcaaTeam(int size) {
+        public final org.capnproto.Text.Builder initBinDimensions(int size) {
           return _initPointerField(org.capnproto.Text.factory, 38, size);
         }
-        public final boolean hasCompatibleDevices() {
+        public final boolean hasNumberOfSpeakers() {
           return !_pointerFieldIsNull(39);
         }
-        public final org.capnproto.Text.Builder getCompatibleDevices() {
+        public final org.capnproto.Text.Builder getNumberOfSpeakers() {
           return _getPointerField(org.capnproto.Text.factory, 39, null, 0, 0);
         }
-        public final void setCompatibleDevices(org.capnproto.Text.Reader value) {
+        public final void setNumberOfSpeakers(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 39, value);
         }
-        public final void setCompatibleDevices(String value) {
+        public final void setNumberOfSpeakers(String value) {
           _setPointerField(org.capnproto.Text.factory, 39, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCompatibleDevices(int size) {
+        public final org.capnproto.Text.Builder initNumberOfSpeakers(int size) {
           return _initPointerField(org.capnproto.Text.factory, 39, size);
         }
-        public final boolean hasInkColor() {
+        public final boolean hasAmps() {
           return !_pointerFieldIsNull(40);
         }
-        public final org.capnproto.Text.Builder getInkColor() {
+        public final org.capnproto.Text.Builder getAmps() {
           return _getPointerField(org.capnproto.Text.factory, 40, null, 0, 0);
         }
-        public final void setInkColor(org.capnproto.Text.Reader value) {
+        public final void setAmps(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 40, value);
         }
-        public final void setInkColor(String value) {
+        public final void setAmps(String value) {
           _setPointerField(org.capnproto.Text.factory, 40, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initInkColor(int size) {
+        public final org.capnproto.Text.Builder initAmps(int size) {
           return _initPointerField(org.capnproto.Text.factory, 40, size);
         }
-        public final boolean hasPoleHeight() {
+        public final boolean hasOrentation() {
           return !_pointerFieldIsNull(41);
         }
-        public final org.capnproto.Text.Builder getPoleHeight() {
+        public final org.capnproto.Text.Builder getOrentation() {
           return _getPointerField(org.capnproto.Text.factory, 41, null, 0, 0);
         }
-        public final void setPoleHeight(org.capnproto.Text.Reader value) {
+        public final void setOrentation(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 41, value);
         }
-        public final void setPoleHeight(String value) {
+        public final void setOrentation(String value) {
           _setPointerField(org.capnproto.Text.factory, 41, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPoleHeight(int size) {
+        public final org.capnproto.Text.Builder initOrentation(int size) {
           return _initPointerField(org.capnproto.Text.factory, 41, size);
         }
-        public final boolean hasScopeSize() {
+        public final boolean hasGauge() {
           return !_pointerFieldIsNull(42);
         }
-        public final org.capnproto.Text.Builder getScopeSize() {
+        public final org.capnproto.Text.Builder getGauge() {
           return _getPointerField(org.capnproto.Text.factory, 42, null, 0, 0);
         }
-        public final void setScopeSize(org.capnproto.Text.Reader value) {
+        public final void setGauge(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 42, value);
         }
-        public final void setScopeSize(String value) {
+        public final void setGauge(String value) {
           _setPointerField(org.capnproto.Text.factory, 42, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initScopeSize(int size) {
+        public final org.capnproto.Text.Builder initGauge(int size) {
           return _initPointerField(org.capnproto.Text.factory, 42, size);
         }
-        public final boolean hasAssembledProductHeight() {
+        public final boolean hasSeatBackColor() {
           return !_pointerFieldIsNull(43);
         }
-        public final org.capnproto.Text.Builder getAssembledProductHeight() {
+        public final org.capnproto.Text.Builder getSeatBackColor() {
           return _getPointerField(org.capnproto.Text.factory, 43, null, 0, 0);
         }
-        public final void setAssembledProductHeight(org.capnproto.Text.Reader value) {
+        public final void setSeatBackColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 43, value);
         }
-        public final void setAssembledProductHeight(String value) {
+        public final void setSeatBackColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 43, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAssembledProductHeight(int size) {
+        public final org.capnproto.Text.Builder initSeatBackColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 43, size);
         }
-        public final boolean hasLightBulbColor() {
+        public final boolean hasAssemblyRequired() {
           return !_pointerFieldIsNull(44);
         }
-        public final org.capnproto.Text.Builder getLightBulbColor() {
+        public final org.capnproto.Text.Builder getAssemblyRequired() {
           return _getPointerField(org.capnproto.Text.factory, 44, null, 0, 0);
         }
-        public final void setLightBulbColor(org.capnproto.Text.Reader value) {
+        public final void setAssemblyRequired(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 44, value);
         }
-        public final void setLightBulbColor(String value) {
+        public final void setAssemblyRequired(String value) {
           _setPointerField(org.capnproto.Text.factory, 44, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLightBulbColor(int size) {
+        public final org.capnproto.Text.Builder initAssemblyRequired(int size) {
           return _initPointerField(org.capnproto.Text.factory, 44, size);
         }
-        public final boolean hasReticle() {
+        public final boolean hasPanSize() {
           return !_pointerFieldIsNull(45);
         }
-        public final org.capnproto.Text.Builder getReticle() {
+        public final org.capnproto.Text.Builder getPanSize() {
           return _getPointerField(org.capnproto.Text.factory, 45, null, 0, 0);
         }
-        public final void setReticle(org.capnproto.Text.Reader value) {
+        public final void setPanSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 45, value);
         }
-        public final void setReticle(String value) {
+        public final void setPanSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 45, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initReticle(int size) {
+        public final org.capnproto.Text.Builder initPanSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 45, size);
         }
-        public final boolean hasLegHeightGlideStyle() {
+        public final boolean hasNumberOfPads() {
           return !_pointerFieldIsNull(46);
         }
-        public final org.capnproto.Text.Builder getLegHeightGlideStyle() {
+        public final org.capnproto.Text.Builder getNumberOfPads() {
           return _getPointerField(org.capnproto.Text.factory, 46, null, 0, 0);
         }
-        public final void setLegHeightGlideStyle(org.capnproto.Text.Reader value) {
+        public final void setNumberOfPads(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 46, value);
         }
-        public final void setLegHeightGlideStyle(String value) {
+        public final void setNumberOfPads(String value) {
           _setPointerField(org.capnproto.Text.factory, 46, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegHeightGlideStyle(int size) {
+        public final org.capnproto.Text.Builder initNumberOfPads(int size) {
           return _initPointerField(org.capnproto.Text.factory, 46, size);
         }
-        public final boolean hasFrameFinish() {
+        public final boolean hasPanelColor() {
           return !_pointerFieldIsNull(47);
         }
-        public final org.capnproto.Text.Builder getFrameFinish() {
+        public final org.capnproto.Text.Builder getPanelColor() {
           return _getPointerField(org.capnproto.Text.factory, 47, null, 0, 0);
         }
-        public final void setFrameFinish(org.capnproto.Text.Reader value) {
+        public final void setPanelColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 47, value);
         }
-        public final void setFrameFinish(String value) {
+        public final void setPanelColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 47, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFrameFinish(int size) {
+        public final org.capnproto.Text.Builder initPanelColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 47, size);
         }
-        public final boolean hasEarPadMaterial() {
+        public final boolean hasLampChanger() {
           return !_pointerFieldIsNull(48);
         }
-        public final org.capnproto.Text.Builder getEarPadMaterial() {
+        public final org.capnproto.Text.Builder getLampChanger() {
           return _getPointerField(org.capnproto.Text.factory, 48, null, 0, 0);
         }
-        public final void setEarPadMaterial(org.capnproto.Text.Reader value) {
+        public final void setLampChanger(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 48, value);
         }
-        public final void setEarPadMaterial(String value) {
+        public final void setLampChanger(String value) {
           _setPointerField(org.capnproto.Text.factory, 48, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initEarPadMaterial(int size) {
+        public final org.capnproto.Text.Builder initLampChanger(int size) {
           return _initPointerField(org.capnproto.Text.factory, 48, size);
         }
-        public final boolean hasFlavor() {
+        public final boolean hasBacking() {
           return !_pointerFieldIsNull(49);
         }
-        public final org.capnproto.Text.Builder getFlavor() {
+        public final org.capnproto.Text.Builder getBacking() {
           return _getPointerField(org.capnproto.Text.factory, 49, null, 0, 0);
         }
-        public final void setFlavor(org.capnproto.Text.Reader value) {
+        public final void setBacking(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 49, value);
         }
-        public final void setFlavor(String value) {
+        public final void setBacking(String value) {
           _setPointerField(org.capnproto.Text.factory, 49, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFlavor(int size) {
+        public final org.capnproto.Text.Builder initBacking(int size) {
           return _initPointerField(org.capnproto.Text.factory, 49, size);
         }
-        public final boolean hasNumberOfPieces() {
+        public final boolean hasRightBookendColor() {
           return !_pointerFieldIsNull(50);
         }
-        public final org.capnproto.Text.Builder getNumberOfPieces() {
+        public final org.capnproto.Text.Builder getRightBookendColor() {
           return _getPointerField(org.capnproto.Text.factory, 50, null, 0, 0);
         }
-        public final void setNumberOfPieces(org.capnproto.Text.Reader value) {
+        public final void setRightBookendColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 50, value);
         }
-        public final void setNumberOfPieces(String value) {
+        public final void setRightBookendColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 50, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfPieces(int size) {
+        public final org.capnproto.Text.Builder initRightBookendColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 50, size);
         }
-        public final boolean hasWoodFinish() {
+        public final boolean hasOpening() {
           return !_pointerFieldIsNull(51);
         }
-        public final org.capnproto.Text.Builder getWoodFinish() {
+        public final org.capnproto.Text.Builder getOpening() {
           return _getPointerField(org.capnproto.Text.factory, 51, null, 0, 0);
         }
-        public final void setWoodFinish(org.capnproto.Text.Reader value) {
+        public final void setOpening(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 51, value);
         }
-        public final void setWoodFinish(String value) {
+        public final void setOpening(String value) {
           _setPointerField(org.capnproto.Text.factory, 51, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWoodFinish(int size) {
+        public final org.capnproto.Text.Builder initOpening(int size) {
           return _initPointerField(org.capnproto.Text.factory, 51, size);
         }
-        public final boolean hasModel() {
+        public final boolean hasTransmitterIncluded() {
           return !_pointerFieldIsNull(52);
         }
-        public final org.capnproto.Text.Builder getModel() {
+        public final org.capnproto.Text.Builder getTransmitterIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 52, null, 0, 0);
         }
-        public final void setModel(org.capnproto.Text.Reader value) {
+        public final void setTransmitterIncluded(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 52, value);
         }
-        public final void setModel(String value) {
+        public final void setTransmitterIncluded(String value) {
           _setPointerField(org.capnproto.Text.factory, 52, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initModel(int size) {
+        public final org.capnproto.Text.Builder initTransmitterIncluded(int size) {
           return _initPointerField(org.capnproto.Text.factory, 52, size);
         }
-        public final boolean hasResistanceRange() {
+        public final boolean hasSeatFrameColor() {
           return !_pointerFieldIsNull(53);
         }
-        public final org.capnproto.Text.Builder getResistanceRange() {
+        public final org.capnproto.Text.Builder getSeatFrameColor() {
           return _getPointerField(org.capnproto.Text.factory, 53, null, 0, 0);
         }
-        public final void setResistanceRange(org.capnproto.Text.Reader value) {
+        public final void setSeatFrameColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 53, value);
         }
-        public final void setResistanceRange(String value) {
+        public final void setSeatFrameColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 53, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initResistanceRange(int size) {
+        public final org.capnproto.Text.Builder initSeatFrameColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 53, size);
         }
-        public final boolean hasBaseColor() {
+        public final boolean hasMapRail() {
           return !_pointerFieldIsNull(54);
         }
-        public final org.capnproto.Text.Builder getBaseColor() {
+        public final org.capnproto.Text.Builder getMapRail() {
           return _getPointerField(org.capnproto.Text.factory, 54, null, 0, 0);
         }
-        public final void setBaseColor(org.capnproto.Text.Reader value) {
+        public final void setMapRail(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 54, value);
         }
-        public final void setBaseColor(String value) {
+        public final void setMapRail(String value) {
           _setPointerField(org.capnproto.Text.factory, 54, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBaseColor(int size) {
+        public final org.capnproto.Text.Builder initMapRail(int size) {
           return _initPointerField(org.capnproto.Text.factory, 54, size);
         }
-        public final boolean hasRackSize() {
+        public final boolean hasOrientation() {
           return !_pointerFieldIsNull(55);
         }
-        public final org.capnproto.Text.Builder getRackSize() {
+        public final org.capnproto.Text.Builder getOrientation() {
           return _getPointerField(org.capnproto.Text.factory, 55, null, 0, 0);
         }
-        public final void setRackSize(org.capnproto.Text.Reader value) {
+        public final void setOrientation(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 55, value);
         }
-        public final void setRackSize(String value) {
+        public final void setOrientation(String value) {
           _setPointerField(org.capnproto.Text.factory, 55, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRackSize(int size) {
+        public final org.capnproto.Text.Builder initOrientation(int size) {
           return _initPointerField(org.capnproto.Text.factory, 55, size);
         }
-        public final boolean hasWidth() {
+        public final boolean hasAmount() {
           return !_pointerFieldIsNull(56);
         }
-        public final org.capnproto.Text.Builder getWidth() {
+        public final org.capnproto.Text.Builder getAmount() {
           return _getPointerField(org.capnproto.Text.factory, 56, null, 0, 0);
         }
-        public final void setWidth(org.capnproto.Text.Reader value) {
+        public final void setAmount(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 56, value);
         }
-        public final void setWidth(String value) {
+        public final void setAmount(String value) {
           _setPointerField(org.capnproto.Text.factory, 56, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWidth(int size) {
+        public final org.capnproto.Text.Builder initAmount(int size) {
           return _initPointerField(org.capnproto.Text.factory, 56, size);
         }
-        public final boolean hasLegs() {
+        public final boolean hasBaseColor() {
           return !_pointerFieldIsNull(57);
         }
-        public final org.capnproto.Text.Builder getLegs() {
+        public final org.capnproto.Text.Builder getBaseColor() {
           return _getPointerField(org.capnproto.Text.factory, 57, null, 0, 0);
         }
-        public final void setLegs(org.capnproto.Text.Reader value) {
+        public final void setBaseColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 57, value);
         }
-        public final void setLegs(String value) {
+        public final void setBaseColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 57, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegs(int size) {
+        public final org.capnproto.Text.Builder initBaseColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 57, size);
         }
-        public final boolean hasNumberOfMounts() {
+        public final boolean hasArms() {
           return !_pointerFieldIsNull(58);
         }
-        public final org.capnproto.Text.Builder getNumberOfMounts() {
+        public final org.capnproto.Text.Builder getArms() {
           return _getPointerField(org.capnproto.Text.factory, 58, null, 0, 0);
         }
-        public final void setNumberOfMounts(org.capnproto.Text.Reader value) {
+        public final void setArms(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 58, value);
         }
-        public final void setNumberOfMounts(String value) {
+        public final void setArms(String value) {
           _setPointerField(org.capnproto.Text.factory, 58, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfMounts(int size) {
+        public final org.capnproto.Text.Builder initArms(int size) {
           return _initPointerField(org.capnproto.Text.factory, 58, size);
         }
-        public final boolean hasShelfDepth() {
+        public final boolean hasPoleHeight() {
           return !_pointerFieldIsNull(59);
         }
-        public final org.capnproto.Text.Builder getShelfDepth() {
+        public final org.capnproto.Text.Builder getPoleHeight() {
           return _getPointerField(org.capnproto.Text.factory, 59, null, 0, 0);
         }
-        public final void setShelfDepth(org.capnproto.Text.Reader value) {
+        public final void setPoleHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 59, value);
         }
-        public final void setShelfDepth(String value) {
+        public final void setPoleHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 59, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShelfDepth(int size) {
+        public final org.capnproto.Text.Builder initPoleHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 59, size);
         }
-        public final boolean hasPaintAndLaminateFinish() {
+        public final boolean hasCasterType() {
           return !_pointerFieldIsNull(60);
         }
-        public final org.capnproto.Text.Builder getPaintAndLaminateFinish() {
+        public final org.capnproto.Text.Builder getCasterType() {
           return _getPointerField(org.capnproto.Text.factory, 60, null, 0, 0);
         }
-        public final void setPaintAndLaminateFinish(org.capnproto.Text.Reader value) {
+        public final void setCasterType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 60, value);
         }
-        public final void setPaintAndLaminateFinish(String value) {
+        public final void setCasterType(String value) {
           _setPointerField(org.capnproto.Text.factory, 60, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPaintAndLaminateFinish(int size) {
+        public final org.capnproto.Text.Builder initCasterType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 60, size);
         }
-        public final boolean hasAmount() {
+        public final boolean hasCushioned() {
           return !_pointerFieldIsNull(61);
         }
-        public final org.capnproto.Text.Builder getAmount() {
+        public final org.capnproto.Text.Builder getCushioned() {
           return _getPointerField(org.capnproto.Text.factory, 61, null, 0, 0);
         }
-        public final void setAmount(org.capnproto.Text.Reader value) {
+        public final void setCushioned(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 61, value);
         }
-        public final void setAmount(String value) {
+        public final void setCushioned(String value) {
           _setPointerField(org.capnproto.Text.factory, 61, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAmount(int size) {
+        public final org.capnproto.Text.Builder initCushioned(int size) {
           return _initPointerField(org.capnproto.Text.factory, 61, size);
         }
-        public final boolean hasCapacity() {
+        public final boolean hasSideColor() {
           return !_pointerFieldIsNull(62);
         }
-        public final org.capnproto.Text.Builder getCapacity() {
+        public final org.capnproto.Text.Builder getSideColor() {
           return _getPointerField(org.capnproto.Text.factory, 62, null, 0, 0);
         }
-        public final void setCapacity(org.capnproto.Text.Reader value) {
+        public final void setSideColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 62, value);
         }
-        public final void setCapacity(String value) {
+        public final void setSideColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 62, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCapacity(int size) {
+        public final org.capnproto.Text.Builder initSideColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 62, size);
         }
-        public final boolean hasLegColor() {
+        public final boolean hasResistanceRange() {
           return !_pointerFieldIsNull(63);
         }
-        public final org.capnproto.Text.Builder getLegColor() {
+        public final org.capnproto.Text.Builder getResistanceRange() {
           return _getPointerField(org.capnproto.Text.factory, 63, null, 0, 0);
         }
-        public final void setLegColor(org.capnproto.Text.Reader value) {
+        public final void setResistanceRange(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 63, value);
         }
-        public final void setLegColor(String value) {
+        public final void setResistanceRange(String value) {
           _setPointerField(org.capnproto.Text.factory, 63, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegColor(int size) {
+        public final org.capnproto.Text.Builder initResistanceRange(int size) {
           return _initPointerField(org.capnproto.Text.factory, 63, size);
         }
-        public final boolean hasEdgeType() {
+        public final boolean hasCarrel() {
           return !_pointerFieldIsNull(64);
         }
-        public final org.capnproto.Text.Builder getEdgeType() {
+        public final org.capnproto.Text.Builder getCarrel() {
           return _getPointerField(org.capnproto.Text.factory, 64, null, 0, 0);
         }
-        public final void setEdgeType(org.capnproto.Text.Reader value) {
+        public final void setCarrel(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 64, value);
         }
-        public final void setEdgeType(String value) {
+        public final void setCarrel(String value) {
           _setPointerField(org.capnproto.Text.factory, 64, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initEdgeType(int size) {
+        public final org.capnproto.Text.Builder initCarrel(int size) {
           return _initPointerField(org.capnproto.Text.factory, 64, size);
         }
-        public final boolean hasPackageQuantity() {
+        public final boolean hasEarPadMaterial() {
           return !_pointerFieldIsNull(65);
         }
-        public final org.capnproto.Text.Builder getPackageQuantity() {
+        public final org.capnproto.Text.Builder getEarPadMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 65, null, 0, 0);
         }
-        public final void setPackageQuantity(org.capnproto.Text.Reader value) {
+        public final void setEarPadMaterial(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 65, value);
         }
-        public final void setPackageQuantity(String value) {
+        public final void setEarPadMaterial(String value) {
           _setPointerField(org.capnproto.Text.factory, 65, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPackageQuantity(int size) {
+        public final org.capnproto.Text.Builder initEarPadMaterial(int size) {
           return _initPointerField(org.capnproto.Text.factory, 65, size);
         }
-        public final boolean hasLaminate() {
+        public final boolean hasAssembly() {
           return !_pointerFieldIsNull(66);
         }
-        public final org.capnproto.Text.Builder getLaminate() {
+        public final org.capnproto.Text.Builder getAssembly() {
           return _getPointerField(org.capnproto.Text.factory, 66, null, 0, 0);
         }
-        public final void setLaminate(org.capnproto.Text.Reader value) {
+        public final void setAssembly(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 66, value);
         }
-        public final void setLaminate(String value) {
+        public final void setAssembly(String value) {
           _setPointerField(org.capnproto.Text.factory, 66, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLaminate(int size) {
+        public final org.capnproto.Text.Builder initAssembly(int size) {
           return _initPointerField(org.capnproto.Text.factory, 66, size);
         }
-        public final boolean hasHeight() {
+        public final boolean hasLaminate() {
           return !_pointerFieldIsNull(67);
         }
-        public final org.capnproto.Text.Builder getHeight() {
+        public final org.capnproto.Text.Builder getLaminate() {
           return _getPointerField(org.capnproto.Text.factory, 67, null, 0, 0);
         }
-        public final void setHeight(org.capnproto.Text.Reader value) {
+        public final void setLaminate(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 67, value);
         }
-        public final void setHeight(String value) {
+        public final void setLaminate(String value) {
           _setPointerField(org.capnproto.Text.factory, 67, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHeight(int size) {
+        public final org.capnproto.Text.Builder initLaminate(int size) {
           return _initPointerField(org.capnproto.Text.factory, 67, size);
         }
-        public final boolean hasSeatFinish() {
+        public final boolean hasViewingArea() {
           return !_pointerFieldIsNull(68);
         }
-        public final org.capnproto.Text.Builder getSeatFinish() {
+        public final org.capnproto.Text.Builder getViewingArea() {
           return _getPointerField(org.capnproto.Text.factory, 68, null, 0, 0);
         }
-        public final void setSeatFinish(org.capnproto.Text.Reader value) {
+        public final void setViewingArea(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 68, value);
         }
-        public final void setSeatFinish(String value) {
+        public final void setViewingArea(String value) {
           _setPointerField(org.capnproto.Text.factory, 68, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSeatFinish(int size) {
+        public final org.capnproto.Text.Builder initViewingArea(int size) {
           return _initPointerField(org.capnproto.Text.factory, 68, size);
         }
-        public final boolean hasTabNumber() {
+        public final boolean hasShipping() {
           return !_pointerFieldIsNull(69);
         }
-        public final org.capnproto.Text.Builder getTabNumber() {
+        public final org.capnproto.Text.Builder getShipping() {
           return _getPointerField(org.capnproto.Text.factory, 69, null, 0, 0);
         }
-        public final void setTabNumber(org.capnproto.Text.Reader value) {
+        public final void setShipping(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 69, value);
         }
-        public final void setTabNumber(String value) {
+        public final void setShipping(String value) {
           _setPointerField(org.capnproto.Text.factory, 69, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTabNumber(int size) {
+        public final org.capnproto.Text.Builder initShipping(int size) {
           return _initPointerField(org.capnproto.Text.factory, 69, size);
         }
-        public final boolean hasMaximumWireLength() {
+        public final boolean hasColor() {
           return !_pointerFieldIsNull(70);
         }
-        public final org.capnproto.Text.Builder getMaximumWireLength() {
+        public final org.capnproto.Text.Builder getColor() {
           return _getPointerField(org.capnproto.Text.factory, 70, null, 0, 0);
         }
-        public final void setMaximumWireLength(org.capnproto.Text.Reader value) {
+        public final void setColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 70, value);
         }
-        public final void setMaximumWireLength(String value) {
+        public final void setColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 70, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMaximumWireLength(int size) {
+        public final org.capnproto.Text.Builder initColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 70, size);
         }
-        public final boolean hasNumberOfHoles() {
+        public final boolean hasPackageQuantity() {
           return !_pointerFieldIsNull(71);
         }
-        public final org.capnproto.Text.Builder getNumberOfHoles() {
+        public final org.capnproto.Text.Builder getPackageQuantity() {
           return _getPointerField(org.capnproto.Text.factory, 71, null, 0, 0);
         }
-        public final void setNumberOfHoles(org.capnproto.Text.Reader value) {
+        public final void setPackageQuantity(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 71, value);
         }
-        public final void setNumberOfHoles(String value) {
+        public final void setPackageQuantity(String value) {
           _setPointerField(org.capnproto.Text.factory, 71, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfHoles(int size) {
+        public final org.capnproto.Text.Builder initPackageQuantity(int size) {
           return _initPointerField(org.capnproto.Text.factory, 71, size);
         }
-        public final boolean hasLampChanger() {
+        public final boolean hasLength() {
           return !_pointerFieldIsNull(72);
         }
-        public final org.capnproto.Text.Builder getLampChanger() {
+        public final org.capnproto.Text.Builder getLength() {
           return _getPointerField(org.capnproto.Text.factory, 72, null, 0, 0);
         }
-        public final void setLampChanger(org.capnproto.Text.Reader value) {
+        public final void setLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 72, value);
         }
-        public final void setLampChanger(String value) {
+        public final void setLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 72, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLampChanger(int size) {
+        public final org.capnproto.Text.Builder initLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 72, size);
         }
-        public final boolean hasCasterType() {
+        public final boolean hasTabNumber() {
           return !_pointerFieldIsNull(73);
         }
-        public final org.capnproto.Text.Builder getCasterType() {
+        public final org.capnproto.Text.Builder getTabNumber() {
           return _getPointerField(org.capnproto.Text.factory, 73, null, 0, 0);
         }
-        public final void setCasterType(org.capnproto.Text.Reader value) {
+        public final void setTabNumber(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 73, value);
         }
-        public final void setCasterType(String value) {
+        public final void setTabNumber(String value) {
           _setPointerField(org.capnproto.Text.factory, 73, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCasterType(int size) {
+        public final org.capnproto.Text.Builder initTabNumber(int size) {
           return _initPointerField(org.capnproto.Text.factory, 73, size);
         }
-        public final boolean hasIflexPrivacyPanels() {
+        public final boolean hasSportsTeam() {
           return !_pointerFieldIsNull(74);
         }
-        public final org.capnproto.Text.Builder getIflexPrivacyPanels() {
+        public final org.capnproto.Text.Builder getSportsTeam() {
           return _getPointerField(org.capnproto.Text.factory, 74, null, 0, 0);
         }
-        public final void setIflexPrivacyPanels(org.capnproto.Text.Reader value) {
+        public final void setSportsTeam(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 74, value);
         }
-        public final void setIflexPrivacyPanels(String value) {
+        public final void setSportsTeam(String value) {
           _setPointerField(org.capnproto.Text.factory, 74, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initIflexPrivacyPanels(int size) {
+        public final org.capnproto.Text.Builder initSportsTeam(int size) {
           return _initPointerField(org.capnproto.Text.factory, 74, size);
         }
-        public final boolean hasOrentation() {
+        public final boolean hasSeatFinish() {
           return !_pointerFieldIsNull(75);
         }
-        public final org.capnproto.Text.Builder getOrentation() {
+        public final org.capnproto.Text.Builder getSeatFinish() {
           return _getPointerField(org.capnproto.Text.factory, 75, null, 0, 0);
         }
-        public final void setOrentation(org.capnproto.Text.Reader value) {
+        public final void setSeatFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 75, value);
         }
-        public final void setOrentation(String value) {
+        public final void setSeatFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 75, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOrentation(int size) {
+        public final org.capnproto.Text.Builder initSeatFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 75, size);
         }
-        public final boolean hasMapRail() {
+        public final boolean hasBase() {
           return !_pointerFieldIsNull(76);
         }
-        public final org.capnproto.Text.Builder getMapRail() {
+        public final org.capnproto.Text.Builder getBase() {
           return _getPointerField(org.capnproto.Text.factory, 76, null, 0, 0);
         }
-        public final void setMapRail(org.capnproto.Text.Reader value) {
+        public final void setBase(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 76, value);
         }
-        public final void setMapRail(String value) {
+        public final void setBase(String value) {
           _setPointerField(org.capnproto.Text.factory, 76, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMapRail(int size) {
+        public final org.capnproto.Text.Builder initBase(int size) {
           return _initPointerField(org.capnproto.Text.factory, 76, size);
         }
-        public final boolean hasDeskFinish() {
+        public final boolean hasLightBulbColor() {
           return !_pointerFieldIsNull(77);
         }
-        public final org.capnproto.Text.Builder getDeskFinish() {
+        public final org.capnproto.Text.Builder getLightBulbColor() {
           return _getPointerField(org.capnproto.Text.factory, 77, null, 0, 0);
         }
-        public final void setDeskFinish(org.capnproto.Text.Reader value) {
+        public final void setLightBulbColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 77, value);
         }
-        public final void setDeskFinish(String value) {
+        public final void setLightBulbColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 77, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDeskFinish(int size) {
+        public final org.capnproto.Text.Builder initLightBulbColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 77, size);
         }
-        public final boolean hasOption() {
+        public final boolean hasLengthType() {
           return !_pointerFieldIsNull(78);
         }
-        public final org.capnproto.Text.Builder getOption() {
+        public final org.capnproto.Text.Builder getLengthType() {
           return _getPointerField(org.capnproto.Text.factory, 78, null, 0, 0);
         }
-        public final void setOption(org.capnproto.Text.Reader value) {
+        public final void setLengthType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 78, value);
         }
-        public final void setOption(String value) {
+        public final void setLengthType(String value) {
           _setPointerField(org.capnproto.Text.factory, 78, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOption(int size) {
+        public final org.capnproto.Text.Builder initLengthType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 78, size);
         }
-        public final boolean hasCdSpace() {
+        public final boolean hasSportsLeague() {
           return !_pointerFieldIsNull(79);
         }
-        public final org.capnproto.Text.Builder getCdSpace() {
+        public final org.capnproto.Text.Builder getSportsLeague() {
           return _getPointerField(org.capnproto.Text.factory, 79, null, 0, 0);
         }
-        public final void setCdSpace(org.capnproto.Text.Reader value) {
+        public final void setSportsLeague(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 79, value);
         }
-        public final void setCdSpace(String value) {
+        public final void setSportsLeague(String value) {
           _setPointerField(org.capnproto.Text.factory, 79, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCdSpace(int size) {
+        public final org.capnproto.Text.Builder initSportsLeague(int size) {
           return _initPointerField(org.capnproto.Text.factory, 79, size);
         }
-        public final boolean hasHandleColor() {
+        public final boolean hasAbsorbency() {
           return !_pointerFieldIsNull(80);
         }
-        public final org.capnproto.Text.Builder getHandleColor() {
+        public final org.capnproto.Text.Builder getAbsorbency() {
           return _getPointerField(org.capnproto.Text.factory, 80, null, 0, 0);
         }
-        public final void setHandleColor(org.capnproto.Text.Reader value) {
+        public final void setAbsorbency(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 80, value);
         }
-        public final void setHandleColor(String value) {
+        public final void setAbsorbency(String value) {
           _setPointerField(org.capnproto.Text.factory, 80, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHandleColor(int size) {
+        public final org.capnproto.Text.Builder initAbsorbency(int size) {
           return _initPointerField(org.capnproto.Text.factory, 80, size);
         }
-        public final boolean hasLeftBookendColor() {
+        public final boolean hasRackSize() {
           return !_pointerFieldIsNull(81);
         }
-        public final org.capnproto.Text.Builder getLeftBookendColor() {
+        public final org.capnproto.Text.Builder getRackSize() {
           return _getPointerField(org.capnproto.Text.factory, 81, null, 0, 0);
         }
-        public final void setLeftBookendColor(org.capnproto.Text.Reader value) {
+        public final void setRackSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 81, value);
         }
-        public final void setLeftBookendColor(String value) {
+        public final void setRackSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 81, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLeftBookendColor(int size) {
+        public final org.capnproto.Text.Builder initRackSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 81, size);
         }
-        public final boolean hasGuideKitIncluded() {
+        public final boolean hasStandColor() {
           return !_pointerFieldIsNull(82);
         }
-        public final org.capnproto.Text.Builder getGuideKitIncluded() {
+        public final org.capnproto.Text.Builder getStandColor() {
           return _getPointerField(org.capnproto.Text.factory, 82, null, 0, 0);
         }
-        public final void setGuideKitIncluded(org.capnproto.Text.Reader value) {
+        public final void setStandColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 82, value);
         }
-        public final void setGuideKitIncluded(String value) {
+        public final void setStandColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 82, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initGuideKitIncluded(int size) {
+        public final org.capnproto.Text.Builder initStandColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 82, size);
         }
-        public final boolean hasUvProtection() {
+        public final boolean hasWirelessMicOption() {
           return !_pointerFieldIsNull(83);
         }
-        public final org.capnproto.Text.Builder getUvProtection() {
+        public final org.capnproto.Text.Builder getWirelessMicOption() {
           return _getPointerField(org.capnproto.Text.factory, 83, null, 0, 0);
         }
-        public final void setUvProtection(org.capnproto.Text.Reader value) {
+        public final void setWirelessMicOption(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 83, value);
         }
-        public final void setUvProtection(String value) {
+        public final void setWirelessMicOption(String value) {
           _setPointerField(org.capnproto.Text.factory, 83, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initUvProtection(int size) {
+        public final org.capnproto.Text.Builder initWirelessMicOption(int size) {
           return _initPointerField(org.capnproto.Text.factory, 83, size);
         }
-        public final boolean hasLengthType() {
+        public final boolean hasMicrophoneIncluded() {
           return !_pointerFieldIsNull(84);
         }
-        public final org.capnproto.Text.Builder getLengthType() {
+        public final org.capnproto.Text.Builder getMicrophoneIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 84, null, 0, 0);
         }
-        public final void setLengthType(org.capnproto.Text.Reader value) {
+        public final void setMicrophoneIncluded(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 84, value);
         }
-        public final void setLengthType(String value) {
+        public final void setMicrophoneIncluded(String value) {
           _setPointerField(org.capnproto.Text.factory, 84, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLengthType(int size) {
+        public final org.capnproto.Text.Builder initMicrophoneIncluded(int size) {
           return _initPointerField(org.capnproto.Text.factory, 84, size);
         }
-        public final boolean hasFastenerType() {
+        public final boolean hasCastersGlides() {
           return !_pointerFieldIsNull(85);
         }
-        public final org.capnproto.Text.Builder getFastenerType() {
+        public final org.capnproto.Text.Builder getCastersGlides() {
           return _getPointerField(org.capnproto.Text.factory, 85, null, 0, 0);
         }
-        public final void setFastenerType(org.capnproto.Text.Reader value) {
+        public final void setCastersGlides(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 85, value);
         }
-        public final void setFastenerType(String value) {
+        public final void setCastersGlides(String value) {
           _setPointerField(org.capnproto.Text.factory, 85, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFastenerType(int size) {
+        public final org.capnproto.Text.Builder initCastersGlides(int size) {
           return _initPointerField(org.capnproto.Text.factory, 85, size);
         }
-        public final boolean hasStorageAccessories() {
+        public final boolean hasElectricCapability() {
           return !_pointerFieldIsNull(86);
         }
-        public final org.capnproto.Text.Builder getStorageAccessories() {
+        public final org.capnproto.Text.Builder getElectricCapability() {
           return _getPointerField(org.capnproto.Text.factory, 86, null, 0, 0);
         }
-        public final void setStorageAccessories(org.capnproto.Text.Reader value) {
+        public final void setElectricCapability(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 86, value);
         }
-        public final void setStorageAccessories(String value) {
+        public final void setElectricCapability(String value) {
           _setPointerField(org.capnproto.Text.factory, 86, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initStorageAccessories(int size) {
+        public final org.capnproto.Text.Builder initElectricCapability(int size) {
           return _initPointerField(org.capnproto.Text.factory, 86, size);
         }
-        public final boolean hasCompatibleCaseSize() {
+        public final boolean hasHeight() {
           return !_pointerFieldIsNull(87);
         }
-        public final org.capnproto.Text.Builder getCompatibleCaseSize() {
+        public final org.capnproto.Text.Builder getHeight() {
           return _getPointerField(org.capnproto.Text.factory, 87, null, 0, 0);
         }
-        public final void setCompatibleCaseSize(org.capnproto.Text.Reader value) {
+        public final void setHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 87, value);
         }
-        public final void setCompatibleCaseSize(String value) {
+        public final void setHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 87, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCompatibleCaseSize(int size) {
+        public final org.capnproto.Text.Builder initHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 87, size);
         }
-        public final boolean hasLeatherColor() {
+        public final boolean hasDropAdjustmentLength() {
           return !_pointerFieldIsNull(88);
         }
-        public final org.capnproto.Text.Builder getLeatherColor() {
+        public final org.capnproto.Text.Builder getDropAdjustmentLength() {
           return _getPointerField(org.capnproto.Text.factory, 88, null, 0, 0);
         }
-        public final void setLeatherColor(org.capnproto.Text.Reader value) {
+        public final void setDropAdjustmentLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 88, value);
         }
-        public final void setLeatherColor(String value) {
+        public final void setDropAdjustmentLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 88, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLeatherColor(int size) {
+        public final org.capnproto.Text.Builder initDropAdjustmentLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 88, size);
         }
-        public final boolean hasDimensions() {
+        public final boolean hasNumberOfLights() {
           return !_pointerFieldIsNull(89);
         }
-        public final org.capnproto.Text.Builder getDimensions() {
+        public final org.capnproto.Text.Builder getNumberOfLights() {
           return _getPointerField(org.capnproto.Text.factory, 89, null, 0, 0);
         }
-        public final void setDimensions(org.capnproto.Text.Reader value) {
+        public final void setNumberOfLights(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 89, value);
         }
-        public final void setDimensions(String value) {
+        public final void setNumberOfLights(String value) {
           _setPointerField(org.capnproto.Text.factory, 89, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDimensions(int size) {
+        public final org.capnproto.Text.Builder initNumberOfLights(int size) {
           return _initPointerField(org.capnproto.Text.factory, 89, size);
         }
-        public final boolean hasCarrel() {
+        public final boolean hasTableSize() {
           return !_pointerFieldIsNull(90);
         }
-        public final org.capnproto.Text.Builder getCarrel() {
+        public final org.capnproto.Text.Builder getTableSize() {
           return _getPointerField(org.capnproto.Text.factory, 90, null, 0, 0);
         }
-        public final void setCarrel(org.capnproto.Text.Reader value) {
+        public final void setTableSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 90, value);
         }
-        public final void setCarrel(String value) {
+        public final void setTableSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 90, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCarrel(int size) {
+        public final org.capnproto.Text.Builder initTableSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 90, size);
         }
-        public final boolean hasDepth() {
+        public final boolean hasWoodenFrameFinish() {
           return !_pointerFieldIsNull(91);
         }
-        public final org.capnproto.Text.Builder getDepth() {
+        public final org.capnproto.Text.Builder getWoodenFrameFinish() {
           return _getPointerField(org.capnproto.Text.factory, 91, null, 0, 0);
         }
-        public final void setDepth(org.capnproto.Text.Reader value) {
+        public final void setWoodenFrameFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 91, value);
         }
-        public final void setDepth(String value) {
+        public final void setWoodenFrameFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 91, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDepth(int size) {
+        public final org.capnproto.Text.Builder initWoodenFrameFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 91, size);
         }
-        public final boolean hasBins() {
+        public final boolean hasClothingSize() {
           return !_pointerFieldIsNull(92);
         }
-        public final org.capnproto.Text.Builder getBins() {
+        public final org.capnproto.Text.Builder getClothingSize() {
           return _getPointerField(org.capnproto.Text.factory, 92, null, 0, 0);
         }
-        public final void setBins(org.capnproto.Text.Reader value) {
+        public final void setClothingSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 92, value);
         }
-        public final void setBins(String value) {
+        public final void setClothingSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 92, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBins(int size) {
+        public final org.capnproto.Text.Builder initClothingSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 92, size);
         }
-        public final boolean hasVehicleType() {
+        public final boolean hasPaintAndLaminateFinish() {
           return !_pointerFieldIsNull(93);
         }
-        public final org.capnproto.Text.Builder getVehicleType() {
+        public final org.capnproto.Text.Builder getPaintAndLaminateFinish() {
           return _getPointerField(org.capnproto.Text.factory, 93, null, 0, 0);
         }
-        public final void setVehicleType(org.capnproto.Text.Reader value) {
+        public final void setPaintAndLaminateFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 93, value);
         }
-        public final void setVehicleType(String value) {
+        public final void setPaintAndLaminateFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 93, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initVehicleType(int size) {
+        public final org.capnproto.Text.Builder initPaintAndLaminateFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 93, size);
         }
         public final boolean hasShelfSpan() {
@@ -2421,2254 +2421,2254 @@ public final class WalmartCapnp {
         public final org.capnproto.Text.Builder initShelfSpan(int size) {
           return _initPointerField(org.capnproto.Text.factory, 94, size);
         }
-        public final boolean hasShape() {
+        public final boolean hasAccentColor() {
           return !_pointerFieldIsNull(95);
         }
-        public final org.capnproto.Text.Builder getShape() {
+        public final org.capnproto.Text.Builder getAccentColor() {
           return _getPointerField(org.capnproto.Text.factory, 95, null, 0, 0);
         }
-        public final void setShape(org.capnproto.Text.Reader value) {
+        public final void setAccentColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 95, value);
         }
-        public final void setShape(String value) {
+        public final void setAccentColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 95, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShape(int size) {
+        public final org.capnproto.Text.Builder initAccentColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 95, size);
         }
-        public final boolean hasFeet() {
+        public final boolean hasScreenSize() {
           return !_pointerFieldIsNull(96);
         }
-        public final org.capnproto.Text.Builder getFeet() {
+        public final org.capnproto.Text.Builder getScreenSize() {
           return _getPointerField(org.capnproto.Text.factory, 96, null, 0, 0);
         }
-        public final void setFeet(org.capnproto.Text.Reader value) {
+        public final void setScreenSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 96, value);
         }
-        public final void setFeet(String value) {
+        public final void setScreenSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 96, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFeet(int size) {
+        public final org.capnproto.Text.Builder initScreenSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 96, size);
         }
-        public final boolean hasSuspensionLength() {
+        public final boolean hasPolesCaps() {
           return !_pointerFieldIsNull(97);
         }
-        public final org.capnproto.Text.Builder getSuspensionLength() {
+        public final org.capnproto.Text.Builder getPolesCaps() {
           return _getPointerField(org.capnproto.Text.factory, 97, null, 0, 0);
         }
-        public final void setSuspensionLength(org.capnproto.Text.Reader value) {
+        public final void setPolesCaps(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 97, value);
         }
-        public final void setSuspensionLength(String value) {
+        public final void setPolesCaps(String value) {
           _setPointerField(org.capnproto.Text.factory, 97, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSuspensionLength(int size) {
+        public final org.capnproto.Text.Builder initPolesCaps(int size) {
           return _initPointerField(org.capnproto.Text.factory, 97, size);
         }
-        public final boolean hasStudSize() {
+        public final boolean hasNumberOfMounts() {
           return !_pointerFieldIsNull(98);
         }
-        public final org.capnproto.Text.Builder getStudSize() {
+        public final org.capnproto.Text.Builder getNumberOfMounts() {
           return _getPointerField(org.capnproto.Text.factory, 98, null, 0, 0);
         }
-        public final void setStudSize(org.capnproto.Text.Reader value) {
+        public final void setNumberOfMounts(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 98, value);
         }
-        public final void setStudSize(String value) {
+        public final void setNumberOfMounts(String value) {
           _setPointerField(org.capnproto.Text.factory, 98, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initStudSize(int size) {
+        public final org.capnproto.Text.Builder initNumberOfMounts(int size) {
           return _initPointerField(org.capnproto.Text.factory, 98, size);
         }
-        public final boolean hasBrightness() {
+        public final boolean hasType() {
           return !_pointerFieldIsNull(99);
         }
-        public final org.capnproto.Text.Builder getBrightness() {
+        public final org.capnproto.Text.Builder getType() {
           return _getPointerField(org.capnproto.Text.factory, 99, null, 0, 0);
         }
-        public final void setBrightness(org.capnproto.Text.Reader value) {
+        public final void setType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 99, value);
         }
-        public final void setBrightness(String value) {
+        public final void setType(String value) {
           _setPointerField(org.capnproto.Text.factory, 99, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBrightness(int size) {
+        public final org.capnproto.Text.Builder initType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 99, size);
         }
-        public final boolean hasDrawerOptions() {
+        public final boolean hasNcaaTeam() {
           return !_pointerFieldIsNull(100);
         }
-        public final org.capnproto.Text.Builder getDrawerOptions() {
+        public final org.capnproto.Text.Builder getNcaaTeam() {
           return _getPointerField(org.capnproto.Text.factory, 100, null, 0, 0);
         }
-        public final void setDrawerOptions(org.capnproto.Text.Reader value) {
+        public final void setNcaaTeam(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 100, value);
         }
-        public final void setDrawerOptions(String value) {
+        public final void setNcaaTeam(String value) {
           _setPointerField(org.capnproto.Text.factory, 100, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDrawerOptions(int size) {
+        public final org.capnproto.Text.Builder initNcaaTeam(int size) {
           return _initPointerField(org.capnproto.Text.factory, 100, size);
         }
-        public final boolean hasDrop() {
+        public final boolean hasShelfFinish() {
           return !_pointerFieldIsNull(101);
         }
-        public final org.capnproto.Text.Builder getDrop() {
+        public final org.capnproto.Text.Builder getShelfFinish() {
           return _getPointerField(org.capnproto.Text.factory, 101, null, 0, 0);
         }
-        public final void setDrop(org.capnproto.Text.Reader value) {
+        public final void setShelfFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 101, value);
         }
-        public final void setDrop(String value) {
+        public final void setShelfFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 101, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDrop(int size) {
+        public final org.capnproto.Text.Builder initShelfFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 101, size);
         }
-        public final boolean hasShelfFinish() {
+        public final boolean hasPersonalizable() {
           return !_pointerFieldIsNull(102);
         }
-        public final org.capnproto.Text.Builder getShelfFinish() {
+        public final org.capnproto.Text.Builder getPersonalizable() {
           return _getPointerField(org.capnproto.Text.factory, 102, null, 0, 0);
         }
-        public final void setShelfFinish(org.capnproto.Text.Reader value) {
+        public final void setPersonalizable(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 102, value);
         }
-        public final void setShelfFinish(String value) {
+        public final void setPersonalizable(String value) {
           _setPointerField(org.capnproto.Text.factory, 102, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShelfFinish(int size) {
+        public final org.capnproto.Text.Builder initPersonalizable(int size) {
           return _initPointerField(org.capnproto.Text.factory, 102, size);
         }
-        public final boolean hasConfiguration() {
+        public final boolean hasCompatibleCaseSize() {
           return !_pointerFieldIsNull(103);
         }
-        public final org.capnproto.Text.Builder getConfiguration() {
+        public final org.capnproto.Text.Builder getCompatibleCaseSize() {
           return _getPointerField(org.capnproto.Text.factory, 103, null, 0, 0);
         }
-        public final void setConfiguration(org.capnproto.Text.Reader value) {
+        public final void setCompatibleCaseSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 103, value);
         }
-        public final void setConfiguration(String value) {
+        public final void setCompatibleCaseSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 103, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initConfiguration(int size) {
+        public final org.capnproto.Text.Builder initCompatibleCaseSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 103, size);
         }
-        public final boolean hasRackrailType() {
+        public final boolean hasFinish() {
           return !_pointerFieldIsNull(104);
         }
-        public final org.capnproto.Text.Builder getRackrailType() {
+        public final org.capnproto.Text.Builder getFinish() {
           return _getPointerField(org.capnproto.Text.factory, 104, null, 0, 0);
         }
-        public final void setRackrailType(org.capnproto.Text.Reader value) {
+        public final void setFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 104, value);
         }
-        public final void setRackrailType(String value) {
+        public final void setFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 104, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRackrailType(int size) {
+        public final org.capnproto.Text.Builder initFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 104, size);
         }
-        public final boolean hasStandColor() {
+        public final boolean hasTopColor() {
           return !_pointerFieldIsNull(105);
         }
-        public final org.capnproto.Text.Builder getStandColor() {
+        public final org.capnproto.Text.Builder getTopColor() {
           return _getPointerField(org.capnproto.Text.factory, 105, null, 0, 0);
         }
-        public final void setStandColor(org.capnproto.Text.Reader value) {
+        public final void setTopColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 105, value);
         }
-        public final void setStandColor(String value) {
+        public final void setTopColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 105, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initStandColor(int size) {
+        public final org.capnproto.Text.Builder initTopColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 105, size);
         }
-        public final boolean hasItemsIncluded() {
+        public final boolean hasPaintFinish() {
           return !_pointerFieldIsNull(106);
         }
-        public final org.capnproto.Text.Builder getItemsIncluded() {
+        public final org.capnproto.Text.Builder getPaintFinish() {
           return _getPointerField(org.capnproto.Text.factory, 106, null, 0, 0);
         }
-        public final void setItemsIncluded(org.capnproto.Text.Reader value) {
+        public final void setPaintFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 106, value);
         }
-        public final void setItemsIncluded(String value) {
+        public final void setPaintFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 106, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initItemsIncluded(int size) {
+        public final org.capnproto.Text.Builder initPaintFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 106, size);
         }
-        public final boolean hasUpholsteryCasters() {
+        public final boolean hasShelfDepth() {
           return !_pointerFieldIsNull(107);
         }
-        public final org.capnproto.Text.Builder getUpholsteryCasters() {
+        public final org.capnproto.Text.Builder getShelfDepth() {
           return _getPointerField(org.capnproto.Text.factory, 107, null, 0, 0);
         }
-        public final void setUpholsteryCasters(org.capnproto.Text.Reader value) {
+        public final void setShelfDepth(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 107, value);
         }
-        public final void setUpholsteryCasters(String value) {
+        public final void setShelfDepth(String value) {
           _setPointerField(org.capnproto.Text.factory, 107, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initUpholsteryCasters(int size) {
+        public final org.capnproto.Text.Builder initShelfDepth(int size) {
           return _initPointerField(org.capnproto.Text.factory, 107, size);
         }
-        public final boolean hasNumberOfDriveBays() {
+        public final boolean hasCompatibleTubeSize() {
           return !_pointerFieldIsNull(108);
         }
-        public final org.capnproto.Text.Builder getNumberOfDriveBays() {
+        public final org.capnproto.Text.Builder getCompatibleTubeSize() {
           return _getPointerField(org.capnproto.Text.factory, 108, null, 0, 0);
         }
-        public final void setNumberOfDriveBays(org.capnproto.Text.Reader value) {
+        public final void setCompatibleTubeSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 108, value);
         }
-        public final void setNumberOfDriveBays(String value) {
+        public final void setCompatibleTubeSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 108, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfDriveBays(int size) {
+        public final org.capnproto.Text.Builder initCompatibleTubeSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 108, size);
         }
-        public final boolean hasCompatibleTubeSize() {
+        public final boolean hasUvProtection() {
           return !_pointerFieldIsNull(109);
         }
-        public final org.capnproto.Text.Builder getCompatibleTubeSize() {
+        public final org.capnproto.Text.Builder getUvProtection() {
           return _getPointerField(org.capnproto.Text.factory, 109, null, 0, 0);
         }
-        public final void setCompatibleTubeSize(org.capnproto.Text.Reader value) {
+        public final void setUvProtection(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 109, value);
         }
-        public final void setCompatibleTubeSize(String value) {
+        public final void setUvProtection(String value) {
           _setPointerField(org.capnproto.Text.factory, 109, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCompatibleTubeSize(int size) {
+        public final org.capnproto.Text.Builder initUvProtection(int size) {
           return _initPointerField(org.capnproto.Text.factory, 109, size);
         }
-        public final boolean hasPlatformFrameFinish() {
+        public final boolean hasFurnitureFootType() {
           return !_pointerFieldIsNull(110);
         }
-        public final org.capnproto.Text.Builder getPlatformFrameFinish() {
+        public final org.capnproto.Text.Builder getFurnitureFootType() {
           return _getPointerField(org.capnproto.Text.factory, 110, null, 0, 0);
         }
-        public final void setPlatformFrameFinish(org.capnproto.Text.Reader value) {
+        public final void setFurnitureFootType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 110, value);
         }
-        public final void setPlatformFrameFinish(String value) {
+        public final void setFurnitureFootType(String value) {
           _setPointerField(org.capnproto.Text.factory, 110, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPlatformFrameFinish(int size) {
+        public final org.capnproto.Text.Builder initFurnitureFootType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 110, size);
         }
-        public final boolean hasViewingArea() {
+        public final boolean hasMaximumRange() {
           return !_pointerFieldIsNull(111);
         }
-        public final org.capnproto.Text.Builder getViewingArea() {
+        public final org.capnproto.Text.Builder getMaximumRange() {
           return _getPointerField(org.capnproto.Text.factory, 111, null, 0, 0);
         }
-        public final void setViewingArea(org.capnproto.Text.Reader value) {
+        public final void setMaximumRange(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 111, value);
         }
-        public final void setViewingArea(String value) {
+        public final void setMaximumRange(String value) {
           _setPointerField(org.capnproto.Text.factory, 111, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initViewingArea(int size) {
+        public final org.capnproto.Text.Builder initMaximumRange(int size) {
           return _initPointerField(org.capnproto.Text.factory, 111, size);
         }
-        public final boolean hasAbsorbency() {
+        public final boolean hasLegStyle() {
           return !_pointerFieldIsNull(112);
         }
-        public final org.capnproto.Text.Builder getAbsorbency() {
+        public final org.capnproto.Text.Builder getLegStyle() {
           return _getPointerField(org.capnproto.Text.factory, 112, null, 0, 0);
         }
-        public final void setAbsorbency(org.capnproto.Text.Reader value) {
+        public final void setLegStyle(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 112, value);
         }
-        public final void setAbsorbency(String value) {
+        public final void setLegStyle(String value) {
           _setPointerField(org.capnproto.Text.factory, 112, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAbsorbency(int size) {
+        public final org.capnproto.Text.Builder initLegStyle(int size) {
           return _initPointerField(org.capnproto.Text.factory, 112, size);
         }
-        public final boolean hasNumberOfShelves() {
+        public final boolean hasLegHeightGlideStyle() {
           return !_pointerFieldIsNull(113);
         }
-        public final org.capnproto.Text.Builder getNumberOfShelves() {
+        public final org.capnproto.Text.Builder getLegHeightGlideStyle() {
           return _getPointerField(org.capnproto.Text.factory, 113, null, 0, 0);
         }
-        public final void setNumberOfShelves(org.capnproto.Text.Reader value) {
+        public final void setLegHeightGlideStyle(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 113, value);
         }
-        public final void setNumberOfShelves(String value) {
+        public final void setLegHeightGlideStyle(String value) {
           _setPointerField(org.capnproto.Text.factory, 113, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfShelves(int size) {
+        public final org.capnproto.Text.Builder initLegHeightGlideStyle(int size) {
           return _initPointerField(org.capnproto.Text.factory, 113, size);
         }
-        public final boolean hasNumberOfCompartments() {
+        public final boolean hasAssembledProductWidth() {
           return !_pointerFieldIsNull(114);
         }
-        public final org.capnproto.Text.Builder getNumberOfCompartments() {
+        public final org.capnproto.Text.Builder getAssembledProductWidth() {
           return _getPointerField(org.capnproto.Text.factory, 114, null, 0, 0);
         }
-        public final void setNumberOfCompartments(org.capnproto.Text.Reader value) {
+        public final void setAssembledProductWidth(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 114, value);
         }
-        public final void setNumberOfCompartments(String value) {
+        public final void setAssembledProductWidth(String value) {
           _setPointerField(org.capnproto.Text.factory, 114, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfCompartments(int size) {
+        public final org.capnproto.Text.Builder initAssembledProductWidth(int size) {
           return _initPointerField(org.capnproto.Text.factory, 114, size);
         }
-        public final boolean hasLegHeight() {
+        public final boolean hasTableTopType() {
           return !_pointerFieldIsNull(115);
         }
-        public final org.capnproto.Text.Builder getLegHeight() {
+        public final org.capnproto.Text.Builder getTableTopType() {
           return _getPointerField(org.capnproto.Text.factory, 115, null, 0, 0);
         }
-        public final void setLegHeight(org.capnproto.Text.Reader value) {
+        public final void setTableTopType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 115, value);
         }
-        public final void setLegHeight(String value) {
+        public final void setTableTopType(String value) {
           _setPointerField(org.capnproto.Text.factory, 115, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegHeight(int size) {
+        public final org.capnproto.Text.Builder initTableTopType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 115, size);
         }
-        public final boolean hasShelfCapacity() {
+        public final boolean hasTopFinish() {
           return !_pointerFieldIsNull(116);
         }
-        public final org.capnproto.Text.Builder getShelfCapacity() {
+        public final org.capnproto.Text.Builder getTopFinish() {
           return _getPointerField(org.capnproto.Text.factory, 116, null, 0, 0);
         }
-        public final void setShelfCapacity(org.capnproto.Text.Reader value) {
+        public final void setTopFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 116, value);
         }
-        public final void setShelfCapacity(String value) {
+        public final void setTopFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 116, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShelfCapacity(int size) {
+        public final org.capnproto.Text.Builder initTopFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 116, size);
         }
-        public final boolean hasFurnitureFootType() {
+        public final boolean hasWeight() {
           return !_pointerFieldIsNull(117);
         }
-        public final org.capnproto.Text.Builder getFurnitureFootType() {
+        public final org.capnproto.Text.Builder getWeight() {
           return _getPointerField(org.capnproto.Text.factory, 117, null, 0, 0);
         }
-        public final void setFurnitureFootType(org.capnproto.Text.Reader value) {
+        public final void setWeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 117, value);
         }
-        public final void setFurnitureFootType(String value) {
+        public final void setWeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 117, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFurnitureFootType(int size) {
+        public final org.capnproto.Text.Builder initWeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 117, size);
         }
-        public final boolean hasInterfaceType() {
+        public final boolean hasAdjustableHeight() {
           return !_pointerFieldIsNull(118);
         }
-        public final org.capnproto.Text.Builder getInterfaceType() {
+        public final org.capnproto.Text.Builder getAdjustableHeight() {
           return _getPointerField(org.capnproto.Text.factory, 118, null, 0, 0);
         }
-        public final void setInterfaceType(org.capnproto.Text.Reader value) {
+        public final void setAdjustableHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 118, value);
         }
-        public final void setInterfaceType(String value) {
+        public final void setAdjustableHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 118, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initInterfaceType(int size) {
+        public final org.capnproto.Text.Builder initAdjustableHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 118, size);
         }
-        public final boolean hasSidePanelFinish() {
+        public final boolean hasHeadphonesIncluded() {
           return !_pointerFieldIsNull(119);
         }
-        public final org.capnproto.Text.Builder getSidePanelFinish() {
+        public final org.capnproto.Text.Builder getHeadphonesIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 119, null, 0, 0);
         }
-        public final void setSidePanelFinish(org.capnproto.Text.Reader value) {
+        public final void setHeadphonesIncluded(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 119, value);
         }
-        public final void setSidePanelFinish(String value) {
+        public final void setHeadphonesIncluded(String value) {
           _setPointerField(org.capnproto.Text.factory, 119, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSidePanelFinish(int size) {
+        public final org.capnproto.Text.Builder initHeadphonesIncluded(int size) {
           return _initPointerField(org.capnproto.Text.factory, 119, size);
         }
-        public final boolean hasLampType() {
+        public final boolean hasCapacity() {
           return !_pointerFieldIsNull(120);
         }
-        public final org.capnproto.Text.Builder getLampType() {
+        public final org.capnproto.Text.Builder getCapacity() {
           return _getPointerField(org.capnproto.Text.factory, 120, null, 0, 0);
         }
-        public final void setLampType(org.capnproto.Text.Reader value) {
+        public final void setCapacity(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 120, value);
         }
-        public final void setLampType(String value) {
+        public final void setCapacity(String value) {
           _setPointerField(org.capnproto.Text.factory, 120, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLampType(int size) {
+        public final org.capnproto.Text.Builder initCapacity(int size) {
           return _initPointerField(org.capnproto.Text.factory, 120, size);
         }
-        public final boolean hasPolesCaps() {
+        public final boolean hasBaseType() {
           return !_pointerFieldIsNull(121);
         }
-        public final org.capnproto.Text.Builder getPolesCaps() {
+        public final org.capnproto.Text.Builder getBaseType() {
           return _getPointerField(org.capnproto.Text.factory, 121, null, 0, 0);
         }
-        public final void setPolesCaps(org.capnproto.Text.Reader value) {
+        public final void setBaseType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 121, value);
         }
-        public final void setPolesCaps(String value) {
+        public final void setBaseType(String value) {
           _setPointerField(org.capnproto.Text.factory, 121, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPolesCaps(int size) {
+        public final org.capnproto.Text.Builder initBaseType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 121, size);
         }
-        public final boolean hasSideAndBackPanels() {
+        public final boolean hasMagnification() {
           return !_pointerFieldIsNull(122);
         }
-        public final org.capnproto.Text.Builder getSideAndBackPanels() {
+        public final org.capnproto.Text.Builder getMagnification() {
           return _getPointerField(org.capnproto.Text.factory, 122, null, 0, 0);
         }
-        public final void setSideAndBackPanels(org.capnproto.Text.Reader value) {
+        public final void setMagnification(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 122, value);
         }
-        public final void setSideAndBackPanels(String value) {
+        public final void setMagnification(String value) {
           _setPointerField(org.capnproto.Text.factory, 122, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSideAndBackPanels(int size) {
+        public final org.capnproto.Text.Builder initMagnification(int size) {
           return _initPointerField(org.capnproto.Text.factory, 122, size);
         }
-        public final boolean hasPanSize() {
+        public final boolean hasFeatures() {
           return !_pointerFieldIsNull(123);
         }
-        public final org.capnproto.Text.Builder getPanSize() {
+        public final org.capnproto.Text.Builder getFeatures() {
           return _getPointerField(org.capnproto.Text.factory, 123, null, 0, 0);
         }
-        public final void setPanSize(org.capnproto.Text.Reader value) {
+        public final void setFeatures(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 123, value);
         }
-        public final void setPanSize(String value) {
+        public final void setFeatures(String value) {
           _setPointerField(org.capnproto.Text.factory, 123, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPanSize(int size) {
+        public final org.capnproto.Text.Builder initFeatures(int size) {
           return _initPointerField(org.capnproto.Text.factory, 123, size);
         }
-        public final boolean hasSideColor() {
+        public final boolean hasFeet() {
           return !_pointerFieldIsNull(124);
         }
-        public final org.capnproto.Text.Builder getSideColor() {
+        public final org.capnproto.Text.Builder getFeet() {
           return _getPointerField(org.capnproto.Text.factory, 124, null, 0, 0);
         }
-        public final void setSideColor(org.capnproto.Text.Reader value) {
+        public final void setFeet(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 124, value);
         }
-        public final void setSideColor(String value) {
+        public final void setFeet(String value) {
           _setPointerField(org.capnproto.Text.factory, 124, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSideColor(int size) {
+        public final org.capnproto.Text.Builder initFeet(int size) {
           return _initPointerField(org.capnproto.Text.factory, 124, size);
         }
-        public final boolean hasColor() {
+        public final boolean hasCompatibleDevices() {
           return !_pointerFieldIsNull(125);
         }
-        public final org.capnproto.Text.Builder getColor() {
+        public final org.capnproto.Text.Builder getCompatibleDevices() {
           return _getPointerField(org.capnproto.Text.factory, 125, null, 0, 0);
         }
-        public final void setColor(org.capnproto.Text.Reader value) {
+        public final void setCompatibleDevices(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 125, value);
         }
-        public final void setColor(String value) {
+        public final void setCompatibleDevices(String value) {
           _setPointerField(org.capnproto.Text.factory, 125, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initColor(int size) {
+        public final org.capnproto.Text.Builder initCompatibleDevices(int size) {
           return _initPointerField(org.capnproto.Text.factory, 125, size);
         }
-        public final boolean hasDesktopShelfLength() {
+        public final boolean hasLaptopSize() {
           return !_pointerFieldIsNull(126);
         }
-        public final org.capnproto.Text.Builder getDesktopShelfLength() {
+        public final org.capnproto.Text.Builder getLaptopSize() {
           return _getPointerField(org.capnproto.Text.factory, 126, null, 0, 0);
         }
-        public final void setDesktopShelfLength(org.capnproto.Text.Reader value) {
+        public final void setLaptopSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 126, value);
         }
-        public final void setDesktopShelfLength(String value) {
+        public final void setLaptopSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 126, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDesktopShelfLength(int size) {
+        public final org.capnproto.Text.Builder initLaptopSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 126, size);
         }
-        public final boolean hasAspectRatio() {
+        public final boolean hasDeskFinish() {
           return !_pointerFieldIsNull(127);
         }
-        public final org.capnproto.Text.Builder getAspectRatio() {
+        public final org.capnproto.Text.Builder getDeskFinish() {
           return _getPointerField(org.capnproto.Text.factory, 127, null, 0, 0);
         }
-        public final void setAspectRatio(org.capnproto.Text.Reader value) {
+        public final void setDeskFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 127, value);
         }
-        public final void setAspectRatio(String value) {
+        public final void setDeskFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 127, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAspectRatio(int size) {
+        public final org.capnproto.Text.Builder initDeskFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 127, size);
         }
-        public final boolean hasLaminateFinish() {
+        public final boolean hasBinColor() {
           return !_pointerFieldIsNull(128);
         }
-        public final org.capnproto.Text.Builder getLaminateFinish() {
+        public final org.capnproto.Text.Builder getBinColor() {
           return _getPointerField(org.capnproto.Text.factory, 128, null, 0, 0);
         }
-        public final void setLaminateFinish(org.capnproto.Text.Reader value) {
+        public final void setBinColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 128, value);
         }
-        public final void setLaminateFinish(String value) {
+        public final void setBinColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 128, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLaminateFinish(int size) {
+        public final org.capnproto.Text.Builder initBinColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 128, size);
         }
-        public final boolean hasUpholstery() {
+        public final boolean hasNumberOfHoles() {
           return !_pointerFieldIsNull(129);
         }
-        public final org.capnproto.Text.Builder getUpholstery() {
+        public final org.capnproto.Text.Builder getNumberOfHoles() {
           return _getPointerField(org.capnproto.Text.factory, 129, null, 0, 0);
         }
-        public final void setUpholstery(org.capnproto.Text.Reader value) {
+        public final void setNumberOfHoles(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 129, value);
         }
-        public final void setUpholstery(String value) {
+        public final void setNumberOfHoles(String value) {
           _setPointerField(org.capnproto.Text.factory, 129, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initUpholstery(int size) {
+        public final org.capnproto.Text.Builder initNumberOfHoles(int size) {
           return _initPointerField(org.capnproto.Text.factory, 129, size);
         }
-        public final boolean hasCharacter() {
+        public final boolean hasItemType() {
           return !_pointerFieldIsNull(130);
         }
-        public final org.capnproto.Text.Builder getCharacter() {
+        public final org.capnproto.Text.Builder getItemType() {
           return _getPointerField(org.capnproto.Text.factory, 130, null, 0, 0);
         }
-        public final void setCharacter(org.capnproto.Text.Reader value) {
+        public final void setItemType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 130, value);
         }
-        public final void setCharacter(String value) {
+        public final void setItemType(String value) {
           _setPointerField(org.capnproto.Text.factory, 130, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCharacter(int size) {
+        public final org.capnproto.Text.Builder initItemType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 130, size);
         }
-        public final boolean hasFabricMaterial() {
+        public final boolean hasEdgeFinish() {
           return !_pointerFieldIsNull(131);
         }
-        public final org.capnproto.Text.Builder getFabricMaterial() {
+        public final org.capnproto.Text.Builder getEdgeFinish() {
           return _getPointerField(org.capnproto.Text.factory, 131, null, 0, 0);
         }
-        public final void setFabricMaterial(org.capnproto.Text.Reader value) {
+        public final void setEdgeFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 131, value);
         }
-        public final void setFabricMaterial(String value) {
+        public final void setEdgeFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 131, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFabricMaterial(int size) {
+        public final org.capnproto.Text.Builder initEdgeFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 131, size);
         }
-        public final boolean hasHasRearLockingDoor() {
+        public final boolean hasRackSpaces() {
           return !_pointerFieldIsNull(132);
         }
-        public final org.capnproto.Text.Builder getHasRearLockingDoor() {
+        public final org.capnproto.Text.Builder getRackSpaces() {
           return _getPointerField(org.capnproto.Text.factory, 132, null, 0, 0);
         }
-        public final void setHasRearLockingDoor(org.capnproto.Text.Reader value) {
+        public final void setRackSpaces(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 132, value);
         }
-        public final void setHasRearLockingDoor(String value) {
+        public final void setRackSpaces(String value) {
           _setPointerField(org.capnproto.Text.factory, 132, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHasRearLockingDoor(int size) {
+        public final org.capnproto.Text.Builder initRackSpaces(int size) {
           return _initPointerField(org.capnproto.Text.factory, 132, size);
         }
-        public final boolean hasMountSize() {
+        public final boolean hasSizeWXDXH() {
           return !_pointerFieldIsNull(133);
         }
-        public final org.capnproto.Text.Builder getMountSize() {
+        public final org.capnproto.Text.Builder getSizeWXDXH() {
           return _getPointerField(org.capnproto.Text.factory, 133, null, 0, 0);
         }
-        public final void setMountSize(org.capnproto.Text.Reader value) {
+        public final void setSizeWXDXH(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 133, value);
         }
-        public final void setMountSize(String value) {
+        public final void setSizeWXDXH(String value) {
           _setPointerField(org.capnproto.Text.factory, 133, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMountSize(int size) {
+        public final org.capnproto.Text.Builder initSizeWXDXH(int size) {
           return _initPointerField(org.capnproto.Text.factory, 133, size);
         }
-        public final boolean hasWatts() {
+        public final boolean hasShelfCapacity() {
           return !_pointerFieldIsNull(134);
         }
-        public final org.capnproto.Text.Builder getWatts() {
+        public final org.capnproto.Text.Builder getShelfCapacity() {
           return _getPointerField(org.capnproto.Text.factory, 134, null, 0, 0);
         }
-        public final void setWatts(org.capnproto.Text.Reader value) {
+        public final void setShelfCapacity(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 134, value);
         }
-        public final void setWatts(String value) {
+        public final void setShelfCapacity(String value) {
           _setPointerField(org.capnproto.Text.factory, 134, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWatts(int size) {
+        public final org.capnproto.Text.Builder initShelfCapacity(int size) {
           return _initPointerField(org.capnproto.Text.factory, 134, size);
         }
-        public final boolean hasOutletPosition() {
+        public final boolean hasNumberOfShelves() {
           return !_pointerFieldIsNull(135);
         }
-        public final org.capnproto.Text.Builder getOutletPosition() {
+        public final org.capnproto.Text.Builder getNumberOfShelves() {
           return _getPointerField(org.capnproto.Text.factory, 135, null, 0, 0);
         }
-        public final void setOutletPosition(org.capnproto.Text.Reader value) {
+        public final void setNumberOfShelves(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 135, value);
         }
-        public final void setOutletPosition(String value) {
+        public final void setNumberOfShelves(String value) {
           _setPointerField(org.capnproto.Text.factory, 135, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOutletPosition(int size) {
+        public final org.capnproto.Text.Builder initNumberOfShelves(int size) {
           return _initPointerField(org.capnproto.Text.factory, 135, size);
         }
-        public final boolean hasCastersGlides() {
+        public final boolean hasSeatHeight() {
           return !_pointerFieldIsNull(136);
         }
-        public final org.capnproto.Text.Builder getCastersGlides() {
+        public final org.capnproto.Text.Builder getSeatHeight() {
           return _getPointerField(org.capnproto.Text.factory, 136, null, 0, 0);
         }
-        public final void setCastersGlides(org.capnproto.Text.Reader value) {
+        public final void setSeatHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 136, value);
         }
-        public final void setCastersGlides(String value) {
+        public final void setSeatHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 136, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCastersGlides(int size) {
+        public final org.capnproto.Text.Builder initSeatHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 136, size);
         }
-        public final boolean hasStyle() {
+        public final boolean hasTopPanelDoors() {
           return !_pointerFieldIsNull(137);
         }
-        public final org.capnproto.Text.Builder getStyle() {
+        public final org.capnproto.Text.Builder getTopPanelDoors() {
           return _getPointerField(org.capnproto.Text.factory, 137, null, 0, 0);
         }
-        public final void setStyle(org.capnproto.Text.Reader value) {
+        public final void setTopPanelDoors(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 137, value);
         }
-        public final void setStyle(String value) {
+        public final void setTopPanelDoors(String value) {
           _setPointerField(org.capnproto.Text.factory, 137, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initStyle(int size) {
+        public final org.capnproto.Text.Builder initTopPanelDoors(int size) {
           return _initPointerField(org.capnproto.Text.factory, 137, size);
         }
-        public final boolean hasGauge() {
+        public final boolean hasLegHeightAndGlideStyle() {
           return !_pointerFieldIsNull(138);
         }
-        public final org.capnproto.Text.Builder getGauge() {
+        public final org.capnproto.Text.Builder getLegHeightAndGlideStyle() {
           return _getPointerField(org.capnproto.Text.factory, 138, null, 0, 0);
         }
-        public final void setGauge(org.capnproto.Text.Reader value) {
+        public final void setLegHeightAndGlideStyle(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 138, value);
         }
-        public final void setGauge(String value) {
+        public final void setLegHeightAndGlideStyle(String value) {
           _setPointerField(org.capnproto.Text.factory, 138, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initGauge(int size) {
+        public final org.capnproto.Text.Builder initLegHeightAndGlideStyle(int size) {
           return _initPointerField(org.capnproto.Text.factory, 138, size);
         }
-        public final boolean hasSeatHeight() {
+        public final boolean hasLightBulbIncluded() {
           return !_pointerFieldIsNull(139);
         }
-        public final org.capnproto.Text.Builder getSeatHeight() {
+        public final org.capnproto.Text.Builder getLightBulbIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 139, null, 0, 0);
         }
-        public final void setSeatHeight(org.capnproto.Text.Reader value) {
+        public final void setLightBulbIncluded(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 139, value);
         }
-        public final void setSeatHeight(String value) {
+        public final void setLightBulbIncluded(String value) {
           _setPointerField(org.capnproto.Text.factory, 139, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSeatHeight(int size) {
+        public final org.capnproto.Text.Builder initLightBulbIncluded(int size) {
           return _initPointerField(org.capnproto.Text.factory, 139, size);
         }
-        public final boolean hasPaintFinish() {
+        public final boolean hasAssembledProductHeight() {
           return !_pointerFieldIsNull(140);
         }
-        public final org.capnproto.Text.Builder getPaintFinish() {
+        public final org.capnproto.Text.Builder getAssembledProductHeight() {
           return _getPointerField(org.capnproto.Text.factory, 140, null, 0, 0);
         }
-        public final void setPaintFinish(org.capnproto.Text.Reader value) {
+        public final void setAssembledProductHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 140, value);
         }
-        public final void setPaintFinish(String value) {
+        public final void setAssembledProductHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 140, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPaintFinish(int size) {
+        public final org.capnproto.Text.Builder initAssembledProductHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 140, size);
         }
-        public final boolean hasBase() {
+        public final boolean hasAssembledProductLength() {
           return !_pointerFieldIsNull(141);
         }
-        public final org.capnproto.Text.Builder getBase() {
+        public final org.capnproto.Text.Builder getAssembledProductLength() {
           return _getPointerField(org.capnproto.Text.factory, 141, null, 0, 0);
         }
-        public final void setBase(org.capnproto.Text.Reader value) {
+        public final void setAssembledProductLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 141, value);
         }
-        public final void setBase(String value) {
+        public final void setAssembledProductLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 141, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBase(int size) {
+        public final org.capnproto.Text.Builder initAssembledProductLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 141, size);
         }
-        public final boolean hasTableSize() {
+        public final boolean hasMaterial() {
           return !_pointerFieldIsNull(142);
         }
-        public final org.capnproto.Text.Builder getTableSize() {
+        public final org.capnproto.Text.Builder getMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 142, null, 0, 0);
         }
-        public final void setTableSize(org.capnproto.Text.Reader value) {
+        public final void setMaterial(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 142, value);
         }
-        public final void setTableSize(String value) {
+        public final void setMaterial(String value) {
           _setPointerField(org.capnproto.Text.factory, 142, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTableSize(int size) {
+        public final org.capnproto.Text.Builder initMaterial(int size) {
           return _initPointerField(org.capnproto.Text.factory, 142, size);
         }
-        public final boolean hasNumberOfPads() {
+        public final boolean hasNumberOfCompartments() {
           return !_pointerFieldIsNull(143);
         }
-        public final org.capnproto.Text.Builder getNumberOfPads() {
+        public final org.capnproto.Text.Builder getNumberOfCompartments() {
           return _getPointerField(org.capnproto.Text.factory, 143, null, 0, 0);
         }
-        public final void setNumberOfPads(org.capnproto.Text.Reader value) {
+        public final void setNumberOfCompartments(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 143, value);
         }
-        public final void setNumberOfPads(String value) {
+        public final void setNumberOfCompartments(String value) {
           _setPointerField(org.capnproto.Text.factory, 143, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfPads(int size) {
+        public final org.capnproto.Text.Builder initNumberOfCompartments(int size) {
           return _initPointerField(org.capnproto.Text.factory, 143, size);
         }
-        public final boolean hasAssembledProductWidth() {
+        public final boolean hasCasters() {
           return !_pointerFieldIsNull(144);
         }
-        public final org.capnproto.Text.Builder getAssembledProductWidth() {
+        public final org.capnproto.Text.Builder getCasters() {
           return _getPointerField(org.capnproto.Text.factory, 144, null, 0, 0);
         }
-        public final void setAssembledProductWidth(org.capnproto.Text.Reader value) {
+        public final void setCasters(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 144, value);
         }
-        public final void setAssembledProductWidth(String value) {
+        public final void setCasters(String value) {
           _setPointerField(org.capnproto.Text.factory, 144, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAssembledProductWidth(int size) {
+        public final org.capnproto.Text.Builder initCasters(int size) {
           return _initPointerField(org.capnproto.Text.factory, 144, size);
         }
-        public final boolean hasFinishWidth() {
+        public final boolean hasBackPanelHeight() {
           return !_pointerFieldIsNull(145);
         }
-        public final org.capnproto.Text.Builder getFinishWidth() {
+        public final org.capnproto.Text.Builder getBackPanelHeight() {
           return _getPointerField(org.capnproto.Text.factory, 145, null, 0, 0);
         }
-        public final void setFinishWidth(org.capnproto.Text.Reader value) {
+        public final void setBackPanelHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 145, value);
         }
-        public final void setFinishWidth(String value) {
+        public final void setBackPanelHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 145, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFinishWidth(int size) {
+        public final org.capnproto.Text.Builder initBackPanelHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 145, size);
         }
-        public final boolean hasLaptopSize() {
+        public final boolean hasInterior() {
           return !_pointerFieldIsNull(146);
         }
-        public final org.capnproto.Text.Builder getLaptopSize() {
+        public final org.capnproto.Text.Builder getInterior() {
           return _getPointerField(org.capnproto.Text.factory, 146, null, 0, 0);
         }
-        public final void setLaptopSize(org.capnproto.Text.Reader value) {
+        public final void setInterior(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 146, value);
         }
-        public final void setLaptopSize(String value) {
+        public final void setInterior(String value) {
           _setPointerField(org.capnproto.Text.factory, 146, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLaptopSize(int size) {
+        public final org.capnproto.Text.Builder initInterior(int size) {
           return _initPointerField(org.capnproto.Text.factory, 146, size);
         }
-        public final boolean hasOffsetDistance() {
+        public final boolean hasDesktopShelfLength() {
           return !_pointerFieldIsNull(147);
         }
-        public final org.capnproto.Text.Builder getOffsetDistance() {
+        public final org.capnproto.Text.Builder getDesktopShelfLength() {
           return _getPointerField(org.capnproto.Text.factory, 147, null, 0, 0);
         }
-        public final void setOffsetDistance(org.capnproto.Text.Reader value) {
+        public final void setDesktopShelfLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 147, value);
         }
-        public final void setOffsetDistance(String value) {
+        public final void setDesktopShelfLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 147, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOffsetDistance(int size) {
+        public final org.capnproto.Text.Builder initDesktopShelfLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 147, size);
         }
-        public final boolean hasHeadphonesIncluded() {
+        public final boolean hasEdgeType() {
           return !_pointerFieldIsNull(148);
         }
-        public final org.capnproto.Text.Builder getHeadphonesIncluded() {
+        public final org.capnproto.Text.Builder getEdgeType() {
           return _getPointerField(org.capnproto.Text.factory, 148, null, 0, 0);
         }
-        public final void setHeadphonesIncluded(org.capnproto.Text.Reader value) {
+        public final void setEdgeType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 148, value);
         }
-        public final void setHeadphonesIncluded(String value) {
+        public final void setEdgeType(String value) {
           _setPointerField(org.capnproto.Text.factory, 148, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHeadphonesIncluded(int size) {
+        public final org.capnproto.Text.Builder initEdgeType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 148, size);
         }
-        public final boolean hasSeatFrameColor() {
+        public final boolean hasHasFoamInterior() {
           return !_pointerFieldIsNull(149);
         }
-        public final org.capnproto.Text.Builder getSeatFrameColor() {
+        public final org.capnproto.Text.Builder getHasFoamInterior() {
           return _getPointerField(org.capnproto.Text.factory, 149, null, 0, 0);
         }
-        public final void setSeatFrameColor(org.capnproto.Text.Reader value) {
+        public final void setHasFoamInterior(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 149, value);
         }
-        public final void setSeatFrameColor(String value) {
+        public final void setHasFoamInterior(String value) {
           _setPointerField(org.capnproto.Text.factory, 149, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSeatFrameColor(int size) {
+        public final org.capnproto.Text.Builder initHasFoamInterior(int size) {
           return _initPointerField(org.capnproto.Text.factory, 149, size);
         }
-        public final boolean hasPaintAndLaminateColors() {
+        public final boolean hasWireSize() {
           return !_pointerFieldIsNull(150);
         }
-        public final org.capnproto.Text.Builder getPaintAndLaminateColors() {
+        public final org.capnproto.Text.Builder getWireSize() {
           return _getPointerField(org.capnproto.Text.factory, 150, null, 0, 0);
         }
-        public final void setPaintAndLaminateColors(org.capnproto.Text.Reader value) {
+        public final void setWireSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 150, value);
         }
-        public final void setPaintAndLaminateColors(String value) {
+        public final void setWireSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 150, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPaintAndLaminateColors(int size) {
+        public final org.capnproto.Text.Builder initWireSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 150, size);
         }
-        public final boolean hasPackag() {
+        public final boolean hasTableTopColor() {
           return !_pointerFieldIsNull(151);
         }
-        public final org.capnproto.Text.Builder getPackag() {
+        public final org.capnproto.Text.Builder getTableTopColor() {
           return _getPointerField(org.capnproto.Text.factory, 151, null, 0, 0);
         }
-        public final void setPackag(org.capnproto.Text.Reader value) {
+        public final void setTableTopColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 151, value);
         }
-        public final void setPackag(String value) {
+        public final void setTableTopColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 151, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPackag(int size) {
+        public final org.capnproto.Text.Builder initTableTopColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 151, size);
         }
-        public final boolean hasBacking() {
+        public final boolean hasRecommendedUse() {
           return !_pointerFieldIsNull(152);
         }
-        public final org.capnproto.Text.Builder getBacking() {
+        public final org.capnproto.Text.Builder getRecommendedUse() {
           return _getPointerField(org.capnproto.Text.factory, 152, null, 0, 0);
         }
-        public final void setBacking(org.capnproto.Text.Reader value) {
+        public final void setRecommendedUse(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 152, value);
         }
-        public final void setBacking(String value) {
+        public final void setRecommendedUse(String value) {
           _setPointerField(org.capnproto.Text.factory, 152, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBacking(int size) {
+        public final org.capnproto.Text.Builder initRecommendedUse(int size) {
           return _initPointerField(org.capnproto.Text.factory, 152, size);
         }
-        public final boolean hasLightBulbIncluded() {
+        public final boolean hasArmLegFinish() {
           return !_pointerFieldIsNull(153);
         }
-        public final org.capnproto.Text.Builder getLightBulbIncluded() {
+        public final org.capnproto.Text.Builder getArmLegFinish() {
           return _getPointerField(org.capnproto.Text.factory, 153, null, 0, 0);
         }
-        public final void setLightBulbIncluded(org.capnproto.Text.Reader value) {
+        public final void setArmLegFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 153, value);
         }
-        public final void setLightBulbIncluded(String value) {
+        public final void setArmLegFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 153, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLightBulbIncluded(int size) {
+        public final org.capnproto.Text.Builder initArmLegFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 153, size);
         }
-        public final boolean hasSurfaceColor() {
+        public final boolean hasGlassColor() {
           return !_pointerFieldIsNull(154);
         }
-        public final org.capnproto.Text.Builder getSurfaceColor() {
+        public final org.capnproto.Text.Builder getGlassColor() {
           return _getPointerField(org.capnproto.Text.factory, 154, null, 0, 0);
         }
-        public final void setSurfaceColor(org.capnproto.Text.Reader value) {
+        public final void setGlassColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 154, value);
         }
-        public final void setSurfaceColor(String value) {
+        public final void setGlassColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 154, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSurfaceColor(int size) {
+        public final org.capnproto.Text.Builder initGlassColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 154, size);
         }
-        public final boolean hasWirelessMicOption() {
+        public final boolean hasPaperSize() {
           return !_pointerFieldIsNull(155);
         }
-        public final org.capnproto.Text.Builder getWirelessMicOption() {
+        public final org.capnproto.Text.Builder getPaperSize() {
           return _getPointerField(org.capnproto.Text.factory, 155, null, 0, 0);
         }
-        public final void setWirelessMicOption(org.capnproto.Text.Reader value) {
+        public final void setPaperSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 155, value);
         }
-        public final void setWirelessMicOption(String value) {
+        public final void setPaperSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 155, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWirelessMicOption(int size) {
+        public final org.capnproto.Text.Builder initPaperSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 155, size);
         }
-        public final boolean hasRunTime() {
+        public final boolean hasCdSpace() {
           return !_pointerFieldIsNull(156);
         }
-        public final org.capnproto.Text.Builder getRunTime() {
+        public final org.capnproto.Text.Builder getCdSpace() {
           return _getPointerField(org.capnproto.Text.factory, 156, null, 0, 0);
         }
-        public final void setRunTime(org.capnproto.Text.Reader value) {
+        public final void setCdSpace(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 156, value);
         }
-        public final void setRunTime(String value) {
+        public final void setCdSpace(String value) {
           _setPointerField(org.capnproto.Text.factory, 156, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRunTime(int size) {
+        public final org.capnproto.Text.Builder initCdSpace(int size) {
           return _initPointerField(org.capnproto.Text.factory, 156, size);
         }
-        public final boolean hasInterior() {
+        public final boolean hasMaximumWireLength() {
           return !_pointerFieldIsNull(157);
         }
-        public final org.capnproto.Text.Builder getInterior() {
+        public final org.capnproto.Text.Builder getMaximumWireLength() {
           return _getPointerField(org.capnproto.Text.factory, 157, null, 0, 0);
         }
-        public final void setInterior(org.capnproto.Text.Reader value) {
+        public final void setMaximumWireLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 157, value);
         }
-        public final void setInterior(String value) {
+        public final void setMaximumWireLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 157, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initInterior(int size) {
+        public final org.capnproto.Text.Builder initMaximumWireLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 157, size);
         }
-        public final boolean hasSportsTeam() {
+        public final boolean hasUpholstery() {
           return !_pointerFieldIsNull(158);
         }
-        public final org.capnproto.Text.Builder getSportsTeam() {
+        public final org.capnproto.Text.Builder getUpholstery() {
           return _getPointerField(org.capnproto.Text.factory, 158, null, 0, 0);
         }
-        public final void setSportsTeam(org.capnproto.Text.Reader value) {
+        public final void setUpholstery(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 158, value);
         }
-        public final void setSportsTeam(String value) {
+        public final void setUpholstery(String value) {
           _setPointerField(org.capnproto.Text.factory, 158, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSportsTeam(int size) {
+        public final org.capnproto.Text.Builder initUpholstery(int size) {
           return _initPointerField(org.capnproto.Text.factory, 158, size);
         }
-        public final boolean hasElectricCapability() {
+        public final boolean hasPattern() {
           return !_pointerFieldIsNull(159);
         }
-        public final org.capnproto.Text.Builder getElectricCapability() {
+        public final org.capnproto.Text.Builder getPattern() {
           return _getPointerField(org.capnproto.Text.factory, 159, null, 0, 0);
         }
-        public final void setElectricCapability(org.capnproto.Text.Reader value) {
+        public final void setPattern(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 159, value);
         }
-        public final void setElectricCapability(String value) {
+        public final void setPattern(String value) {
           _setPointerField(org.capnproto.Text.factory, 159, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initElectricCapability(int size) {
+        public final org.capnproto.Text.Builder initPattern(int size) {
           return _initPointerField(org.capnproto.Text.factory, 159, size);
         }
-        public final boolean hasSheftSize() {
+        public final boolean hasShelfColor() {
           return !_pointerFieldIsNull(160);
         }
-        public final org.capnproto.Text.Builder getSheftSize() {
+        public final org.capnproto.Text.Builder getShelfColor() {
           return _getPointerField(org.capnproto.Text.factory, 160, null, 0, 0);
         }
-        public final void setSheftSize(org.capnproto.Text.Reader value) {
+        public final void setShelfColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 160, value);
         }
-        public final void setSheftSize(String value) {
+        public final void setShelfColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 160, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSheftSize(int size) {
+        public final org.capnproto.Text.Builder initShelfColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 160, size);
         }
-        public final boolean hasIncludesSoundSystem() {
+        public final boolean hasSideAndBackPanels() {
           return !_pointerFieldIsNull(161);
         }
-        public final org.capnproto.Text.Builder getIncludesSoundSystem() {
+        public final org.capnproto.Text.Builder getSideAndBackPanels() {
           return _getPointerField(org.capnproto.Text.factory, 161, null, 0, 0);
         }
-        public final void setIncludesSoundSystem(org.capnproto.Text.Reader value) {
+        public final void setSideAndBackPanels(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 161, value);
         }
-        public final void setIncludesSoundSystem(String value) {
+        public final void setSideAndBackPanels(String value) {
           _setPointerField(org.capnproto.Text.factory, 161, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initIncludesSoundSystem(int size) {
+        public final org.capnproto.Text.Builder initSideAndBackPanels(int size) {
           return _initPointerField(org.capnproto.Text.factory, 161, size);
         }
-        public final boolean hasTopFinish() {
+        public final boolean hasRackrailType() {
           return !_pointerFieldIsNull(162);
         }
-        public final org.capnproto.Text.Builder getTopFinish() {
+        public final org.capnproto.Text.Builder getRackrailType() {
           return _getPointerField(org.capnproto.Text.factory, 162, null, 0, 0);
         }
-        public final void setTopFinish(org.capnproto.Text.Reader value) {
+        public final void setRackrailType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 162, value);
         }
-        public final void setTopFinish(String value) {
+        public final void setRackrailType(String value) {
           _setPointerField(org.capnproto.Text.factory, 162, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTopFinish(int size) {
+        public final org.capnproto.Text.Builder initRackrailType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 162, size);
         }
-        public final boolean hasSeatColor() {
+        public final boolean hasDiameter() {
           return !_pointerFieldIsNull(163);
         }
-        public final org.capnproto.Text.Builder getSeatColor() {
+        public final org.capnproto.Text.Builder getDiameter() {
           return _getPointerField(org.capnproto.Text.factory, 163, null, 0, 0);
         }
-        public final void setSeatColor(org.capnproto.Text.Reader value) {
+        public final void setDiameter(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 163, value);
         }
-        public final void setSeatColor(String value) {
+        public final void setDiameter(String value) {
           _setPointerField(org.capnproto.Text.factory, 163, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSeatColor(int size) {
+        public final org.capnproto.Text.Builder initDiameter(int size) {
           return _initPointerField(org.capnproto.Text.factory, 163, size);
         }
-        public final boolean hasInterfac() {
+        public final boolean hasActualColor() {
           return !_pointerFieldIsNull(164);
         }
-        public final org.capnproto.Text.Builder getInterfac() {
+        public final org.capnproto.Text.Builder getActualColor() {
           return _getPointerField(org.capnproto.Text.factory, 164, null, 0, 0);
         }
-        public final void setInterfac(org.capnproto.Text.Reader value) {
+        public final void setActualColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 164, value);
         }
-        public final void setInterfac(String value) {
+        public final void setActualColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 164, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initInterfac(int size) {
+        public final org.capnproto.Text.Builder initActualColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 164, size);
         }
-        public final boolean hasRailLength() {
+        public final boolean hasTabLetter() {
           return !_pointerFieldIsNull(165);
         }
-        public final org.capnproto.Text.Builder getRailLength() {
+        public final org.capnproto.Text.Builder getTabLetter() {
           return _getPointerField(org.capnproto.Text.factory, 165, null, 0, 0);
         }
-        public final void setRailLength(org.capnproto.Text.Reader value) {
+        public final void setTabLetter(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 165, value);
         }
-        public final void setRailLength(String value) {
+        public final void setTabLetter(String value) {
           _setPointerField(org.capnproto.Text.factory, 165, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRailLength(int size) {
+        public final org.capnproto.Text.Builder initTabLetter(int size) {
           return _initPointerField(org.capnproto.Text.factory, 165, size);
         }
-        public final boolean hasLegHeightAndGlideStyle() {
+        public final boolean hasHasCasters() {
           return !_pointerFieldIsNull(166);
         }
-        public final org.capnproto.Text.Builder getLegHeightAndGlideStyle() {
+        public final org.capnproto.Text.Builder getHasCasters() {
           return _getPointerField(org.capnproto.Text.factory, 166, null, 0, 0);
         }
-        public final void setLegHeightAndGlideStyle(org.capnproto.Text.Reader value) {
+        public final void setHasCasters(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 166, value);
         }
-        public final void setLegHeightAndGlideStyle(String value) {
+        public final void setHasCasters(String value) {
           _setPointerField(org.capnproto.Text.factory, 166, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegHeightAndGlideStyle(int size) {
+        public final org.capnproto.Text.Builder initHasCasters(int size) {
           return _initPointerField(org.capnproto.Text.factory, 166, size);
         }
-        public final boolean hasFrontAndBackPanel() {
+        public final boolean hasConvertsToSize() {
           return !_pointerFieldIsNull(167);
         }
-        public final org.capnproto.Text.Builder getFrontAndBackPanel() {
+        public final org.capnproto.Text.Builder getConvertsToSize() {
           return _getPointerField(org.capnproto.Text.factory, 167, null, 0, 0);
         }
-        public final void setFrontAndBackPanel(org.capnproto.Text.Reader value) {
+        public final void setConvertsToSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 167, value);
         }
-        public final void setFrontAndBackPanel(String value) {
+        public final void setConvertsToSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 167, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFrontAndBackPanel(int size) {
+        public final org.capnproto.Text.Builder initConvertsToSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 167, size);
         }
-        public final boolean hasLockType() {
+        public final boolean hasTabDimensions() {
           return !_pointerFieldIsNull(168);
         }
-        public final org.capnproto.Text.Builder getLockType() {
+        public final org.capnproto.Text.Builder getTabDimensions() {
           return _getPointerField(org.capnproto.Text.factory, 168, null, 0, 0);
         }
-        public final void setLockType(org.capnproto.Text.Reader value) {
+        public final void setTabDimensions(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 168, value);
         }
-        public final void setLockType(String value) {
+        public final void setTabDimensions(String value) {
           _setPointerField(org.capnproto.Text.factory, 168, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLockType(int size) {
+        public final org.capnproto.Text.Builder initTabDimensions(int size) {
           return _initPointerField(org.capnproto.Text.factory, 168, size);
         }
-        public final boolean hasTransmitterIncluded() {
+        public final boolean hasPlatformFrameFinish() {
           return !_pointerFieldIsNull(169);
         }
-        public final org.capnproto.Text.Builder getTransmitterIncluded() {
+        public final org.capnproto.Text.Builder getPlatformFrameFinish() {
           return _getPointerField(org.capnproto.Text.factory, 169, null, 0, 0);
         }
-        public final void setTransmitterIncluded(org.capnproto.Text.Reader value) {
+        public final void setPlatformFrameFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 169, value);
         }
-        public final void setTransmitterIncluded(String value) {
+        public final void setPlatformFrameFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 169, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTransmitterIncluded(int size) {
+        public final org.capnproto.Text.Builder initPlatformFrameFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 169, size);
         }
-        public final boolean hasHasCasters() {
+        public final boolean hasFrameFinish() {
           return !_pointerFieldIsNull(170);
         }
-        public final org.capnproto.Text.Builder getHasCasters() {
+        public final org.capnproto.Text.Builder getFrameFinish() {
           return _getPointerField(org.capnproto.Text.factory, 170, null, 0, 0);
         }
-        public final void setHasCasters(org.capnproto.Text.Reader value) {
+        public final void setFrameFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 170, value);
         }
-        public final void setHasCasters(String value) {
+        public final void setFrameFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 170, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHasCasters(int size) {
+        public final org.capnproto.Text.Builder initFrameFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 170, size);
         }
-        public final boolean hasPanelColor() {
+        public final boolean hasPaintAndLaminateColors() {
           return !_pointerFieldIsNull(171);
         }
-        public final org.capnproto.Text.Builder getPanelColor() {
+        public final org.capnproto.Text.Builder getPaintAndLaminateColors() {
           return _getPointerField(org.capnproto.Text.factory, 171, null, 0, 0);
         }
-        public final void setPanelColor(org.capnproto.Text.Reader value) {
+        public final void setPaintAndLaminateColors(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 171, value);
         }
-        public final void setPanelColor(String value) {
+        public final void setPaintAndLaminateColors(String value) {
           _setPointerField(org.capnproto.Text.factory, 171, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPanelColor(int size) {
+        public final org.capnproto.Text.Builder initPaintAndLaminateColors(int size) {
           return _initPointerField(org.capnproto.Text.factory, 171, size);
         }
-        public final boolean hasBinDimensions() {
+        public final boolean hasTensileStrength() {
           return !_pointerFieldIsNull(172);
         }
-        public final org.capnproto.Text.Builder getBinDimensions() {
+        public final org.capnproto.Text.Builder getTensileStrength() {
           return _getPointerField(org.capnproto.Text.factory, 172, null, 0, 0);
         }
-        public final void setBinDimensions(org.capnproto.Text.Reader value) {
+        public final void setTensileStrength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 172, value);
         }
-        public final void setBinDimensions(String value) {
+        public final void setTensileStrength(String value) {
           _setPointerField(org.capnproto.Text.factory, 172, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBinDimensions(int size) {
+        public final org.capnproto.Text.Builder initTensileStrength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 172, size);
         }
-        public final boolean hasTabDimensions() {
+        public final boolean hasIflexPrivacyPanels() {
           return !_pointerFieldIsNull(173);
         }
-        public final org.capnproto.Text.Builder getTabDimensions() {
+        public final org.capnproto.Text.Builder getIflexPrivacyPanels() {
           return _getPointerField(org.capnproto.Text.factory, 173, null, 0, 0);
         }
-        public final void setTabDimensions(org.capnproto.Text.Reader value) {
+        public final void setIflexPrivacyPanels(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 173, value);
         }
-        public final void setTabDimensions(String value) {
+        public final void setIflexPrivacyPanels(String value) {
           _setPointerField(org.capnproto.Text.factory, 173, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTabDimensions(int size) {
+        public final org.capnproto.Text.Builder initIflexPrivacyPanels(int size) {
           return _initPointerField(org.capnproto.Text.factory, 173, size);
         }
-        public final boolean hasBaseFinish() {
+        public final boolean hasReticle() {
           return !_pointerFieldIsNull(174);
         }
-        public final org.capnproto.Text.Builder getBaseFinish() {
+        public final org.capnproto.Text.Builder getReticle() {
           return _getPointerField(org.capnproto.Text.factory, 174, null, 0, 0);
         }
-        public final void setBaseFinish(org.capnproto.Text.Reader value) {
+        public final void setReticle(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 174, value);
         }
-        public final void setBaseFinish(String value) {
+        public final void setReticle(String value) {
           _setPointerField(org.capnproto.Text.factory, 174, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBaseFinish(int size) {
+        public final org.capnproto.Text.Builder initReticle(int size) {
           return _initPointerField(org.capnproto.Text.factory, 174, size);
         }
-        public final boolean hasAdjustableHeight() {
+        public final boolean hasModel() {
           return !_pointerFieldIsNull(175);
         }
-        public final org.capnproto.Text.Builder getAdjustableHeight() {
+        public final org.capnproto.Text.Builder getModel() {
           return _getPointerField(org.capnproto.Text.factory, 175, null, 0, 0);
         }
-        public final void setAdjustableHeight(org.capnproto.Text.Reader value) {
+        public final void setModel(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 175, value);
         }
-        public final void setAdjustableHeight(String value) {
+        public final void setModel(String value) {
           _setPointerField(org.capnproto.Text.factory, 175, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAdjustableHeight(int size) {
+        public final org.capnproto.Text.Builder initModel(int size) {
           return _initPointerField(org.capnproto.Text.factory, 175, size);
         }
-        public final boolean hasLegFinish() {
+        public final boolean hasNumberOfPieces() {
           return !_pointerFieldIsNull(176);
         }
-        public final org.capnproto.Text.Builder getLegFinish() {
+        public final org.capnproto.Text.Builder getNumberOfPieces() {
           return _getPointerField(org.capnproto.Text.factory, 176, null, 0, 0);
         }
-        public final void setLegFinish(org.capnproto.Text.Reader value) {
+        public final void setNumberOfPieces(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 176, value);
         }
-        public final void setLegFinish(String value) {
+        public final void setNumberOfPieces(String value) {
           _setPointerField(org.capnproto.Text.factory, 176, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegFinish(int size) {
+        public final org.capnproto.Text.Builder initNumberOfPieces(int size) {
           return _initPointerField(org.capnproto.Text.factory, 176, size);
         }
-        public final boolean hasThreadType() {
+        public final boolean hasOption() {
           return !_pointerFieldIsNull(177);
         }
-        public final org.capnproto.Text.Builder getThreadType() {
+        public final org.capnproto.Text.Builder getOption() {
           return _getPointerField(org.capnproto.Text.factory, 177, null, 0, 0);
         }
-        public final void setThreadType(org.capnproto.Text.Reader value) {
+        public final void setOption(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 177, value);
         }
-        public final void setThreadType(String value) {
+        public final void setOption(String value) {
           _setPointerField(org.capnproto.Text.factory, 177, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initThreadType(int size) {
+        public final org.capnproto.Text.Builder initOption(int size) {
           return _initPointerField(org.capnproto.Text.factory, 177, size);
         }
-        public final boolean hasMaterial() {
+        public final boolean hasTab() {
           return !_pointerFieldIsNull(178);
         }
-        public final org.capnproto.Text.Builder getMaterial() {
+        public final org.capnproto.Text.Builder getTab() {
           return _getPointerField(org.capnproto.Text.factory, 178, null, 0, 0);
         }
-        public final void setMaterial(org.capnproto.Text.Reader value) {
+        public final void setTab(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 178, value);
         }
-        public final void setMaterial(String value) {
+        public final void setTab(String value) {
           _setPointerField(org.capnproto.Text.factory, 178, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMaterial(int size) {
+        public final org.capnproto.Text.Builder initTab(int size) {
           return _initPointerField(org.capnproto.Text.factory, 178, size);
         }
-        public final boolean hasTableTopColor() {
+        public final boolean hasNumberOfRackUnits() {
           return !_pointerFieldIsNull(179);
         }
-        public final org.capnproto.Text.Builder getTableTopColor() {
+        public final org.capnproto.Text.Builder getNumberOfRackUnits() {
           return _getPointerField(org.capnproto.Text.factory, 179, null, 0, 0);
         }
-        public final void setTableTopColor(org.capnproto.Text.Reader value) {
+        public final void setNumberOfRackUnits(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 179, value);
         }
-        public final void setTableTopColor(String value) {
+        public final void setNumberOfRackUnits(String value) {
           _setPointerField(org.capnproto.Text.factory, 179, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTableTopColor(int size) {
+        public final org.capnproto.Text.Builder initNumberOfRackUnits(int size) {
           return _initPointerField(org.capnproto.Text.factory, 179, size);
         }
-        public final boolean hasAssemblyRequired() {
+        public final boolean hasIncludesSoundSystem() {
           return !_pointerFieldIsNull(180);
         }
-        public final org.capnproto.Text.Builder getAssemblyRequired() {
+        public final org.capnproto.Text.Builder getIncludesSoundSystem() {
           return _getPointerField(org.capnproto.Text.factory, 180, null, 0, 0);
         }
-        public final void setAssemblyRequired(org.capnproto.Text.Reader value) {
+        public final void setIncludesSoundSystem(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 180, value);
         }
-        public final void setAssemblyRequired(String value) {
+        public final void setIncludesSoundSystem(String value) {
           _setPointerField(org.capnproto.Text.factory, 180, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAssemblyRequired(int size) {
+        public final org.capnproto.Text.Builder initIncludesSoundSystem(int size) {
           return _initPointerField(org.capnproto.Text.factory, 180, size);
         }
-        public final boolean hasComponents() {
+        public final boolean hasFinishWidth() {
           return !_pointerFieldIsNull(181);
         }
-        public final org.capnproto.Text.Builder getComponents() {
+        public final org.capnproto.Text.Builder getFinishWidth() {
           return _getPointerField(org.capnproto.Text.factory, 181, null, 0, 0);
         }
-        public final void setComponents(org.capnproto.Text.Reader value) {
+        public final void setFinishWidth(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 181, value);
         }
-        public final void setComponents(String value) {
+        public final void setFinishWidth(String value) {
           _setPointerField(org.capnproto.Text.factory, 181, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initComponents(int size) {
+        public final org.capnproto.Text.Builder initFinishWidth(int size) {
           return _initPointerField(org.capnproto.Text.factory, 181, size);
         }
-        public final boolean hasBaseType() {
+        public final boolean hasLegFinish() {
           return !_pointerFieldIsNull(182);
         }
-        public final org.capnproto.Text.Builder getBaseType() {
+        public final org.capnproto.Text.Builder getLegFinish() {
           return _getPointerField(org.capnproto.Text.factory, 182, null, 0, 0);
         }
-        public final void setBaseType(org.capnproto.Text.Reader value) {
+        public final void setLegFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 182, value);
         }
-        public final void setBaseType(String value) {
+        public final void setLegFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 182, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBaseType(int size) {
+        public final org.capnproto.Text.Builder initLegFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 182, size);
         }
-        public final boolean hasTrim() {
+        public final boolean hasRailLength() {
           return !_pointerFieldIsNull(183);
         }
-        public final org.capnproto.Text.Builder getTrim() {
+        public final org.capnproto.Text.Builder getRailLength() {
           return _getPointerField(org.capnproto.Text.factory, 183, null, 0, 0);
         }
-        public final void setTrim(org.capnproto.Text.Reader value) {
+        public final void setRailLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 183, value);
         }
-        public final void setTrim(String value) {
+        public final void setRailLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 183, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTrim(int size) {
+        public final org.capnproto.Text.Builder initRailLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 183, size);
         }
-        public final boolean hasAccentColor() {
+        public final boolean hasLockerColor() {
           return !_pointerFieldIsNull(184);
         }
-        public final org.capnproto.Text.Builder getAccentColor() {
+        public final org.capnproto.Text.Builder getLockerColor() {
           return _getPointerField(org.capnproto.Text.factory, 184, null, 0, 0);
         }
-        public final void setAccentColor(org.capnproto.Text.Reader value) {
+        public final void setLockerColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 184, value);
         }
-        public final void setAccentColor(String value) {
+        public final void setLockerColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 184, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAccentColor(int size) {
+        public final org.capnproto.Text.Builder initLockerColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 184, size);
         }
-        public final boolean hasTensileStrength() {
+        public final boolean hasFastenerType() {
           return !_pointerFieldIsNull(185);
         }
-        public final org.capnproto.Text.Builder getTensileStrength() {
+        public final org.capnproto.Text.Builder getFastenerType() {
           return _getPointerField(org.capnproto.Text.factory, 185, null, 0, 0);
         }
-        public final void setTensileStrength(org.capnproto.Text.Reader value) {
+        public final void setFastenerType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 185, value);
         }
-        public final void setTensileStrength(String value) {
+        public final void setFastenerType(String value) {
           _setPointerField(org.capnproto.Text.factory, 185, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTensileStrength(int size) {
+        public final org.capnproto.Text.Builder initFastenerType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 185, size);
         }
-        public final boolean hasCasters() {
+        public final boolean hasTopMaterial() {
           return !_pointerFieldIsNull(186);
         }
-        public final org.capnproto.Text.Builder getCasters() {
+        public final org.capnproto.Text.Builder getTopMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 186, null, 0, 0);
         }
-        public final void setCasters(org.capnproto.Text.Reader value) {
+        public final void setTopMaterial(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 186, value);
         }
-        public final void setCasters(String value) {
+        public final void setTopMaterial(String value) {
           _setPointerField(org.capnproto.Text.factory, 186, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCasters(int size) {
+        public final org.capnproto.Text.Builder initTopMaterial(int size) {
           return _initPointerField(org.capnproto.Text.factory, 186, size);
         }
-        public final boolean hasTableTop() {
+        public final boolean hasHardwareFinish() {
           return !_pointerFieldIsNull(187);
         }
-        public final org.capnproto.Text.Builder getTableTop() {
+        public final org.capnproto.Text.Builder getHardwareFinish() {
           return _getPointerField(org.capnproto.Text.factory, 187, null, 0, 0);
         }
-        public final void setTableTop(org.capnproto.Text.Reader value) {
+        public final void setHardwareFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 187, value);
         }
-        public final void setTableTop(String value) {
+        public final void setHardwareFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 187, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTableTop(int size) {
+        public final org.capnproto.Text.Builder initHardwareFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 187, size);
         }
-        public final boolean hasLightBulbType() {
+        public final boolean hasHasRearLockingDoor() {
           return !_pointerFieldIsNull(188);
         }
-        public final org.capnproto.Text.Builder getLightBulbType() {
+        public final org.capnproto.Text.Builder getHasRearLockingDoor() {
           return _getPointerField(org.capnproto.Text.factory, 188, null, 0, 0);
         }
-        public final void setLightBulbType(org.capnproto.Text.Reader value) {
+        public final void setHasRearLockingDoor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 188, value);
         }
-        public final void setLightBulbType(String value) {
+        public final void setHasRearLockingDoor(String value) {
           _setPointerField(org.capnproto.Text.factory, 188, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLightBulbType(int size) {
+        public final org.capnproto.Text.Builder initHasRearLockingDoor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 188, size);
         }
-        public final boolean hasRearDoor() {
+        public final boolean hasFlavor() {
           return !_pointerFieldIsNull(189);
         }
-        public final org.capnproto.Text.Builder getRearDoor() {
+        public final org.capnproto.Text.Builder getFlavor() {
           return _getPointerField(org.capnproto.Text.factory, 189, null, 0, 0);
         }
-        public final void setRearDoor(org.capnproto.Text.Reader value) {
+        public final void setFlavor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 189, value);
         }
-        public final void setRearDoor(String value) {
+        public final void setFlavor(String value) {
           _setPointerField(org.capnproto.Text.factory, 189, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRearDoor(int size) {
+        public final org.capnproto.Text.Builder initFlavor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 189, size);
         }
-        public final boolean hasPaperSize() {
+        public final boolean hasWallMountable() {
           return !_pointerFieldIsNull(190);
         }
-        public final org.capnproto.Text.Builder getPaperSize() {
+        public final org.capnproto.Text.Builder getWallMountable() {
           return _getPointerField(org.capnproto.Text.factory, 190, null, 0, 0);
         }
-        public final void setPaperSize(org.capnproto.Text.Reader value) {
+        public final void setWallMountable(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 190, value);
         }
-        public final void setPaperSize(String value) {
+        public final void setWallMountable(String value) {
           _setPointerField(org.capnproto.Text.factory, 190, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initPaperSize(int size) {
+        public final org.capnproto.Text.Builder initWallMountable(int size) {
           return _initPointerField(org.capnproto.Text.factory, 190, size);
         }
-        public final boolean hasSize() {
+        public final boolean hasFabric() {
           return !_pointerFieldIsNull(191);
         }
-        public final org.capnproto.Text.Builder getSize() {
+        public final org.capnproto.Text.Builder getFabric() {
           return _getPointerField(org.capnproto.Text.factory, 191, null, 0, 0);
         }
-        public final void setSize(org.capnproto.Text.Reader value) {
+        public final void setFabric(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 191, value);
         }
-        public final void setSize(String value) {
+        public final void setFabric(String value) {
           _setPointerField(org.capnproto.Text.factory, 191, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSize(int size) {
+        public final org.capnproto.Text.Builder initFabric(int size) {
           return _initPointerField(org.capnproto.Text.factory, 191, size);
         }
-        public final boolean hasConvertsToSize() {
+        public final boolean hasDrawerOptions() {
           return !_pointerFieldIsNull(192);
         }
-        public final org.capnproto.Text.Builder getConvertsToSize() {
+        public final org.capnproto.Text.Builder getDrawerOptions() {
           return _getPointerField(org.capnproto.Text.factory, 192, null, 0, 0);
         }
-        public final void setConvertsToSize(org.capnproto.Text.Reader value) {
+        public final void setDrawerOptions(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 192, value);
         }
-        public final void setConvertsToSize(String value) {
+        public final void setDrawerOptions(String value) {
           _setPointerField(org.capnproto.Text.factory, 192, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initConvertsToSize(int size) {
+        public final org.capnproto.Text.Builder initDrawerOptions(int size) {
           return _initPointerField(org.capnproto.Text.factory, 192, size);
         }
-        public final boolean hasMicrophoneIncluded() {
+        public final boolean hasNflTeam() {
           return !_pointerFieldIsNull(193);
         }
-        public final org.capnproto.Text.Builder getMicrophoneIncluded() {
+        public final org.capnproto.Text.Builder getNflTeam() {
           return _getPointerField(org.capnproto.Text.factory, 193, null, 0, 0);
         }
-        public final void setMicrophoneIncluded(org.capnproto.Text.Reader value) {
+        public final void setNflTeam(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 193, value);
         }
-        public final void setMicrophoneIncluded(String value) {
+        public final void setNflTeam(String value) {
           _setPointerField(org.capnproto.Text.factory, 193, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMicrophoneIncluded(int size) {
+        public final org.capnproto.Text.Builder initNflTeam(int size) {
           return _initPointerField(org.capnproto.Text.factory, 193, size);
         }
-        public final boolean hasGender() {
+        public final boolean hasThreadType() {
           return !_pointerFieldIsNull(194);
         }
-        public final org.capnproto.Text.Builder getGender() {
+        public final org.capnproto.Text.Builder getThreadType() {
           return _getPointerField(org.capnproto.Text.factory, 194, null, 0, 0);
         }
-        public final void setGender(org.capnproto.Text.Reader value) {
+        public final void setThreadType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 194, value);
         }
-        public final void setGender(String value) {
+        public final void setThreadType(String value) {
           _setPointerField(org.capnproto.Text.factory, 194, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initGender(int size) {
+        public final org.capnproto.Text.Builder initThreadType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 194, size);
         }
-        public final boolean hasBedSize() {
+        public final boolean hasTrayColor() {
           return !_pointerFieldIsNull(195);
         }
-        public final org.capnproto.Text.Builder getBedSize() {
+        public final org.capnproto.Text.Builder getTrayColor() {
           return _getPointerField(org.capnproto.Text.factory, 195, null, 0, 0);
         }
-        public final void setBedSize(org.capnproto.Text.Reader value) {
+        public final void setTrayColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 195, value);
         }
-        public final void setBedSize(String value) {
+        public final void setTrayColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 195, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBedSize(int size) {
+        public final org.capnproto.Text.Builder initTrayColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 195, size);
         }
-        public final boolean hasDimensionsWXDXH() {
+        public final boolean hasHandleColor() {
           return !_pointerFieldIsNull(196);
         }
-        public final org.capnproto.Text.Builder getDimensionsWXDXH() {
+        public final org.capnproto.Text.Builder getHandleColor() {
           return _getPointerField(org.capnproto.Text.factory, 196, null, 0, 0);
         }
-        public final void setDimensionsWXDXH(org.capnproto.Text.Reader value) {
+        public final void setHandleColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 196, value);
         }
-        public final void setDimensionsWXDXH(String value) {
+        public final void setHandleColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 196, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDimensionsWXDXH(int size) {
+        public final org.capnproto.Text.Builder initHandleColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 196, size);
         }
-        public final boolean hasMaximumRange() {
+        public final boolean hasConfiguration() {
           return !_pointerFieldIsNull(197);
         }
-        public final org.capnproto.Text.Builder getMaximumRange() {
+        public final org.capnproto.Text.Builder getConfiguration() {
           return _getPointerField(org.capnproto.Text.factory, 197, null, 0, 0);
         }
-        public final void setMaximumRange(org.capnproto.Text.Reader value) {
+        public final void setConfiguration(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 197, value);
         }
-        public final void setMaximumRange(String value) {
+        public final void setConfiguration(String value) {
           _setPointerField(org.capnproto.Text.factory, 197, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMaximumRange(int size) {
+        public final org.capnproto.Text.Builder initConfiguration(int size) {
           return _initPointerField(org.capnproto.Text.factory, 197, size);
         }
-        public final boolean hasFrame() {
+        public final boolean hasInterfac() {
           return !_pointerFieldIsNull(198);
         }
-        public final org.capnproto.Text.Builder getFrame() {
+        public final org.capnproto.Text.Builder getInterfac() {
           return _getPointerField(org.capnproto.Text.factory, 198, null, 0, 0);
         }
-        public final void setFrame(org.capnproto.Text.Reader value) {
+        public final void setInterfac(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 198, value);
         }
-        public final void setFrame(String value) {
+        public final void setInterfac(String value) {
           _setPointerField(org.capnproto.Text.factory, 198, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFrame(int size) {
+        public final org.capnproto.Text.Builder initInterfac(int size) {
           return _initPointerField(org.capnproto.Text.factory, 198, size);
         }
-        public final boolean hasHasAdapterKit() {
+        public final boolean hasRunTime() {
           return !_pointerFieldIsNull(199);
         }
-        public final org.capnproto.Text.Builder getHasAdapterKit() {
+        public final org.capnproto.Text.Builder getRunTime() {
           return _getPointerField(org.capnproto.Text.factory, 199, null, 0, 0);
         }
-        public final void setHasAdapterKit(org.capnproto.Text.Reader value) {
+        public final void setRunTime(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 199, value);
         }
-        public final void setHasAdapterKit(String value) {
+        public final void setRunTime(String value) {
           _setPointerField(org.capnproto.Text.factory, 199, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHasAdapterKit(int size) {
+        public final org.capnproto.Text.Builder initRunTime(int size) {
           return _initPointerField(org.capnproto.Text.factory, 199, size);
         }
-        public final boolean hasScreenSize() {
+        public final boolean hasMicrophoneType() {
           return !_pointerFieldIsNull(200);
         }
-        public final org.capnproto.Text.Builder getScreenSize() {
+        public final org.capnproto.Text.Builder getMicrophoneType() {
           return _getPointerField(org.capnproto.Text.factory, 200, null, 0, 0);
         }
-        public final void setScreenSize(org.capnproto.Text.Reader value) {
+        public final void setMicrophoneType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 200, value);
         }
-        public final void setScreenSize(String value) {
+        public final void setMicrophoneType(String value) {
           _setPointerField(org.capnproto.Text.factory, 200, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initScreenSize(int size) {
+        public final org.capnproto.Text.Builder initMicrophoneType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 200, size);
         }
-        public final boolean hasAssembledProductLength() {
+        public final boolean hasBackPanelColor() {
           return !_pointerFieldIsNull(201);
         }
-        public final org.capnproto.Text.Builder getAssembledProductLength() {
+        public final org.capnproto.Text.Builder getBackPanelColor() {
           return _getPointerField(org.capnproto.Text.factory, 201, null, 0, 0);
         }
-        public final void setAssembledProductLength(org.capnproto.Text.Reader value) {
+        public final void setBackPanelColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 201, value);
         }
-        public final void setAssembledProductLength(String value) {
+        public final void setBackPanelColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 201, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initAssembledProductLength(int size) {
+        public final org.capnproto.Text.Builder initBackPanelColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 201, size);
         }
-        public final boolean hasTeam() {
+        public final boolean hasTabletopSize() {
           return !_pointerFieldIsNull(202);
         }
-        public final org.capnproto.Text.Builder getTeam() {
+        public final org.capnproto.Text.Builder getTabletopSize() {
           return _getPointerField(org.capnproto.Text.factory, 202, null, 0, 0);
         }
-        public final void setTeam(org.capnproto.Text.Reader value) {
+        public final void setTabletopSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 202, value);
         }
-        public final void setTeam(String value) {
+        public final void setTabletopSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 202, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTeam(int size) {
+        public final org.capnproto.Text.Builder initTabletopSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 202, size);
         }
-        public final boolean hasFootType() {
+        public final boolean hasSidePanelFinish() {
           return !_pointerFieldIsNull(203);
         }
-        public final org.capnproto.Text.Builder getFootType() {
+        public final org.capnproto.Text.Builder getSidePanelFinish() {
           return _getPointerField(org.capnproto.Text.factory, 203, null, 0, 0);
         }
-        public final void setFootType(org.capnproto.Text.Reader value) {
+        public final void setSidePanelFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 203, value);
         }
-        public final void setFootType(String value) {
+        public final void setSidePanelFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 203, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFootType(int size) {
+        public final org.capnproto.Text.Builder initSidePanelFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 203, size);
         }
-        public final boolean hasOptionalSeatbelt() {
+        public final boolean hasSuspensionLength() {
           return !_pointerFieldIsNull(204);
         }
-        public final org.capnproto.Text.Builder getOptionalSeatbelt() {
+        public final org.capnproto.Text.Builder getSuspensionLength() {
           return _getPointerField(org.capnproto.Text.factory, 204, null, 0, 0);
         }
-        public final void setOptionalSeatbelt(org.capnproto.Text.Reader value) {
+        public final void setSuspensionLength(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 204, value);
         }
-        public final void setOptionalSeatbelt(String value) {
+        public final void setSuspensionLength(String value) {
           _setPointerField(org.capnproto.Text.factory, 204, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOptionalSeatbelt(int size) {
+        public final org.capnproto.Text.Builder initSuspensionLength(int size) {
           return _initPointerField(org.capnproto.Text.factory, 204, size);
         }
-        public final boolean hasArmLegFinish() {
+        public final boolean hasFrame() {
           return !_pointerFieldIsNull(205);
         }
-        public final org.capnproto.Text.Builder getArmLegFinish() {
+        public final org.capnproto.Text.Builder getFrame() {
           return _getPointerField(org.capnproto.Text.factory, 205, null, 0, 0);
         }
-        public final void setArmLegFinish(org.capnproto.Text.Reader value) {
+        public final void setFrame(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 205, value);
         }
-        public final void setArmLegFinish(String value) {
+        public final void setFrame(String value) {
           _setPointerField(org.capnproto.Text.factory, 205, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initArmLegFinish(int size) {
+        public final org.capnproto.Text.Builder initFrame(int size) {
           return _initPointerField(org.capnproto.Text.factory, 205, size);
         }
-        public final boolean hasLegStyle() {
+        public final boolean hasElectricalUnit() {
           return !_pointerFieldIsNull(206);
         }
-        public final org.capnproto.Text.Builder getLegStyle() {
+        public final org.capnproto.Text.Builder getElectricalUnit() {
           return _getPointerField(org.capnproto.Text.factory, 206, null, 0, 0);
         }
-        public final void setLegStyle(org.capnproto.Text.Reader value) {
+        public final void setElectricalUnit(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 206, value);
         }
-        public final void setLegStyle(String value) {
+        public final void setElectricalUnit(String value) {
           _setPointerField(org.capnproto.Text.factory, 206, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLegStyle(int size) {
+        public final org.capnproto.Text.Builder initElectricalUnit(int size) {
           return _initPointerField(org.capnproto.Text.factory, 206, size);
         }
-        public final boolean hasSeatBackColor() {
+        public final boolean hasLeftBookendColor() {
           return !_pointerFieldIsNull(207);
         }
-        public final org.capnproto.Text.Builder getSeatBackColor() {
+        public final org.capnproto.Text.Builder getLeftBookendColor() {
           return _getPointerField(org.capnproto.Text.factory, 207, null, 0, 0);
         }
-        public final void setSeatBackColor(org.capnproto.Text.Reader value) {
+        public final void setLeftBookendColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 207, value);
         }
-        public final void setSeatBackColor(String value) {
+        public final void setLeftBookendColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 207, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSeatBackColor(int size) {
+        public final org.capnproto.Text.Builder initLeftBookendColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 207, size);
         }
-        public final boolean hasTableTopType() {
+        public final boolean hasLaminateFinish() {
           return !_pointerFieldIsNull(208);
         }
-        public final org.capnproto.Text.Builder getTableTopType() {
+        public final org.capnproto.Text.Builder getLaminateFinish() {
           return _getPointerField(org.capnproto.Text.factory, 208, null, 0, 0);
         }
-        public final void setTableTopType(org.capnproto.Text.Reader value) {
+        public final void setLaminateFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 208, value);
         }
-        public final void setTableTopType(String value) {
+        public final void setLaminateFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 208, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTableTopType(int size) {
+        public final org.capnproto.Text.Builder initLaminateFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 208, size);
         }
-        public final boolean hasTabLetter() {
+        public final boolean hasCabinetColor() {
           return !_pointerFieldIsNull(209);
         }
-        public final org.capnproto.Text.Builder getTabLetter() {
+        public final org.capnproto.Text.Builder getCabinetColor() {
           return _getPointerField(org.capnproto.Text.factory, 209, null, 0, 0);
         }
-        public final void setTabLetter(org.capnproto.Text.Reader value) {
+        public final void setCabinetColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 209, value);
         }
-        public final void setTabLetter(String value) {
+        public final void setCabinetColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 209, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTabLetter(int size) {
+        public final org.capnproto.Text.Builder initCabinetColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 209, size);
         }
-        public final boolean hasGlassColor() {
+        public final boolean hasRugSize() {
           return !_pointerFieldIsNull(210);
         }
-        public final org.capnproto.Text.Builder getGlassColor() {
+        public final org.capnproto.Text.Builder getRugSize() {
           return _getPointerField(org.capnproto.Text.factory, 210, null, 0, 0);
         }
-        public final void setGlassColor(org.capnproto.Text.Reader value) {
+        public final void setRugSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 210, value);
         }
-        public final void setGlassColor(String value) {
+        public final void setRugSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 210, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initGlassColor(int size) {
+        public final org.capnproto.Text.Builder initRugSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 210, size);
         }
-        public final boolean hasRugSize() {
+        public final boolean hasStyle() {
           return !_pointerFieldIsNull(211);
         }
-        public final org.capnproto.Text.Builder getRugSize() {
+        public final org.capnproto.Text.Builder getStyle() {
           return _getPointerField(org.capnproto.Text.factory, 211, null, 0, 0);
         }
-        public final void setRugSize(org.capnproto.Text.Reader value) {
+        public final void setStyle(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 211, value);
         }
-        public final void setRugSize(String value) {
+        public final void setStyle(String value) {
           _setPointerField(org.capnproto.Text.factory, 211, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRugSize(int size) {
+        public final org.capnproto.Text.Builder initStyle(int size) {
           return _initPointerField(org.capnproto.Text.factory, 211, size);
         }
-        public final boolean hasWireSize() {
+        public final boolean hasMlbTeam() {
           return !_pointerFieldIsNull(212);
         }
-        public final org.capnproto.Text.Builder getWireSize() {
+        public final org.capnproto.Text.Builder getMlbTeam() {
           return _getPointerField(org.capnproto.Text.factory, 212, null, 0, 0);
         }
-        public final void setWireSize(org.capnproto.Text.Reader value) {
+        public final void setMlbTeam(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 212, value);
         }
-        public final void setWireSize(String value) {
+        public final void setMlbTeam(String value) {
           _setPointerField(org.capnproto.Text.factory, 212, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initWireSize(int size) {
+        public final org.capnproto.Text.Builder initMlbTeam(int size) {
           return _initPointerField(org.capnproto.Text.factory, 212, size);
         }
-        public final boolean hasTrayColor() {
+        public final boolean hasWoodFinish() {
           return !_pointerFieldIsNull(213);
         }
-        public final org.capnproto.Text.Builder getTrayColor() {
+        public final org.capnproto.Text.Builder getWoodFinish() {
           return _getPointerField(org.capnproto.Text.factory, 213, null, 0, 0);
         }
-        public final void setTrayColor(org.capnproto.Text.Reader value) {
+        public final void setWoodFinish(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 213, value);
         }
-        public final void setTrayColor(String value) {
+        public final void setWoodFinish(String value) {
           _setPointerField(org.capnproto.Text.factory, 213, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTrayColor(int size) {
+        public final org.capnproto.Text.Builder initWoodFinish(int size) {
           return _initPointerField(org.capnproto.Text.factory, 213, size);
         }
-        public final boolean hasTopMaterial() {
+        public final boolean hasMountSize() {
           return !_pointerFieldIsNull(214);
         }
-        public final org.capnproto.Text.Builder getTopMaterial() {
+        public final org.capnproto.Text.Builder getMountSize() {
           return _getPointerField(org.capnproto.Text.factory, 214, null, 0, 0);
         }
-        public final void setTopMaterial(org.capnproto.Text.Reader value) {
+        public final void setMountSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 214, value);
         }
-        public final void setTopMaterial(String value) {
+        public final void setMountSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 214, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTopMaterial(int size) {
+        public final org.capnproto.Text.Builder initMountSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 214, size);
         }
-        public final boolean hasBackPanelHeight() {
+        public final boolean hasGuideKitIncluded() {
           return !_pointerFieldIsNull(215);
         }
-        public final org.capnproto.Text.Builder getBackPanelHeight() {
+        public final org.capnproto.Text.Builder getGuideKitIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 215, null, 0, 0);
         }
-        public final void setBackPanelHeight(org.capnproto.Text.Reader value) {
+        public final void setGuideKitIncluded(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 215, value);
         }
-        public final void setBackPanelHeight(String value) {
+        public final void setGuideKitIncluded(String value) {
           _setPointerField(org.capnproto.Text.factory, 215, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initBackPanelHeight(int size) {
+        public final org.capnproto.Text.Builder initGuideKitIncluded(int size) {
           return _initPointerField(org.capnproto.Text.factory, 215, size);
         }
-        public final boolean hasLength() {
+        public final boolean hasLampType() {
           return !_pointerFieldIsNull(216);
         }
-        public final org.capnproto.Text.Builder getLength() {
+        public final org.capnproto.Text.Builder getLampType() {
           return _getPointerField(org.capnproto.Text.factory, 216, null, 0, 0);
         }
-        public final void setLength(org.capnproto.Text.Reader value) {
+        public final void setLampType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 216, value);
         }
-        public final void setLength(String value) {
+        public final void setLampType(String value) {
           _setPointerField(org.capnproto.Text.factory, 216, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLength(int size) {
+        public final org.capnproto.Text.Builder initLampType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 216, size);
         }
-        public final boolean hasRecommendedUse() {
+        public final boolean hasGlide() {
           return !_pointerFieldIsNull(217);
         }
-        public final org.capnproto.Text.Builder getRecommendedUse() {
+        public final org.capnproto.Text.Builder getGlide() {
           return _getPointerField(org.capnproto.Text.factory, 217, null, 0, 0);
         }
-        public final void setRecommendedUse(org.capnproto.Text.Reader value) {
+        public final void setGlide(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 217, value);
         }
-        public final void setRecommendedUse(String value) {
+        public final void setGlide(String value) {
           _setPointerField(org.capnproto.Text.factory, 217, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initRecommendedUse(int size) {
+        public final org.capnproto.Text.Builder initGlide(int size) {
           return _initPointerField(org.capnproto.Text.factory, 217, size);
         }
-        public final boolean hasLockerColor() {
+        public final boolean hasInterfaceType() {
           return !_pointerFieldIsNull(218);
         }
-        public final org.capnproto.Text.Builder getLockerColor() {
+        public final org.capnproto.Text.Builder getInterfaceType() {
           return _getPointerField(org.capnproto.Text.factory, 218, null, 0, 0);
         }
-        public final void setLockerColor(org.capnproto.Text.Reader value) {
+        public final void setInterfaceType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 218, value);
         }
-        public final void setLockerColor(String value) {
+        public final void setInterfaceType(String value) {
           _setPointerField(org.capnproto.Text.factory, 218, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initLockerColor(int size) {
+        public final org.capnproto.Text.Builder initInterfaceType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 218, size);
         }
-        public final boolean hasOrientation() {
+        public final boolean hasUpholsteryCasters() {
           return !_pointerFieldIsNull(219);
         }
-        public final org.capnproto.Text.Builder getOrientation() {
+        public final org.capnproto.Text.Builder getUpholsteryCasters() {
           return _getPointerField(org.capnproto.Text.factory, 219, null, 0, 0);
         }
-        public final void setOrientation(org.capnproto.Text.Reader value) {
+        public final void setUpholsteryCasters(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 219, value);
         }
-        public final void setOrientation(String value) {
+        public final void setUpholsteryCasters(String value) {
           _setPointerField(org.capnproto.Text.factory, 219, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initOrientation(int size) {
+        public final org.capnproto.Text.Builder initUpholsteryCasters(int size) {
           return _initPointerField(org.capnproto.Text.factory, 219, size);
         }
-        public final boolean hasQuantity() {
+        public final boolean hasHasAdapterKit() {
           return !_pointerFieldIsNull(220);
         }
-        public final org.capnproto.Text.Builder getQuantity() {
+        public final org.capnproto.Text.Builder getHasAdapterKit() {
           return _getPointerField(org.capnproto.Text.factory, 220, null, 0, 0);
         }
-        public final void setQuantity(org.capnproto.Text.Reader value) {
+        public final void setHasAdapterKit(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 220, value);
         }
-        public final void setQuantity(String value) {
+        public final void setHasAdapterKit(String value) {
           _setPointerField(org.capnproto.Text.factory, 220, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initQuantity(int size) {
+        public final org.capnproto.Text.Builder initHasAdapterKit(int size) {
           return _initPointerField(org.capnproto.Text.factory, 220, size);
         }
-        public final boolean hasMagnification() {
+        public final boolean hasShadeColor() {
           return !_pointerFieldIsNull(221);
         }
-        public final org.capnproto.Text.Builder getMagnification() {
+        public final org.capnproto.Text.Builder getShadeColor() {
           return _getPointerField(org.capnproto.Text.factory, 221, null, 0, 0);
         }
-        public final void setMagnification(org.capnproto.Text.Reader value) {
+        public final void setShadeColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 221, value);
         }
-        public final void setMagnification(String value) {
+        public final void setShadeColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 221, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMagnification(int size) {
+        public final org.capnproto.Text.Builder initShadeColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 221, size);
         }
-        public final boolean hasDrawerColor() {
+        public final boolean hasCut() {
           return !_pointerFieldIsNull(222);
         }
-        public final org.capnproto.Text.Builder getDrawerColor() {
+        public final org.capnproto.Text.Builder getCut() {
           return _getPointerField(org.capnproto.Text.factory, 222, null, 0, 0);
         }
-        public final void setDrawerColor(org.capnproto.Text.Reader value) {
+        public final void setCut(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 222, value);
         }
-        public final void setDrawerColor(String value) {
+        public final void setCut(String value) {
           _setPointerField(org.capnproto.Text.factory, 222, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDrawerColor(int size) {
+        public final org.capnproto.Text.Builder initCut(int size) {
           return _initPointerField(org.capnproto.Text.factory, 222, size);
         }
-        public final boolean hasElectricalUnit() {
+        public final boolean hasSurfaceColor() {
           return !_pointerFieldIsNull(223);
         }
-        public final org.capnproto.Text.Builder getElectricalUnit() {
+        public final org.capnproto.Text.Builder getSurfaceColor() {
           return _getPointerField(org.capnproto.Text.factory, 223, null, 0, 0);
         }
-        public final void setElectricalUnit(org.capnproto.Text.Reader value) {
+        public final void setSurfaceColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 223, value);
         }
-        public final void setElectricalUnit(String value) {
+        public final void setSurfaceColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 223, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initElectricalUnit(int size) {
+        public final org.capnproto.Text.Builder initSurfaceColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 223, size);
         }
-        public final boolean hasNumberOfLights() {
+        public final boolean hasPackag() {
           return !_pointerFieldIsNull(224);
         }
-        public final org.capnproto.Text.Builder getNumberOfLights() {
+        public final org.capnproto.Text.Builder getPackag() {
           return _getPointerField(org.capnproto.Text.factory, 224, null, 0, 0);
         }
-        public final void setNumberOfLights(org.capnproto.Text.Reader value) {
+        public final void setPackag(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 224, value);
         }
-        public final void setNumberOfLights(String value) {
+        public final void setPackag(String value) {
           _setPointerField(org.capnproto.Text.factory, 224, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfLights(int size) {
+        public final org.capnproto.Text.Builder initPackag(int size) {
           return _initPointerField(org.capnproto.Text.factory, 224, size);
         }
-        public final boolean hasClothingSize() {
+        public final boolean hasEdgeBanding() {
           return !_pointerFieldIsNull(225);
         }
-        public final org.capnproto.Text.Builder getClothingSize() {
+        public final org.capnproto.Text.Builder getEdgeBanding() {
           return _getPointerField(org.capnproto.Text.factory, 225, null, 0, 0);
         }
-        public final void setClothingSize(org.capnproto.Text.Reader value) {
+        public final void setEdgeBanding(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 225, value);
         }
-        public final void setClothingSize(String value) {
+        public final void setEdgeBanding(String value) {
           _setPointerField(org.capnproto.Text.factory, 225, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initClothingSize(int size) {
+        public final org.capnproto.Text.Builder initEdgeBanding(int size) {
           return _initPointerField(org.capnproto.Text.factory, 225, size);
         }
-        public final boolean hasHasFoamInterior() {
+        public final boolean hasSize() {
           return !_pointerFieldIsNull(226);
         }
-        public final org.capnproto.Text.Builder getHasFoamInterior() {
+        public final org.capnproto.Text.Builder getSize() {
           return _getPointerField(org.capnproto.Text.factory, 226, null, 0, 0);
         }
-        public final void setHasFoamInterior(org.capnproto.Text.Reader value) {
+        public final void setSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 226, value);
         }
-        public final void setHasFoamInterior(String value) {
+        public final void setSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 226, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHasFoamInterior(int size) {
+        public final org.capnproto.Text.Builder initSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 226, size);
         }
-        public final boolean hasNumberOfSpeakers() {
+        public final boolean hasSeatColor() {
           return !_pointerFieldIsNull(227);
         }
-        public final org.capnproto.Text.Builder getNumberOfSpeakers() {
+        public final org.capnproto.Text.Builder getSeatColor() {
           return _getPointerField(org.capnproto.Text.factory, 227, null, 0, 0);
         }
-        public final void setNumberOfSpeakers(org.capnproto.Text.Reader value) {
+        public final void setSeatColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 227, value);
         }
-        public final void setNumberOfSpeakers(String value) {
+        public final void setSeatColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 227, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNumberOfSpeakers(int size) {
+        public final org.capnproto.Text.Builder initSeatColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 227, size);
         }
-        public final boolean hasEdgeBanding() {
+        public final boolean hasFabricMaterial() {
           return !_pointerFieldIsNull(228);
         }
-        public final org.capnproto.Text.Builder getEdgeBanding() {
+        public final org.capnproto.Text.Builder getFabricMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 228, null, 0, 0);
         }
-        public final void setEdgeBanding(org.capnproto.Text.Reader value) {
+        public final void setFabricMaterial(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 228, value);
         }
-        public final void setEdgeBanding(String value) {
+        public final void setFabricMaterial(String value) {
           _setPointerField(org.capnproto.Text.factory, 228, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initEdgeBanding(int size) {
+        public final org.capnproto.Text.Builder initFabricMaterial(int size) {
           return _initPointerField(org.capnproto.Text.factory, 228, size);
         }
-        public final boolean hasFabric() {
+        public final boolean hasLegHeight() {
           return !_pointerFieldIsNull(229);
         }
-        public final org.capnproto.Text.Builder getFabric() {
+        public final org.capnproto.Text.Builder getLegHeight() {
           return _getPointerField(org.capnproto.Text.factory, 229, null, 0, 0);
         }
-        public final void setFabric(org.capnproto.Text.Reader value) {
+        public final void setLegHeight(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 229, value);
         }
-        public final void setFabric(String value) {
+        public final void setLegHeight(String value) {
           _setPointerField(org.capnproto.Text.factory, 229, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFabric(int size) {
+        public final org.capnproto.Text.Builder initLegHeight(int size) {
           return _initPointerField(org.capnproto.Text.factory, 229, size);
         }
-        public final boolean hasShipping() {
+        public final boolean hasLockType() {
           return !_pointerFieldIsNull(230);
         }
-        public final org.capnproto.Text.Builder getShipping() {
+        public final org.capnproto.Text.Builder getLockType() {
           return _getPointerField(org.capnproto.Text.factory, 230, null, 0, 0);
         }
-        public final void setShipping(org.capnproto.Text.Reader value) {
+        public final void setLockType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 230, value);
         }
-        public final void setShipping(String value) {
+        public final void setLockType(String value) {
           _setPointerField(org.capnproto.Text.factory, 230, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShipping(int size) {
+        public final org.capnproto.Text.Builder initLockType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 230, size);
         }
-        public final boolean hasDimensionsWXH() {
+        public final boolean hasProduct() {
           return !_pointerFieldIsNull(231);
         }
-        public final org.capnproto.Text.Builder getDimensionsWXH() {
+        public final org.capnproto.Text.Builder getProduct() {
           return _getPointerField(org.capnproto.Text.factory, 231, null, 0, 0);
         }
-        public final void setDimensionsWXH(org.capnproto.Text.Reader value) {
+        public final void setProduct(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 231, value);
         }
-        public final void setDimensionsWXH(String value) {
+        public final void setProduct(String value) {
           _setPointerField(org.capnproto.Text.factory, 231, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDimensionsWXH(int size) {
+        public final org.capnproto.Text.Builder initProduct(int size) {
           return _initPointerField(org.capnproto.Text.factory, 231, size);
         }
-        public final boolean hasCollege() {
+        public final boolean hasDimensionsWXH() {
           return !_pointerFieldIsNull(232);
         }
-        public final org.capnproto.Text.Builder getCollege() {
+        public final org.capnproto.Text.Builder getDimensionsWXH() {
           return _getPointerField(org.capnproto.Text.factory, 232, null, 0, 0);
         }
-        public final void setCollege(org.capnproto.Text.Reader value) {
+        public final void setDimensionsWXH(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 232, value);
         }
-        public final void setCollege(String value) {
+        public final void setDimensionsWXH(String value) {
           _setPointerField(org.capnproto.Text.factory, 232, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCollege(int size) {
+        public final org.capnproto.Text.Builder initDimensionsWXH(int size) {
           return _initPointerField(org.capnproto.Text.factory, 232, size);
         }
-        public final boolean hasProduct() {
+        public final boolean hasDrawerColor() {
           return !_pointerFieldIsNull(233);
         }
-        public final org.capnproto.Text.Builder getProduct() {
+        public final org.capnproto.Text.Builder getDrawerColor() {
           return _getPointerField(org.capnproto.Text.factory, 233, null, 0, 0);
         }
-        public final void setProduct(org.capnproto.Text.Reader value) {
+        public final void setDrawerColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 233, value);
         }
-        public final void setProduct(String value) {
+        public final void setDrawerColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 233, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProduct(int size) {
+        public final org.capnproto.Text.Builder initDrawerColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 233, size);
         }
-        public final boolean hasTab() {
+        public final boolean hasHasMirror() {
           return !_pointerFieldIsNull(234);
         }
-        public final org.capnproto.Text.Builder getTab() {
+        public final org.capnproto.Text.Builder getHasMirror() {
           return _getPointerField(org.capnproto.Text.factory, 234, null, 0, 0);
         }
-        public final void setTab(org.capnproto.Text.Reader value) {
+        public final void setHasMirror(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 234, value);
         }
-        public final void setTab(String value) {
+        public final void setHasMirror(String value) {
           _setPointerField(org.capnproto.Text.factory, 234, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initTab(int size) {
+        public final org.capnproto.Text.Builder initHasMirror(int size) {
           return _initPointerField(org.capnproto.Text.factory, 234, size);
         }
-        public final boolean hasCushioned() {
+        public final boolean hasLeatherColor() {
           return !_pointerFieldIsNull(235);
         }
-        public final org.capnproto.Text.Builder getCushioned() {
+        public final org.capnproto.Text.Builder getLeatherColor() {
           return _getPointerField(org.capnproto.Text.factory, 235, null, 0, 0);
         }
-        public final void setCushioned(org.capnproto.Text.Reader value) {
+        public final void setLeatherColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 235, value);
         }
-        public final void setCushioned(String value) {
+        public final void setLeatherColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 235, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCushioned(int size) {
+        public final org.capnproto.Text.Builder initLeatherColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 235, size);
         }
-        public final boolean hasHardwareFinish() {
+        public final boolean hasFootType() {
           return !_pointerFieldIsNull(236);
         }
-        public final org.capnproto.Text.Builder getHardwareFinish() {
+        public final org.capnproto.Text.Builder getFootType() {
           return _getPointerField(org.capnproto.Text.factory, 236, null, 0, 0);
         }
-        public final void setHardwareFinish(org.capnproto.Text.Reader value) {
+        public final void setFootType(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 236, value);
         }
-        public final void setHardwareFinish(String value) {
+        public final void setFootType(String value) {
           _setPointerField(org.capnproto.Text.factory, 236, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initHardwareFinish(int size) {
+        public final org.capnproto.Text.Builder initFootType(int size) {
           return _initPointerField(org.capnproto.Text.factory, 236, size);
         }
-        public final boolean hasMicrophoneType() {
+        public final boolean hasDrop() {
           return !_pointerFieldIsNull(237);
         }
-        public final org.capnproto.Text.Builder getMicrophoneType() {
+        public final org.capnproto.Text.Builder getDrop() {
           return _getPointerField(org.capnproto.Text.factory, 237, null, 0, 0);
         }
-        public final void setMicrophoneType(org.capnproto.Text.Reader value) {
+        public final void setDrop(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 237, value);
         }
-        public final void setMicrophoneType(String value) {
+        public final void setDrop(String value) {
           _setPointerField(org.capnproto.Text.factory, 237, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initMicrophoneType(int size) {
+        public final org.capnproto.Text.Builder initDrop(int size) {
           return _initPointerField(org.capnproto.Text.factory, 237, size);
         }
-        public final boolean hasItemType() {
+        public final boolean hasWidth() {
           return !_pointerFieldIsNull(238);
         }
-        public final org.capnproto.Text.Builder getItemType() {
+        public final org.capnproto.Text.Builder getWidth() {
           return _getPointerField(org.capnproto.Text.factory, 238, null, 0, 0);
         }
-        public final void setItemType(org.capnproto.Text.Reader value) {
+        public final void setWidth(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 238, value);
         }
-        public final void setItemType(String value) {
+        public final void setWidth(String value) {
           _setPointerField(org.capnproto.Text.factory, 238, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initItemType(int size) {
+        public final org.capnproto.Text.Builder initWidth(int size) {
           return _initPointerField(org.capnproto.Text.factory, 238, size);
         }
-        public final boolean hasSeatMaterial() {
+        public final boolean hasBedSize() {
           return !_pointerFieldIsNull(239);
         }
-        public final org.capnproto.Text.Builder getSeatMaterial() {
+        public final org.capnproto.Text.Builder getBedSize() {
           return _getPointerField(org.capnproto.Text.factory, 239, null, 0, 0);
         }
-        public final void setSeatMaterial(org.capnproto.Text.Reader value) {
+        public final void setBedSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 239, value);
         }
-        public final void setSeatMaterial(String value) {
+        public final void setBedSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 239, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSeatMaterial(int size) {
+        public final org.capnproto.Text.Builder initBedSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 239, size);
         }
-        public final boolean hasProfile() {
+        public final boolean hasSheftSize() {
           return !_pointerFieldIsNull(240);
         }
-        public final org.capnproto.Text.Builder getProfile() {
+        public final org.capnproto.Text.Builder getSheftSize() {
           return _getPointerField(org.capnproto.Text.factory, 240, null, 0, 0);
         }
-        public final void setProfile(org.capnproto.Text.Reader value) {
+        public final void setSheftSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 240, value);
         }
-        public final void setProfile(String value) {
+        public final void setSheftSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 240, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProfile(int size) {
+        public final org.capnproto.Text.Builder initSheftSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 240, size);
         }
-        public final boolean hasDropAdjustmentLength() {
+        public final boolean hasQuantity() {
           return !_pointerFieldIsNull(241);
         }
-        public final org.capnproto.Text.Builder getDropAdjustmentLength() {
+        public final org.capnproto.Text.Builder getQuantity() {
           return _getPointerField(org.capnproto.Text.factory, 241, null, 0, 0);
         }
-        public final void setDropAdjustmentLength(org.capnproto.Text.Reader value) {
+        public final void setQuantity(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 241, value);
         }
-        public final void setDropAdjustmentLength(String value) {
+        public final void setQuantity(String value) {
           _setPointerField(org.capnproto.Text.factory, 241, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDropAdjustmentLength(int size) {
+        public final org.capnproto.Text.Builder initQuantity(int size) {
           return _initPointerField(org.capnproto.Text.factory, 241, size);
         }
-        public final boolean hasDoorType() {
+        public final boolean hasScopeSize() {
           return !_pointerFieldIsNull(242);
         }
-        public final org.capnproto.Text.Builder getDoorType() {
+        public final org.capnproto.Text.Builder getScopeSize() {
           return _getPointerField(org.capnproto.Text.factory, 242, null, 0, 0);
         }
-        public final void setDoorType(org.capnproto.Text.Reader value) {
+        public final void setScopeSize(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 242, value);
         }
-        public final void setDoorType(String value) {
+        public final void setScopeSize(String value) {
           _setPointerField(org.capnproto.Text.factory, 242, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDoorType(int size) {
+        public final org.capnproto.Text.Builder initScopeSize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 242, size);
         }
-        public final boolean hasShelfColor() {
+        public final boolean hasEdgeColor() {
           return !_pointerFieldIsNull(243);
         }
-        public final org.capnproto.Text.Builder getShelfColor() {
+        public final org.capnproto.Text.Builder getEdgeColor() {
           return _getPointerField(org.capnproto.Text.factory, 243, null, 0, 0);
         }
-        public final void setShelfColor(org.capnproto.Text.Reader value) {
+        public final void setEdgeColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 243, value);
         }
-        public final void setShelfColor(String value) {
+        public final void setEdgeColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 243, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initShelfColor(int size) {
+        public final org.capnproto.Text.Builder initEdgeColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 243, size);
         }
-        public final boolean hasEdgeColor() {
+        public final boolean hasWatts() {
           return !_pointerFieldIsNull(244);
         }
-        public final org.capnproto.Text.Builder getEdgeColor() {
+        public final org.capnproto.Text.Builder getWatts() {
           return _getPointerField(org.capnproto.Text.factory, 244, null, 0, 0);
         }
-        public final void setEdgeColor(org.capnproto.Text.Reader value) {
+        public final void setWatts(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 244, value);
         }
-        public final void setEdgeColor(String value) {
+        public final void setWatts(String value) {
           _setPointerField(org.capnproto.Text.factory, 244, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initEdgeColor(int size) {
+        public final org.capnproto.Text.Builder initWatts(int size) {
           return _initPointerField(org.capnproto.Text.factory, 244, size);
         }
       }
@@ -4678,661 +4678,661 @@ public final class WalmartCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasRackSpaces() {
+        public boolean hasVehicleType() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getRackSpaces() {
+        public org.capnproto.Text.Reader getVehicleType() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasAmps() {
+        public boolean hasBrightness() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getAmps() {
+        public org.capnproto.Text.Reader getBrightness() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
-        public boolean hasPattern() {
+        public boolean hasLightBulbType() {
           return !_pointerFieldIsNull(2);
         }
-        public org.capnproto.Text.Reader getPattern() {
+        public org.capnproto.Text.Reader getLightBulbType() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
-        public boolean hasTrimColor() {
+        public boolean hasShape() {
           return !_pointerFieldIsNull(3);
         }
-        public org.capnproto.Text.Reader getTrimColor() {
+        public org.capnproto.Text.Reader getShape() {
           return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
 
-        public boolean hasEdgeFinish() {
+        public boolean hasGender() {
           return !_pointerFieldIsNull(4);
         }
-        public org.capnproto.Text.Reader getEdgeFinish() {
+        public org.capnproto.Text.Reader getGender() {
           return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
 
-        public boolean hasWallMountable() {
+        public boolean hasRackDepth() {
           return !_pointerFieldIsNull(5);
         }
-        public org.capnproto.Text.Reader getWallMountable() {
+        public org.capnproto.Text.Reader getRackDepth() {
           return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
 
-        public boolean hasWeight() {
+        public boolean hasDepth() {
           return !_pointerFieldIsNull(6);
         }
-        public org.capnproto.Text.Reader getWeight() {
+        public org.capnproto.Text.Reader getDepth() {
           return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
         }
 
-        public boolean hasCableLength() {
+        public boolean hasVolts() {
           return !_pointerFieldIsNull(7);
         }
-        public org.capnproto.Text.Reader getCableLength() {
+        public org.capnproto.Text.Reader getVolts() {
           return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
         }
 
-        public boolean hasBinColor() {
+        public boolean hasBins() {
           return !_pointerFieldIsNull(8);
         }
-        public org.capnproto.Text.Reader getBinColor() {
+        public org.capnproto.Text.Reader getBins() {
           return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
 
-        public boolean hasTopColor() {
+        public boolean hasInkColor() {
           return !_pointerFieldIsNull(9);
         }
-        public org.capnproto.Text.Reader getTopColor() {
+        public org.capnproto.Text.Reader getInkColor() {
           return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
         }
 
-        public boolean hasPersonalizable() {
+        public boolean hasOutletPosition() {
           return !_pointerFieldIsNull(10);
         }
-        public org.capnproto.Text.Reader getPersonalizable() {
+        public org.capnproto.Text.Reader getOutletPosition() {
           return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
         }
 
-        public boolean hasShadeColor() {
+        public boolean hasNumberOfDriveBays() {
           return !_pointerFieldIsNull(11);
         }
-        public org.capnproto.Text.Reader getShadeColor() {
+        public org.capnproto.Text.Reader getNumberOfDriveBays() {
           return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
 
-        public boolean hasDiameter() {
+        public boolean hasCollege() {
           return !_pointerFieldIsNull(12);
         }
-        public org.capnproto.Text.Reader getDiameter() {
+        public org.capnproto.Text.Reader getCollege() {
           return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
         }
 
-        public boolean hasBackPanelColor() {
+        public boolean hasCableLength() {
           return !_pointerFieldIsNull(13);
         }
-        public org.capnproto.Text.Reader getBackPanelColor() {
+        public org.capnproto.Text.Reader getCableLength() {
           return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
         }
 
-        public boolean hasType() {
+        public boolean hasBaseFinish() {
           return !_pointerFieldIsNull(14);
         }
-        public org.capnproto.Text.Reader getType() {
+        public org.capnproto.Text.Reader getBaseFinish() {
           return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
         }
 
-        public boolean hasTopPanelDoors() {
+        public boolean hasSeatMaterial() {
           return !_pointerFieldIsNull(15);
         }
-        public org.capnproto.Text.Reader getTopPanelDoors() {
+        public org.capnproto.Text.Reader getSeatMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
         }
 
-        public boolean hasRightBookendColor() {
+        public boolean hasTableTop() {
           return !_pointerFieldIsNull(16);
         }
-        public org.capnproto.Text.Reader getRightBookendColor() {
+        public org.capnproto.Text.Reader getTableTop() {
           return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
         }
 
-        public boolean hasOpening() {
+        public boolean hasStudSize() {
           return !_pointerFieldIsNull(17);
         }
-        public org.capnproto.Text.Reader getOpening() {
+        public org.capnproto.Text.Reader getStudSize() {
           return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
         }
 
-        public boolean hasWoodenFrameFinish() {
+        public boolean hasSideFinish() {
           return !_pointerFieldIsNull(18);
         }
-        public org.capnproto.Text.Reader getWoodenFrameFinish() {
+        public org.capnproto.Text.Reader getSideFinish() {
           return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
         }
 
-        public boolean hasTabletopSize() {
+        public boolean hasTrimColor() {
           return !_pointerFieldIsNull(19);
         }
-        public org.capnproto.Text.Reader getTabletopSize() {
+        public org.capnproto.Text.Reader getTrimColor() {
           return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
         }
 
-        public boolean hasRackDepth() {
+        public boolean hasItemsIncluded() {
           return !_pointerFieldIsNull(20);
         }
-        public org.capnproto.Text.Reader getRackDepth() {
+        public org.capnproto.Text.Reader getItemsIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
         }
 
-        public boolean hasFeatures() {
+        public boolean hasOptionalSeatbelt() {
           return !_pointerFieldIsNull(21);
         }
-        public org.capnproto.Text.Reader getFeatures() {
+        public org.capnproto.Text.Reader getOptionalSeatbelt() {
           return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
         }
 
-        public boolean hasNumberOfRackUnits() {
+        public boolean hasLegColor() {
           return !_pointerFieldIsNull(22);
         }
-        public org.capnproto.Text.Reader getNumberOfRackUnits() {
+        public org.capnproto.Text.Reader getLegColor() {
           return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
         }
 
-        public boolean hasCabinetColor() {
+        public boolean hasFrontAndBackPanel() {
           return !_pointerFieldIsNull(23);
         }
-        public org.capnproto.Text.Reader getCabinetColor() {
+        public org.capnproto.Text.Reader getFrontAndBackPanel() {
           return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
         }
 
-        public boolean hasCut() {
+        public boolean hasDoorType() {
           return !_pointerFieldIsNull(24);
         }
-        public org.capnproto.Text.Reader getCut() {
+        public org.capnproto.Text.Reader getDoorType() {
           return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
         }
 
-        public boolean hasArms() {
+        public boolean hasDimensionsWXDXH() {
           return !_pointerFieldIsNull(25);
         }
-        public org.capnproto.Text.Reader getArms() {
+        public org.capnproto.Text.Reader getDimensionsWXDXH() {
           return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
         }
 
-        public boolean hasActualColor() {
+        public boolean hasCharacter() {
           return !_pointerFieldIsNull(26);
         }
-        public org.capnproto.Text.Reader getActualColor() {
+        public org.capnproto.Text.Reader getCharacter() {
           return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
         }
 
-        public boolean hasSideFinish() {
+        public boolean hasComponents() {
           return !_pointerFieldIsNull(27);
         }
-        public org.capnproto.Text.Reader getSideFinish() {
+        public org.capnproto.Text.Reader getComponents() {
           return _getPointerField(org.capnproto.Text.factory, 27, null, 0, 0);
         }
 
-        public boolean hasNflTeam() {
+        public boolean hasAspectRatio() {
           return !_pointerFieldIsNull(28);
         }
-        public org.capnproto.Text.Reader getNflTeam() {
+        public org.capnproto.Text.Reader getAspectRatio() {
           return _getPointerField(org.capnproto.Text.factory, 28, null, 0, 0);
         }
 
-        public boolean hasVolts() {
+        public boolean hasOffsetDistance() {
           return !_pointerFieldIsNull(29);
         }
-        public org.capnproto.Text.Reader getVolts() {
+        public org.capnproto.Text.Reader getOffsetDistance() {
           return _getPointerField(org.capnproto.Text.factory, 29, null, 0, 0);
         }
 
-        public boolean hasMlbTeam() {
+        public boolean hasTeam() {
           return !_pointerFieldIsNull(30);
         }
-        public org.capnproto.Text.Reader getMlbTeam() {
+        public org.capnproto.Text.Reader getTeam() {
           return _getPointerField(org.capnproto.Text.factory, 30, null, 0, 0);
         }
 
-        public boolean hasHasMirror() {
+        public boolean hasProfile() {
           return !_pointerFieldIsNull(31);
         }
-        public org.capnproto.Text.Reader getHasMirror() {
+        public org.capnproto.Text.Reader getProfile() {
           return _getPointerField(org.capnproto.Text.factory, 31, null, 0, 0);
         }
 
-        public boolean hasSizeWXDXH() {
+        public boolean hasLegs() {
           return !_pointerFieldIsNull(32);
         }
-        public org.capnproto.Text.Reader getSizeWXDXH() {
+        public org.capnproto.Text.Reader getLegs() {
           return _getPointerField(org.capnproto.Text.factory, 32, null, 0, 0);
         }
 
-        public boolean hasAssembly() {
+        public boolean hasStorageAccessories() {
           return !_pointerFieldIsNull(33);
         }
-        public org.capnproto.Text.Reader getAssembly() {
+        public org.capnproto.Text.Reader getStorageAccessories() {
           return _getPointerField(org.capnproto.Text.factory, 33, null, 0, 0);
         }
 
-        public boolean hasSportsLeague() {
+        public boolean hasRearDoor() {
           return !_pointerFieldIsNull(34);
         }
-        public org.capnproto.Text.Reader getSportsLeague() {
+        public org.capnproto.Text.Reader getRearDoor() {
           return _getPointerField(org.capnproto.Text.factory, 34, null, 0, 0);
         }
 
-        public boolean hasFinish() {
+        public boolean hasTrim() {
           return !_pointerFieldIsNull(35);
         }
-        public org.capnproto.Text.Reader getFinish() {
+        public org.capnproto.Text.Reader getTrim() {
           return _getPointerField(org.capnproto.Text.factory, 35, null, 0, 0);
         }
 
-        public boolean hasCustomInterface() {
+        public boolean hasDimensions() {
           return !_pointerFieldIsNull(36);
         }
-        public org.capnproto.Text.Reader getCustomInterface() {
+        public org.capnproto.Text.Reader getDimensions() {
           return _getPointerField(org.capnproto.Text.factory, 36, null, 0, 0);
         }
 
-        public boolean hasGlide() {
+        public boolean hasCustomInterface() {
           return !_pointerFieldIsNull(37);
         }
-        public org.capnproto.Text.Reader getGlide() {
+        public org.capnproto.Text.Reader getCustomInterface() {
           return _getPointerField(org.capnproto.Text.factory, 37, null, 0, 0);
         }
 
-        public boolean hasNcaaTeam() {
+        public boolean hasBinDimensions() {
           return !_pointerFieldIsNull(38);
         }
-        public org.capnproto.Text.Reader getNcaaTeam() {
+        public org.capnproto.Text.Reader getBinDimensions() {
           return _getPointerField(org.capnproto.Text.factory, 38, null, 0, 0);
         }
 
-        public boolean hasCompatibleDevices() {
+        public boolean hasNumberOfSpeakers() {
           return !_pointerFieldIsNull(39);
         }
-        public org.capnproto.Text.Reader getCompatibleDevices() {
+        public org.capnproto.Text.Reader getNumberOfSpeakers() {
           return _getPointerField(org.capnproto.Text.factory, 39, null, 0, 0);
         }
 
-        public boolean hasInkColor() {
+        public boolean hasAmps() {
           return !_pointerFieldIsNull(40);
         }
-        public org.capnproto.Text.Reader getInkColor() {
+        public org.capnproto.Text.Reader getAmps() {
           return _getPointerField(org.capnproto.Text.factory, 40, null, 0, 0);
         }
 
-        public boolean hasPoleHeight() {
+        public boolean hasOrentation() {
           return !_pointerFieldIsNull(41);
         }
-        public org.capnproto.Text.Reader getPoleHeight() {
+        public org.capnproto.Text.Reader getOrentation() {
           return _getPointerField(org.capnproto.Text.factory, 41, null, 0, 0);
         }
 
-        public boolean hasScopeSize() {
+        public boolean hasGauge() {
           return !_pointerFieldIsNull(42);
         }
-        public org.capnproto.Text.Reader getScopeSize() {
+        public org.capnproto.Text.Reader getGauge() {
           return _getPointerField(org.capnproto.Text.factory, 42, null, 0, 0);
         }
 
-        public boolean hasAssembledProductHeight() {
+        public boolean hasSeatBackColor() {
           return !_pointerFieldIsNull(43);
         }
-        public org.capnproto.Text.Reader getAssembledProductHeight() {
+        public org.capnproto.Text.Reader getSeatBackColor() {
           return _getPointerField(org.capnproto.Text.factory, 43, null, 0, 0);
         }
 
-        public boolean hasLightBulbColor() {
+        public boolean hasAssemblyRequired() {
           return !_pointerFieldIsNull(44);
         }
-        public org.capnproto.Text.Reader getLightBulbColor() {
+        public org.capnproto.Text.Reader getAssemblyRequired() {
           return _getPointerField(org.capnproto.Text.factory, 44, null, 0, 0);
         }
 
-        public boolean hasReticle() {
+        public boolean hasPanSize() {
           return !_pointerFieldIsNull(45);
         }
-        public org.capnproto.Text.Reader getReticle() {
+        public org.capnproto.Text.Reader getPanSize() {
           return _getPointerField(org.capnproto.Text.factory, 45, null, 0, 0);
         }
 
-        public boolean hasLegHeightGlideStyle() {
+        public boolean hasNumberOfPads() {
           return !_pointerFieldIsNull(46);
         }
-        public org.capnproto.Text.Reader getLegHeightGlideStyle() {
+        public org.capnproto.Text.Reader getNumberOfPads() {
           return _getPointerField(org.capnproto.Text.factory, 46, null, 0, 0);
         }
 
-        public boolean hasFrameFinish() {
+        public boolean hasPanelColor() {
           return !_pointerFieldIsNull(47);
         }
-        public org.capnproto.Text.Reader getFrameFinish() {
+        public org.capnproto.Text.Reader getPanelColor() {
           return _getPointerField(org.capnproto.Text.factory, 47, null, 0, 0);
         }
 
-        public boolean hasEarPadMaterial() {
+        public boolean hasLampChanger() {
           return !_pointerFieldIsNull(48);
         }
-        public org.capnproto.Text.Reader getEarPadMaterial() {
+        public org.capnproto.Text.Reader getLampChanger() {
           return _getPointerField(org.capnproto.Text.factory, 48, null, 0, 0);
         }
 
-        public boolean hasFlavor() {
+        public boolean hasBacking() {
           return !_pointerFieldIsNull(49);
         }
-        public org.capnproto.Text.Reader getFlavor() {
+        public org.capnproto.Text.Reader getBacking() {
           return _getPointerField(org.capnproto.Text.factory, 49, null, 0, 0);
         }
 
-        public boolean hasNumberOfPieces() {
+        public boolean hasRightBookendColor() {
           return !_pointerFieldIsNull(50);
         }
-        public org.capnproto.Text.Reader getNumberOfPieces() {
+        public org.capnproto.Text.Reader getRightBookendColor() {
           return _getPointerField(org.capnproto.Text.factory, 50, null, 0, 0);
         }
 
-        public boolean hasWoodFinish() {
+        public boolean hasOpening() {
           return !_pointerFieldIsNull(51);
         }
-        public org.capnproto.Text.Reader getWoodFinish() {
+        public org.capnproto.Text.Reader getOpening() {
           return _getPointerField(org.capnproto.Text.factory, 51, null, 0, 0);
         }
 
-        public boolean hasModel() {
+        public boolean hasTransmitterIncluded() {
           return !_pointerFieldIsNull(52);
         }
-        public org.capnproto.Text.Reader getModel() {
+        public org.capnproto.Text.Reader getTransmitterIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 52, null, 0, 0);
         }
 
-        public boolean hasResistanceRange() {
+        public boolean hasSeatFrameColor() {
           return !_pointerFieldIsNull(53);
         }
-        public org.capnproto.Text.Reader getResistanceRange() {
+        public org.capnproto.Text.Reader getSeatFrameColor() {
           return _getPointerField(org.capnproto.Text.factory, 53, null, 0, 0);
         }
 
-        public boolean hasBaseColor() {
+        public boolean hasMapRail() {
           return !_pointerFieldIsNull(54);
         }
-        public org.capnproto.Text.Reader getBaseColor() {
+        public org.capnproto.Text.Reader getMapRail() {
           return _getPointerField(org.capnproto.Text.factory, 54, null, 0, 0);
         }
 
-        public boolean hasRackSize() {
+        public boolean hasOrientation() {
           return !_pointerFieldIsNull(55);
         }
-        public org.capnproto.Text.Reader getRackSize() {
+        public org.capnproto.Text.Reader getOrientation() {
           return _getPointerField(org.capnproto.Text.factory, 55, null, 0, 0);
         }
 
-        public boolean hasWidth() {
+        public boolean hasAmount() {
           return !_pointerFieldIsNull(56);
         }
-        public org.capnproto.Text.Reader getWidth() {
+        public org.capnproto.Text.Reader getAmount() {
           return _getPointerField(org.capnproto.Text.factory, 56, null, 0, 0);
         }
 
-        public boolean hasLegs() {
+        public boolean hasBaseColor() {
           return !_pointerFieldIsNull(57);
         }
-        public org.capnproto.Text.Reader getLegs() {
+        public org.capnproto.Text.Reader getBaseColor() {
           return _getPointerField(org.capnproto.Text.factory, 57, null, 0, 0);
         }
 
-        public boolean hasNumberOfMounts() {
+        public boolean hasArms() {
           return !_pointerFieldIsNull(58);
         }
-        public org.capnproto.Text.Reader getNumberOfMounts() {
+        public org.capnproto.Text.Reader getArms() {
           return _getPointerField(org.capnproto.Text.factory, 58, null, 0, 0);
         }
 
-        public boolean hasShelfDepth() {
+        public boolean hasPoleHeight() {
           return !_pointerFieldIsNull(59);
         }
-        public org.capnproto.Text.Reader getShelfDepth() {
+        public org.capnproto.Text.Reader getPoleHeight() {
           return _getPointerField(org.capnproto.Text.factory, 59, null, 0, 0);
         }
 
-        public boolean hasPaintAndLaminateFinish() {
+        public boolean hasCasterType() {
           return !_pointerFieldIsNull(60);
         }
-        public org.capnproto.Text.Reader getPaintAndLaminateFinish() {
+        public org.capnproto.Text.Reader getCasterType() {
           return _getPointerField(org.capnproto.Text.factory, 60, null, 0, 0);
         }
 
-        public boolean hasAmount() {
+        public boolean hasCushioned() {
           return !_pointerFieldIsNull(61);
         }
-        public org.capnproto.Text.Reader getAmount() {
+        public org.capnproto.Text.Reader getCushioned() {
           return _getPointerField(org.capnproto.Text.factory, 61, null, 0, 0);
         }
 
-        public boolean hasCapacity() {
+        public boolean hasSideColor() {
           return !_pointerFieldIsNull(62);
         }
-        public org.capnproto.Text.Reader getCapacity() {
+        public org.capnproto.Text.Reader getSideColor() {
           return _getPointerField(org.capnproto.Text.factory, 62, null, 0, 0);
         }
 
-        public boolean hasLegColor() {
+        public boolean hasResistanceRange() {
           return !_pointerFieldIsNull(63);
         }
-        public org.capnproto.Text.Reader getLegColor() {
+        public org.capnproto.Text.Reader getResistanceRange() {
           return _getPointerField(org.capnproto.Text.factory, 63, null, 0, 0);
         }
 
-        public boolean hasEdgeType() {
+        public boolean hasCarrel() {
           return !_pointerFieldIsNull(64);
         }
-        public org.capnproto.Text.Reader getEdgeType() {
+        public org.capnproto.Text.Reader getCarrel() {
           return _getPointerField(org.capnproto.Text.factory, 64, null, 0, 0);
         }
 
-        public boolean hasPackageQuantity() {
+        public boolean hasEarPadMaterial() {
           return !_pointerFieldIsNull(65);
         }
-        public org.capnproto.Text.Reader getPackageQuantity() {
+        public org.capnproto.Text.Reader getEarPadMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 65, null, 0, 0);
         }
 
-        public boolean hasLaminate() {
+        public boolean hasAssembly() {
           return !_pointerFieldIsNull(66);
         }
-        public org.capnproto.Text.Reader getLaminate() {
+        public org.capnproto.Text.Reader getAssembly() {
           return _getPointerField(org.capnproto.Text.factory, 66, null, 0, 0);
         }
 
-        public boolean hasHeight() {
+        public boolean hasLaminate() {
           return !_pointerFieldIsNull(67);
         }
-        public org.capnproto.Text.Reader getHeight() {
+        public org.capnproto.Text.Reader getLaminate() {
           return _getPointerField(org.capnproto.Text.factory, 67, null, 0, 0);
         }
 
-        public boolean hasSeatFinish() {
+        public boolean hasViewingArea() {
           return !_pointerFieldIsNull(68);
         }
-        public org.capnproto.Text.Reader getSeatFinish() {
+        public org.capnproto.Text.Reader getViewingArea() {
           return _getPointerField(org.capnproto.Text.factory, 68, null, 0, 0);
         }
 
-        public boolean hasTabNumber() {
+        public boolean hasShipping() {
           return !_pointerFieldIsNull(69);
         }
-        public org.capnproto.Text.Reader getTabNumber() {
+        public org.capnproto.Text.Reader getShipping() {
           return _getPointerField(org.capnproto.Text.factory, 69, null, 0, 0);
         }
 
-        public boolean hasMaximumWireLength() {
+        public boolean hasColor() {
           return !_pointerFieldIsNull(70);
         }
-        public org.capnproto.Text.Reader getMaximumWireLength() {
+        public org.capnproto.Text.Reader getColor() {
           return _getPointerField(org.capnproto.Text.factory, 70, null, 0, 0);
         }
 
-        public boolean hasNumberOfHoles() {
+        public boolean hasPackageQuantity() {
           return !_pointerFieldIsNull(71);
         }
-        public org.capnproto.Text.Reader getNumberOfHoles() {
+        public org.capnproto.Text.Reader getPackageQuantity() {
           return _getPointerField(org.capnproto.Text.factory, 71, null, 0, 0);
         }
 
-        public boolean hasLampChanger() {
+        public boolean hasLength() {
           return !_pointerFieldIsNull(72);
         }
-        public org.capnproto.Text.Reader getLampChanger() {
+        public org.capnproto.Text.Reader getLength() {
           return _getPointerField(org.capnproto.Text.factory, 72, null, 0, 0);
         }
 
-        public boolean hasCasterType() {
+        public boolean hasTabNumber() {
           return !_pointerFieldIsNull(73);
         }
-        public org.capnproto.Text.Reader getCasterType() {
+        public org.capnproto.Text.Reader getTabNumber() {
           return _getPointerField(org.capnproto.Text.factory, 73, null, 0, 0);
         }
 
-        public boolean hasIflexPrivacyPanels() {
+        public boolean hasSportsTeam() {
           return !_pointerFieldIsNull(74);
         }
-        public org.capnproto.Text.Reader getIflexPrivacyPanels() {
+        public org.capnproto.Text.Reader getSportsTeam() {
           return _getPointerField(org.capnproto.Text.factory, 74, null, 0, 0);
         }
 
-        public boolean hasOrentation() {
+        public boolean hasSeatFinish() {
           return !_pointerFieldIsNull(75);
         }
-        public org.capnproto.Text.Reader getOrentation() {
+        public org.capnproto.Text.Reader getSeatFinish() {
           return _getPointerField(org.capnproto.Text.factory, 75, null, 0, 0);
         }
 
-        public boolean hasMapRail() {
+        public boolean hasBase() {
           return !_pointerFieldIsNull(76);
         }
-        public org.capnproto.Text.Reader getMapRail() {
+        public org.capnproto.Text.Reader getBase() {
           return _getPointerField(org.capnproto.Text.factory, 76, null, 0, 0);
         }
 
-        public boolean hasDeskFinish() {
+        public boolean hasLightBulbColor() {
           return !_pointerFieldIsNull(77);
         }
-        public org.capnproto.Text.Reader getDeskFinish() {
+        public org.capnproto.Text.Reader getLightBulbColor() {
           return _getPointerField(org.capnproto.Text.factory, 77, null, 0, 0);
         }
 
-        public boolean hasOption() {
+        public boolean hasLengthType() {
           return !_pointerFieldIsNull(78);
         }
-        public org.capnproto.Text.Reader getOption() {
+        public org.capnproto.Text.Reader getLengthType() {
           return _getPointerField(org.capnproto.Text.factory, 78, null, 0, 0);
         }
 
-        public boolean hasCdSpace() {
+        public boolean hasSportsLeague() {
           return !_pointerFieldIsNull(79);
         }
-        public org.capnproto.Text.Reader getCdSpace() {
+        public org.capnproto.Text.Reader getSportsLeague() {
           return _getPointerField(org.capnproto.Text.factory, 79, null, 0, 0);
         }
 
-        public boolean hasHandleColor() {
+        public boolean hasAbsorbency() {
           return !_pointerFieldIsNull(80);
         }
-        public org.capnproto.Text.Reader getHandleColor() {
+        public org.capnproto.Text.Reader getAbsorbency() {
           return _getPointerField(org.capnproto.Text.factory, 80, null, 0, 0);
         }
 
-        public boolean hasLeftBookendColor() {
+        public boolean hasRackSize() {
           return !_pointerFieldIsNull(81);
         }
-        public org.capnproto.Text.Reader getLeftBookendColor() {
+        public org.capnproto.Text.Reader getRackSize() {
           return _getPointerField(org.capnproto.Text.factory, 81, null, 0, 0);
         }
 
-        public boolean hasGuideKitIncluded() {
+        public boolean hasStandColor() {
           return !_pointerFieldIsNull(82);
         }
-        public org.capnproto.Text.Reader getGuideKitIncluded() {
+        public org.capnproto.Text.Reader getStandColor() {
           return _getPointerField(org.capnproto.Text.factory, 82, null, 0, 0);
         }
 
-        public boolean hasUvProtection() {
+        public boolean hasWirelessMicOption() {
           return !_pointerFieldIsNull(83);
         }
-        public org.capnproto.Text.Reader getUvProtection() {
+        public org.capnproto.Text.Reader getWirelessMicOption() {
           return _getPointerField(org.capnproto.Text.factory, 83, null, 0, 0);
         }
 
-        public boolean hasLengthType() {
+        public boolean hasMicrophoneIncluded() {
           return !_pointerFieldIsNull(84);
         }
-        public org.capnproto.Text.Reader getLengthType() {
+        public org.capnproto.Text.Reader getMicrophoneIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 84, null, 0, 0);
         }
 
-        public boolean hasFastenerType() {
+        public boolean hasCastersGlides() {
           return !_pointerFieldIsNull(85);
         }
-        public org.capnproto.Text.Reader getFastenerType() {
+        public org.capnproto.Text.Reader getCastersGlides() {
           return _getPointerField(org.capnproto.Text.factory, 85, null, 0, 0);
         }
 
-        public boolean hasStorageAccessories() {
+        public boolean hasElectricCapability() {
           return !_pointerFieldIsNull(86);
         }
-        public org.capnproto.Text.Reader getStorageAccessories() {
+        public org.capnproto.Text.Reader getElectricCapability() {
           return _getPointerField(org.capnproto.Text.factory, 86, null, 0, 0);
         }
 
-        public boolean hasCompatibleCaseSize() {
+        public boolean hasHeight() {
           return !_pointerFieldIsNull(87);
         }
-        public org.capnproto.Text.Reader getCompatibleCaseSize() {
+        public org.capnproto.Text.Reader getHeight() {
           return _getPointerField(org.capnproto.Text.factory, 87, null, 0, 0);
         }
 
-        public boolean hasLeatherColor() {
+        public boolean hasDropAdjustmentLength() {
           return !_pointerFieldIsNull(88);
         }
-        public org.capnproto.Text.Reader getLeatherColor() {
+        public org.capnproto.Text.Reader getDropAdjustmentLength() {
           return _getPointerField(org.capnproto.Text.factory, 88, null, 0, 0);
         }
 
-        public boolean hasDimensions() {
+        public boolean hasNumberOfLights() {
           return !_pointerFieldIsNull(89);
         }
-        public org.capnproto.Text.Reader getDimensions() {
+        public org.capnproto.Text.Reader getNumberOfLights() {
           return _getPointerField(org.capnproto.Text.factory, 89, null, 0, 0);
         }
 
-        public boolean hasCarrel() {
+        public boolean hasTableSize() {
           return !_pointerFieldIsNull(90);
         }
-        public org.capnproto.Text.Reader getCarrel() {
+        public org.capnproto.Text.Reader getTableSize() {
           return _getPointerField(org.capnproto.Text.factory, 90, null, 0, 0);
         }
 
-        public boolean hasDepth() {
+        public boolean hasWoodenFrameFinish() {
           return !_pointerFieldIsNull(91);
         }
-        public org.capnproto.Text.Reader getDepth() {
+        public org.capnproto.Text.Reader getWoodenFrameFinish() {
           return _getPointerField(org.capnproto.Text.factory, 91, null, 0, 0);
         }
 
-        public boolean hasBins() {
+        public boolean hasClothingSize() {
           return !_pointerFieldIsNull(92);
         }
-        public org.capnproto.Text.Reader getBins() {
+        public org.capnproto.Text.Reader getClothingSize() {
           return _getPointerField(org.capnproto.Text.factory, 92, null, 0, 0);
         }
 
-        public boolean hasVehicleType() {
+        public boolean hasPaintAndLaminateFinish() {
           return !_pointerFieldIsNull(93);
         }
-        public org.capnproto.Text.Reader getVehicleType() {
+        public org.capnproto.Text.Reader getPaintAndLaminateFinish() {
           return _getPointerField(org.capnproto.Text.factory, 93, null, 0, 0);
         }
 
@@ -5343,1053 +5343,1053 @@ public final class WalmartCapnp {
           return _getPointerField(org.capnproto.Text.factory, 94, null, 0, 0);
         }
 
-        public boolean hasShape() {
+        public boolean hasAccentColor() {
           return !_pointerFieldIsNull(95);
         }
-        public org.capnproto.Text.Reader getShape() {
+        public org.capnproto.Text.Reader getAccentColor() {
           return _getPointerField(org.capnproto.Text.factory, 95, null, 0, 0);
         }
 
-        public boolean hasFeet() {
+        public boolean hasScreenSize() {
           return !_pointerFieldIsNull(96);
         }
-        public org.capnproto.Text.Reader getFeet() {
+        public org.capnproto.Text.Reader getScreenSize() {
           return _getPointerField(org.capnproto.Text.factory, 96, null, 0, 0);
         }
 
-        public boolean hasSuspensionLength() {
+        public boolean hasPolesCaps() {
           return !_pointerFieldIsNull(97);
         }
-        public org.capnproto.Text.Reader getSuspensionLength() {
+        public org.capnproto.Text.Reader getPolesCaps() {
           return _getPointerField(org.capnproto.Text.factory, 97, null, 0, 0);
         }
 
-        public boolean hasStudSize() {
+        public boolean hasNumberOfMounts() {
           return !_pointerFieldIsNull(98);
         }
-        public org.capnproto.Text.Reader getStudSize() {
+        public org.capnproto.Text.Reader getNumberOfMounts() {
           return _getPointerField(org.capnproto.Text.factory, 98, null, 0, 0);
         }
 
-        public boolean hasBrightness() {
+        public boolean hasType() {
           return !_pointerFieldIsNull(99);
         }
-        public org.capnproto.Text.Reader getBrightness() {
+        public org.capnproto.Text.Reader getType() {
           return _getPointerField(org.capnproto.Text.factory, 99, null, 0, 0);
         }
 
-        public boolean hasDrawerOptions() {
+        public boolean hasNcaaTeam() {
           return !_pointerFieldIsNull(100);
         }
-        public org.capnproto.Text.Reader getDrawerOptions() {
+        public org.capnproto.Text.Reader getNcaaTeam() {
           return _getPointerField(org.capnproto.Text.factory, 100, null, 0, 0);
         }
 
-        public boolean hasDrop() {
+        public boolean hasShelfFinish() {
           return !_pointerFieldIsNull(101);
         }
-        public org.capnproto.Text.Reader getDrop() {
+        public org.capnproto.Text.Reader getShelfFinish() {
           return _getPointerField(org.capnproto.Text.factory, 101, null, 0, 0);
         }
 
-        public boolean hasShelfFinish() {
+        public boolean hasPersonalizable() {
           return !_pointerFieldIsNull(102);
         }
-        public org.capnproto.Text.Reader getShelfFinish() {
+        public org.capnproto.Text.Reader getPersonalizable() {
           return _getPointerField(org.capnproto.Text.factory, 102, null, 0, 0);
         }
 
-        public boolean hasConfiguration() {
+        public boolean hasCompatibleCaseSize() {
           return !_pointerFieldIsNull(103);
         }
-        public org.capnproto.Text.Reader getConfiguration() {
+        public org.capnproto.Text.Reader getCompatibleCaseSize() {
           return _getPointerField(org.capnproto.Text.factory, 103, null, 0, 0);
         }
 
-        public boolean hasRackrailType() {
+        public boolean hasFinish() {
           return !_pointerFieldIsNull(104);
         }
-        public org.capnproto.Text.Reader getRackrailType() {
+        public org.capnproto.Text.Reader getFinish() {
           return _getPointerField(org.capnproto.Text.factory, 104, null, 0, 0);
         }
 
-        public boolean hasStandColor() {
+        public boolean hasTopColor() {
           return !_pointerFieldIsNull(105);
         }
-        public org.capnproto.Text.Reader getStandColor() {
+        public org.capnproto.Text.Reader getTopColor() {
           return _getPointerField(org.capnproto.Text.factory, 105, null, 0, 0);
         }
 
-        public boolean hasItemsIncluded() {
+        public boolean hasPaintFinish() {
           return !_pointerFieldIsNull(106);
         }
-        public org.capnproto.Text.Reader getItemsIncluded() {
+        public org.capnproto.Text.Reader getPaintFinish() {
           return _getPointerField(org.capnproto.Text.factory, 106, null, 0, 0);
         }
 
-        public boolean hasUpholsteryCasters() {
+        public boolean hasShelfDepth() {
           return !_pointerFieldIsNull(107);
         }
-        public org.capnproto.Text.Reader getUpholsteryCasters() {
+        public org.capnproto.Text.Reader getShelfDepth() {
           return _getPointerField(org.capnproto.Text.factory, 107, null, 0, 0);
         }
 
-        public boolean hasNumberOfDriveBays() {
+        public boolean hasCompatibleTubeSize() {
           return !_pointerFieldIsNull(108);
         }
-        public org.capnproto.Text.Reader getNumberOfDriveBays() {
+        public org.capnproto.Text.Reader getCompatibleTubeSize() {
           return _getPointerField(org.capnproto.Text.factory, 108, null, 0, 0);
         }
 
-        public boolean hasCompatibleTubeSize() {
+        public boolean hasUvProtection() {
           return !_pointerFieldIsNull(109);
         }
-        public org.capnproto.Text.Reader getCompatibleTubeSize() {
+        public org.capnproto.Text.Reader getUvProtection() {
           return _getPointerField(org.capnproto.Text.factory, 109, null, 0, 0);
         }
 
-        public boolean hasPlatformFrameFinish() {
+        public boolean hasFurnitureFootType() {
           return !_pointerFieldIsNull(110);
         }
-        public org.capnproto.Text.Reader getPlatformFrameFinish() {
+        public org.capnproto.Text.Reader getFurnitureFootType() {
           return _getPointerField(org.capnproto.Text.factory, 110, null, 0, 0);
         }
 
-        public boolean hasViewingArea() {
+        public boolean hasMaximumRange() {
           return !_pointerFieldIsNull(111);
         }
-        public org.capnproto.Text.Reader getViewingArea() {
+        public org.capnproto.Text.Reader getMaximumRange() {
           return _getPointerField(org.capnproto.Text.factory, 111, null, 0, 0);
         }
 
-        public boolean hasAbsorbency() {
+        public boolean hasLegStyle() {
           return !_pointerFieldIsNull(112);
         }
-        public org.capnproto.Text.Reader getAbsorbency() {
+        public org.capnproto.Text.Reader getLegStyle() {
           return _getPointerField(org.capnproto.Text.factory, 112, null, 0, 0);
         }
 
-        public boolean hasNumberOfShelves() {
+        public boolean hasLegHeightGlideStyle() {
           return !_pointerFieldIsNull(113);
         }
-        public org.capnproto.Text.Reader getNumberOfShelves() {
+        public org.capnproto.Text.Reader getLegHeightGlideStyle() {
           return _getPointerField(org.capnproto.Text.factory, 113, null, 0, 0);
         }
 
-        public boolean hasNumberOfCompartments() {
+        public boolean hasAssembledProductWidth() {
           return !_pointerFieldIsNull(114);
         }
-        public org.capnproto.Text.Reader getNumberOfCompartments() {
+        public org.capnproto.Text.Reader getAssembledProductWidth() {
           return _getPointerField(org.capnproto.Text.factory, 114, null, 0, 0);
         }
 
-        public boolean hasLegHeight() {
+        public boolean hasTableTopType() {
           return !_pointerFieldIsNull(115);
         }
-        public org.capnproto.Text.Reader getLegHeight() {
+        public org.capnproto.Text.Reader getTableTopType() {
           return _getPointerField(org.capnproto.Text.factory, 115, null, 0, 0);
         }
 
-        public boolean hasShelfCapacity() {
+        public boolean hasTopFinish() {
           return !_pointerFieldIsNull(116);
         }
-        public org.capnproto.Text.Reader getShelfCapacity() {
+        public org.capnproto.Text.Reader getTopFinish() {
           return _getPointerField(org.capnproto.Text.factory, 116, null, 0, 0);
         }
 
-        public boolean hasFurnitureFootType() {
+        public boolean hasWeight() {
           return !_pointerFieldIsNull(117);
         }
-        public org.capnproto.Text.Reader getFurnitureFootType() {
+        public org.capnproto.Text.Reader getWeight() {
           return _getPointerField(org.capnproto.Text.factory, 117, null, 0, 0);
         }
 
-        public boolean hasInterfaceType() {
+        public boolean hasAdjustableHeight() {
           return !_pointerFieldIsNull(118);
         }
-        public org.capnproto.Text.Reader getInterfaceType() {
+        public org.capnproto.Text.Reader getAdjustableHeight() {
           return _getPointerField(org.capnproto.Text.factory, 118, null, 0, 0);
         }
 
-        public boolean hasSidePanelFinish() {
+        public boolean hasHeadphonesIncluded() {
           return !_pointerFieldIsNull(119);
         }
-        public org.capnproto.Text.Reader getSidePanelFinish() {
+        public org.capnproto.Text.Reader getHeadphonesIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 119, null, 0, 0);
         }
 
-        public boolean hasLampType() {
+        public boolean hasCapacity() {
           return !_pointerFieldIsNull(120);
         }
-        public org.capnproto.Text.Reader getLampType() {
+        public org.capnproto.Text.Reader getCapacity() {
           return _getPointerField(org.capnproto.Text.factory, 120, null, 0, 0);
         }
 
-        public boolean hasPolesCaps() {
+        public boolean hasBaseType() {
           return !_pointerFieldIsNull(121);
         }
-        public org.capnproto.Text.Reader getPolesCaps() {
+        public org.capnproto.Text.Reader getBaseType() {
           return _getPointerField(org.capnproto.Text.factory, 121, null, 0, 0);
         }
 
-        public boolean hasSideAndBackPanels() {
+        public boolean hasMagnification() {
           return !_pointerFieldIsNull(122);
         }
-        public org.capnproto.Text.Reader getSideAndBackPanels() {
+        public org.capnproto.Text.Reader getMagnification() {
           return _getPointerField(org.capnproto.Text.factory, 122, null, 0, 0);
         }
 
-        public boolean hasPanSize() {
+        public boolean hasFeatures() {
           return !_pointerFieldIsNull(123);
         }
-        public org.capnproto.Text.Reader getPanSize() {
+        public org.capnproto.Text.Reader getFeatures() {
           return _getPointerField(org.capnproto.Text.factory, 123, null, 0, 0);
         }
 
-        public boolean hasSideColor() {
+        public boolean hasFeet() {
           return !_pointerFieldIsNull(124);
         }
-        public org.capnproto.Text.Reader getSideColor() {
+        public org.capnproto.Text.Reader getFeet() {
           return _getPointerField(org.capnproto.Text.factory, 124, null, 0, 0);
         }
 
-        public boolean hasColor() {
+        public boolean hasCompatibleDevices() {
           return !_pointerFieldIsNull(125);
         }
-        public org.capnproto.Text.Reader getColor() {
+        public org.capnproto.Text.Reader getCompatibleDevices() {
           return _getPointerField(org.capnproto.Text.factory, 125, null, 0, 0);
         }
 
-        public boolean hasDesktopShelfLength() {
+        public boolean hasLaptopSize() {
           return !_pointerFieldIsNull(126);
         }
-        public org.capnproto.Text.Reader getDesktopShelfLength() {
+        public org.capnproto.Text.Reader getLaptopSize() {
           return _getPointerField(org.capnproto.Text.factory, 126, null, 0, 0);
         }
 
-        public boolean hasAspectRatio() {
+        public boolean hasDeskFinish() {
           return !_pointerFieldIsNull(127);
         }
-        public org.capnproto.Text.Reader getAspectRatio() {
+        public org.capnproto.Text.Reader getDeskFinish() {
           return _getPointerField(org.capnproto.Text.factory, 127, null, 0, 0);
         }
 
-        public boolean hasLaminateFinish() {
+        public boolean hasBinColor() {
           return !_pointerFieldIsNull(128);
         }
-        public org.capnproto.Text.Reader getLaminateFinish() {
+        public org.capnproto.Text.Reader getBinColor() {
           return _getPointerField(org.capnproto.Text.factory, 128, null, 0, 0);
         }
 
-        public boolean hasUpholstery() {
+        public boolean hasNumberOfHoles() {
           return !_pointerFieldIsNull(129);
         }
-        public org.capnproto.Text.Reader getUpholstery() {
+        public org.capnproto.Text.Reader getNumberOfHoles() {
           return _getPointerField(org.capnproto.Text.factory, 129, null, 0, 0);
         }
 
-        public boolean hasCharacter() {
+        public boolean hasItemType() {
           return !_pointerFieldIsNull(130);
         }
-        public org.capnproto.Text.Reader getCharacter() {
+        public org.capnproto.Text.Reader getItemType() {
           return _getPointerField(org.capnproto.Text.factory, 130, null, 0, 0);
         }
 
-        public boolean hasFabricMaterial() {
+        public boolean hasEdgeFinish() {
           return !_pointerFieldIsNull(131);
         }
-        public org.capnproto.Text.Reader getFabricMaterial() {
+        public org.capnproto.Text.Reader getEdgeFinish() {
           return _getPointerField(org.capnproto.Text.factory, 131, null, 0, 0);
         }
 
-        public boolean hasHasRearLockingDoor() {
+        public boolean hasRackSpaces() {
           return !_pointerFieldIsNull(132);
         }
-        public org.capnproto.Text.Reader getHasRearLockingDoor() {
+        public org.capnproto.Text.Reader getRackSpaces() {
           return _getPointerField(org.capnproto.Text.factory, 132, null, 0, 0);
         }
 
-        public boolean hasMountSize() {
+        public boolean hasSizeWXDXH() {
           return !_pointerFieldIsNull(133);
         }
-        public org.capnproto.Text.Reader getMountSize() {
+        public org.capnproto.Text.Reader getSizeWXDXH() {
           return _getPointerField(org.capnproto.Text.factory, 133, null, 0, 0);
         }
 
-        public boolean hasWatts() {
+        public boolean hasShelfCapacity() {
           return !_pointerFieldIsNull(134);
         }
-        public org.capnproto.Text.Reader getWatts() {
+        public org.capnproto.Text.Reader getShelfCapacity() {
           return _getPointerField(org.capnproto.Text.factory, 134, null, 0, 0);
         }
 
-        public boolean hasOutletPosition() {
+        public boolean hasNumberOfShelves() {
           return !_pointerFieldIsNull(135);
         }
-        public org.capnproto.Text.Reader getOutletPosition() {
+        public org.capnproto.Text.Reader getNumberOfShelves() {
           return _getPointerField(org.capnproto.Text.factory, 135, null, 0, 0);
         }
 
-        public boolean hasCastersGlides() {
+        public boolean hasSeatHeight() {
           return !_pointerFieldIsNull(136);
         }
-        public org.capnproto.Text.Reader getCastersGlides() {
+        public org.capnproto.Text.Reader getSeatHeight() {
           return _getPointerField(org.capnproto.Text.factory, 136, null, 0, 0);
         }
 
-        public boolean hasStyle() {
+        public boolean hasTopPanelDoors() {
           return !_pointerFieldIsNull(137);
         }
-        public org.capnproto.Text.Reader getStyle() {
+        public org.capnproto.Text.Reader getTopPanelDoors() {
           return _getPointerField(org.capnproto.Text.factory, 137, null, 0, 0);
         }
 
-        public boolean hasGauge() {
+        public boolean hasLegHeightAndGlideStyle() {
           return !_pointerFieldIsNull(138);
         }
-        public org.capnproto.Text.Reader getGauge() {
+        public org.capnproto.Text.Reader getLegHeightAndGlideStyle() {
           return _getPointerField(org.capnproto.Text.factory, 138, null, 0, 0);
         }
 
-        public boolean hasSeatHeight() {
+        public boolean hasLightBulbIncluded() {
           return !_pointerFieldIsNull(139);
         }
-        public org.capnproto.Text.Reader getSeatHeight() {
+        public org.capnproto.Text.Reader getLightBulbIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 139, null, 0, 0);
         }
 
-        public boolean hasPaintFinish() {
+        public boolean hasAssembledProductHeight() {
           return !_pointerFieldIsNull(140);
         }
-        public org.capnproto.Text.Reader getPaintFinish() {
+        public org.capnproto.Text.Reader getAssembledProductHeight() {
           return _getPointerField(org.capnproto.Text.factory, 140, null, 0, 0);
         }
 
-        public boolean hasBase() {
+        public boolean hasAssembledProductLength() {
           return !_pointerFieldIsNull(141);
         }
-        public org.capnproto.Text.Reader getBase() {
+        public org.capnproto.Text.Reader getAssembledProductLength() {
           return _getPointerField(org.capnproto.Text.factory, 141, null, 0, 0);
         }
 
-        public boolean hasTableSize() {
+        public boolean hasMaterial() {
           return !_pointerFieldIsNull(142);
         }
-        public org.capnproto.Text.Reader getTableSize() {
+        public org.capnproto.Text.Reader getMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 142, null, 0, 0);
         }
 
-        public boolean hasNumberOfPads() {
+        public boolean hasNumberOfCompartments() {
           return !_pointerFieldIsNull(143);
         }
-        public org.capnproto.Text.Reader getNumberOfPads() {
+        public org.capnproto.Text.Reader getNumberOfCompartments() {
           return _getPointerField(org.capnproto.Text.factory, 143, null, 0, 0);
         }
 
-        public boolean hasAssembledProductWidth() {
+        public boolean hasCasters() {
           return !_pointerFieldIsNull(144);
         }
-        public org.capnproto.Text.Reader getAssembledProductWidth() {
+        public org.capnproto.Text.Reader getCasters() {
           return _getPointerField(org.capnproto.Text.factory, 144, null, 0, 0);
         }
 
-        public boolean hasFinishWidth() {
+        public boolean hasBackPanelHeight() {
           return !_pointerFieldIsNull(145);
         }
-        public org.capnproto.Text.Reader getFinishWidth() {
+        public org.capnproto.Text.Reader getBackPanelHeight() {
           return _getPointerField(org.capnproto.Text.factory, 145, null, 0, 0);
         }
 
-        public boolean hasLaptopSize() {
+        public boolean hasInterior() {
           return !_pointerFieldIsNull(146);
         }
-        public org.capnproto.Text.Reader getLaptopSize() {
+        public org.capnproto.Text.Reader getInterior() {
           return _getPointerField(org.capnproto.Text.factory, 146, null, 0, 0);
         }
 
-        public boolean hasOffsetDistance() {
+        public boolean hasDesktopShelfLength() {
           return !_pointerFieldIsNull(147);
         }
-        public org.capnproto.Text.Reader getOffsetDistance() {
+        public org.capnproto.Text.Reader getDesktopShelfLength() {
           return _getPointerField(org.capnproto.Text.factory, 147, null, 0, 0);
         }
 
-        public boolean hasHeadphonesIncluded() {
+        public boolean hasEdgeType() {
           return !_pointerFieldIsNull(148);
         }
-        public org.capnproto.Text.Reader getHeadphonesIncluded() {
+        public org.capnproto.Text.Reader getEdgeType() {
           return _getPointerField(org.capnproto.Text.factory, 148, null, 0, 0);
         }
 
-        public boolean hasSeatFrameColor() {
+        public boolean hasHasFoamInterior() {
           return !_pointerFieldIsNull(149);
         }
-        public org.capnproto.Text.Reader getSeatFrameColor() {
+        public org.capnproto.Text.Reader getHasFoamInterior() {
           return _getPointerField(org.capnproto.Text.factory, 149, null, 0, 0);
         }
 
-        public boolean hasPaintAndLaminateColors() {
+        public boolean hasWireSize() {
           return !_pointerFieldIsNull(150);
         }
-        public org.capnproto.Text.Reader getPaintAndLaminateColors() {
+        public org.capnproto.Text.Reader getWireSize() {
           return _getPointerField(org.capnproto.Text.factory, 150, null, 0, 0);
         }
 
-        public boolean hasPackag() {
+        public boolean hasTableTopColor() {
           return !_pointerFieldIsNull(151);
         }
-        public org.capnproto.Text.Reader getPackag() {
+        public org.capnproto.Text.Reader getTableTopColor() {
           return _getPointerField(org.capnproto.Text.factory, 151, null, 0, 0);
         }
 
-        public boolean hasBacking() {
+        public boolean hasRecommendedUse() {
           return !_pointerFieldIsNull(152);
         }
-        public org.capnproto.Text.Reader getBacking() {
+        public org.capnproto.Text.Reader getRecommendedUse() {
           return _getPointerField(org.capnproto.Text.factory, 152, null, 0, 0);
         }
 
-        public boolean hasLightBulbIncluded() {
+        public boolean hasArmLegFinish() {
           return !_pointerFieldIsNull(153);
         }
-        public org.capnproto.Text.Reader getLightBulbIncluded() {
+        public org.capnproto.Text.Reader getArmLegFinish() {
           return _getPointerField(org.capnproto.Text.factory, 153, null, 0, 0);
         }
 
-        public boolean hasSurfaceColor() {
+        public boolean hasGlassColor() {
           return !_pointerFieldIsNull(154);
         }
-        public org.capnproto.Text.Reader getSurfaceColor() {
+        public org.capnproto.Text.Reader getGlassColor() {
           return _getPointerField(org.capnproto.Text.factory, 154, null, 0, 0);
         }
 
-        public boolean hasWirelessMicOption() {
+        public boolean hasPaperSize() {
           return !_pointerFieldIsNull(155);
         }
-        public org.capnproto.Text.Reader getWirelessMicOption() {
+        public org.capnproto.Text.Reader getPaperSize() {
           return _getPointerField(org.capnproto.Text.factory, 155, null, 0, 0);
         }
 
-        public boolean hasRunTime() {
+        public boolean hasCdSpace() {
           return !_pointerFieldIsNull(156);
         }
-        public org.capnproto.Text.Reader getRunTime() {
+        public org.capnproto.Text.Reader getCdSpace() {
           return _getPointerField(org.capnproto.Text.factory, 156, null, 0, 0);
         }
 
-        public boolean hasInterior() {
+        public boolean hasMaximumWireLength() {
           return !_pointerFieldIsNull(157);
         }
-        public org.capnproto.Text.Reader getInterior() {
+        public org.capnproto.Text.Reader getMaximumWireLength() {
           return _getPointerField(org.capnproto.Text.factory, 157, null, 0, 0);
         }
 
-        public boolean hasSportsTeam() {
+        public boolean hasUpholstery() {
           return !_pointerFieldIsNull(158);
         }
-        public org.capnproto.Text.Reader getSportsTeam() {
+        public org.capnproto.Text.Reader getUpholstery() {
           return _getPointerField(org.capnproto.Text.factory, 158, null, 0, 0);
         }
 
-        public boolean hasElectricCapability() {
+        public boolean hasPattern() {
           return !_pointerFieldIsNull(159);
         }
-        public org.capnproto.Text.Reader getElectricCapability() {
+        public org.capnproto.Text.Reader getPattern() {
           return _getPointerField(org.capnproto.Text.factory, 159, null, 0, 0);
         }
 
-        public boolean hasSheftSize() {
+        public boolean hasShelfColor() {
           return !_pointerFieldIsNull(160);
         }
-        public org.capnproto.Text.Reader getSheftSize() {
+        public org.capnproto.Text.Reader getShelfColor() {
           return _getPointerField(org.capnproto.Text.factory, 160, null, 0, 0);
         }
 
-        public boolean hasIncludesSoundSystem() {
+        public boolean hasSideAndBackPanels() {
           return !_pointerFieldIsNull(161);
         }
-        public org.capnproto.Text.Reader getIncludesSoundSystem() {
+        public org.capnproto.Text.Reader getSideAndBackPanels() {
           return _getPointerField(org.capnproto.Text.factory, 161, null, 0, 0);
         }
 
-        public boolean hasTopFinish() {
+        public boolean hasRackrailType() {
           return !_pointerFieldIsNull(162);
         }
-        public org.capnproto.Text.Reader getTopFinish() {
+        public org.capnproto.Text.Reader getRackrailType() {
           return _getPointerField(org.capnproto.Text.factory, 162, null, 0, 0);
         }
 
-        public boolean hasSeatColor() {
+        public boolean hasDiameter() {
           return !_pointerFieldIsNull(163);
         }
-        public org.capnproto.Text.Reader getSeatColor() {
+        public org.capnproto.Text.Reader getDiameter() {
           return _getPointerField(org.capnproto.Text.factory, 163, null, 0, 0);
         }
 
-        public boolean hasInterfac() {
+        public boolean hasActualColor() {
           return !_pointerFieldIsNull(164);
         }
-        public org.capnproto.Text.Reader getInterfac() {
+        public org.capnproto.Text.Reader getActualColor() {
           return _getPointerField(org.capnproto.Text.factory, 164, null, 0, 0);
         }
 
-        public boolean hasRailLength() {
+        public boolean hasTabLetter() {
           return !_pointerFieldIsNull(165);
         }
-        public org.capnproto.Text.Reader getRailLength() {
+        public org.capnproto.Text.Reader getTabLetter() {
           return _getPointerField(org.capnproto.Text.factory, 165, null, 0, 0);
         }
 
-        public boolean hasLegHeightAndGlideStyle() {
+        public boolean hasHasCasters() {
           return !_pointerFieldIsNull(166);
         }
-        public org.capnproto.Text.Reader getLegHeightAndGlideStyle() {
+        public org.capnproto.Text.Reader getHasCasters() {
           return _getPointerField(org.capnproto.Text.factory, 166, null, 0, 0);
         }
 
-        public boolean hasFrontAndBackPanel() {
+        public boolean hasConvertsToSize() {
           return !_pointerFieldIsNull(167);
         }
-        public org.capnproto.Text.Reader getFrontAndBackPanel() {
+        public org.capnproto.Text.Reader getConvertsToSize() {
           return _getPointerField(org.capnproto.Text.factory, 167, null, 0, 0);
         }
 
-        public boolean hasLockType() {
+        public boolean hasTabDimensions() {
           return !_pointerFieldIsNull(168);
         }
-        public org.capnproto.Text.Reader getLockType() {
+        public org.capnproto.Text.Reader getTabDimensions() {
           return _getPointerField(org.capnproto.Text.factory, 168, null, 0, 0);
         }
 
-        public boolean hasTransmitterIncluded() {
+        public boolean hasPlatformFrameFinish() {
           return !_pointerFieldIsNull(169);
         }
-        public org.capnproto.Text.Reader getTransmitterIncluded() {
+        public org.capnproto.Text.Reader getPlatformFrameFinish() {
           return _getPointerField(org.capnproto.Text.factory, 169, null, 0, 0);
         }
 
-        public boolean hasHasCasters() {
+        public boolean hasFrameFinish() {
           return !_pointerFieldIsNull(170);
         }
-        public org.capnproto.Text.Reader getHasCasters() {
+        public org.capnproto.Text.Reader getFrameFinish() {
           return _getPointerField(org.capnproto.Text.factory, 170, null, 0, 0);
         }
 
-        public boolean hasPanelColor() {
+        public boolean hasPaintAndLaminateColors() {
           return !_pointerFieldIsNull(171);
         }
-        public org.capnproto.Text.Reader getPanelColor() {
+        public org.capnproto.Text.Reader getPaintAndLaminateColors() {
           return _getPointerField(org.capnproto.Text.factory, 171, null, 0, 0);
         }
 
-        public boolean hasBinDimensions() {
+        public boolean hasTensileStrength() {
           return !_pointerFieldIsNull(172);
         }
-        public org.capnproto.Text.Reader getBinDimensions() {
+        public org.capnproto.Text.Reader getTensileStrength() {
           return _getPointerField(org.capnproto.Text.factory, 172, null, 0, 0);
         }
 
-        public boolean hasTabDimensions() {
+        public boolean hasIflexPrivacyPanels() {
           return !_pointerFieldIsNull(173);
         }
-        public org.capnproto.Text.Reader getTabDimensions() {
+        public org.capnproto.Text.Reader getIflexPrivacyPanels() {
           return _getPointerField(org.capnproto.Text.factory, 173, null, 0, 0);
         }
 
-        public boolean hasBaseFinish() {
+        public boolean hasReticle() {
           return !_pointerFieldIsNull(174);
         }
-        public org.capnproto.Text.Reader getBaseFinish() {
+        public org.capnproto.Text.Reader getReticle() {
           return _getPointerField(org.capnproto.Text.factory, 174, null, 0, 0);
         }
 
-        public boolean hasAdjustableHeight() {
+        public boolean hasModel() {
           return !_pointerFieldIsNull(175);
         }
-        public org.capnproto.Text.Reader getAdjustableHeight() {
+        public org.capnproto.Text.Reader getModel() {
           return _getPointerField(org.capnproto.Text.factory, 175, null, 0, 0);
         }
 
-        public boolean hasLegFinish() {
+        public boolean hasNumberOfPieces() {
           return !_pointerFieldIsNull(176);
         }
-        public org.capnproto.Text.Reader getLegFinish() {
+        public org.capnproto.Text.Reader getNumberOfPieces() {
           return _getPointerField(org.capnproto.Text.factory, 176, null, 0, 0);
         }
 
-        public boolean hasThreadType() {
+        public boolean hasOption() {
           return !_pointerFieldIsNull(177);
         }
-        public org.capnproto.Text.Reader getThreadType() {
+        public org.capnproto.Text.Reader getOption() {
           return _getPointerField(org.capnproto.Text.factory, 177, null, 0, 0);
         }
 
-        public boolean hasMaterial() {
+        public boolean hasTab() {
           return !_pointerFieldIsNull(178);
         }
-        public org.capnproto.Text.Reader getMaterial() {
+        public org.capnproto.Text.Reader getTab() {
           return _getPointerField(org.capnproto.Text.factory, 178, null, 0, 0);
         }
 
-        public boolean hasTableTopColor() {
+        public boolean hasNumberOfRackUnits() {
           return !_pointerFieldIsNull(179);
         }
-        public org.capnproto.Text.Reader getTableTopColor() {
+        public org.capnproto.Text.Reader getNumberOfRackUnits() {
           return _getPointerField(org.capnproto.Text.factory, 179, null, 0, 0);
         }
 
-        public boolean hasAssemblyRequired() {
+        public boolean hasIncludesSoundSystem() {
           return !_pointerFieldIsNull(180);
         }
-        public org.capnproto.Text.Reader getAssemblyRequired() {
+        public org.capnproto.Text.Reader getIncludesSoundSystem() {
           return _getPointerField(org.capnproto.Text.factory, 180, null, 0, 0);
         }
 
-        public boolean hasComponents() {
+        public boolean hasFinishWidth() {
           return !_pointerFieldIsNull(181);
         }
-        public org.capnproto.Text.Reader getComponents() {
+        public org.capnproto.Text.Reader getFinishWidth() {
           return _getPointerField(org.capnproto.Text.factory, 181, null, 0, 0);
         }
 
-        public boolean hasBaseType() {
+        public boolean hasLegFinish() {
           return !_pointerFieldIsNull(182);
         }
-        public org.capnproto.Text.Reader getBaseType() {
+        public org.capnproto.Text.Reader getLegFinish() {
           return _getPointerField(org.capnproto.Text.factory, 182, null, 0, 0);
         }
 
-        public boolean hasTrim() {
+        public boolean hasRailLength() {
           return !_pointerFieldIsNull(183);
         }
-        public org.capnproto.Text.Reader getTrim() {
+        public org.capnproto.Text.Reader getRailLength() {
           return _getPointerField(org.capnproto.Text.factory, 183, null, 0, 0);
         }
 
-        public boolean hasAccentColor() {
+        public boolean hasLockerColor() {
           return !_pointerFieldIsNull(184);
         }
-        public org.capnproto.Text.Reader getAccentColor() {
+        public org.capnproto.Text.Reader getLockerColor() {
           return _getPointerField(org.capnproto.Text.factory, 184, null, 0, 0);
         }
 
-        public boolean hasTensileStrength() {
+        public boolean hasFastenerType() {
           return !_pointerFieldIsNull(185);
         }
-        public org.capnproto.Text.Reader getTensileStrength() {
+        public org.capnproto.Text.Reader getFastenerType() {
           return _getPointerField(org.capnproto.Text.factory, 185, null, 0, 0);
         }
 
-        public boolean hasCasters() {
+        public boolean hasTopMaterial() {
           return !_pointerFieldIsNull(186);
         }
-        public org.capnproto.Text.Reader getCasters() {
+        public org.capnproto.Text.Reader getTopMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 186, null, 0, 0);
         }
 
-        public boolean hasTableTop() {
+        public boolean hasHardwareFinish() {
           return !_pointerFieldIsNull(187);
         }
-        public org.capnproto.Text.Reader getTableTop() {
+        public org.capnproto.Text.Reader getHardwareFinish() {
           return _getPointerField(org.capnproto.Text.factory, 187, null, 0, 0);
         }
 
-        public boolean hasLightBulbType() {
+        public boolean hasHasRearLockingDoor() {
           return !_pointerFieldIsNull(188);
         }
-        public org.capnproto.Text.Reader getLightBulbType() {
+        public org.capnproto.Text.Reader getHasRearLockingDoor() {
           return _getPointerField(org.capnproto.Text.factory, 188, null, 0, 0);
         }
 
-        public boolean hasRearDoor() {
+        public boolean hasFlavor() {
           return !_pointerFieldIsNull(189);
         }
-        public org.capnproto.Text.Reader getRearDoor() {
+        public org.capnproto.Text.Reader getFlavor() {
           return _getPointerField(org.capnproto.Text.factory, 189, null, 0, 0);
         }
 
-        public boolean hasPaperSize() {
+        public boolean hasWallMountable() {
           return !_pointerFieldIsNull(190);
         }
-        public org.capnproto.Text.Reader getPaperSize() {
+        public org.capnproto.Text.Reader getWallMountable() {
           return _getPointerField(org.capnproto.Text.factory, 190, null, 0, 0);
         }
 
-        public boolean hasSize() {
+        public boolean hasFabric() {
           return !_pointerFieldIsNull(191);
         }
-        public org.capnproto.Text.Reader getSize() {
+        public org.capnproto.Text.Reader getFabric() {
           return _getPointerField(org.capnproto.Text.factory, 191, null, 0, 0);
         }
 
-        public boolean hasConvertsToSize() {
+        public boolean hasDrawerOptions() {
           return !_pointerFieldIsNull(192);
         }
-        public org.capnproto.Text.Reader getConvertsToSize() {
+        public org.capnproto.Text.Reader getDrawerOptions() {
           return _getPointerField(org.capnproto.Text.factory, 192, null, 0, 0);
         }
 
-        public boolean hasMicrophoneIncluded() {
+        public boolean hasNflTeam() {
           return !_pointerFieldIsNull(193);
         }
-        public org.capnproto.Text.Reader getMicrophoneIncluded() {
+        public org.capnproto.Text.Reader getNflTeam() {
           return _getPointerField(org.capnproto.Text.factory, 193, null, 0, 0);
         }
 
-        public boolean hasGender() {
+        public boolean hasThreadType() {
           return !_pointerFieldIsNull(194);
         }
-        public org.capnproto.Text.Reader getGender() {
+        public org.capnproto.Text.Reader getThreadType() {
           return _getPointerField(org.capnproto.Text.factory, 194, null, 0, 0);
         }
 
-        public boolean hasBedSize() {
+        public boolean hasTrayColor() {
           return !_pointerFieldIsNull(195);
         }
-        public org.capnproto.Text.Reader getBedSize() {
+        public org.capnproto.Text.Reader getTrayColor() {
           return _getPointerField(org.capnproto.Text.factory, 195, null, 0, 0);
         }
 
-        public boolean hasDimensionsWXDXH() {
+        public boolean hasHandleColor() {
           return !_pointerFieldIsNull(196);
         }
-        public org.capnproto.Text.Reader getDimensionsWXDXH() {
+        public org.capnproto.Text.Reader getHandleColor() {
           return _getPointerField(org.capnproto.Text.factory, 196, null, 0, 0);
         }
 
-        public boolean hasMaximumRange() {
+        public boolean hasConfiguration() {
           return !_pointerFieldIsNull(197);
         }
-        public org.capnproto.Text.Reader getMaximumRange() {
+        public org.capnproto.Text.Reader getConfiguration() {
           return _getPointerField(org.capnproto.Text.factory, 197, null, 0, 0);
         }
 
-        public boolean hasFrame() {
+        public boolean hasInterfac() {
           return !_pointerFieldIsNull(198);
         }
-        public org.capnproto.Text.Reader getFrame() {
+        public org.capnproto.Text.Reader getInterfac() {
           return _getPointerField(org.capnproto.Text.factory, 198, null, 0, 0);
         }
 
-        public boolean hasHasAdapterKit() {
+        public boolean hasRunTime() {
           return !_pointerFieldIsNull(199);
         }
-        public org.capnproto.Text.Reader getHasAdapterKit() {
+        public org.capnproto.Text.Reader getRunTime() {
           return _getPointerField(org.capnproto.Text.factory, 199, null, 0, 0);
         }
 
-        public boolean hasScreenSize() {
+        public boolean hasMicrophoneType() {
           return !_pointerFieldIsNull(200);
         }
-        public org.capnproto.Text.Reader getScreenSize() {
+        public org.capnproto.Text.Reader getMicrophoneType() {
           return _getPointerField(org.capnproto.Text.factory, 200, null, 0, 0);
         }
 
-        public boolean hasAssembledProductLength() {
+        public boolean hasBackPanelColor() {
           return !_pointerFieldIsNull(201);
         }
-        public org.capnproto.Text.Reader getAssembledProductLength() {
+        public org.capnproto.Text.Reader getBackPanelColor() {
           return _getPointerField(org.capnproto.Text.factory, 201, null, 0, 0);
         }
 
-        public boolean hasTeam() {
+        public boolean hasTabletopSize() {
           return !_pointerFieldIsNull(202);
         }
-        public org.capnproto.Text.Reader getTeam() {
+        public org.capnproto.Text.Reader getTabletopSize() {
           return _getPointerField(org.capnproto.Text.factory, 202, null, 0, 0);
         }
 
-        public boolean hasFootType() {
+        public boolean hasSidePanelFinish() {
           return !_pointerFieldIsNull(203);
         }
-        public org.capnproto.Text.Reader getFootType() {
+        public org.capnproto.Text.Reader getSidePanelFinish() {
           return _getPointerField(org.capnproto.Text.factory, 203, null, 0, 0);
         }
 
-        public boolean hasOptionalSeatbelt() {
+        public boolean hasSuspensionLength() {
           return !_pointerFieldIsNull(204);
         }
-        public org.capnproto.Text.Reader getOptionalSeatbelt() {
+        public org.capnproto.Text.Reader getSuspensionLength() {
           return _getPointerField(org.capnproto.Text.factory, 204, null, 0, 0);
         }
 
-        public boolean hasArmLegFinish() {
+        public boolean hasFrame() {
           return !_pointerFieldIsNull(205);
         }
-        public org.capnproto.Text.Reader getArmLegFinish() {
+        public org.capnproto.Text.Reader getFrame() {
           return _getPointerField(org.capnproto.Text.factory, 205, null, 0, 0);
         }
 
-        public boolean hasLegStyle() {
+        public boolean hasElectricalUnit() {
           return !_pointerFieldIsNull(206);
         }
-        public org.capnproto.Text.Reader getLegStyle() {
+        public org.capnproto.Text.Reader getElectricalUnit() {
           return _getPointerField(org.capnproto.Text.factory, 206, null, 0, 0);
         }
 
-        public boolean hasSeatBackColor() {
+        public boolean hasLeftBookendColor() {
           return !_pointerFieldIsNull(207);
         }
-        public org.capnproto.Text.Reader getSeatBackColor() {
+        public org.capnproto.Text.Reader getLeftBookendColor() {
           return _getPointerField(org.capnproto.Text.factory, 207, null, 0, 0);
         }
 
-        public boolean hasTableTopType() {
+        public boolean hasLaminateFinish() {
           return !_pointerFieldIsNull(208);
         }
-        public org.capnproto.Text.Reader getTableTopType() {
+        public org.capnproto.Text.Reader getLaminateFinish() {
           return _getPointerField(org.capnproto.Text.factory, 208, null, 0, 0);
         }
 
-        public boolean hasTabLetter() {
+        public boolean hasCabinetColor() {
           return !_pointerFieldIsNull(209);
         }
-        public org.capnproto.Text.Reader getTabLetter() {
+        public org.capnproto.Text.Reader getCabinetColor() {
           return _getPointerField(org.capnproto.Text.factory, 209, null, 0, 0);
         }
 
-        public boolean hasGlassColor() {
+        public boolean hasRugSize() {
           return !_pointerFieldIsNull(210);
         }
-        public org.capnproto.Text.Reader getGlassColor() {
+        public org.capnproto.Text.Reader getRugSize() {
           return _getPointerField(org.capnproto.Text.factory, 210, null, 0, 0);
         }
 
-        public boolean hasRugSize() {
+        public boolean hasStyle() {
           return !_pointerFieldIsNull(211);
         }
-        public org.capnproto.Text.Reader getRugSize() {
+        public org.capnproto.Text.Reader getStyle() {
           return _getPointerField(org.capnproto.Text.factory, 211, null, 0, 0);
         }
 
-        public boolean hasWireSize() {
+        public boolean hasMlbTeam() {
           return !_pointerFieldIsNull(212);
         }
-        public org.capnproto.Text.Reader getWireSize() {
+        public org.capnproto.Text.Reader getMlbTeam() {
           return _getPointerField(org.capnproto.Text.factory, 212, null, 0, 0);
         }
 
-        public boolean hasTrayColor() {
+        public boolean hasWoodFinish() {
           return !_pointerFieldIsNull(213);
         }
-        public org.capnproto.Text.Reader getTrayColor() {
+        public org.capnproto.Text.Reader getWoodFinish() {
           return _getPointerField(org.capnproto.Text.factory, 213, null, 0, 0);
         }
 
-        public boolean hasTopMaterial() {
+        public boolean hasMountSize() {
           return !_pointerFieldIsNull(214);
         }
-        public org.capnproto.Text.Reader getTopMaterial() {
+        public org.capnproto.Text.Reader getMountSize() {
           return _getPointerField(org.capnproto.Text.factory, 214, null, 0, 0);
         }
 
-        public boolean hasBackPanelHeight() {
+        public boolean hasGuideKitIncluded() {
           return !_pointerFieldIsNull(215);
         }
-        public org.capnproto.Text.Reader getBackPanelHeight() {
+        public org.capnproto.Text.Reader getGuideKitIncluded() {
           return _getPointerField(org.capnproto.Text.factory, 215, null, 0, 0);
         }
 
-        public boolean hasLength() {
+        public boolean hasLampType() {
           return !_pointerFieldIsNull(216);
         }
-        public org.capnproto.Text.Reader getLength() {
+        public org.capnproto.Text.Reader getLampType() {
           return _getPointerField(org.capnproto.Text.factory, 216, null, 0, 0);
         }
 
-        public boolean hasRecommendedUse() {
+        public boolean hasGlide() {
           return !_pointerFieldIsNull(217);
         }
-        public org.capnproto.Text.Reader getRecommendedUse() {
+        public org.capnproto.Text.Reader getGlide() {
           return _getPointerField(org.capnproto.Text.factory, 217, null, 0, 0);
         }
 
-        public boolean hasLockerColor() {
+        public boolean hasInterfaceType() {
           return !_pointerFieldIsNull(218);
         }
-        public org.capnproto.Text.Reader getLockerColor() {
+        public org.capnproto.Text.Reader getInterfaceType() {
           return _getPointerField(org.capnproto.Text.factory, 218, null, 0, 0);
         }
 
-        public boolean hasOrientation() {
+        public boolean hasUpholsteryCasters() {
           return !_pointerFieldIsNull(219);
         }
-        public org.capnproto.Text.Reader getOrientation() {
+        public org.capnproto.Text.Reader getUpholsteryCasters() {
           return _getPointerField(org.capnproto.Text.factory, 219, null, 0, 0);
         }
 
-        public boolean hasQuantity() {
+        public boolean hasHasAdapterKit() {
           return !_pointerFieldIsNull(220);
         }
-        public org.capnproto.Text.Reader getQuantity() {
+        public org.capnproto.Text.Reader getHasAdapterKit() {
           return _getPointerField(org.capnproto.Text.factory, 220, null, 0, 0);
         }
 
-        public boolean hasMagnification() {
+        public boolean hasShadeColor() {
           return !_pointerFieldIsNull(221);
         }
-        public org.capnproto.Text.Reader getMagnification() {
+        public org.capnproto.Text.Reader getShadeColor() {
           return _getPointerField(org.capnproto.Text.factory, 221, null, 0, 0);
         }
 
-        public boolean hasDrawerColor() {
+        public boolean hasCut() {
           return !_pointerFieldIsNull(222);
         }
-        public org.capnproto.Text.Reader getDrawerColor() {
+        public org.capnproto.Text.Reader getCut() {
           return _getPointerField(org.capnproto.Text.factory, 222, null, 0, 0);
         }
 
-        public boolean hasElectricalUnit() {
+        public boolean hasSurfaceColor() {
           return !_pointerFieldIsNull(223);
         }
-        public org.capnproto.Text.Reader getElectricalUnit() {
+        public org.capnproto.Text.Reader getSurfaceColor() {
           return _getPointerField(org.capnproto.Text.factory, 223, null, 0, 0);
         }
 
-        public boolean hasNumberOfLights() {
+        public boolean hasPackag() {
           return !_pointerFieldIsNull(224);
         }
-        public org.capnproto.Text.Reader getNumberOfLights() {
+        public org.capnproto.Text.Reader getPackag() {
           return _getPointerField(org.capnproto.Text.factory, 224, null, 0, 0);
         }
 
-        public boolean hasClothingSize() {
+        public boolean hasEdgeBanding() {
           return !_pointerFieldIsNull(225);
         }
-        public org.capnproto.Text.Reader getClothingSize() {
+        public org.capnproto.Text.Reader getEdgeBanding() {
           return _getPointerField(org.capnproto.Text.factory, 225, null, 0, 0);
         }
 
-        public boolean hasHasFoamInterior() {
+        public boolean hasSize() {
           return !_pointerFieldIsNull(226);
         }
-        public org.capnproto.Text.Reader getHasFoamInterior() {
+        public org.capnproto.Text.Reader getSize() {
           return _getPointerField(org.capnproto.Text.factory, 226, null, 0, 0);
         }
 
-        public boolean hasNumberOfSpeakers() {
+        public boolean hasSeatColor() {
           return !_pointerFieldIsNull(227);
         }
-        public org.capnproto.Text.Reader getNumberOfSpeakers() {
+        public org.capnproto.Text.Reader getSeatColor() {
           return _getPointerField(org.capnproto.Text.factory, 227, null, 0, 0);
         }
 
-        public boolean hasEdgeBanding() {
+        public boolean hasFabricMaterial() {
           return !_pointerFieldIsNull(228);
         }
-        public org.capnproto.Text.Reader getEdgeBanding() {
+        public org.capnproto.Text.Reader getFabricMaterial() {
           return _getPointerField(org.capnproto.Text.factory, 228, null, 0, 0);
         }
 
-        public boolean hasFabric() {
+        public boolean hasLegHeight() {
           return !_pointerFieldIsNull(229);
         }
-        public org.capnproto.Text.Reader getFabric() {
+        public org.capnproto.Text.Reader getLegHeight() {
           return _getPointerField(org.capnproto.Text.factory, 229, null, 0, 0);
         }
 
-        public boolean hasShipping() {
+        public boolean hasLockType() {
           return !_pointerFieldIsNull(230);
         }
-        public org.capnproto.Text.Reader getShipping() {
+        public org.capnproto.Text.Reader getLockType() {
           return _getPointerField(org.capnproto.Text.factory, 230, null, 0, 0);
         }
 
-        public boolean hasDimensionsWXH() {
+        public boolean hasProduct() {
           return !_pointerFieldIsNull(231);
         }
-        public org.capnproto.Text.Reader getDimensionsWXH() {
+        public org.capnproto.Text.Reader getProduct() {
           return _getPointerField(org.capnproto.Text.factory, 231, null, 0, 0);
         }
 
-        public boolean hasCollege() {
+        public boolean hasDimensionsWXH() {
           return !_pointerFieldIsNull(232);
         }
-        public org.capnproto.Text.Reader getCollege() {
+        public org.capnproto.Text.Reader getDimensionsWXH() {
           return _getPointerField(org.capnproto.Text.factory, 232, null, 0, 0);
         }
 
-        public boolean hasProduct() {
+        public boolean hasDrawerColor() {
           return !_pointerFieldIsNull(233);
         }
-        public org.capnproto.Text.Reader getProduct() {
+        public org.capnproto.Text.Reader getDrawerColor() {
           return _getPointerField(org.capnproto.Text.factory, 233, null, 0, 0);
         }
 
-        public boolean hasTab() {
+        public boolean hasHasMirror() {
           return !_pointerFieldIsNull(234);
         }
-        public org.capnproto.Text.Reader getTab() {
+        public org.capnproto.Text.Reader getHasMirror() {
           return _getPointerField(org.capnproto.Text.factory, 234, null, 0, 0);
         }
 
-        public boolean hasCushioned() {
+        public boolean hasLeatherColor() {
           return !_pointerFieldIsNull(235);
         }
-        public org.capnproto.Text.Reader getCushioned() {
+        public org.capnproto.Text.Reader getLeatherColor() {
           return _getPointerField(org.capnproto.Text.factory, 235, null, 0, 0);
         }
 
-        public boolean hasHardwareFinish() {
+        public boolean hasFootType() {
           return !_pointerFieldIsNull(236);
         }
-        public org.capnproto.Text.Reader getHardwareFinish() {
+        public org.capnproto.Text.Reader getFootType() {
           return _getPointerField(org.capnproto.Text.factory, 236, null, 0, 0);
         }
 
-        public boolean hasMicrophoneType() {
+        public boolean hasDrop() {
           return !_pointerFieldIsNull(237);
         }
-        public org.capnproto.Text.Reader getMicrophoneType() {
+        public org.capnproto.Text.Reader getDrop() {
           return _getPointerField(org.capnproto.Text.factory, 237, null, 0, 0);
         }
 
-        public boolean hasItemType() {
+        public boolean hasWidth() {
           return !_pointerFieldIsNull(238);
         }
-        public org.capnproto.Text.Reader getItemType() {
+        public org.capnproto.Text.Reader getWidth() {
           return _getPointerField(org.capnproto.Text.factory, 238, null, 0, 0);
         }
 
-        public boolean hasSeatMaterial() {
+        public boolean hasBedSize() {
           return !_pointerFieldIsNull(239);
         }
-        public org.capnproto.Text.Reader getSeatMaterial() {
+        public org.capnproto.Text.Reader getBedSize() {
           return _getPointerField(org.capnproto.Text.factory, 239, null, 0, 0);
         }
 
-        public boolean hasProfile() {
+        public boolean hasSheftSize() {
           return !_pointerFieldIsNull(240);
         }
-        public org.capnproto.Text.Reader getProfile() {
+        public org.capnproto.Text.Reader getSheftSize() {
           return _getPointerField(org.capnproto.Text.factory, 240, null, 0, 0);
         }
 
-        public boolean hasDropAdjustmentLength() {
+        public boolean hasQuantity() {
           return !_pointerFieldIsNull(241);
         }
-        public org.capnproto.Text.Reader getDropAdjustmentLength() {
+        public org.capnproto.Text.Reader getQuantity() {
           return _getPointerField(org.capnproto.Text.factory, 241, null, 0, 0);
         }
 
-        public boolean hasDoorType() {
+        public boolean hasScopeSize() {
           return !_pointerFieldIsNull(242);
         }
-        public org.capnproto.Text.Reader getDoorType() {
+        public org.capnproto.Text.Reader getScopeSize() {
           return _getPointerField(org.capnproto.Text.factory, 242, null, 0, 0);
         }
 
-        public boolean hasShelfColor() {
+        public boolean hasEdgeColor() {
           return !_pointerFieldIsNull(243);
         }
-        public org.capnproto.Text.Reader getShelfColor() {
+        public org.capnproto.Text.Reader getEdgeColor() {
           return _getPointerField(org.capnproto.Text.factory, 243, null, 0, 0);
         }
 
-        public boolean hasEdgeColor() {
+        public boolean hasWatts() {
           return !_pointerFieldIsNull(244);
         }
-        public org.capnproto.Text.Reader getEdgeColor() {
+        public org.capnproto.Text.Reader getWatts() {
           return _getPointerField(org.capnproto.Text.factory, 244, null, 0, 0);
         }
 
@@ -6403,7 +6403,7 @@ public final class WalmartCapnp {
 
 
 public static final class Schemas {
-public static final org.capnproto.SegmentReader b_f657547f6afb2960 = loadSchema();
+public static final org.capnproto.SegmentReader b_881e23d6f29b9f78 = loadSchema();
 
 private static org.capnproto.SegmentReader loadSchema() {
   try (java.io.InputStream is = BestbuyCapnp.class.getResourceAsStream("/eu/hippix/bsctest/data/capnp/bestbuy.capnp.bin")) {

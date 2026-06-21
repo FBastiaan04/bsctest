@@ -1,5 +1,6 @@
 /target
-/output/*
+/output/logs/*.txt
+/output/jfr/eu.*
 /out
 /eu.*
 /.idea

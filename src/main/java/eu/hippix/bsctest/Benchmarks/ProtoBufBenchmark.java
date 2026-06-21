@@ -14,7 +14,6 @@ import java.io.IOException;
 @State(Scope.Benchmark)
 public class ProtoBufBenchmark extends AbstractBenchmark<byte[]> {
 
-    // Reusable buffer to avoid memory allocation overhead during benchmarking
     private LinkedBuffer buffer = null;
     private Schema schema = null;
 

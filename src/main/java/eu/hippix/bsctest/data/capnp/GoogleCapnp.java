@@ -47,17 +47,17 @@ public final class GoogleCapnp {
       public final org.capnproto.Text.Builder initStatus(int size) {
         return _initPointerField(org.capnproto.Text.factory, 0, size);
       }
-      public final boolean hasAvailableTravelModes() {
+      public final boolean hasGeocodedWaypoints() {
         return !_pointerFieldIsNull(1);
       }
-      public final org.capnproto.TextList.Builder getAvailableTravelModes() {
-        return _getPointerField(org.capnproto.TextList.factory, 1, null, 0);
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Builder> getGeocodedWaypoints() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 1, null, 0);
       }
-      public final void setAvailableTravelModes(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 1, value);
+      public final void setGeocodedWaypoints(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 1, value);
       }
-      public final org.capnproto.TextList.Builder initAvailableTravelModes(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 1, size);
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Builder> initGeocodedWaypoints(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 1, size);
       }
       public final boolean hasRoutes() {
         return !_pointerFieldIsNull(2);
@@ -71,17 +71,17 @@ public final class GoogleCapnp {
       public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Routes.Builder> initRoutes(int size) {
         return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Routes.listFactory, 2, size);
       }
-      public final boolean hasGeocodedWaypoints() {
+      public final boolean hasAvailableTravelModes() {
         return !_pointerFieldIsNull(3);
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Builder> getGeocodedWaypoints() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 3, null, 0);
+      public final org.capnproto.TextList.Builder getAvailableTravelModes() {
+        return _getPointerField(org.capnproto.TextList.factory, 3, null, 0);
       }
-      public final void setGeocodedWaypoints(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 3, value);
+      public final void setAvailableTravelModes(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 3, value);
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Builder> initGeocodedWaypoints(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 3, size);
+      public final org.capnproto.TextList.Builder initAvailableTravelModes(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 3, size);
       }
     }
 
@@ -97,11 +97,11 @@ public final class GoogleCapnp {
         return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
       }
 
-      public final boolean hasAvailableTravelModes() {
+      public final boolean hasGeocodedWaypoints() {
         return !_pointerFieldIsNull(1);
       }
-      public final org.capnproto.TextList.Reader getAvailableTravelModes() {
-        return _getPointerField(org.capnproto.TextList.factory, 1, null, 0);
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Reader> getGeocodedWaypoints() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 1, null, 0);
       }
 
       public final boolean hasRoutes() {
@@ -111,11 +111,11 @@ public final class GoogleCapnp {
         return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Routes.listFactory, 2, null, 0);
       }
 
-      public final boolean hasGeocodedWaypoints() {
+      public final boolean hasAvailableTravelModes() {
         return !_pointerFieldIsNull(3);
       }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.Reader> getGeocodedWaypoints() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.GeocodedWaypoints.listFactory, 3, null, 0);
+      public final org.capnproto.TextList.Reader getAvailableTravelModes() {
+        return _getPointerField(org.capnproto.TextList.factory, 3, null, 0);
       }
 
     }
@@ -344,13 +344,6 @@ public final class GoogleCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final int getValue() {
-          return _getIntField(0);
-        }
-        public final void setValue(int value) {
-          _setIntField(0, value);
-        }
-
         public final boolean hasText() {
           return !_pointerFieldIsNull(0);
         }
@@ -366,6 +359,13 @@ public final class GoogleCapnp {
         public final org.capnproto.Text.Builder initText(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
+        public final int getValue() {
+          return _getIntField(0);
+        }
+        public final void setValue(int value) {
+          _setIntField(0, value);
+        }
+
       }
 
       public static final class Reader extends org.capnproto.StructReader {
@@ -373,15 +373,15 @@ public final class GoogleCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final int getValue() {
-          return _getIntField(0);
-        }
-
         public boolean hasText() {
           return !_pointerFieldIsNull(0);
         }
         public org.capnproto.Text.Reader getText() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+
+        public final int getValue() {
+          return _getIntField(0);
         }
 
       }
@@ -417,80 +417,80 @@ public final class GoogleCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDuration() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory, 0, null, 0);
-        }
-        public final void setDuration(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,0, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDuration() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,0, 0);
-        }
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder getEndLocation() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 1, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 0, null, 0);
         }
         public final void setEndLocation(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,1, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,0, value);
         }
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder initEndLocation() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,1, 0);
-        }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDistance() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory, 2, null, 0);
-        }
-        public final void setDistance(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,2, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDistance() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,2, 0);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,0, 0);
         }
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder getStartLocation() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 3, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 1, null, 0);
         }
         public final void setStartLocation(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,3, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,1, value);
         }
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder initStartLocation() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,3, 0);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,1, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Builder getPolyline() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory, 4, null, 0);
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDuration() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory, 2, null, 0);
         }
-        public final void setPolyline(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,4, value);
+        public final void setDuration(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,2, value);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Builder initPolyline() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,4, 0);
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDuration() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,2, 0);
         }
         public final boolean hasHtmlInstructions() {
-          return !_pointerFieldIsNull(5);
+          return !_pointerFieldIsNull(3);
         }
         public final org.capnproto.Text.Builder getHtmlInstructions() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
         public final void setHtmlInstructions(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 5, value);
+          _setPointerField(org.capnproto.Text.factory, 3, value);
         }
         public final void setHtmlInstructions(String value) {
-          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
+          _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
         }
         public final org.capnproto.Text.Builder initHtmlInstructions(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 5, size);
+          return _initPointerField(org.capnproto.Text.factory, 3, size);
         }
         public final boolean hasTravelMode() {
-          return !_pointerFieldIsNull(6);
+          return !_pointerFieldIsNull(4);
         }
         public final org.capnproto.Text.Builder getTravelMode() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
         public final void setTravelMode(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
+          _setPointerField(org.capnproto.Text.factory, 4, value);
         }
         public final void setTravelMode(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
+          _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
         }
         public final org.capnproto.Text.Builder initTravelMode(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
+          return _initPointerField(org.capnproto.Text.factory, 4, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDistance() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory, 5, null, 0);
+        }
+        public final void setDistance(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,5, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDistance() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,5, 0);
+        }
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Builder getPolyline() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory, 6, null, 0);
+        }
+        public final void setPolyline(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,6, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Builder initPolyline() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,6, 0);
         }
       }
 
@@ -499,53 +499,53 @@ public final class GoogleCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasDuration() {
+        public boolean hasEndLocation() {
           return !_pointerFieldIsNull(0);
         }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDuration() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,0,null, 0);
-        }
-
-        public boolean hasEndLocation() {
-          return !_pointerFieldIsNull(1);
-        }
         public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader getEndLocation() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,1,null, 0);
-        }
-
-        public boolean hasDistance() {
-          return !_pointerFieldIsNull(2);
-        }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDistance() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,2,null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,0,null, 0);
         }
 
         public boolean hasStartLocation() {
-          return !_pointerFieldIsNull(3);
+          return !_pointerFieldIsNull(1);
         }
         public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader getStartLocation() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,3,null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,1,null, 0);
         }
 
-        public boolean hasPolyline() {
-          return !_pointerFieldIsNull(4);
+        public boolean hasDuration() {
+          return !_pointerFieldIsNull(2);
         }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Reader getPolyline() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,4,null, 0);
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDuration() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,2,null, 0);
         }
 
         public boolean hasHtmlInstructions() {
-          return !_pointerFieldIsNull(5);
+          return !_pointerFieldIsNull(3);
         }
         public org.capnproto.Text.Reader getHtmlInstructions() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
 
         public boolean hasTravelMode() {
-          return !_pointerFieldIsNull(6);
+          return !_pointerFieldIsNull(4);
         }
         public org.capnproto.Text.Reader getTravelMode() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+        }
+
+        public boolean hasDistance() {
+          return !_pointerFieldIsNull(5);
+        }
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDistance() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,5,null, 0);
+        }
+
+        public boolean hasPolyline() {
+          return !_pointerFieldIsNull(6);
+        }
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Reader getPolyline() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,6,null, 0);
         }
 
       }
@@ -581,38 +581,38 @@ public final class GoogleCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasTrafficSpeedEntry() {
+        public final boolean hasStartAddress() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.TextList.Builder getTrafficSpeedEntry() {
-          return _getPointerField(org.capnproto.TextList.factory, 0, null, 0);
+        public final org.capnproto.Text.Builder getStartAddress() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
-        public final void setTrafficSpeedEntry(org.capnproto.TextList.Reader value) {
-          _setPointerField(org.capnproto.TextList.factory, 0, value);
+        public final void setStartAddress(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 0, value);
         }
-        public final org.capnproto.TextList.Builder initTrafficSpeedEntry(int size) {
-          return _initPointerField(org.capnproto.TextList.factory, 0, size);
+        public final void setStartAddress(String value) {
+          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDuration() {
+        public final org.capnproto.Text.Builder initStartAddress(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDistance() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory, 1, null, 0);
         }
-        public final void setDuration(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
+        public final void setDistance(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
           _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,1, value);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDuration() {
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDistance() {
           return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,1, 0);
         }
-        public final boolean hasSteps() {
-          return !_pointerFieldIsNull(2);
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder getStartLocation() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 2, null, 0);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Builder> getSteps() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 2, null, 0);
+        public final void setStartLocation(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,2, value);
         }
-        public final void setSteps(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 2, value);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Builder> initSteps(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 2, size);
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder initStartLocation() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,2, 0);
         }
         public final boolean hasViaWaypoint() {
           return !_pointerFieldIsNull(3);
@@ -626,35 +626,29 @@ public final class GoogleCapnp {
         public final org.capnproto.TextList.Builder initViaWaypoint(int size) {
           return _initPointerField(org.capnproto.TextList.factory, 3, size);
         }
-        public final boolean hasStartAddress() {
+        public final boolean hasTrafficSpeedEntry() {
           return !_pointerFieldIsNull(4);
         }
-        public final org.capnproto.Text.Builder getStartAddress() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+        public final org.capnproto.TextList.Builder getTrafficSpeedEntry() {
+          return _getPointerField(org.capnproto.TextList.factory, 4, null, 0);
         }
-        public final void setStartAddress(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 4, value);
+        public final void setTrafficSpeedEntry(org.capnproto.TextList.Reader value) {
+          _setPointerField(org.capnproto.TextList.factory, 4, value);
         }
-        public final void setStartAddress(String value) {
-          _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
+        public final org.capnproto.TextList.Builder initTrafficSpeedEntry(int size) {
+          return _initPointerField(org.capnproto.TextList.factory, 4, size);
         }
-        public final org.capnproto.Text.Builder initStartAddress(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 4, size);
-        }
-        public final boolean hasEndAddress() {
+        public final boolean hasSteps() {
           return !_pointerFieldIsNull(5);
         }
-        public final org.capnproto.Text.Builder getEndAddress() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Builder> getSteps() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 5, null, 0);
         }
-        public final void setEndAddress(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 5, value);
+        public final void setSteps(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Reader> value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 5, value);
         }
-        public final void setEndAddress(String value) {
-          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initEndAddress(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 5, size);
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Builder> initSteps(int size) {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 5, size);
         }
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder getEndLocation() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 6, null, 0);
@@ -665,23 +659,29 @@ public final class GoogleCapnp {
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder initEndLocation() {
           return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,6, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDistance() {
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder getDuration() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory, 7, null, 0);
         }
-        public final void setDistance(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
+        public final void setDuration(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader value) {
           _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,7, value);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDistance() {
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Builder initDuration() {
           return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,7, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder getStartLocation() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory, 8, null, 0);
+        public final boolean hasEndAddress() {
+          return !_pointerFieldIsNull(8);
         }
-        public final void setStartLocation(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,8, value);
+        public final org.capnproto.Text.Builder getEndAddress() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Builder initStartLocation() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,8, 0);
+        public final void setEndAddress(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 8, value);
+        }
+        public final void setEndAddress(String value) {
+          _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initEndAddress(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 8, size);
         }
       }
 
@@ -690,25 +690,25 @@ public final class GoogleCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final boolean hasTrafficSpeedEntry() {
+        public boolean hasStartAddress() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.TextList.Reader getTrafficSpeedEntry() {
-          return _getPointerField(org.capnproto.TextList.factory, 0, null, 0);
+        public org.capnproto.Text.Reader getStartAddress() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasDuration() {
+        public boolean hasDistance() {
           return !_pointerFieldIsNull(1);
         }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDuration() {
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDistance() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,1,null, 0);
         }
 
-        public final boolean hasSteps() {
+        public boolean hasStartLocation() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Reader> getSteps() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 2, null, 0);
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader getStartLocation() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,2,null, 0);
         }
 
         public final boolean hasViaWaypoint() {
@@ -718,18 +718,18 @@ public final class GoogleCapnp {
           return _getPointerField(org.capnproto.TextList.factory, 3, null, 0);
         }
 
-        public boolean hasStartAddress() {
+        public final boolean hasTrafficSpeedEntry() {
           return !_pointerFieldIsNull(4);
         }
-        public org.capnproto.Text.Reader getStartAddress() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+        public final org.capnproto.TextList.Reader getTrafficSpeedEntry() {
+          return _getPointerField(org.capnproto.TextList.factory, 4, null, 0);
         }
 
-        public boolean hasEndAddress() {
+        public final boolean hasSteps() {
           return !_pointerFieldIsNull(5);
         }
-        public org.capnproto.Text.Reader getEndAddress() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.Reader> getSteps() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Steps.listFactory, 5, null, 0);
         }
 
         public boolean hasEndLocation() {
@@ -739,18 +739,18 @@ public final class GoogleCapnp {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,6,null, 0);
         }
 
-        public boolean hasDistance() {
+        public boolean hasDuration() {
           return !_pointerFieldIsNull(7);
         }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDistance() {
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.Reader getDuration() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Distance.factory,7,null, 0);
         }
 
-        public boolean hasStartLocation() {
+        public boolean hasEndAddress() {
           return !_pointerFieldIsNull(8);
         }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.Reader getStartLocation() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Northeast.factory,8,null, 0);
+        public org.capnproto.Text.Reader getEndAddress() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
 
       }
@@ -786,26 +786,32 @@ public final class GoogleCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Builder getBounds() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory, 0, null, 0);
+        public final boolean hasLegs() {
+          return !_pointerFieldIsNull(0);
         }
-        public final void setBounds(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory,0, value);
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Builder> getLegs() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 0, null, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Builder initBounds() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory,0, 0);
+        public final void setLegs(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Reader> value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 0, value);
         }
-        public final boolean hasWarnings() {
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Builder> initLegs(int size) {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 0, size);
+        }
+        public final boolean hasCopyrights() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.TextList.Builder getWarnings() {
-          return _getPointerField(org.capnproto.TextList.factory, 1, null, 0);
+        public final org.capnproto.Text.Builder getCopyrights() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
-        public final void setWarnings(org.capnproto.TextList.Reader value) {
-          _setPointerField(org.capnproto.TextList.factory, 1, value);
+        public final void setCopyrights(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
         }
-        public final org.capnproto.TextList.Builder initWarnings(int size) {
-          return _initPointerField(org.capnproto.TextList.factory, 1, size);
+        public final void setCopyrights(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initCopyrights(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Builder getOverviewPolyline() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory, 2, null, 0);
@@ -816,29 +822,29 @@ public final class GoogleCapnp {
         public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.Builder initOverviewPolyline() {
           return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,2, 0);
         }
-        public final boolean hasWaypointOrder() {
+        public final boolean hasWarnings() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.TextList.Builder getWaypointOrder() {
+        public final org.capnproto.TextList.Builder getWarnings() {
           return _getPointerField(org.capnproto.TextList.factory, 3, null, 0);
         }
-        public final void setWaypointOrder(org.capnproto.TextList.Reader value) {
+        public final void setWarnings(org.capnproto.TextList.Reader value) {
           _setPointerField(org.capnproto.TextList.factory, 3, value);
         }
-        public final org.capnproto.TextList.Builder initWaypointOrder(int size) {
+        public final org.capnproto.TextList.Builder initWarnings(int size) {
           return _initPointerField(org.capnproto.TextList.factory, 3, size);
         }
-        public final boolean hasLegs() {
+        public final boolean hasWaypointOrder() {
           return !_pointerFieldIsNull(4);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Builder> getLegs() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 4, null, 0);
+        public final org.capnproto.TextList.Builder getWaypointOrder() {
+          return _getPointerField(org.capnproto.TextList.factory, 4, null, 0);
         }
-        public final void setLegs(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 4, value);
+        public final void setWaypointOrder(org.capnproto.TextList.Reader value) {
+          _setPointerField(org.capnproto.TextList.factory, 4, value);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Builder> initLegs(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 4, size);
+        public final org.capnproto.TextList.Builder initWaypointOrder(int size) {
+          return _initPointerField(org.capnproto.TextList.factory, 4, size);
         }
         public final boolean hasSummary() {
           return !_pointerFieldIsNull(5);
@@ -855,20 +861,14 @@ public final class GoogleCapnp {
         public final org.capnproto.Text.Builder initSummary(int size) {
           return _initPointerField(org.capnproto.Text.factory, 5, size);
         }
-        public final boolean hasCopyrights() {
-          return !_pointerFieldIsNull(6);
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Builder getBounds() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory, 6, null, 0);
         }
-        public final org.capnproto.Text.Builder getCopyrights() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+        public final void setBounds(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory,6, value);
         }
-        public final void setCopyrights(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
-        }
-        public final void setCopyrights(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initCopyrights(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
+        public final eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Builder initBounds() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory,6, 0);
         }
       }
 
@@ -877,18 +877,18 @@ public final class GoogleCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasBounds() {
+        public final boolean hasLegs() {
           return !_pointerFieldIsNull(0);
         }
-        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Reader getBounds() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory,0,null, 0);
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Reader> getLegs() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 0, null, 0);
         }
 
-        public final boolean hasWarnings() {
+        public boolean hasCopyrights() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.TextList.Reader getWarnings() {
-          return _getPointerField(org.capnproto.TextList.factory, 1, null, 0);
+        public org.capnproto.Text.Reader getCopyrights() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
         public boolean hasOverviewPolyline() {
@@ -898,18 +898,18 @@ public final class GoogleCapnp {
           return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.OverviewPolyline.factory,2,null, 0);
         }
 
-        public final boolean hasWaypointOrder() {
+        public final boolean hasWarnings() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.TextList.Reader getWaypointOrder() {
+        public final org.capnproto.TextList.Reader getWarnings() {
           return _getPointerField(org.capnproto.TextList.factory, 3, null, 0);
         }
 
-        public final boolean hasLegs() {
+        public final boolean hasWaypointOrder() {
           return !_pointerFieldIsNull(4);
         }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.Reader> getLegs() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Legs.listFactory, 4, null, 0);
+        public final org.capnproto.TextList.Reader getWaypointOrder() {
+          return _getPointerField(org.capnproto.TextList.factory, 4, null, 0);
         }
 
         public boolean hasSummary() {
@@ -919,11 +919,11 @@ public final class GoogleCapnp {
           return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
 
-        public boolean hasCopyrights() {
+        public boolean hasBounds() {
           return !_pointerFieldIsNull(6);
         }
-        public org.capnproto.Text.Reader getCopyrights() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+        public eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.Reader getBounds() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.GoogleCapnp.Google.Bounds.factory,6,null, 0);
         }
 
       }
@@ -959,20 +959,17 @@ public final class GoogleCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasPlaceId() {
+        public final boolean hasTypes() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getPlaceId() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final org.capnproto.TextList.Builder getTypes() {
+          return _getPointerField(org.capnproto.TextList.factory, 0, null, 0);
         }
-        public final void setPlaceId(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
+        public final void setTypes(org.capnproto.TextList.Reader value) {
+          _setPointerField(org.capnproto.TextList.factory, 0, value);
         }
-        public final void setPlaceId(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initPlaceId(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        public final org.capnproto.TextList.Builder initTypes(int size) {
+          return _initPointerField(org.capnproto.TextList.factory, 0, size);
         }
         public final boolean hasGeocoderStatus() {
           return !_pointerFieldIsNull(1);
@@ -989,17 +986,20 @@ public final class GoogleCapnp {
         public final org.capnproto.Text.Builder initGeocoderStatus(int size) {
           return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
-        public final boolean hasTypes() {
+        public final boolean hasPlaceId() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.TextList.Builder getTypes() {
-          return _getPointerField(org.capnproto.TextList.factory, 2, null, 0);
+        public final org.capnproto.Text.Builder getPlaceId() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final void setTypes(org.capnproto.TextList.Reader value) {
-          _setPointerField(org.capnproto.TextList.factory, 2, value);
+        public final void setPlaceId(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 2, value);
         }
-        public final org.capnproto.TextList.Builder initTypes(int size) {
-          return _initPointerField(org.capnproto.TextList.factory, 2, size);
+        public final void setPlaceId(String value) {
+          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initPlaceId(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
       }
 
@@ -1008,11 +1008,11 @@ public final class GoogleCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasPlaceId() {
+        public final boolean hasTypes() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getPlaceId() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final org.capnproto.TextList.Reader getTypes() {
+          return _getPointerField(org.capnproto.TextList.factory, 0, null, 0);
         }
 
         public boolean hasGeocoderStatus() {
@@ -1022,11 +1022,11 @@ public final class GoogleCapnp {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
-        public final boolean hasTypes() {
+        public boolean hasPlaceId() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.TextList.Reader getTypes() {
-          return _getPointerField(org.capnproto.TextList.factory, 2, null, 0);
+        public org.capnproto.Text.Reader getPlaceId() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
       }
@@ -1039,7 +1039,7 @@ public final class GoogleCapnp {
 
 
 public static final class Schemas {
-public static final org.capnproto.SegmentReader b_bf24746b7b27f7c6 = loadSchema();
+public static final org.capnproto.SegmentReader b_c74ed9b4062ea8a5 = loadSchema();
 
 private static org.capnproto.SegmentReader loadSchema() {
   try (java.io.InputStream is = BestbuyCapnp.class.getResourceAsStream("/eu/hippix/bsctest/data/capnp/bestbuy.capnp.bin")) {

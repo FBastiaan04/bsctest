@@ -1,12 +1,12 @@
-@0xd6317da505811901;
+@0xd6317da505811900;
 using Java = import "java.capnp";
 $Java.package("eu.hippix.bsctest.data.capnp");
 $Java.outerClassname("GoogleCapnp");
 struct Google {
 	status @0 :Text;
-	availableTravelModes @1 :List(Text);
+	geocodedWaypoints @1 :List(GeocodedWaypoints);
 	routes @2 :List(Routes);
-	geocodedWaypoints @3 :List(GeocodedWaypoints);
+	availableTravelModes @3 :List(Text);
 	struct OverviewPolyline {
 		points @0 :Text;
 	}
@@ -19,41 +19,41 @@ struct Google {
 		southwest @1 :Northeast;
 	}
 	struct Distance {
-		value @0 :Int32;
-		text @1 :Text;
+		text @0 :Text;
+		value @1 :Int32;
 	}
 	struct Steps {
-		duration @0 :Distance;
-		endLocation @1 :Northeast;
-		distance @2 :Distance;
-		startLocation @3 :Northeast;
-		polyline @4 :OverviewPolyline;
-		htmlInstructions @5 :Text;
-		travelMode @6 :Text;
+		endLocation @0 :Northeast;
+		startLocation @1 :Northeast;
+		duration @2 :Distance;
+		htmlInstructions @3 :Text;
+		travelMode @4 :Text;
+		distance @5 :Distance;
+		polyline @6 :OverviewPolyline;
 	}
 	struct Legs {
-		trafficSpeedEntry @0 :List(Text);
-		duration @1 :Distance;
-		steps @2 :List(Steps);
+		startAddress @0 :Text;
+		distance @1 :Distance;
+		startLocation @2 :Northeast;
 		viaWaypoint @3 :List(Text);
-		startAddress @4 :Text;
-		endAddress @5 :Text;
+		trafficSpeedEntry @4 :List(Text);
+		steps @5 :List(Steps);
 		endLocation @6 :Northeast;
-		distance @7 :Distance;
-		startLocation @8 :Northeast;
+		duration @7 :Distance;
+		endAddress @8 :Text;
 	}
 	struct Routes {
-		bounds @0 :Bounds;
-		warnings @1 :List(Text);
+		legs @0 :List(Legs);
+		copyrights @1 :Text;
 		overviewPolyline @2 :OverviewPolyline;
-		waypointOrder @3 :List(Text);
-		legs @4 :List(Legs);
+		warnings @3 :List(Text);
+		waypointOrder @4 :List(Text);
 		summary @5 :Text;
-		copyrights @6 :Text;
+		bounds @6 :Bounds;
 	}
 	struct GeocodedWaypoints {
-		placeId @0 :Text;
+		types @0 :List(Text);
 		geocoderStatus @1 :Text;
-		types @2 :List(Text);
+		placeId @2 :Text;
 	}
 }
