@@ -15,7 +15,6 @@ public class FastJsonBenchmark extends AbstractBenchmark<byte[]> {
 
     @Override
     protected Object deserializeItem(byte[] encodedItem, Class<?> objectType) {
-        // System.out.println(new String(encodedItem, StandardCharsets.UTF_8));
         return JSON.parseObject(encodedItem, objectType);
     }
 
