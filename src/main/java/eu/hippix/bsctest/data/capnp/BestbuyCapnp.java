@@ -32,1034 +32,1573 @@ public final class BestbuyCapnp {
       public final Reader asReader() {
         return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
       }
-      public final boolean hasFulfilledBy() {
+      public final boolean hasTechnologyCode() {
         return !_pointerFieldIsNull(0);
       }
-      public final org.capnproto.Text.Builder getFulfilledBy() {
+      public final org.capnproto.Text.Builder getTechnologyCode() {
         return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
       }
-      public final void setFulfilledBy(org.capnproto.Text.Reader value) {
+      public final void setTechnologyCode(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 0, value);
       }
-      public final void setFulfilledBy(String value) {
+      public final void setTechnologyCode(String value) {
         _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initFulfilledBy(int size) {
+      public final org.capnproto.Text.Builder initTechnologyCode(int size) {
         return _initPointerField(org.capnproto.Text.factory, 0, size);
       }
-      public final boolean hasActivationCharge() {
+      public final boolean hasLongDescription() {
         return !_pointerFieldIsNull(1);
       }
-      public final org.capnproto.Text.Builder getActivationCharge() {
+      public final org.capnproto.Text.Builder getLongDescription() {
         return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
       }
-      public final void setActivationCharge(org.capnproto.Text.Reader value) {
+      public final void setLongDescription(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 1, value);
       }
-      public final void setActivationCharge(String value) {
+      public final void setLongDescription(String value) {
         _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initActivationCharge(int size) {
+      public final org.capnproto.Text.Builder initLongDescription(int size) {
         return _initPointerField(org.capnproto.Text.factory, 1, size);
       }
-      public final int getClassId() {
+      public final int getHdmiInputs() {
         return _getIntField(0);
       }
-      public final void setClassId(int value) {
+      public final void setHdmiInputs(int value) {
         _setIntField(0, value);
       }
 
-      public final boolean getOutletCenter() {
-        return _getBooleanField(32);
+      public final boolean hasStartDate() {
+        return !_pointerFieldIsNull(2);
       }
-      public final void setOutletCenter(boolean value) {
-        _setBooleanField(32, value);
+      public final org.capnproto.Text.Builder getStartDate() {
+        return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
       }
-
-      public final double getRegularPrice() {
+      public final void setStartDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 2, value);
+      }
+      public final void setStartDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initStartDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 2, size);
+      }
+      public final boolean hasWeight() {
+        return !_pointerFieldIsNull(3);
+      }
+      public final org.capnproto.Text.Builder getWeight() {
+        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+      }
+      public final void setWeight(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 3, value);
+      }
+      public final void setWeight(String value) {
+        _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initWeight(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 3, size);
+      }
+      public final double getCapacityCuFt() {
         return _getDoubleField(1);
       }
-      public final void setRegularPrice(double value) {
+      public final void setCapacityCuFt(double value) {
         _setDoubleField(1, value);
       }
 
-      public final boolean hasProtectionPlanHighPrice() {
-        return !_pointerFieldIsNull(2);
-      }
-      public final org.capnproto.Text.Builder getProtectionPlanHighPrice() {
-        return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
-      }
-      public final void setProtectionPlanHighPrice(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 2, value);
-      }
-      public final void setProtectionPlanHighPrice(String value) {
-        _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initProtectionPlanHighPrice(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 2, size);
-      }
-      public final double getCapacityFreshFoodCuFt() {
-        return _getDoubleField(2);
-      }
-      public final void setCapacityFreshFoodCuFt(double value) {
-        _setDoubleField(2, value);
-      }
-
-      public final boolean getHomeDelivery() {
-        return _getBooleanField(33);
-      }
-      public final void setHomeDelivery(boolean value) {
-        _setBooleanField(33, value);
-      }
-
-      public final boolean hasMediumImage() {
-        return !_pointerFieldIsNull(3);
-      }
-      public final org.capnproto.Text.Builder getMediumImage() {
-        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
-      }
-      public final void setMediumImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 3, value);
-      }
-      public final void setMediumImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initMediumImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 3, size);
-      }
-      public final boolean getWifiBuiltIn() {
-        return _getBooleanField(34);
-      }
-      public final void setWifiBuiltIn(boolean value) {
-        _setBooleanField(34, value);
-      }
-
-      public final boolean hasValidUntil() {
+      public final boolean hasType() {
         return !_pointerFieldIsNull(4);
       }
-      public final org.capnproto.Text.Builder getValidUntil() {
+      public final org.capnproto.Text.Builder getType() {
         return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
       }
-      public final void setValidUntil(org.capnproto.Text.Reader value) {
+      public final void setType(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 4, value);
       }
-      public final void setValidUntil(String value) {
+      public final void setType(String value) {
         _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initValidUntil(int size) {
+      public final org.capnproto.Text.Builder initType(int size) {
         return _initPointerField(org.capnproto.Text.factory, 4, size);
       }
-      public final boolean hasMembers() {
+      public final boolean hasScannerType() {
         return !_pointerFieldIsNull(5);
       }
-      public final org.capnproto.TextList.Builder getMembers() {
-        return _getPointerField(org.capnproto.TextList.factory, 5, null, 0);
+      public final org.capnproto.Text.Builder getScannerType() {
+        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
       }
-      public final void setMembers(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 5, value);
+      public final void setScannerType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 5, value);
       }
-      public final org.capnproto.TextList.Builder initMembers(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 5, size);
+      public final void setScannerType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
       }
-      public final boolean hasCabinetSideColor() {
+      public final org.capnproto.Text.Builder initScannerType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 5, size);
+      }
+      public final boolean hasCollection() {
         return !_pointerFieldIsNull(6);
       }
-      public final org.capnproto.Text.Builder getCabinetSideColor() {
+      public final org.capnproto.Text.Builder getCollection() {
         return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
       }
-      public final void setCabinetSideColor(org.capnproto.Text.Reader value) {
+      public final void setCollection(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 6, value);
       }
-      public final void setCabinetSideColor(String value) {
+      public final void setCollection(String value) {
         _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initCabinetSideColor(int size) {
+      public final org.capnproto.Text.Builder initCollection(int size) {
         return _initPointerField(org.capnproto.Text.factory, 6, size);
       }
-      public final double getDepthLessDoorIn() {
-        return _getDoubleField(3);
-      }
-      public final void setDepthLessDoorIn(double value) {
-        _setDoubleField(3, value);
-      }
-
-      public final boolean getDigital() {
-        return _getBooleanField(35);
-      }
-      public final void setDigital(boolean value) {
-        _setBooleanField(35, value);
-      }
-
-      public final boolean hasGenre() {
-        return !_pointerFieldIsNull(7);
-      }
-      public final org.capnproto.Text.Builder getGenre() {
-        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
-      }
-      public final void setGenre(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 7, value);
-      }
-      public final void setGenre(String value) {
-        _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initGenre(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 7, size);
-      }
-      public final boolean hasBuybackPlans() {
-        return !_pointerFieldIsNull(8);
-      }
-      public final org.capnproto.TextList.Builder getBuybackPlans() {
-        return _getPointerField(org.capnproto.TextList.factory, 8, null, 0);
-      }
-      public final void setBuybackPlans(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 8, value);
-      }
-      public final org.capnproto.TextList.Builder initBuybackPlans(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 8, size);
-      }
-      public final boolean getSecondRinse() {
-        return _getBooleanField(36);
-      }
-      public final void setSecondRinse(boolean value) {
-        _setBooleanField(36, value);
-      }
-
-      public final boolean hasImage() {
-        return !_pointerFieldIsNull(9);
-      }
-      public final org.capnproto.Text.Builder getImage() {
-        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-      }
-      public final void setImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 9, value);
-      }
-      public final void setImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 9, size);
-      }
-      public final boolean hasLargeFrontImage() {
-        return !_pointerFieldIsNull(10);
-      }
-      public final org.capnproto.Text.Builder getLargeFrontImage() {
-        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-      }
-      public final void setLargeFrontImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 10, value);
-      }
-      public final void setLargeFrontImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initLargeFrontImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 10, size);
-      }
-      public final boolean hasAngleImage() {
-        return !_pointerFieldIsNull(11);
-      }
-      public final org.capnproto.Text.Builder getAngleImage() {
-        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
-      }
-      public final void setAngleImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 11, value);
-      }
-      public final void setAngleImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAngleImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 11, size);
-      }
-      public final boolean hasDriveConnectivity() {
-        return !_pointerFieldIsNull(12);
-      }
-      public final org.capnproto.Text.Builder getDriveConnectivity() {
-        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
-      }
-      public final void setDriveConnectivity(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 12, value);
-      }
-      public final void setDriveConnectivity(String value) {
-        _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initDriveConnectivity(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 12, size);
-      }
-      public final boolean getSmartCapable() {
-        return _getBooleanField(37);
-      }
-      public final void setSmartCapable(boolean value) {
-        _setBooleanField(37, value);
-      }
-
-      public final boolean hasValidFrom() {
-        return !_pointerFieldIsNull(13);
-      }
-      public final org.capnproto.Text.Builder getValidFrom() {
-        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
-      }
-      public final void setValidFrom(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 13, value);
-      }
-      public final void setValidFrom(String value) {
-        _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initValidFrom(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 13, size);
-      }
-      public final int getMediaCount() {
-        return _getIntField(8);
-      }
-      public final void setMediaCount(int value) {
-        _setIntField(8, value);
-      }
-
-      public final boolean getUsbPort() {
-        return _getBooleanField(38);
-      }
-      public final void setUsbPort(boolean value) {
-        _setBooleanField(38, value);
-      }
-
-      public final boolean hasHeight() {
-        return !_pointerFieldIsNull(14);
-      }
-      public final org.capnproto.Text.Builder getHeight() {
-        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-      }
-      public final void setHeight(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 14, value);
-      }
-      public final void setHeight(String value) {
-        _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initHeight(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 14, size);
-      }
-      public final int getCustomerReviewCount() {
-        return _getIntField(9);
-      }
-      public final void setCustomerReviewCount(int value) {
-        _setIntField(9, value);
-      }
-
-      public final boolean hasRemoteControlImage() {
-        return !_pointerFieldIsNull(15);
-      }
-      public final org.capnproto.Text.Builder getRemoteControlImage() {
-        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
-      }
-      public final void setRemoteControlImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 15, value);
-      }
-      public final void setRemoteControlImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initRemoteControlImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 15, size);
-      }
-      public final boolean hasTopViewImage() {
-        return !_pointerFieldIsNull(16);
-      }
-      public final org.capnproto.Text.Builder getTopViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
-      }
-      public final void setTopViewImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 16, value);
-      }
-      public final void setTopViewImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initTopViewImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 16, size);
-      }
-      public final boolean hasProductFamilies() {
-        return !_pointerFieldIsNull(17);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Builder> getProductFamilies() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 17, null, 0);
-      }
-      public final void setProductFamilies(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 17, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Builder> initProductFamilies(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 17, size);
-      }
-      public final double getDepthWithDoorOpenIn() {
-        return _getDoubleField(5);
-      }
-      public final void setDepthWithDoorOpenIn(double value) {
-        _setDoubleField(5, value);
-      }
-
-      public final boolean hasLinkShareAffiliateAddToCartUrl() {
-        return !_pointerFieldIsNull(18);
-      }
-      public final org.capnproto.Text.Builder getLinkShareAffiliateAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
-      }
-      public final void setLinkShareAffiliateAddToCartUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 18, value);
-      }
-      public final void setLinkShareAffiliateAddToCartUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initLinkShareAffiliateAddToCartUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 18, size);
-      }
-      public final boolean getBluetoothEnabled() {
-        return _getBooleanField(39);
-      }
-      public final void setBluetoothEnabled(boolean value) {
-        _setBooleanField(39, value);
-      }
-
-      public final boolean getDelicateCycle() {
-        return _getBooleanField(40);
-      }
-      public final void setDelicateCycle(boolean value) {
-        _setBooleanField(40, value);
-      }
-
-      public final boolean hasPlanType() {
-        return !_pointerFieldIsNull(19);
-      }
-      public final org.capnproto.Text.Builder getPlanType() {
-        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
-      }
-      public final void setPlanType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 19, value);
-      }
-      public final void setPlanType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPlanType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 19, size);
-      }
-      public final boolean hasFrequentlyPurchasedWith() {
-        return !_pointerFieldIsNull(20);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getFrequentlyPurchasedWith() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 20, null, 0);
-      }
-      public final void setFrequentlyPurchasedWith(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 20, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initFrequentlyPurchasedWith(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 20, size);
-      }
-      public final boolean hasShippingCost() {
-        return !_pointerFieldIsNull(21);
-      }
-      public final org.capnproto.Text.Builder getShippingCost() {
-        return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
-      }
-      public final void setShippingCost(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 21, value);
-      }
-      public final void setShippingCost(String value) {
-        _setPointerField(org.capnproto.Text.factory, 21, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initShippingCost(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 21, size);
-      }
-      public final boolean hasWaterFilterLocation() {
-        return !_pointerFieldIsNull(22);
-      }
-      public final org.capnproto.Text.Builder getWaterFilterLocation() {
-        return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
-      }
-      public final void setWaterFilterLocation(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 22, value);
-      }
-      public final void setWaterFilterLocation(String value) {
-        _setPointerField(org.capnproto.Text.factory, 22, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initWaterFilterLocation(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 22, size);
-      }
-      public final boolean getOnlinePlay() {
-        return _getBooleanField(41);
-      }
-      public final void setOnlinePlay(boolean value) {
-        _setBooleanField(41, value);
+      public final int getSalesRankLongTerm() {
+        return _getIntField(1);
+      }
+      public final void setSalesRankLongTerm(int value) {
+        _setIntField(1, value);
       }
 
       public final boolean getDelayedStart() {
-        return _getBooleanField(42);
+        return _getBooleanField(128);
       }
       public final void setDelayedStart(boolean value) {
-        _setBooleanField(42, value);
+        _setBooleanField(128, value);
       }
 
-      public final boolean getSleepTimer() {
-        return _getBooleanField(43);
+      public final boolean hasShippingWeight() {
+        return !_pointerFieldIsNull(7);
       }
-      public final void setSleepTimer(boolean value) {
-        _setBooleanField(43, value);
+      public final org.capnproto.Text.Builder getShippingWeight() {
+        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+      }
+      public final void setShippingWeight(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 7, value);
+      }
+      public final void setShippingWeight(String value) {
+        _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initShippingWeight(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 7, size);
+      }
+      public final boolean hasPriceRestriction() {
+        return !_pointerFieldIsNull(8);
+      }
+      public final org.capnproto.Text.Builder getPriceRestriction() {
+        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
+      }
+      public final void setPriceRestriction(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 8, value);
+      }
+      public final void setPriceRestriction(String value) {
+        _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPriceRestriction(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 8, size);
+      }
+      public final boolean hasLeftViewImage() {
+        return !_pointerFieldIsNull(9);
+      }
+      public final org.capnproto.Text.Builder getLeftViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+      }
+      public final void setLeftViewImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 9, value);
+      }
+      public final void setLeftViewImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initLeftViewImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 9, size);
+      }
+      public final boolean getOnScreenDisplay() {
+        return _getBooleanField(129);
+      }
+      public final void setOnScreenDisplay(boolean value) {
+        _setBooleanField(129, value);
       }
 
-      public final boolean hasCarrierModelNumber() {
-        return !_pointerFieldIsNull(23);
+      public final boolean hasFormat() {
+        return !_pointerFieldIsNull(10);
       }
-      public final org.capnproto.Text.Builder getCarrierModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
+      public final org.capnproto.Text.Builder getFormat() {
+        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
       }
-      public final void setCarrierModelNumber(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 23, value);
+      public final void setFormat(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 10, value);
       }
-      public final void setCarrierModelNumber(String value) {
-        _setPointerField(org.capnproto.Text.factory, 23, new org.capnproto.Text.Reader(value));
+      public final void setFormat(String value) {
+        _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initCarrierModelNumber(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 23, size);
+      public final org.capnproto.Text.Builder initFormat(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 10, size);
       }
-      public final boolean hasLoadAccess() {
-        return !_pointerFieldIsNull(24);
+      public final int getNumberOfChannels() {
+        return _getIntField(5);
       }
-      public final org.capnproto.Text.Builder getLoadAccess() {
-        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
+      public final void setNumberOfChannels(int value) {
+        _setIntField(5, value);
       }
-      public final void setLoadAccess(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 24, value);
+
+      public final boolean hasThumbnailImage() {
+        return !_pointerFieldIsNull(11);
       }
-      public final void setLoadAccess(String value) {
-        _setPointerField(org.capnproto.Text.factory, 24, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder getThumbnailImage() {
+        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder initLoadAccess(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 24, size);
+      public final void setThumbnailImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 11, value);
       }
+      public final void setThumbnailImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initThumbnailImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 11, size);
+      }
+      public final boolean hasShippingCost() {
+        return !_pointerFieldIsNull(12);
+      }
+      public final org.capnproto.Text.Builder getShippingCost() {
+        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+      }
+      public final void setShippingCost(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 12, value);
+      }
+      public final void setShippingCost(String value) {
+        _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initShippingCost(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 12, size);
+      }
+      public final boolean hasContrastRatio() {
+        return !_pointerFieldIsNull(13);
+      }
+      public final org.capnproto.Text.Builder getContrastRatio() {
+        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+      }
+      public final void setContrastRatio(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 13, value);
+      }
+      public final void setContrastRatio(String value) {
+        _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initContrastRatio(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 13, size);
+      }
+      public final boolean hasOnlineAvailabilityText() {
+        return !_pointerFieldIsNull(14);
+      }
+      public final org.capnproto.Text.Builder getOnlineAvailabilityText() {
+        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+      }
+      public final void setOnlineAvailabilityText(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 14, value);
+      }
+      public final void setOnlineAvailabilityText(String value) {
+        _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initOnlineAvailabilityText(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 14, size);
+      }
+      public final double getHeightToTopOfRefrigeratorIn() {
+        return _getDoubleField(3);
+      }
+      public final void setHeightToTopOfRefrigeratorIn(double value) {
+        _setDoubleField(3, value);
+      }
+
+      public final boolean hasRelatedProducts() {
+        return !_pointerFieldIsNull(15);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getRelatedProducts() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 15, null, 0);
+      }
+      public final void setRelatedProducts(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 15, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initRelatedProducts(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 15, size);
+      }
+      public final boolean getUsbPort() {
+        return _getBooleanField(130);
+      }
+      public final void setUsbPort(boolean value) {
+        _setBooleanField(130, value);
+      }
+
+      public final boolean hasThruTheDoorDispenser() {
+        return !_pointerFieldIsNull(16);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Builder> getThruTheDoorDispenser() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 16, null, 0);
+      }
+      public final void setThruTheDoorDispenser(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 16, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Builder> initThruTheDoorDispenser(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 16, size);
+      }
+      public final boolean hasTopViewImage() {
+        return !_pointerFieldIsNull(17);
+      }
+      public final org.capnproto.Text.Builder getTopViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+      }
+      public final void setTopViewImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 17, value);
+      }
+      public final void setTopViewImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initTopViewImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 17, size);
+      }
+      public final boolean hasWidth() {
+        return !_pointerFieldIsNull(18);
+      }
+      public final org.capnproto.Text.Builder getWidth() {
+        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
+      }
+      public final void setWidth(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 18, value);
+      }
+      public final void setWidth(String value) {
+        _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initWidth(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 18, size);
+      }
+      public final boolean getInternetConnectable() {
+        return _getBooleanField(131);
+      }
+      public final void setInternetConnectable(boolean value) {
+        _setBooleanField(131, value);
+      }
+
       public final boolean hasStudioLive() {
-        return !_pointerFieldIsNull(25);
+        return !_pointerFieldIsNull(19);
       }
       public final org.capnproto.Text.Builder getStudioLive() {
-        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
       }
       public final void setStudioLive(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 25, value);
+        _setPointerField(org.capnproto.Text.factory, 19, value);
       }
       public final void setStudioLive(String value) {
-        _setPointerField(org.capnproto.Text.factory, 25, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initStudioLive(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 19, size);
+      }
+      public final int getQuantityLimit() {
+        return _getIntField(8);
+      }
+      public final void setQuantityLimit(int value) {
+        _setIntField(8, value);
+      }
+
+      public final boolean getDoorOpenAlarm() {
+        return _getBooleanField(132);
+      }
+      public final void setDoorOpenAlarm(boolean value) {
+        _setBooleanField(132, value);
+      }
+
+      public final boolean getParentalAdvisory() {
+        return _getBooleanField(133);
+      }
+      public final void setParentalAdvisory(boolean value) {
+        _setBooleanField(133, value);
+      }
+
+      public final boolean hasHeight() {
+        return !_pointerFieldIsNull(20);
+      }
+      public final org.capnproto.Text.Builder getHeight() {
+        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+      }
+      public final void setHeight(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 20, value);
+      }
+      public final void setHeight(String value) {
+        _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initHeight(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 20, size);
+      }
+      public final boolean hasPlanFeatures() {
+        return !_pointerFieldIsNull(21);
+      }
+      public final org.capnproto.TextList.Builder getPlanFeatures() {
+        return _getPointerField(org.capnproto.TextList.factory, 21, null, 0);
+      }
+      public final void setPlanFeatures(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 21, value);
+      }
+      public final org.capnproto.TextList.Builder initPlanFeatures(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 21, size);
+      }
+      public final int getLengthInMinutes() {
+        return _getIntField(9);
+      }
+      public final void setLengthInMinutes(int value) {
+        _setIntField(9, value);
+      }
+
+      public final boolean hasBundledIn() {
+        return !_pointerFieldIsNull(22);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getBundledIn() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 22, null, 0);
+      }
+      public final void setBundledIn(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 22, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initBundledIn(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 22, size);
+      }
+      public final boolean getHandWashCycle() {
+        return _getBooleanField(134);
+      }
+      public final void setHandWashCycle(boolean value) {
+        _setBooleanField(134, value);
+      }
+
+      public final boolean getCompactDesign() {
+        return _getBooleanField(135);
+      }
+      public final void setCompactDesign(boolean value) {
+        _setBooleanField(135, value);
+      }
+
+      public final boolean getEndOfCycleSignal() {
+        return _getBooleanField(136);
+      }
+      public final void setEndOfCycleSignal(boolean value) {
+        _setBooleanField(136, value);
+      }
+
+      public final boolean getSecondaryMarket() {
+        return _getBooleanField(137);
+      }
+      public final void setSecondaryMarket(boolean value) {
+        _setBooleanField(137, value);
+      }
+
+      public final boolean hasLargeFrontImage() {
+        return !_pointerFieldIsNull(23);
+      }
+      public final org.capnproto.Text.Builder getLargeFrontImage() {
+        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
+      }
+      public final void setLargeFrontImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 23, value);
+      }
+      public final void setLargeFrontImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 23, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initLargeFrontImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 23, size);
+      }
+      public final boolean getExtraDelicateCycle() {
+        return _getBooleanField(138);
+      }
+      public final void setExtraDelicateCycle(boolean value) {
+        _setBooleanField(138, value);
+      }
+
+      public final boolean hasNumberOfPlayers() {
+        return !_pointerFieldIsNull(24);
+      }
+      public final org.capnproto.Text.Builder getNumberOfPlayers() {
+        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
+      }
+      public final void setNumberOfPlayers(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 24, value);
+      }
+      public final void setNumberOfPlayers(String value) {
+        _setPointerField(org.capnproto.Text.factory, 24, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initNumberOfPlayers(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 24, size);
+      }
+      public final boolean getCustomerTopRated() {
+        return _getBooleanField(139);
+      }
+      public final void setCustomerTopRated(boolean value) {
+        _setBooleanField(139, value);
+      }
+
+      public final boolean hasFulfilledBy() {
+        return !_pointerFieldIsNull(25);
+      }
+      public final org.capnproto.Text.Builder getFulfilledBy() {
+        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
+      }
+      public final void setFulfilledBy(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 25, value);
+      }
+      public final void setFulfilledBy(String value) {
+        _setPointerField(org.capnproto.Text.factory, 25, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initFulfilledBy(int size) {
         return _initPointerField(org.capnproto.Text.factory, 25, size);
       }
-      public final boolean hasTemperatureControlType() {
+      public final boolean hasActivationCharge() {
         return !_pointerFieldIsNull(26);
       }
-      public final org.capnproto.Text.Builder getTemperatureControlType() {
+      public final org.capnproto.Text.Builder getActivationCharge() {
         return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
       }
-      public final void setTemperatureControlType(org.capnproto.Text.Reader value) {
+      public final void setActivationCharge(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 26, value);
       }
-      public final void setTemperatureControlType(String value) {
+      public final void setActivationCharge(String value) {
         _setPointerField(org.capnproto.Text.factory, 26, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initTemperatureControlType(int size) {
+      public final org.capnproto.Text.Builder initActivationCharge(int size) {
         return _initPointerField(org.capnproto.Text.factory, 26, size);
       }
-      public final double getEstimatedYearlyOperatingCostsUsd() {
-        return _getDoubleField(6);
-      }
-      public final void setEstimatedYearlyOperatingCostsUsd(double value) {
-        _setDoubleField(6, value);
-      }
-
-      public final boolean hasAlternateViewsImage() {
+      public final boolean hasOriginalReleaseDate() {
         return !_pointerFieldIsNull(27);
       }
-      public final org.capnproto.Text.Builder getAlternateViewsImage() {
+      public final org.capnproto.Text.Builder getOriginalReleaseDate() {
         return _getPointerField(org.capnproto.Text.factory, 27, null, 0, 0);
       }
-      public final void setAlternateViewsImage(org.capnproto.Text.Reader value) {
+      public final void setOriginalReleaseDate(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 27, value);
       }
-      public final void setAlternateViewsImage(String value) {
+      public final void setOriginalReleaseDate(String value) {
         _setPointerField(org.capnproto.Text.factory, 27, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initAlternateViewsImage(int size) {
+      public final org.capnproto.Text.Builder initOriginalReleaseDate(int size) {
         return _initPointerField(org.capnproto.Text.factory, 27, size);
       }
-      public final boolean hasLinkShareAffiliateUrl() {
+      public final boolean hasLoadAccess() {
         return !_pointerFieldIsNull(28);
       }
-      public final org.capnproto.Text.Builder getLinkShareAffiliateUrl() {
+      public final org.capnproto.Text.Builder getLoadAccess() {
         return _getPointerField(org.capnproto.Text.factory, 28, null, 0, 0);
       }
-      public final void setLinkShareAffiliateUrl(org.capnproto.Text.Reader value) {
+      public final void setLoadAccess(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 28, value);
       }
-      public final void setLinkShareAffiliateUrl(String value) {
+      public final void setLoadAccess(String value) {
         _setPointerField(org.capnproto.Text.factory, 28, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initLinkShareAffiliateUrl(int size) {
+      public final org.capnproto.Text.Builder initLoadAccess(int size) {
         return _initPointerField(org.capnproto.Text.factory, 28, size);
       }
-      public final boolean hasModelNumber() {
+      public final int getStationPresetsAm() {
+        return _getIntField(10);
+      }
+      public final void setStationPresetsAm(int value) {
+        _setIntField(10, value);
+      }
+
+      public final boolean hasDepth() {
         return !_pointerFieldIsNull(29);
       }
-      public final org.capnproto.Text.Builder getModelNumber() {
+      public final org.capnproto.Text.Builder getDepth() {
         return _getPointerField(org.capnproto.Text.factory, 29, null, 0, 0);
       }
-      public final void setModelNumber(org.capnproto.Text.Reader value) {
+      public final void setDepth(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 29, value);
       }
-      public final void setModelNumber(String value) {
+      public final void setDepth(String value) {
         _setPointerField(org.capnproto.Text.factory, 29, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initModelNumber(int size) {
+      public final org.capnproto.Text.Builder initDepth(int size) {
         return _initPointerField(org.capnproto.Text.factory, 29, size);
       }
-      public final int getStationPresetsFm() {
-        return _getIntField(14);
+      public final boolean getSleepTimer() {
+        return _getBooleanField(140);
       }
-      public final void setStationPresetsFm(int value) {
-        _setIntField(14, value);
-      }
-
-      public final int getDepartmentId() {
-        return _getIntField(15);
-      }
-      public final void setDepartmentId(int value) {
-        _setIntField(15, value);
+      public final void setSleepTimer(boolean value) {
+        _setBooleanField(140, value);
       }
 
-      public final double getHeightToTopOfDoorHingeIn() {
-        return _getDoubleField(8);
-      }
-      public final void setHeightToTopOfDoorHingeIn(double value) {
-        _setDoubleField(8, value);
-      }
-
-      public final boolean hasDrumAndInteriorFinish() {
+      public final boolean hasMonoStereo() {
         return !_pointerFieldIsNull(30);
       }
-      public final org.capnproto.Text.Builder getDrumAndInteriorFinish() {
+      public final org.capnproto.Text.Builder getMonoStereo() {
         return _getPointerField(org.capnproto.Text.factory, 30, null, 0, 0);
       }
-      public final void setDrumAndInteriorFinish(org.capnproto.Text.Reader value) {
+      public final void setMonoStereo(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 30, value);
       }
-      public final void setDrumAndInteriorFinish(String value) {
+      public final void setMonoStereo(String value) {
         _setPointerField(org.capnproto.Text.factory, 30, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initDrumAndInteriorFinish(int size) {
+      public final org.capnproto.Text.Builder initMonoStereo(int size) {
         return _initPointerField(org.capnproto.Text.factory, 30, size);
       }
-      public final boolean hasEnergyGuideImage() {
+      public final boolean hasWaterFilterLocation() {
         return !_pointerFieldIsNull(31);
       }
-      public final org.capnproto.Text.Builder getEnergyGuideImage() {
+      public final org.capnproto.Text.Builder getWaterFilterLocation() {
         return _getPointerField(org.capnproto.Text.factory, 31, null, 0, 0);
       }
-      public final void setEnergyGuideImage(org.capnproto.Text.Reader value) {
+      public final void setWaterFilterLocation(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 31, value);
       }
-      public final void setEnergyGuideImage(String value) {
+      public final void setWaterFilterLocation(String value) {
         _setPointerField(org.capnproto.Text.factory, 31, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initEnergyGuideImage(int size) {
+      public final org.capnproto.Text.Builder initWaterFilterLocation(int size) {
         return _initPointerField(org.capnproto.Text.factory, 31, size);
       }
-      public final boolean getWaterFiltration() {
-        return _getBooleanField(44);
-      }
-      public final void setWaterFiltration(boolean value) {
-        _setBooleanField(44, value);
-      }
-
-      public final boolean hasProtectionPlanLowPrice() {
+      public final boolean hasCabinetSideColor() {
         return !_pointerFieldIsNull(32);
       }
-      public final org.capnproto.Text.Builder getProtectionPlanLowPrice() {
+      public final org.capnproto.Text.Builder getCabinetSideColor() {
         return _getPointerField(org.capnproto.Text.factory, 32, null, 0, 0);
       }
-      public final void setProtectionPlanLowPrice(org.capnproto.Text.Reader value) {
+      public final void setCabinetSideColor(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 32, value);
       }
-      public final void setProtectionPlanLowPrice(String value) {
+      public final void setCabinetSideColor(String value) {
         _setPointerField(org.capnproto.Text.factory, 32, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initProtectionPlanLowPrice(int size) {
+      public final org.capnproto.Text.Builder initCabinetSideColor(int size) {
         return _initPointerField(org.capnproto.Text.factory, 32, size);
       }
-      public final boolean hasProtectionPlanType() {
+      public final boolean hasAdditionalFeatures() {
         return !_pointerFieldIsNull(33);
       }
-      public final org.capnproto.Text.Builder getProtectionPlanType() {
-        return _getPointerField(org.capnproto.Text.factory, 33, null, 0, 0);
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Builder> getAdditionalFeatures() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 33, null, 0);
       }
-      public final void setProtectionPlanType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 33, value);
+      public final void setAdditionalFeatures(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 33, value);
       }
-      public final void setProtectionPlanType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 33, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Builder> initAdditionalFeatures(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 33, size);
       }
-      public final org.capnproto.Text.Builder initProtectionPlanType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 33, size);
+      public final boolean getFrontFacingCamera() {
+        return _getBooleanField(141);
       }
-      public final boolean hasDisplayType() {
+      public final void setFrontFacingCamera(boolean value) {
+        _setBooleanField(141, value);
+      }
+
+      public final boolean hasMembers() {
         return !_pointerFieldIsNull(34);
       }
-      public final org.capnproto.Text.Builder getDisplayType() {
-        return _getPointerField(org.capnproto.Text.factory, 34, null, 0, 0);
+      public final org.capnproto.TextList.Builder getMembers() {
+        return _getPointerField(org.capnproto.TextList.factory, 34, null, 0);
       }
-      public final void setDisplayType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 34, value);
+      public final void setMembers(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 34, value);
       }
-      public final void setDisplayType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 34, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.TextList.Builder initMembers(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 34, size);
       }
-      public final org.capnproto.Text.Builder initDisplayType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 34, size);
-      }
-      public final int getSalesRankShortTerm() {
-        return _getIntField(18);
-      }
-      public final void setSalesRankShortTerm(int value) {
-        _setIntField(18, value);
-      }
-
-      public final double getDollarSavings() {
-        return _getDoubleField(10);
-      }
-      public final void setDollarSavings(double value) {
-        _setDoubleField(10, value);
-      }
-
-      public final boolean hasAffiliateAddToCartUrl() {
+      public final boolean hasListingId() {
         return !_pointerFieldIsNull(35);
       }
-      public final org.capnproto.Text.Builder getAffiliateAddToCartUrl() {
+      public final org.capnproto.Text.Builder getListingId() {
         return _getPointerField(org.capnproto.Text.factory, 35, null, 0, 0);
       }
-      public final void setAffiliateAddToCartUrl(org.capnproto.Text.Reader value) {
+      public final void setListingId(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 35, value);
       }
-      public final void setAffiliateAddToCartUrl(String value) {
+      public final void setListingId(String value) {
         _setPointerField(org.capnproto.Text.factory, 35, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initAffiliateAddToCartUrl(int size) {
+      public final org.capnproto.Text.Builder initListingId(int size) {
         return _initPointerField(org.capnproto.Text.factory, 35, size);
       }
-      public final boolean getInteriorLight() {
-        return _getBooleanField(45);
+      public final boolean hasPowerSource() {
+        return !_pointerFieldIsNull(36);
       }
-      public final void setInteriorLight(boolean value) {
-        _setBooleanField(45, value);
+      public final org.capnproto.Text.Builder getPowerSource() {
+        return _getPointerField(org.capnproto.Text.factory, 36, null, 0, 0);
+      }
+      public final void setPowerSource(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 36, value);
+      }
+      public final void setPowerSource(String value) {
+        _setPointerField(org.capnproto.Text.factory, 36, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPowerSource(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 36, size);
+      }
+      public final boolean hasUrl() {
+        return !_pointerFieldIsNull(37);
+      }
+      public final org.capnproto.Text.Builder getUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 37, null, 0, 0);
+      }
+      public final void setUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 37, value);
+      }
+      public final void setUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 37, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 37, size);
+      }
+      public final boolean hasSellerId() {
+        return !_pointerFieldIsNull(38);
+      }
+      public final org.capnproto.Text.Builder getSellerId() {
+        return _getPointerField(org.capnproto.Text.factory, 38, null, 0, 0);
+      }
+      public final void setSellerId(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 38, value);
+      }
+      public final void setSellerId(String value) {
+        _setPointerField(org.capnproto.Text.factory, 38, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSellerId(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 38, size);
+      }
+      public final boolean hasAlbumLabel() {
+        return !_pointerFieldIsNull(39);
+      }
+      public final org.capnproto.Text.Builder getAlbumLabel() {
+        return _getPointerField(org.capnproto.Text.factory, 39, null, 0, 0);
+      }
+      public final void setAlbumLabel(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 39, value);
+      }
+      public final void setAlbumLabel(String value) {
+        _setPointerField(org.capnproto.Text.factory, 39, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAlbumLabel(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 39, size);
+      }
+      public final boolean hasMountBracketVesaPattern() {
+        return !_pointerFieldIsNull(40);
+      }
+      public final org.capnproto.Text.Builder getMountBracketVesaPattern() {
+        return _getPointerField(org.capnproto.Text.factory, 40, null, 0, 0);
+      }
+      public final void setMountBracketVesaPattern(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 40, value);
+      }
+      public final void setMountBracketVesaPattern(String value) {
+        _setPointerField(org.capnproto.Text.factory, 40, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initMountBracketVesaPattern(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 40, size);
+      }
+      public final boolean getSpecialOrder() {
+        return _getBooleanField(142);
+      }
+      public final void setSpecialOrder(boolean value) {
+        _setBooleanField(142, value);
+      }
+
+      public final boolean getWifiReady() {
+        return _getBooleanField(143);
+      }
+      public final void setWifiReady(boolean value) {
+        _setBooleanField(143, value);
+      }
+
+      public final boolean getClearance() {
+        return _getBooleanField(144);
+      }
+      public final void setClearance(boolean value) {
+        _setBooleanField(144, value);
+      }
+
+      public final boolean hasInStoreAvailabilityUpdateDate() {
+        return !_pointerFieldIsNull(41);
+      }
+      public final org.capnproto.Text.Builder getInStoreAvailabilityUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 41, null, 0, 0);
+      }
+      public final void setInStoreAvailabilityUpdateDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 41, value);
+      }
+      public final void setInStoreAvailabilityUpdateDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 41, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initInStoreAvailabilityUpdateDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 41, size);
+      }
+      public final boolean getFreeShippingEligible() {
+        return _getBooleanField(145);
+      }
+      public final void setFreeShippingEligible(boolean value) {
+        _setBooleanField(145, value);
+      }
+
+      public final boolean hasFamilyIndividualCode() {
+        return !_pointerFieldIsNull(42);
+      }
+      public final org.capnproto.Text.Builder getFamilyIndividualCode() {
+        return _getPointerField(org.capnproto.Text.factory, 42, null, 0, 0);
+      }
+      public final void setFamilyIndividualCode(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 42, value);
+      }
+      public final void setFamilyIndividualCode(String value) {
+        _setPointerField(org.capnproto.Text.factory, 42, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initFamilyIndividualCode(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 42, size);
+      }
+      public final boolean hasImage() {
+        return !_pointerFieldIsNull(43);
+      }
+      public final org.capnproto.Text.Builder getImage() {
+        return _getPointerField(org.capnproto.Text.factory, 43, null, 0, 0);
+      }
+      public final void setImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 43, value);
+      }
+      public final void setImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 43, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 43, size);
+      }
+      public final boolean getWifiBuiltIn() {
+        return _getBooleanField(146);
+      }
+      public final void setWifiBuiltIn(boolean value) {
+        _setBooleanField(146, value);
+      }
+
+      public final boolean getInStoreAvailability() {
+        return _getBooleanField(147);
+      }
+      public final void setInStoreAvailability(boolean value) {
+        _setBooleanField(147, value);
+      }
+
+      public final boolean hasAddToCartUrl() {
+        return !_pointerFieldIsNull(44);
+      }
+      public final org.capnproto.Text.Builder getAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 44, null, 0, 0);
+      }
+      public final void setAddToCartUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 44, value);
+      }
+      public final void setAddToCartUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 44, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAddToCartUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 44, size);
+      }
+      public final int getSku() {
+        return _getIntField(11);
+      }
+      public final void setSku(int value) {
+        _setIntField(11, value);
+      }
+
+      public final boolean getBleachDispenser() {
+        return _getBooleanField(148);
+      }
+      public final void setBleachDispenser(boolean value) {
+        _setBooleanField(148, value);
+      }
+
+      public final boolean hasMinutePrice() {
+        return !_pointerFieldIsNull(45);
+      }
+      public final org.capnproto.Text.Builder getMinutePrice() {
+        return _getPointerField(org.capnproto.Text.factory, 45, null, 0, 0);
+      }
+      public final void setMinutePrice(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 45, value);
+      }
+      public final void setMinutePrice(String value) {
+        _setPointerField(org.capnproto.Text.factory, 45, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initMinutePrice(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 45, size);
+      }
+      public final boolean getPreWashDispenser() {
+        return _getBooleanField(149);
+      }
+      public final void setPreWashDispenser(boolean value) {
+        _setBooleanField(149, value);
+      }
+
+      public final boolean getFreeShipping() {
+        return _getBooleanField(150);
+      }
+      public final void setFreeShipping(boolean value) {
+        _setBooleanField(150, value);
+      }
+
+      public final boolean getPermanentPressCycle() {
+        return _getBooleanField(151);
+      }
+      public final void setPermanentPressCycle(boolean value) {
+        _setBooleanField(151, value);
       }
 
       public final boolean hasOnlineAvailabilityUpdateDate() {
-        return !_pointerFieldIsNull(36);
+        return !_pointerFieldIsNull(46);
       }
       public final org.capnproto.Text.Builder getOnlineAvailabilityUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 36, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 46, null, 0, 0);
       }
       public final void setOnlineAvailabilityUpdateDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 36, value);
+        _setPointerField(org.capnproto.Text.factory, 46, value);
       }
       public final void setOnlineAvailabilityUpdateDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 36, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 46, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initOnlineAvailabilityUpdateDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 36, size);
+        return _initPointerField(org.capnproto.Text.factory, 46, size);
       }
-      public final boolean getCounterDepth() {
-        return _getBooleanField(46);
+      public final boolean getOnlineAvailability() {
+        return _getBooleanField(152);
       }
-      public final void setCounterDepth(boolean value) {
-        _setBooleanField(46, value);
+      public final void setOnlineAvailability(boolean value) {
+        _setBooleanField(152, value);
       }
 
+      public final boolean getCdRRwCompatible() {
+        return _getBooleanField(153);
+      }
+      public final void setCdRRwCompatible(boolean value) {
+        _setBooleanField(153, value);
+      }
+
+      public final boolean getRearFacingCamera() {
+        return _getBooleanField(154);
+      }
+      public final void setRearFacingCamera(boolean value) {
+        _setBooleanField(154, value);
+      }
+
+      public final int getCustomerReviewCount() {
+        return _getIntField(12);
+      }
+      public final void setCustomerReviewCount(int value) {
+        _setIntField(12, value);
+      }
+
+      public final boolean hasAngleImage() {
+        return !_pointerFieldIsNull(47);
+      }
+      public final org.capnproto.Text.Builder getAngleImage() {
+        return _getPointerField(org.capnproto.Text.factory, 47, null, 0, 0);
+      }
+      public final void setAngleImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 47, value);
+      }
+      public final void setAngleImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 47, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAngleImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 47, size);
+      }
+      public final boolean hasShippingLevelsOfService() {
+        return !_pointerFieldIsNull(48);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Builder> getShippingLevelsOfService() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 48, null, 0);
+      }
+      public final void setShippingLevelsOfService(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 48, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Builder> initShippingLevelsOfService(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 48, size);
+      }
+      public final double getEstimatedYearlyOperatingCostsUsd() {
+        return _getDoubleField(7);
+      }
+      public final void setEstimatedYearlyOperatingCostsUsd(double value) {
+        _setDoubleField(7, value);
+      }
+
+      public final boolean getBluetoothEnabled() {
+        return _getBooleanField(155);
+      }
+      public final void setBluetoothEnabled(boolean value) {
+        _setBooleanField(155, value);
+      }
+
+      public final boolean getSecondRinse() {
+        return _getBooleanField(156);
+      }
+      public final void setSecondRinse(boolean value) {
+        _setBooleanField(156, value);
+      }
+
+      public final boolean hasLinkShareAffiliateAddToCartUrl() {
+        return !_pointerFieldIsNull(49);
+      }
+      public final org.capnproto.Text.Builder getLinkShareAffiliateAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 49, null, 0, 0);
+      }
+      public final void setLinkShareAffiliateAddToCartUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 49, value);
+      }
+      public final void setLinkShareAffiliateAddToCartUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 49, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initLinkShareAffiliateAddToCartUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 49, size);
+      }
+      public final boolean hasScore() {
+        return !_pointerFieldIsNull(50);
+      }
+      public final org.capnproto.Text.Builder getScore() {
+        return _getPointerField(org.capnproto.Text.factory, 50, null, 0, 0);
+      }
+      public final void setScore(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 50, value);
+      }
+      public final void setScore(String value) {
+        _setPointerField(org.capnproto.Text.factory, 50, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initScore(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 50, size);
+      }
+      public final boolean getThreeDReady() {
+        return _getBooleanField(157);
+      }
+      public final void setThreeDReady(boolean value) {
+        _setBooleanField(157, value);
+      }
+
+      public final boolean hasManufacturer() {
+        return !_pointerFieldIsNull(51);
+      }
+      public final org.capnproto.Text.Builder getManufacturer() {
+        return _getPointerField(org.capnproto.Text.factory, 51, null, 0, 0);
+      }
+      public final void setManufacturer(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 51, value);
+      }
+      public final void setManufacturer(String value) {
+        _setPointerField(org.capnproto.Text.factory, 51, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initManufacturer(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 51, size);
+      }
       public final boolean hasInStoreAvailabilityText() {
-        return !_pointerFieldIsNull(37);
+        return !_pointerFieldIsNull(52);
       }
       public final org.capnproto.Text.Builder getInStoreAvailabilityText() {
-        return _getPointerField(org.capnproto.Text.factory, 37, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 52, null, 0, 0);
       }
       public final void setInStoreAvailabilityText(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 37, value);
+        _setPointerField(org.capnproto.Text.factory, 52, value);
       }
       public final void setInStoreAvailabilityText(String value) {
-        _setPointerField(org.capnproto.Text.factory, 37, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 52, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initInStoreAvailabilityText(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 37, size);
+        return _initPointerField(org.capnproto.Text.factory, 52, size);
       }
-      public final boolean hasServiceProvider() {
-        return !_pointerFieldIsNull(38);
+      public final boolean getOutletCenter() {
+        return _getBooleanField(158);
       }
-      public final org.capnproto.Text.Builder getServiceProvider() {
-        return _getPointerField(org.capnproto.Text.factory, 38, null, 0, 0);
-      }
-      public final void setServiceProvider(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 38, value);
-      }
-      public final void setServiceProvider(String value) {
-        _setPointerField(org.capnproto.Text.factory, 38, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initServiceProvider(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 38, size);
-      }
-      public final boolean getPreWashDispenser() {
-        return _getBooleanField(47);
-      }
-      public final void setPreWashDispenser(boolean value) {
-        _setBooleanField(47, value);
+      public final void setOutletCenter(boolean value) {
+        _setBooleanField(158, value);
       }
 
-      public final boolean hasRightViewImage() {
-        return !_pointerFieldIsNull(39);
+      public final boolean hasTotalHarmonicDistortion() {
+        return !_pointerFieldIsNull(53);
       }
-      public final org.capnproto.Text.Builder getRightViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 39, null, 0, 0);
+      public final org.capnproto.Text.Builder getTotalHarmonicDistortion() {
+        return _getPointerField(org.capnproto.Text.factory, 53, null, 0, 0);
       }
-      public final void setRightViewImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 39, value);
+      public final void setTotalHarmonicDistortion(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 53, value);
       }
-      public final void setRightViewImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 39, new org.capnproto.Text.Reader(value));
+      public final void setTotalHarmonicDistortion(String value) {
+        _setPointerField(org.capnproto.Text.factory, 53, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initRightViewImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 39, size);
+      public final org.capnproto.Text.Builder initTotalHarmonicDistortion(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 53, size);
       }
-      public final boolean hasDepth() {
-        return !_pointerFieldIsNull(40);
+      public final double getScreenSizeIn() {
+        return _getDoubleField(8);
       }
-      public final org.capnproto.Text.Builder getDepth() {
-        return _getPointerField(org.capnproto.Text.factory, 40, null, 0, 0);
-      }
-      public final void setDepth(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 40, value);
-      }
-      public final void setDepth(String value) {
-        _setPointerField(org.capnproto.Text.factory, 40, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initDepth(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 40, size);
-      }
-      public final boolean hasShippingWeight() {
-        return !_pointerFieldIsNull(41);
-      }
-      public final org.capnproto.Text.Builder getShippingWeight() {
-        return _getPointerField(org.capnproto.Text.factory, 41, null, 0, 0);
-      }
-      public final void setShippingWeight(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 41, value);
-      }
-      public final void setShippingWeight(String value) {
-        _setPointerField(org.capnproto.Text.factory, 41, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initShippingWeight(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 41, size);
-      }
-      public final int getAudioOutputs() {
-        return _getIntField(19);
-      }
-      public final void setAudioOutputs(int value) {
-        _setIntField(19, value);
+      public final void setScreenSizeIn(double value) {
+        _setDoubleField(8, value);
       }
 
-      public final boolean getChildLock() {
-        return _getBooleanField(48);
+      public final boolean hasTradeInValue() {
+        return !_pointerFieldIsNull(54);
       }
-      public final void setChildLock(boolean value) {
-        _setBooleanField(48, value);
+      public final org.capnproto.Text.Builder getTradeInValue() {
+        return _getPointerField(org.capnproto.Text.factory, 54, null, 0, 0);
+      }
+      public final void setTradeInValue(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 54, value);
+      }
+      public final void setTradeInValue(String value) {
+        _setPointerField(org.capnproto.Text.factory, 54, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initTradeInValue(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 54, size);
+      }
+      public final boolean getHeadphoneJacks() {
+        return _getBooleanField(159);
+      }
+      public final void setHeadphoneJacks(boolean value) {
+        _setBooleanField(159, value);
       }
 
-      public final int getHdmiOutputs() {
-        return _getIntField(22);
+      public final double getDepthLessDoorIn() {
+        return _getDoubleField(9);
       }
-      public final void setHdmiOutputs(int value) {
-        _setIntField(22, value);
+      public final void setDepthLessDoorIn(double value) {
+        _setDoubleField(9, value);
       }
 
-      public final boolean hasProtectionPlanTerm() {
-        return !_pointerFieldIsNull(42);
+      public final boolean getMoistureSensor() {
+        return _getBooleanField(416);
       }
-      public final org.capnproto.Text.Builder getProtectionPlanTerm() {
-        return _getPointerField(org.capnproto.Text.factory, 42, null, 0, 0);
+      public final void setMoistureSensor(boolean value) {
+        _setBooleanField(416, value);
       }
-      public final void setProtectionPlanTerm(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 42, value);
+
+      public final boolean hasBackViewImage() {
+        return !_pointerFieldIsNull(55);
       }
-      public final void setProtectionPlanTerm(String value) {
-        _setPointerField(org.capnproto.Text.factory, 42, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder getBackViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 55, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder initProtectionPlanTerm(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 42, size);
+      public final void setBackViewImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 55, value);
       }
-      public final boolean hasAccessoriesImage() {
-        return !_pointerFieldIsNull(43);
+      public final void setBackViewImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 55, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder getAccessoriesImage() {
-        return _getPointerField(org.capnproto.Text.factory, 43, null, 0, 0);
+      public final org.capnproto.Text.Builder initBackViewImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 55, size);
       }
-      public final void setAccessoriesImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 43, value);
+      public final boolean hasItemUpdateDate() {
+        return !_pointerFieldIsNull(56);
       }
-      public final void setAccessoriesImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 43, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder getItemUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 56, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder initAccessoriesImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 43, size);
+      public final void setItemUpdateDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 56, value);
       }
-      public final boolean getEthernetPort() {
-        return _getBooleanField(49);
+      public final void setItemUpdateDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 56, new org.capnproto.Text.Reader(value));
       }
-      public final void setEthernetPort(boolean value) {
-        _setBooleanField(49, value);
+      public final org.capnproto.Text.Builder initItemUpdateDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 56, size);
+      }
+      public final boolean hasSubtitleLanguages() {
+        return !_pointerFieldIsNull(57);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Builder> getSubtitleLanguages() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 57, null, 0);
+      }
+      public final void setSubtitleLanguages(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 57, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Builder> initSubtitleLanguages(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 57, size);
+      }
+      public final boolean hasPlaybackFormats() {
+        return !_pointerFieldIsNull(58);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Builder> getPlaybackFormats() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 58, null, 0);
+      }
+      public final void setPlaybackFormats(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 58, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Builder> initPlaybackFormats(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 58, size);
+      }
+      public final boolean getInStorePickup() {
+        return _getBooleanField(417);
+      }
+      public final void setInStorePickup(boolean value) {
+        _setBooleanField(417, value);
+      }
+
+      public final boolean hasBuybackPlans() {
+        return !_pointerFieldIsNull(59);
+      }
+      public final org.capnproto.TextList.Builder getBuybackPlans() {
+        return _getPointerField(org.capnproto.TextList.factory, 59, null, 0);
+      }
+      public final void setBuybackPlans(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 59, value);
+      }
+      public final org.capnproto.TextList.Builder initBuybackPlans(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 59, size);
+      }
+      public final boolean hasShippingRestrictions() {
+        return !_pointerFieldIsNull(60);
+      }
+      public final org.capnproto.Text.Builder getShippingRestrictions() {
+        return _getPointerField(org.capnproto.Text.factory, 60, null, 0, 0);
+      }
+      public final void setShippingRestrictions(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 60, value);
+      }
+      public final void setShippingRestrictions(String value) {
+        _setPointerField(org.capnproto.Text.factory, 60, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initShippingRestrictions(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 60, size);
+      }
+      public final boolean hasShortDescription() {
+        return !_pointerFieldIsNull(61);
+      }
+      public final org.capnproto.Text.Builder getShortDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 61, null, 0, 0);
+      }
+      public final void setShortDescription(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 61, value);
+      }
+      public final void setShortDescription(String value) {
+        _setPointerField(org.capnproto.Text.factory, 61, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initShortDescription(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 61, size);
+      }
+      public final int getDiscCapacity() {
+        return _getIntField(20);
+      }
+      public final void setDiscCapacity(int value) {
+        _setIntField(20, value);
+      }
+
+      public final boolean getFactoryInstalledIceMaker() {
+        return _getBooleanField(418);
+      }
+      public final void setFactoryInstalledIceMaker(boolean value) {
+        _setBooleanField(418, value);
+      }
+
+      public final boolean getSabbathMode() {
+        return _getBooleanField(419);
+      }
+      public final void setSabbathMode(boolean value) {
+        _setBooleanField(419, value);
       }
 
       public final boolean getLowPriceGuarantee() {
-        return _getBooleanField(50);
+        return _getBooleanField(420);
       }
       public final void setLowPriceGuarantee(boolean value) {
-        _setBooleanField(50, value);
+        _setBooleanField(420, value);
       }
 
-      public final boolean hasProtectionPlans() {
-        return !_pointerFieldIsNull(44);
+      public final boolean hasClazz() {
+        return !_pointerFieldIsNull(62);
       }
-      public final org.capnproto.TextList.Builder getProtectionPlans() {
-        return _getPointerField(org.capnproto.TextList.factory, 44, null, 0);
+      public final org.capnproto.Text.Builder getClazz() {
+        return _getPointerField(org.capnproto.Text.factory, 62, null, 0, 0);
       }
-      public final void setProtectionPlans(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 44, value);
+      public final void setClazz(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 62, value);
       }
-      public final org.capnproto.TextList.Builder initProtectionPlans(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 44, size);
+      public final void setClazz(String value) {
+        _setPointerField(org.capnproto.Text.factory, 62, new org.capnproto.Text.Reader(value));
       }
-      public final boolean hasDoorHandleColor() {
-        return !_pointerFieldIsNull(45);
+      public final org.capnproto.Text.Builder initClazz(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 62, size);
       }
-      public final org.capnproto.Text.Builder getDoorHandleColor() {
-        return _getPointerField(org.capnproto.Text.factory, 45, null, 0, 0);
+      public final boolean hasDrumAndInteriorFinish() {
+        return !_pointerFieldIsNull(63);
       }
-      public final void setDoorHandleColor(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 45, value);
+      public final org.capnproto.Text.Builder getDrumAndInteriorFinish() {
+        return _getPointerField(org.capnproto.Text.factory, 63, null, 0, 0);
       }
-      public final void setDoorHandleColor(String value) {
-        _setPointerField(org.capnproto.Text.factory, 45, new org.capnproto.Text.Reader(value));
+      public final void setDrumAndInteriorFinish(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 63, value);
       }
-      public final org.capnproto.Text.Builder initDoorHandleColor(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 45, size);
+      public final void setDrumAndInteriorFinish(String value) {
+        _setPointerField(org.capnproto.Text.factory, 63, new org.capnproto.Text.Reader(value));
       }
-      public final boolean hasTheatricalReleaseDate() {
-        return !_pointerFieldIsNull(46);
+      public final org.capnproto.Text.Builder initDrumAndInteriorFinish(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 63, size);
       }
-      public final org.capnproto.Text.Builder getTheatricalReleaseDate() {
-        return _getPointerField(org.capnproto.Text.factory, 46, null, 0, 0);
+      public final int getAudioOutputs() {
+        return _getIntField(21);
       }
-      public final void setTheatricalReleaseDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 46, value);
-      }
-      public final void setTheatricalReleaseDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 46, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initTheatricalReleaseDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 46, size);
-      }
-      public final boolean hasFormat() {
-        return !_pointerFieldIsNull(47);
-      }
-      public final org.capnproto.Text.Builder getFormat() {
-        return _getPointerField(org.capnproto.Text.factory, 47, null, 0, 0);
-      }
-      public final void setFormat(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 47, value);
-      }
-      public final void setFormat(String value) {
-        _setPointerField(org.capnproto.Text.factory, 47, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initFormat(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 47, size);
-      }
-      public final boolean hasSoftwareAge() {
-        return !_pointerFieldIsNull(48);
-      }
-      public final org.capnproto.Text.Builder getSoftwareAge() {
-        return _getPointerField(org.capnproto.Text.factory, 48, null, 0, 0);
-      }
-      public final void setSoftwareAge(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 48, value);
-      }
-      public final void setSoftwareAge(String value) {
-        _setPointerField(org.capnproto.Text.factory, 48, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSoftwareAge(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 48, size);
-      }
-      public final boolean getExtraDelicateCycle() {
-        return _getBooleanField(51);
-      }
-      public final void setExtraDelicateCycle(boolean value) {
-        _setBooleanField(51, value);
+      public final void setAudioOutputs(int value) {
+        _setIntField(21, value);
       }
 
-      public final boolean hasDispenserColor() {
-        return !_pointerFieldIsNull(49);
+      public final boolean getVibrationReduction() {
+        return _getBooleanField(421);
       }
-      public final org.capnproto.Text.Builder getDispenserColor() {
-        return _getPointerField(org.capnproto.Text.factory, 49, null, 0, 0);
-      }
-      public final void setDispenserColor(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 49, value);
-      }
-      public final void setDispenserColor(String value) {
-        _setPointerField(org.capnproto.Text.factory, 49, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initDispenserColor(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 49, size);
-      }
-      public final boolean hasControlType() {
-        return !_pointerFieldIsNull(50);
-      }
-      public final org.capnproto.Text.Builder getControlType() {
-        return _getPointerField(org.capnproto.Text.factory, 50, null, 0, 0);
-      }
-      public final void setControlType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 50, value);
-      }
-      public final void setControlType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 50, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initControlType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 50, size);
-      }
-      public final boolean getInStorePickup() {
-        return _getBooleanField(52);
-      }
-      public final void setInStorePickup(boolean value) {
-        _setBooleanField(52, value);
+      public final void setVibrationReduction(boolean value) {
+        _setBooleanField(421, value);
       }
 
-      public final boolean getStackable() {
-        return _getBooleanField(53);
+      public final int getMaximumPowerHandling() {
+        return _getIntField(22);
       }
-      public final void setStackable(boolean value) {
-        _setBooleanField(53, value);
+      public final void setMaximumPowerHandling(int value) {
+        _setIntField(22, value);
       }
 
-      public final boolean hasEarlyTerminationFees() {
-        return !_pointerFieldIsNull(51);
+      public final boolean hasEnergyGuideImage() {
+        return !_pointerFieldIsNull(64);
       }
-      public final org.capnproto.TextList.Builder getEarlyTerminationFees() {
-        return _getPointerField(org.capnproto.TextList.factory, 51, null, 0);
+      public final org.capnproto.Text.Builder getEnergyGuideImage() {
+        return _getPointerField(org.capnproto.Text.factory, 64, null, 0, 0);
       }
-      public final void setEarlyTerminationFees(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 51, value);
+      public final void setEnergyGuideImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 64, value);
       }
-      public final org.capnproto.TextList.Builder initEarlyTerminationFees(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 51, size);
+      public final void setEnergyGuideImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 64, new org.capnproto.Text.Reader(value));
       }
-      public final double getScreenSizeIn() {
+      public final org.capnproto.Text.Builder initEnergyGuideImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 64, size);
+      }
+      public final int getSubclassId() {
+        return _getIntField(23);
+      }
+      public final void setSubclassId(int value) {
+        _setIntField(23, value);
+      }
+
+      public final boolean getOnSale() {
+        return _getBooleanField(422);
+      }
+      public final void setOnSale(boolean value) {
+        _setBooleanField(422, value);
+      }
+
+      public final boolean hasRightViewImage() {
+        return !_pointerFieldIsNull(65);
+      }
+      public final org.capnproto.Text.Builder getRightViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 65, null, 0, 0);
+      }
+      public final void setRightViewImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 65, value);
+      }
+      public final void setRightViewImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 65, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initRightViewImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 65, size);
+      }
+      public final boolean getAutomaticTemperatureControl() {
+        return _getBooleanField(423);
+      }
+      public final void setAutomaticTemperatureControl(boolean value) {
+        _setBooleanField(423, value);
+      }
+
+      public final boolean hasShelfConstruction() {
+        return !_pointerFieldIsNull(66);
+      }
+      public final org.capnproto.Text.Builder getShelfConstruction() {
+        return _getPointerField(org.capnproto.Text.factory, 66, null, 0, 0);
+      }
+      public final void setShelfConstruction(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 66, value);
+      }
+      public final void setShelfConstruction(String value) {
+        _setPointerField(org.capnproto.Text.factory, 66, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initShelfConstruction(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 66, size);
+      }
+      public final boolean hasLists() {
+        return !_pointerFieldIsNull(67);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Builder> getLists() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 67, null, 0);
+      }
+      public final void setLists(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 67, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Builder> initLists(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 67, size);
+      }
+      public final boolean getInteriorLight() {
+        return _getBooleanField(424);
+      }
+      public final void setInteriorLight(boolean value) {
+        _setBooleanField(424, value);
+      }
+
+      public final boolean getLintFilterLight() {
+        return _getBooleanField(425);
+      }
+      public final void setLintFilterLight(boolean value) {
+        _setBooleanField(425, value);
+      }
+
+      public final double getDepthWithDoorOpenIn() {
         return _getDoubleField(12);
       }
-      public final void setScreenSizeIn(double value) {
+      public final void setDepthWithDoorOpenIn(double value) {
         _setDoubleField(12, value);
       }
 
+      public final boolean hasBrightnessCdPerSqM() {
+        return !_pointerFieldIsNull(68);
+      }
+      public final org.capnproto.Text.Builder getBrightnessCdPerSqM() {
+        return _getPointerField(org.capnproto.Text.factory, 68, null, 0, 0);
+      }
+      public final void setBrightnessCdPerSqM(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 68, value);
+      }
+      public final void setBrightnessCdPerSqM(String value) {
+        _setPointerField(org.capnproto.Text.factory, 68, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initBrightnessCdPerSqM(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 68, size);
+      }
+      public final boolean getHumidityControlledCrisper() {
+        return _getBooleanField(426);
+      }
+      public final void setHumidityControlledCrisper(boolean value) {
+        _setBooleanField(426, value);
+      }
+
+      public final boolean hasOrderable() {
+        return !_pointerFieldIsNull(69);
+      }
+      public final org.capnproto.Text.Builder getOrderable() {
+        return _getPointerField(org.capnproto.Text.factory, 69, null, 0, 0);
+      }
+      public final void setOrderable(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 69, value);
+      }
+      public final void setOrderable(String value) {
+        _setPointerField(org.capnproto.Text.factory, 69, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initOrderable(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 69, size);
+      }
+      public final boolean hasShipping() {
+        return !_pointerFieldIsNull(70);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Builder> getShipping() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 70, null, 0);
+      }
+      public final void setShipping(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 70, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Builder> initShipping(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 70, size);
+      }
+      public final boolean getNoiseReduction() {
+        return _getBooleanField(427);
+      }
+      public final void setNoiseReduction(boolean value) {
+        _setBooleanField(427, value);
+      }
+
+      public final boolean getDelicateCycle() {
+        return _getBooleanField(428);
+      }
+      public final void setDelicateCycle(boolean value) {
+        _setBooleanField(428, value);
+      }
+
+      public final boolean hasPlanCategory() {
+        return !_pointerFieldIsNull(71);
+      }
+      public final org.capnproto.Text.Builder getPlanCategory() {
+        return _getPointerField(org.capnproto.Text.factory, 71, null, 0, 0);
+      }
+      public final void setPlanCategory(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 71, value);
+      }
+      public final void setPlanCategory(String value) {
+        _setPointerField(org.capnproto.Text.factory, 71, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPlanCategory(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 71, size);
+      }
+      public final boolean hasSurfaceFinish() {
+        return !_pointerFieldIsNull(72);
+      }
+      public final org.capnproto.Text.Builder getSurfaceFinish() {
+        return _getPointerField(org.capnproto.Text.factory, 72, null, 0, 0);
+      }
+      public final void setSurfaceFinish(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 72, value);
+      }
+      public final void setSurfaceFinish(String value) {
+        _setPointerField(org.capnproto.Text.factory, 72, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSurfaceFinish(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 72, size);
+      }
+      public final boolean hasDeviceManufacturer() {
+        return !_pointerFieldIsNull(73);
+      }
+      public final org.capnproto.Text.Builder getDeviceManufacturer() {
+        return _getPointerField(org.capnproto.Text.factory, 73, null, 0, 0);
+      }
+      public final void setDeviceManufacturer(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 73, value);
+      }
+      public final void setDeviceManufacturer(String value) {
+        _setPointerField(org.capnproto.Text.factory, 73, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initDeviceManufacturer(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 73, size);
+      }
+      public final boolean hasName() {
+        return !_pointerFieldIsNull(74);
+      }
+      public final org.capnproto.Text.Builder getName() {
+        return _getPointerField(org.capnproto.Text.factory, 74, null, 0, 0);
+      }
+      public final void setName(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 74, value);
+      }
+      public final void setName(String value) {
+        _setPointerField(org.capnproto.Text.factory, 74, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initName(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 74, size);
+      }
+      public final boolean getDvdPlayer() {
+        return _getBooleanField(429);
+      }
+      public final void setDvdPlayer(boolean value) {
+        _setBooleanField(429, value);
+      }
+
+      public final boolean hasCarrierPlan() {
+        return !_pointerFieldIsNull(75);
+      }
+      public final org.capnproto.Text.Builder getCarrierPlan() {
+        return _getPointerField(org.capnproto.Text.factory, 75, null, 0, 0);
+      }
+      public final void setCarrierPlan(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 75, value);
+      }
+      public final void setCarrierPlan(String value) {
+        _setPointerField(org.capnproto.Text.factory, 75, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initCarrierPlan(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 75, size);
+      }
+      public final boolean hasBluRayPlayer() {
+        return !_pointerFieldIsNull(76);
+      }
+      public final org.capnproto.Text.Builder getBluRayPlayer() {
+        return _getPointerField(org.capnproto.Text.factory, 76, null, 0, 0);
+      }
+      public final void setBluRayPlayer(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 76, value);
+      }
+      public final void setBluRayPlayer(String value) {
+        _setPointerField(org.capnproto.Text.factory, 76, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initBluRayPlayer(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 76, size);
+      }
       public final double getDepthWithoutHandlesIn() {
         return _getDoubleField(13);
       }
@@ -1067,2144 +1606,1605 @@ public final class BestbuyCapnp {
         _setDoubleField(13, value);
       }
 
-      public final boolean getOnSale() {
-        return _getBooleanField(54);
-      }
-      public final void setOnSale(boolean value) {
-        _setBooleanField(54, value);
-      }
-
-      public final boolean hasSurfaceFinish() {
-        return !_pointerFieldIsNull(52);
-      }
-      public final org.capnproto.Text.Builder getSurfaceFinish() {
-        return _getPointerField(org.capnproto.Text.factory, 52, null, 0, 0);
-      }
-      public final void setSurfaceFinish(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 52, value);
-      }
-      public final void setSurfaceFinish(String value) {
-        _setPointerField(org.capnproto.Text.factory, 52, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSurfaceFinish(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 52, size);
-      }
-      public final boolean getSanitationCycle() {
-        return _getBooleanField(55);
-      }
-      public final void setSanitationCycle(boolean value) {
-        _setBooleanField(55, value);
-      }
-
-      public final boolean hasLeftViewImage() {
-        return !_pointerFieldIsNull(53);
-      }
-      public final org.capnproto.Text.Builder getLeftViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 53, null, 0, 0);
-      }
-      public final void setLeftViewImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 53, value);
-      }
-      public final void setLeftViewImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 53, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initLeftViewImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 53, size);
-      }
-      public final boolean getClearance() {
-        return _getBooleanField(56);
-      }
-      public final void setClearance(boolean value) {
-        _setBooleanField(56, value);
-      }
-
-      public final boolean hasLongDescription() {
-        return !_pointerFieldIsNull(54);
-      }
-      public final org.capnproto.Text.Builder getLongDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 54, null, 0, 0);
-      }
-      public final void setLongDescription(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 54, value);
-      }
-      public final void setLongDescription(String value) {
-        _setPointerField(org.capnproto.Text.factory, 54, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initLongDescription(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 54, size);
-      }
-      public final boolean hasControlLocation() {
-        return !_pointerFieldIsNull(55);
-      }
-      public final org.capnproto.Text.Builder getControlLocation() {
-        return _getPointerField(org.capnproto.Text.factory, 55, null, 0, 0);
-      }
-      public final void setControlLocation(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 55, value);
-      }
-      public final void setControlLocation(String value) {
-        _setPointerField(org.capnproto.Text.factory, 55, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initControlLocation(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 55, size);
-      }
-      public final boolean hasRelatedProducts() {
-        return !_pointerFieldIsNull(56);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getRelatedProducts() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 56, null, 0);
-      }
-      public final void setRelatedProducts(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 56, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initRelatedProducts(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 56, size);
-      }
-      public final boolean getSpecialOrder() {
-        return _getBooleanField(57);
-      }
-      public final void setSpecialOrder(boolean value) {
-        _setBooleanField(57, value);
-      }
-
-      public final boolean hasPowerSource() {
-        return !_pointerFieldIsNull(57);
-      }
-      public final org.capnproto.Text.Builder getPowerSource() {
-        return _getPointerField(org.capnproto.Text.factory, 57, null, 0, 0);
-      }
-      public final void setPowerSource(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 57, value);
-      }
-      public final void setPowerSource(String value) {
-        _setPointerField(org.capnproto.Text.factory, 57, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPowerSource(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 57, size);
-      }
-      public final boolean hasAccessories() {
-        return !_pointerFieldIsNull(58);
-      }
-      public final org.capnproto.TextList.Builder getAccessories() {
-        return _getPointerField(org.capnproto.TextList.factory, 58, null, 0);
-      }
-      public final void setAccessories(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 58, value);
-      }
-      public final org.capnproto.TextList.Builder initAccessories(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 58, size);
-      }
-      public final boolean hasWarrantyParts() {
-        return !_pointerFieldIsNull(59);
-      }
-      public final org.capnproto.Text.Builder getWarrantyParts() {
-        return _getPointerField(org.capnproto.Text.factory, 59, null, 0, 0);
-      }
-      public final void setWarrantyParts(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 59, value);
-      }
-      public final void setWarrantyParts(String value) {
-        _setPointerField(org.capnproto.Text.factory, 59, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initWarrantyParts(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 59, size);
-      }
-      public final boolean getBuiltInDigitalCamera() {
-        return _getBooleanField(58);
-      }
-      public final void setBuiltInDigitalCamera(boolean value) {
-        _setBooleanField(58, value);
-      }
-
-      public final boolean getOnlineAvailability() {
-        return _getBooleanField(59);
-      }
-      public final void setOnlineAvailability(boolean value) {
-        _setBooleanField(59, value);
-      }
-
-      public final boolean hasPriceWithPlan() {
-        return !_pointerFieldIsNull(60);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Builder> getPriceWithPlan() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 60, null, 0);
-      }
-      public final void setPriceWithPlan(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 60, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Builder> initPriceWithPlan(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 60, size);
-      }
-      public final double getSalePrice() {
-        return _getDoubleField(14);
-      }
-      public final void setSalePrice(double value) {
-        _setDoubleField(14, value);
-      }
-
-      public final int getLengthInMinutes() {
-        return _getIntField(23);
-      }
-      public final void setLengthInMinutes(int value) {
-        _setIntField(23, value);
-      }
-
-      public final boolean hasProductAspectRatio() {
-        return !_pointerFieldIsNull(61);
-      }
-      public final org.capnproto.Text.Builder getProductAspectRatio() {
-        return _getPointerField(org.capnproto.Text.factory, 61, null, 0, 0);
-      }
-      public final void setProductAspectRatio(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 61, value);
-      }
-      public final void setProductAspectRatio(String value) {
-        _setPointerField(org.capnproto.Text.factory, 61, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initProductAspectRatio(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 61, size);
-      }
-      public final boolean getPreowned() {
-        return _getBooleanField(60);
-      }
-      public final void setPreowned(boolean value) {
-        _setBooleanField(60, value);
-      }
-
-      public final boolean hasPriceRestriction() {
-        return !_pointerFieldIsNull(62);
-      }
-      public final org.capnproto.Text.Builder getPriceRestriction() {
-        return _getPointerField(org.capnproto.Text.factory, 62, null, 0, 0);
-      }
-      public final void setPriceRestriction(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 62, value);
-      }
-      public final void setPriceRestriction(String value) {
-        _setPointerField(org.capnproto.Text.factory, 62, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPriceRestriction(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 62, size);
-      }
-      public final boolean getNoiseReduction() {
-        return _getBooleanField(61);
-      }
-      public final void setNoiseReduction(boolean value) {
-        _setBooleanField(61, value);
-      }
-
-      public final boolean hasSource() {
-        return !_pointerFieldIsNull(63);
-      }
-      public final org.capnproto.Text.Builder getSource() {
-        return _getPointerField(org.capnproto.Text.factory, 63, null, 0, 0);
-      }
-      public final void setSource(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 63, value);
-      }
-      public final void setSource(String value) {
-        _setPointerField(org.capnproto.Text.factory, 63, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSource(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 63, size);
-      }
-      public final boolean getFreeShippingEligible() {
-        return _getBooleanField(62);
-      }
-      public final void setFreeShippingEligible(boolean value) {
-        _setBooleanField(62, value);
-      }
-
-      public final boolean hasOriginalReleaseDate() {
-        return !_pointerFieldIsNull(64);
-      }
-      public final org.capnproto.Text.Builder getOriginalReleaseDate() {
-        return _getPointerField(org.capnproto.Text.factory, 64, null, 0, 0);
-      }
-      public final void setOriginalReleaseDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 64, value);
-      }
-      public final void setOriginalReleaseDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 64, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initOriginalReleaseDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 64, size);
-      }
-      public final boolean getBleachDispenser() {
-        return _getBooleanField(63);
-      }
-      public final void setBleachDispenser(boolean value) {
-        _setBooleanField(63, value);
-      }
-
-      public final int getBatteryLifeMin() {
-        return _getIntField(30);
-      }
-      public final void setBatteryLifeMin(int value) {
-        _setIntField(30, value);
-      }
-
-      public final boolean hasEstimatedYearlyOperatingCosts() {
-        return !_pointerFieldIsNull(65);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Builder> getEstimatedYearlyOperatingCosts() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 65, null, 0);
-      }
-      public final void setEstimatedYearlyOperatingCosts(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 65, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Builder> initEstimatedYearlyOperatingCosts(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 65, size);
-      }
-      public final int getTotalSystemPowerWatts() {
-        return _getIntField(31);
-      }
-      public final void setTotalSystemPowerWatts(int value) {
-        _setIntField(31, value);
-      }
-
-      public final boolean hasTechnologyCode() {
-        return !_pointerFieldIsNull(66);
-      }
-      public final org.capnproto.Text.Builder getTechnologyCode() {
-        return _getPointerField(org.capnproto.Text.factory, 66, null, 0, 0);
-      }
-      public final void setTechnologyCode(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 66, value);
-      }
-      public final void setTechnologyCode(String value) {
-        _setPointerField(org.capnproto.Text.factory, 66, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initTechnologyCode(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 66, size);
-      }
-      public final boolean getCustomerTopRated() {
-        return _getBooleanField(1024);
-      }
-      public final void setCustomerTopRated(boolean value) {
-        _setBooleanField(1024, value);
-      }
-
-      public final boolean hasPercentSavings() {
-        return !_pointerFieldIsNull(67);
-      }
-      public final org.capnproto.Text.Builder getPercentSavings() {
-        return _getPointerField(org.capnproto.Text.factory, 67, null, 0, 0);
-      }
-      public final void setPercentSavings(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 67, value);
-      }
-      public final void setPercentSavings(String value) {
-        _setPointerField(org.capnproto.Text.factory, 67, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPercentSavings(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 67, size);
-      }
-      public final boolean hasShippingRestrictions() {
-        return !_pointerFieldIsNull(68);
-      }
-      public final org.capnproto.Text.Builder getShippingRestrictions() {
-        return _getPointerField(org.capnproto.Text.factory, 68, null, 0, 0);
-      }
-      public final void setShippingRestrictions(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 68, value);
-      }
-      public final void setShippingRestrictions(String value) {
-        _setPointerField(org.capnproto.Text.factory, 68, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initShippingRestrictions(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 68, size);
-      }
-      public final boolean hasStudio() {
-        return !_pointerFieldIsNull(69);
-      }
-      public final org.capnproto.Text.Builder getStudio() {
-        return _getPointerField(org.capnproto.Text.factory, 69, null, 0, 0);
-      }
-      public final void setStudio(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 69, value);
-      }
-      public final void setStudio(String value) {
-        _setPointerField(org.capnproto.Text.factory, 69, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initStudio(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 69, size);
-      }
-      public final boolean getMoistureSensor() {
-        return _getBooleanField(1025);
-      }
-      public final void setMoistureSensor(boolean value) {
-        _setBooleanField(1025, value);
-      }
-
-      public final int getQuantityLimit() {
-        return _getIntField(33);
-      }
-      public final void setQuantityLimit(int value) {
-        _setIntField(33, value);
-      }
-
-      public final boolean hasScore() {
-        return !_pointerFieldIsNull(70);
-      }
-      public final org.capnproto.Text.Builder getScore() {
-        return _getPointerField(org.capnproto.Text.factory, 70, null, 0, 0);
-      }
-      public final void setScore(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 70, value);
-      }
-      public final void setScore(String value) {
-        _setPointerField(org.capnproto.Text.factory, 70, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initScore(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 70, size);
-      }
-      public final boolean getActive() {
-        return _getBooleanField(1026);
-      }
-      public final void setActive(boolean value) {
-        _setBooleanField(1026, value);
+      public final int getBestSellingRank() {
+        return _getIntField(28);
+      }
+      public final void setBestSellingRank(int value) {
+        _setIntField(28, value);
       }
 
       public final int getDriveCapacityGb() {
-        return _getIntField(34);
+        return _getIntField(29);
       }
       public final void setDriveCapacityGb(int value) {
-        _setIntField(34, value);
+        _setIntField(29, value);
       }
 
-      public final double getCapacityRefrigeratorCuFt() {
-        return _getDoubleField(18);
-      }
-      public final void setCapacityRefrigeratorCuFt(double value) {
-        _setDoubleField(18, value);
-      }
-
-      public final boolean getFrontFacingCamera() {
-        return _getBooleanField(1027);
-      }
-      public final void setFrontFacingCamera(boolean value) {
-        _setBooleanField(1027, value);
-      }
-
-      public final boolean hasWeight() {
-        return !_pointerFieldIsNull(71);
-      }
-      public final org.capnproto.Text.Builder getWeight() {
-        return _getPointerField(org.capnproto.Text.factory, 71, null, 0, 0);
-      }
-      public final void setWeight(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 71, value);
-      }
-      public final void setWeight(String value) {
-        _setPointerField(org.capnproto.Text.factory, 71, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initWeight(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 71, size);
-      }
-      public final boolean hasPriceUpdateDate() {
-        return !_pointerFieldIsNull(72);
-      }
-      public final org.capnproto.Text.Builder getPriceUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 72, null, 0, 0);
-      }
-      public final void setPriceUpdateDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 72, value);
-      }
-      public final void setPriceUpdateDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 72, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPriceUpdateDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 72, size);
-      }
-      public final boolean hasTechSupportPlans() {
-        return !_pointerFieldIsNull(73);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getTechSupportPlans() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 73, null, 0);
-      }
-      public final void setTechSupportPlans(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 73, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initTechSupportPlans(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 73, size);
-      }
-      public final boolean hasUrl() {
-        return !_pointerFieldIsNull(74);
-      }
-      public final org.capnproto.Text.Builder getUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 74, null, 0, 0);
-      }
-      public final void setUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 74, value);
-      }
-      public final void setUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 74, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 74, size);
-      }
-      public final boolean getAllergyCycle() {
-        return _getBooleanField(1028);
-      }
-      public final void setAllergyCycle(boolean value) {
-        _setBooleanField(1028, value);
-      }
-
-      public final boolean hasThruTheDoorDispenser() {
-        return !_pointerFieldIsNull(75);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Builder> getThruTheDoorDispenser() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 75, null, 0);
-      }
-      public final void setThruTheDoorDispenser(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 75, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Builder> initThruTheDoorDispenser(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 75, size);
-      }
-      public final boolean getSecondaryMarket() {
-        return _getBooleanField(1029);
-      }
-      public final void setSecondaryMarket(boolean value) {
-        _setBooleanField(1029, value);
-      }
-
-      public final boolean getEndOfCycleSignal() {
-        return _getBooleanField(1030);
-      }
-      public final void setEndOfCycleSignal(boolean value) {
-        _setBooleanField(1030, value);
-      }
-
-      public final boolean hasType() {
-        return !_pointerFieldIsNull(76);
-      }
-      public final org.capnproto.Text.Builder getType() {
-        return _getPointerField(org.capnproto.Text.factory, 76, null, 0, 0);
-      }
-      public final void setType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 76, value);
-      }
-      public final void setType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 76, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 76, size);
-      }
-      public final boolean hasVideoChapters() {
+      public final boolean hasMonthlyRecurringChargeGrandTotal() {
         return !_pointerFieldIsNull(77);
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Builder> getVideoChapters() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 77, null, 0);
-      }
-      public final void setVideoChapters(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 77, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Builder> initVideoChapters(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 77, size);
-      }
-      public final boolean hasTradeInValue() {
-        return !_pointerFieldIsNull(78);
-      }
-      public final org.capnproto.Text.Builder getTradeInValue() {
-        return _getPointerField(org.capnproto.Text.factory, 78, null, 0, 0);
-      }
-      public final void setTradeInValue(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 78, value);
-      }
-      public final void setTradeInValue(String value) {
-        _setPointerField(org.capnproto.Text.factory, 78, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initTradeInValue(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 78, size);
-      }
-      public final boolean getMarketplace() {
-        return _getBooleanField(1031);
-      }
-      public final void setMarketplace(boolean value) {
-        _setBooleanField(1031, value);
-      }
-
-      public final boolean hasAdditionalFeatures() {
-        return !_pointerFieldIsNull(79);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Builder> getAdditionalFeatures() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 79, null, 0);
-      }
-      public final void setAdditionalFeatures(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 79, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Builder> initAdditionalFeatures(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 79, size);
-      }
-      public final boolean hasUpc() {
-        return !_pointerFieldIsNull(80);
-      }
-      public final org.capnproto.Text.Builder getUpc() {
-        return _getPointerField(org.capnproto.Text.factory, 80, null, 0, 0);
-      }
-      public final void setUpc(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 80, value);
-      }
-      public final void setUpc(String value) {
-        _setPointerField(org.capnproto.Text.factory, 80, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initUpc(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 80, size);
-      }
-      public final boolean getHumidityControlledCrisper() {
-        return _getBooleanField(1032);
-      }
-      public final void setHumidityControlledCrisper(boolean value) {
-        _setBooleanField(1032, value);
-      }
-
-      public final int getDiscCapacity() {
-        return _getIntField(35);
-      }
-      public final void setDiscCapacity(int value) {
-        _setIntField(35, value);
-      }
-
-      public final boolean hasWidth() {
-        return !_pointerFieldIsNull(81);
-      }
-      public final org.capnproto.Text.Builder getWidth() {
-        return _getPointerField(org.capnproto.Text.factory, 81, null, 0, 0);
-      }
-      public final void setWidth(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 81, value);
-      }
-      public final void setWidth(String value) {
-        _setPointerField(org.capnproto.Text.factory, 81, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initWidth(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 81, size);
-      }
-      public final boolean hasDescription() {
-        return !_pointerFieldIsNull(82);
-      }
-      public final org.capnproto.Text.Builder getDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 82, null, 0, 0);
-      }
-      public final void setDescription(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 82, value);
-      }
-      public final void setDescription(String value) {
-        _setPointerField(org.capnproto.Text.factory, 82, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initDescription(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 82, size);
-      }
-      public final boolean hasDeviceManufacturer() {
-        return !_pointerFieldIsNull(83);
-      }
-      public final org.capnproto.Text.Builder getDeviceManufacturer() {
-        return _getPointerField(org.capnproto.Text.factory, 83, null, 0, 0);
-      }
-      public final void setDeviceManufacturer(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 83, value);
-      }
-      public final void setDeviceManufacturer(String value) {
-        _setPointerField(org.capnproto.Text.factory, 83, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initDeviceManufacturer(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 83, size);
-      }
-      public final boolean hasOrderable() {
-        return !_pointerFieldIsNull(84);
-      }
-      public final org.capnproto.Text.Builder getOrderable() {
-        return _getPointerField(org.capnproto.Text.factory, 84, null, 0, 0);
-      }
-      public final void setOrderable(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 84, value);
-      }
-      public final void setOrderable(String value) {
-        _setPointerField(org.capnproto.Text.factory, 84, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initOrderable(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 84, size);
-      }
-      public final boolean hasBrightnessCdPerSqM() {
-        return !_pointerFieldIsNull(85);
-      }
-      public final org.capnproto.Text.Builder getBrightnessCdPerSqM() {
-        return _getPointerField(org.capnproto.Text.factory, 85, null, 0, 0);
-      }
-      public final void setBrightnessCdPerSqM(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 85, value);
-      }
-      public final void setBrightnessCdPerSqM(String value) {
-        _setPointerField(org.capnproto.Text.factory, 85, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initBrightnessCdPerSqM(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 85, size);
-      }
-      public final double getDepthIncludingHandlesIn() {
-        return _getDoubleField(19);
-      }
-      public final void setDepthIncludingHandlesIn(double value) {
-        _setDoubleField(19, value);
-      }
-
-      public final boolean getInStoreAvailability() {
-        return _getBooleanField(1033);
-      }
-      public final void setInStoreAvailability(boolean value) {
-        _setBooleanField(1033, value);
-      }
-
-      public final double getDepthWithStandIn() {
-        return _getDoubleField(20);
-      }
-      public final void setDepthWithStandIn(double value) {
-        _setDoubleField(20, value);
-      }
-
-      public final boolean hasBundledIn() {
-        return !_pointerFieldIsNull(86);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getBundledIn() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 86, null, 0);
-      }
-      public final void setBundledIn(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 86, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initBundledIn(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 86, size);
-      }
-      public final double getHeightToTopOfRefrigeratorIn() {
-        return _getDoubleField(21);
-      }
-      public final void setHeightToTopOfRefrigeratorIn(double value) {
-        _setDoubleField(21, value);
-      }
-
-      public final boolean hasInstantContent() {
-        return !_pointerFieldIsNull(87);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Builder> getInstantContent() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 87, null, 0);
-      }
-      public final void setInstantContent(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 87, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Builder> initInstantContent(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 87, size);
-      }
-      public final boolean hasMonthlyRecurringChargeGrandTotal() {
-        return !_pointerFieldIsNull(88);
-      }
       public final org.capnproto.Text.Builder getMonthlyRecurringChargeGrandTotal() {
-        return _getPointerField(org.capnproto.Text.factory, 88, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 77, null, 0, 0);
       }
       public final void setMonthlyRecurringChargeGrandTotal(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 88, value);
+        _setPointerField(org.capnproto.Text.factory, 77, value);
       }
       public final void setMonthlyRecurringChargeGrandTotal(String value) {
-        _setPointerField(org.capnproto.Text.factory, 88, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 77, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initMonthlyRecurringChargeGrandTotal(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 88, size);
+        return _initPointerField(org.capnproto.Text.factory, 77, size);
       }
-      public final boolean getCdRRwCompatible() {
-        return _getBooleanField(1034);
+      public final int getScreenRefreshRateHz() {
+        return _getIntField(30);
       }
-      public final void setCdRRwCompatible(boolean value) {
-        _setBooleanField(1034, value);
-      }
-
-      public final boolean getDvdPlayer() {
-        return _getBooleanField(1035);
-      }
-      public final void setDvdPlayer(boolean value) {
-        _setBooleanField(1035, value);
+      public final void setScreenRefreshRateHz(int value) {
+        _setIntField(30, value);
       }
 
-      public final boolean getFabricDispenser() {
-        return _getBooleanField(1036);
+      public final boolean hasAffiliateAddToCartUrl() {
+        return !_pointerFieldIsNull(78);
       }
-      public final void setFabricDispenser(boolean value) {
-        _setBooleanField(1036, value);
+      public final org.capnproto.Text.Builder getAffiliateAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 78, null, 0, 0);
       }
-
-      public final boolean hasShippingLevelsOfService() {
-        return !_pointerFieldIsNull(89);
+      public final void setAffiliateAddToCartUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 78, value);
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Builder> getShippingLevelsOfService() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 89, null, 0);
+      public final void setAffiliateAddToCartUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 78, new org.capnproto.Text.Reader(value));
       }
-      public final void setShippingLevelsOfService(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 89, value);
+      public final org.capnproto.Text.Builder initAffiliateAddToCartUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 78, size);
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Builder> initShippingLevelsOfService(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 89, size);
-      }
-      public final boolean hasStartDate() {
-        return !_pointerFieldIsNull(90);
-      }
-      public final org.capnproto.Text.Builder getStartDate() {
-        return _getPointerField(org.capnproto.Text.factory, 90, null, 0, 0);
-      }
-      public final void setStartDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 90, value);
-      }
-      public final void setStartDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 90, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initStartDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 90, size);
-      }
-      public final boolean hasShortDescription() {
-        return !_pointerFieldIsNull(91);
-      }
-      public final org.capnproto.Text.Builder getShortDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 91, null, 0, 0);
-      }
-      public final void setShortDescription(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 91, value);
-      }
-      public final void setShortDescription(String value) {
-        _setPointerField(org.capnproto.Text.factory, 91, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initShortDescription(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 91, size);
-      }
-      public final boolean getOnScreenDisplay() {
-        return _getBooleanField(1037);
-      }
-      public final void setOnScreenDisplay(boolean value) {
-        _setBooleanField(1037, value);
-      }
-
-      public final boolean hasArtistId() {
-        return !_pointerFieldIsNull(92);
-      }
-      public final org.capnproto.Text.Builder getArtistId() {
-        return _getPointerField(org.capnproto.Text.factory, 92, null, 0, 0);
-      }
-      public final void setArtistId(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 92, value);
-      }
-      public final void setArtistId(String value) {
-        _setPointerField(org.capnproto.Text.factory, 92, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initArtistId(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 92, size);
-      }
-      public final boolean getFriendsAndFamilyPickup() {
-        return _getBooleanField(1038);
-      }
-      public final void setFriendsAndFamilyPickup(boolean value) {
-        _setBooleanField(1038, value);
-      }
-
-      public final boolean getInternetConnectable() {
-        return _getBooleanField(1039);
-      }
-      public final void setInternetConnectable(boolean value) {
-        _setBooleanField(1039, value);
-      }
-
-      public final int getSalesRankLongTerm() {
-        return _getIntField(44);
-      }
-      public final void setSalesRankLongTerm(int value) {
-        _setIntField(44, value);
-      }
-
       public final boolean getEnergyStarQualified() {
-        return _getBooleanField(1040);
+        return _getBooleanField(430);
       }
       public final void setEnergyStarQualified(boolean value) {
-        _setBooleanField(1040, value);
-      }
-
-      public final boolean getHeadphoneJacks() {
-        return _getBooleanField(1041);
-      }
-      public final void setHeadphoneJacks(boolean value) {
-        _setBooleanField(1041, value);
-      }
-
-      public final boolean hasScannerType() {
-        return !_pointerFieldIsNull(93);
-      }
-      public final org.capnproto.Text.Builder getScannerType() {
-        return _getPointerField(org.capnproto.Text.factory, 93, null, 0, 0);
-      }
-      public final void setScannerType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 93, value);
-      }
-      public final void setScannerType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 93, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initScannerType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 93, size);
-      }
-      public final boolean hasCarrierPlan() {
-        return !_pointerFieldIsNull(94);
-      }
-      public final org.capnproto.Text.Builder getCarrierPlan() {
-        return _getPointerField(org.capnproto.Text.factory, 94, null, 0, 0);
-      }
-      public final void setCarrierPlan(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 94, value);
-      }
-      public final void setCarrierPlan(String value) {
-        _setPointerField(org.capnproto.Text.factory, 94, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initCarrierPlan(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 94, size);
-      }
-      public final boolean hasInStoreAvailabilityUpdateDate() {
-        return !_pointerFieldIsNull(95);
-      }
-      public final org.capnproto.Text.Builder getInStoreAvailabilityUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 95, null, 0, 0);
-      }
-      public final void setInStoreAvailabilityUpdateDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 95, value);
-      }
-      public final void setInStoreAvailabilityUpdateDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 95, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initInStoreAvailabilityUpdateDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 95, size);
-      }
-      public final boolean hasAlbumTitle() {
-        return !_pointerFieldIsNull(96);
-      }
-      public final org.capnproto.Text.Builder getAlbumTitle() {
-        return _getPointerField(org.capnproto.Text.factory, 96, null, 0, 0);
-      }
-      public final void setAlbumTitle(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 96, value);
-      }
-      public final void setAlbumTitle(String value) {
-        _setPointerField(org.capnproto.Text.factory, 96, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAlbumTitle(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 96, size);
-      }
-      public final boolean hasScreenFormat() {
-        return !_pointerFieldIsNull(97);
-      }
-      public final org.capnproto.Text.Builder getScreenFormat() {
-        return _getPointerField(org.capnproto.Text.factory, 97, null, 0, 0);
-      }
-      public final void setScreenFormat(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 97, value);
-      }
-      public final void setScreenFormat(String value) {
-        _setPointerField(org.capnproto.Text.factory, 97, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initScreenFormat(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 97, size);
-      }
-      public final boolean hasAgitatorType() {
-        return !_pointerFieldIsNull(98);
-      }
-      public final org.capnproto.Text.Builder getAgitatorType() {
-        return _getPointerField(org.capnproto.Text.factory, 98, null, 0, 0);
-      }
-      public final void setAgitatorType(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 98, value);
-      }
-      public final void setAgitatorType(String value) {
-        _setPointerField(org.capnproto.Text.factory, 98, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAgitatorType(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 98, size);
-      }
-      public final boolean hasManufacturer() {
-        return !_pointerFieldIsNull(99);
-      }
-      public final org.capnproto.Text.Builder getManufacturer() {
-        return _getPointerField(org.capnproto.Text.factory, 99, null, 0, 0);
-      }
-      public final void setManufacturer(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 99, value);
-      }
-      public final void setManufacturer(String value) {
-        _setPointerField(org.capnproto.Text.factory, 99, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initManufacturer(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 99, size);
-      }
-      public final boolean getIpodReady() {
-        return _getBooleanField(1042);
-      }
-      public final void setIpodReady(boolean value) {
-        _setBooleanField(1042, value);
-      }
-
-      public final boolean hasContrastRatio() {
-        return !_pointerFieldIsNull(100);
-      }
-      public final org.capnproto.Text.Builder getContrastRatio() {
-        return _getPointerField(org.capnproto.Text.factory, 100, null, 0, 0);
-      }
-      public final void setContrastRatio(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 100, value);
-      }
-      public final void setContrastRatio(String value) {
-        _setPointerField(org.capnproto.Text.factory, 100, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initContrastRatio(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 100, size);
-      }
-      public final boolean getHighEfficiency() {
-        return _getBooleanField(1043);
-      }
-      public final void setHighEfficiency(boolean value) {
-        _setBooleanField(1043, value);
-      }
-
-      public final boolean getDryingRack() {
-        return _getBooleanField(1044);
-      }
-      public final void setDryingRack(boolean value) {
-        _setBooleanField(1044, value);
-      }
-
-      public final boolean hasFamilyIndividualCode() {
-        return !_pointerFieldIsNull(101);
-      }
-      public final org.capnproto.Text.Builder getFamilyIndividualCode() {
-        return _getPointerField(org.capnproto.Text.factory, 101, null, 0, 0);
-      }
-      public final void setFamilyIndividualCode(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 101, value);
-      }
-      public final void setFamilyIndividualCode(String value) {
-        _setPointerField(org.capnproto.Text.factory, 101, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initFamilyIndividualCode(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 101, size);
-      }
-      public final boolean hasAlbumLabel() {
-        return !_pointerFieldIsNull(102);
-      }
-      public final org.capnproto.Text.Builder getAlbumLabel() {
-        return _getPointerField(org.capnproto.Text.factory, 102, null, 0, 0);
-      }
-      public final void setAlbumLabel(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 102, value);
-      }
-      public final void setAlbumLabel(String value) {
-        _setPointerField(org.capnproto.Text.factory, 102, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAlbumLabel(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 102, size);
-      }
-      public final boolean hasPlot() {
-        return !_pointerFieldIsNull(103);
-      }
-      public final org.capnproto.Text.Builder getPlot() {
-        return _getPointerField(org.capnproto.Text.factory, 103, null, 0, 0);
-      }
-      public final void setPlot(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 103, value);
-      }
-      public final void setPlot(String value) {
-        _setPointerField(org.capnproto.Text.factory, 103, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPlot(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 103, size);
-      }
-      public final boolean hasCondition() {
-        return !_pointerFieldIsNull(104);
-      }
-      public final org.capnproto.Text.Builder getCondition() {
-        return _getPointerField(org.capnproto.Text.factory, 104, null, 0, 0);
-      }
-      public final void setCondition(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 104, value);
-      }
-      public final void setCondition(String value) {
-        _setPointerField(org.capnproto.Text.factory, 104, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initCondition(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 104, size);
-      }
-      public final boolean hasActiveUpdateDate() {
-        return !_pointerFieldIsNull(105);
-      }
-      public final org.capnproto.Text.Builder getActiveUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 105, null, 0, 0);
-      }
-      public final void setActiveUpdateDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 105, value);
-      }
-      public final void setActiveUpdateDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 105, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initActiveUpdateDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 105, size);
-      }
-      public final boolean getVibrationReduction() {
-        return _getBooleanField(1045);
-      }
-      public final void setVibrationReduction(boolean value) {
-        _setBooleanField(1045, value);
-      }
-
-      public final boolean hasName() {
-        return !_pointerFieldIsNull(106);
-      }
-      public final org.capnproto.Text.Builder getName() {
-        return _getPointerField(org.capnproto.Text.factory, 106, null, 0, 0);
-      }
-      public final void setName(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 106, value);
-      }
-      public final void setName(String value) {
-        _setPointerField(org.capnproto.Text.factory, 106, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initName(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 106, size);
-      }
-      public final boolean hasMonoStereo() {
-        return !_pointerFieldIsNull(107);
-      }
-      public final org.capnproto.Text.Builder getMonoStereo() {
-        return _getPointerField(org.capnproto.Text.factory, 107, null, 0, 0);
-      }
-      public final void setMonoStereo(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 107, value);
-      }
-      public final void setMonoStereo(String value) {
-        _setPointerField(org.capnproto.Text.factory, 107, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initMonoStereo(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 107, size);
-      }
-      public final boolean hasCategoryPath() {
-        return !_pointerFieldIsNull(108);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Builder> getCategoryPath() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 108, null, 0);
-      }
-      public final void setCategoryPath(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 108, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Builder> initCategoryPath(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 108, size);
-      }
-      public final boolean hasPlanFeatures() {
-        return !_pointerFieldIsNull(109);
-      }
-      public final org.capnproto.TextList.Builder getPlanFeatures() {
-        return _getPointerField(org.capnproto.TextList.factory, 109, null, 0);
-      }
-      public final void setPlanFeatures(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 109, value);
-      }
-      public final org.capnproto.TextList.Builder initPlanFeatures(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 109, size);
-      }
-      public final boolean hasAddToCartUrl() {
-        return !_pointerFieldIsNull(110);
-      }
-      public final org.capnproto.Text.Builder getAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 110, null, 0, 0);
-      }
-      public final void setAddToCartUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 110, value);
-      }
-      public final void setAddToCartUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 110, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initAddToCartUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 110, size);
-      }
-      public final boolean getFreeShipping() {
-        return _getBooleanField(1046);
-      }
-      public final void setFreeShipping(boolean value) {
-        _setBooleanField(1046, value);
-      }
-
-      public final int getNumberOfCycles() {
-        return _getIntField(45);
-      }
-      public final void setNumberOfCycles(int value) {
-        _setIntField(45, value);
-      }
-
-      public final boolean getDoorOpenAlarm() {
-        return _getBooleanField(1047);
-      }
-      public final void setDoorOpenAlarm(boolean value) {
-        _setBooleanField(1047, value);
-      }
-
-      public final boolean getWifiReady() {
-        return _getBooleanField(1048);
-      }
-      public final void setWifiReady(boolean value) {
-        _setBooleanField(1048, value);
-      }
-
-      public final boolean hasEsrbRating() {
-        return !_pointerFieldIsNull(111);
-      }
-      public final org.capnproto.Text.Builder getEsrbRating() {
-        return _getPointerField(org.capnproto.Text.factory, 111, null, 0, 0);
-      }
-      public final void setEsrbRating(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 111, value);
-      }
-      public final void setEsrbRating(String value) {
-        _setPointerField(org.capnproto.Text.factory, 111, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initEsrbRating(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 111, size);
-      }
-      public final boolean hasWaterFilterModelNumber() {
-        return !_pointerFieldIsNull(112);
-      }
-      public final org.capnproto.Text.Builder getWaterFilterModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 112, null, 0, 0);
-      }
-      public final void setWaterFilterModelNumber(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 112, value);
-      }
-      public final void setWaterFilterModelNumber(String value) {
-        _setPointerField(org.capnproto.Text.factory, 112, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initWaterFilterModelNumber(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 112, size);
-      }
-      public final double getPlanPrice() {
-        return _getDoubleField(23);
-      }
-      public final void setPlanPrice(double value) {
-        _setDoubleField(23, value);
-      }
-
-      public final boolean hasOnlineAvailabilityText() {
-        return !_pointerFieldIsNull(113);
-      }
-      public final org.capnproto.Text.Builder getOnlineAvailabilityText() {
-        return _getPointerField(org.capnproto.Text.factory, 113, null, 0, 0);
-      }
-      public final void setOnlineAvailabilityText(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 113, value);
-      }
-      public final void setOnlineAvailabilityText(String value) {
-        _setPointerField(org.capnproto.Text.factory, 113, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initOnlineAvailabilityText(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 113, size);
-      }
-      public final boolean hasMountBracketVesaPattern() {
-        return !_pointerFieldIsNull(114);
-      }
-      public final org.capnproto.Text.Builder getMountBracketVesaPattern() {
-        return _getPointerField(org.capnproto.Text.factory, 114, null, 0, 0);
-      }
-      public final void setMountBracketVesaPattern(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 114, value);
-      }
-      public final void setMountBracketVesaPattern(String value) {
-        _setPointerField(org.capnproto.Text.factory, 114, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initMountBracketVesaPattern(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 114, size);
-      }
-      public final boolean hasNumberOfPlayers() {
-        return !_pointerFieldIsNull(115);
-      }
-      public final org.capnproto.Text.Builder getNumberOfPlayers() {
-        return _getPointerField(org.capnproto.Text.factory, 115, null, 0, 0);
-      }
-      public final void setNumberOfPlayers(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 115, value);
-      }
-      public final void setNumberOfPlayers(String value) {
-        _setPointerField(org.capnproto.Text.factory, 115, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initNumberOfPlayers(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 115, size);
-      }
-      public final double getWattsPerChannel() {
-        return _getDoubleField(24);
-      }
-      public final void setWattsPerChannel(double value) {
-        _setDoubleField(24, value);
-      }
-
-      public final boolean hasPlanCategory() {
-        return !_pointerFieldIsNull(116);
-      }
-      public final org.capnproto.Text.Builder getPlanCategory() {
-        return _getPointerField(org.capnproto.Text.factory, 116, null, 0, 0);
-      }
-      public final void setPlanCategory(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 116, value);
-      }
-      public final void setPlanCategory(String value) {
-        _setPointerField(org.capnproto.Text.factory, 116, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initPlanCategory(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 116, size);
-      }
-      public final boolean hasLists() {
-        return !_pointerFieldIsNull(117);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Builder> getLists() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 117, null, 0);
-      }
-      public final void setLists(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 117, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Builder> initLists(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 117, size);
-      }
-      public final boolean hasVerticalResolution() {
-        return !_pointerFieldIsNull(118);
-      }
-      public final org.capnproto.Text.Builder getVerticalResolution() {
-        return _getPointerField(org.capnproto.Text.factory, 118, null, 0, 0);
-      }
-      public final void setVerticalResolution(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 118, value);
-      }
-      public final void setVerticalResolution(String value) {
-        _setPointerField(org.capnproto.Text.factory, 118, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initVerticalResolution(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 118, size);
-      }
-      public final int getNumberOfWashCycles() {
-        return _getIntField(50);
-      }
-      public final void setNumberOfWashCycles(int value) {
-        _setIntField(50, value);
-      }
-
-      public final boolean hasSubtitleLanguages() {
-        return !_pointerFieldIsNull(119);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Builder> getSubtitleLanguages() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 119, null, 0);
-      }
-      public final void setSubtitleLanguages(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 119, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Builder> initSubtitleLanguages(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 119, size);
-      }
-      public final boolean getMediaCardSlot() {
-        return _getBooleanField(1049);
-      }
-      public final void setMediaCardSlot(boolean value) {
-        _setBooleanField(1049, value);
-      }
-
-      public final boolean getAutomaticTemperatureControl() {
-        return _getBooleanField(1050);
-      }
-      public final void setAutomaticTemperatureControl(boolean value) {
-        _setBooleanField(1050, value);
-      }
-
-      public final boolean getWaterEfficiency() {
-        return _getBooleanField(1051);
-      }
-      public final void setWaterEfficiency(boolean value) {
-        _setBooleanField(1051, value);
-      }
-
-      public final boolean getReversibleDoorHinge() {
-        return _getBooleanField(1052);
-      }
-      public final void setReversibleDoorHinge(boolean value) {
-        _setBooleanField(1052, value);
-      }
-
-      public final int getStationPresets() {
-        return _getIntField(51);
-      }
-      public final void setStationPresets(int value) {
-        _setIntField(51, value);
-      }
-
-      public final boolean getFactoryInstalledIceMaker() {
-        return _getBooleanField(1053);
-      }
-      public final void setFactoryInstalledIceMaker(boolean value) {
-        _setBooleanField(1053, value);
-      }
-
-      public final double getCapacityCuFt() {
-        return _getDoubleField(26);
-      }
-      public final void setCapacityCuFt(double value) {
-        _setDoubleField(26, value);
-      }
-
-      public final boolean hasSpin360Url() {
-        return !_pointerFieldIsNull(120);
-      }
-      public final org.capnproto.Text.Builder getSpin360Url() {
-        return _getPointerField(org.capnproto.Text.factory, 120, null, 0, 0);
-      }
-      public final void setSpin360Url(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 120, value);
-      }
-      public final void setSpin360Url(String value) {
-        _setPointerField(org.capnproto.Text.factory, 120, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSpin360Url(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 120, size);
-      }
-      public final double getCapacityFreezerCuFt() {
-        return _getDoubleField(27);
-      }
-      public final void setCapacityFreezerCuFt(double value) {
-        _setDoubleField(27, value);
-      }
-
-      public final int getPeakPowerHandling() {
-        return _getIntField(56);
-      }
-      public final void setPeakPowerHandling(int value) {
-        _setIntField(56, value);
-      }
-
-      public final boolean hasCarriers() {
-        return !_pointerFieldIsNull(121);
-      }
-      public final org.capnproto.TextList.Builder getCarriers() {
-        return _getPointerField(org.capnproto.TextList.factory, 121, null, 0);
-      }
-      public final void setCarriers(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 121, value);
-      }
-      public final org.capnproto.TextList.Builder initCarriers(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 121, size);
-      }
-      public final boolean hasMpaaRating() {
-        return !_pointerFieldIsNull(122);
-      }
-      public final org.capnproto.Text.Builder getMpaaRating() {
-        return _getPointerField(org.capnproto.Text.factory, 122, null, 0, 0);
-      }
-      public final void setMpaaRating(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 122, value);
-      }
-      public final void setMpaaRating(String value) {
-        _setPointerField(org.capnproto.Text.factory, 122, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initMpaaRating(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 122, size);
-      }
-      public final boolean hasSoftwareNumberOfPlayers() {
-        return !_pointerFieldIsNull(123);
-      }
-      public final org.capnproto.Text.Builder getSoftwareNumberOfPlayers() {
-        return _getPointerField(org.capnproto.Text.factory, 123, null, 0, 0);
-      }
-      public final void setSoftwareNumberOfPlayers(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 123, value);
-      }
-      public final void setSoftwareNumberOfPlayers(String value) {
-        _setPointerField(org.capnproto.Text.factory, 123, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initSoftwareNumberOfPlayers(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 123, size);
-      }
-      public final boolean hasCustomerReviewAverage() {
-        return !_pointerFieldIsNull(124);
-      }
-      public final org.capnproto.Text.Builder getCustomerReviewAverage() {
-        return _getPointerField(org.capnproto.Text.factory, 124, null, 0, 0);
-      }
-      public final void setCustomerReviewAverage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 124, value);
-      }
-      public final void setCustomerReviewAverage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 124, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initCustomerReviewAverage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 124, size);
-      }
-      public final boolean hasWarrantyLabor() {
-        return !_pointerFieldIsNull(125);
-      }
-      public final org.capnproto.Text.Builder getWarrantyLabor() {
-        return _getPointerField(org.capnproto.Text.factory, 125, null, 0, 0);
-      }
-      public final void setWarrantyLabor(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 125, value);
-      }
-      public final void setWarrantyLabor(String value) {
-        _setPointerField(org.capnproto.Text.factory, 125, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initWarrantyLabor(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 125, size);
-      }
-      public final boolean hasClazz() {
-        return !_pointerFieldIsNull(126);
-      }
-      public final org.capnproto.Text.Builder getClazz() {
-        return _getPointerField(org.capnproto.Text.factory, 126, null, 0, 0);
-      }
-      public final void setClazz(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 126, value);
-      }
-      public final void setClazz(String value) {
-        _setPointerField(org.capnproto.Text.factory, 126, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initClazz(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 126, size);
-      }
-      public final boolean hasShipping() {
-        return !_pointerFieldIsNull(127);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Builder> getShipping() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 127, null, 0);
-      }
-      public final void setShipping(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 127, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Builder> initShipping(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 127, size);
-      }
-      public final boolean hasCarrierPlans() {
-        return !_pointerFieldIsNull(128);
-      }
-      public final org.capnproto.TextList.Builder getCarrierPlans() {
-        return _getPointerField(org.capnproto.TextList.factory, 128, null, 0);
-      }
-      public final void setCarrierPlans(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 128, value);
-      }
-      public final org.capnproto.TextList.Builder initCarrierPlans(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 128, size);
-      }
-      public final int getStationPresetsAm() {
-        return _getIntField(57);
-      }
-      public final void setStationPresetsAm(int value) {
-        _setIntField(57, value);
-      }
-
-      public final boolean hasProductTemplate() {
-        return !_pointerFieldIsNull(129);
-      }
-      public final org.capnproto.Text.Builder getProductTemplate() {
-        return _getPointerField(org.capnproto.Text.factory, 129, null, 0, 0);
-      }
-      public final void setProductTemplate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 129, value);
-      }
-      public final void setProductTemplate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 129, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initProductTemplate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 129, size);
-      }
-      public final boolean hasMobileOperatingSystem() {
-        return !_pointerFieldIsNull(130);
-      }
-      public final org.capnproto.Text.Builder getMobileOperatingSystem() {
-        return _getPointerField(org.capnproto.Text.factory, 130, null, 0, 0);
-      }
-      public final void setMobileOperatingSystem(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 130, value);
-      }
-      public final void setMobileOperatingSystem(String value) {
-        _setPointerField(org.capnproto.Text.factory, 130, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initMobileOperatingSystem(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 130, size);
-      }
-      public final int getSalesRankMediumTerm() {
-        return _getIntField(58);
-      }
-      public final void setSalesRankMediumTerm(int value) {
-        _setIntField(58, value);
-      }
-
-      public final int getHdmiInputs() {
-        return _getIntField(59);
-      }
-      public final void setHdmiInputs(int value) {
-        _setIntField(59, value);
-      }
-
-      public final boolean hasStyle() {
-        return !_pointerFieldIsNull(131);
-      }
-      public final org.capnproto.Text.Builder getStyle() {
-        return _getPointerField(org.capnproto.Text.factory, 131, null, 0, 0);
-      }
-      public final void setStyle(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 131, value);
-      }
-      public final void setStyle(String value) {
-        _setPointerField(org.capnproto.Text.factory, 131, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initStyle(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 131, size);
-      }
-      public final boolean hasBluRayPlayer() {
-        return !_pointerFieldIsNull(132);
-      }
-      public final org.capnproto.Text.Builder getBluRayPlayer() {
-        return _getPointerField(org.capnproto.Text.factory, 132, null, 0, 0);
-      }
-      public final void setBluRayPlayer(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 132, value);
-      }
-      public final void setBluRayPlayer(String value) {
-        _setPointerField(org.capnproto.Text.factory, 132, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initBluRayPlayer(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 132, size);
-      }
-      public final int getSku() {
-        return _getIntField(60);
-      }
-      public final void setSku(int value) {
-        _setIntField(60, value);
-      }
-
-      public final boolean hasReleaseDate() {
-        return !_pointerFieldIsNull(133);
-      }
-      public final org.capnproto.Text.Builder getReleaseDate() {
-        return _getPointerField(org.capnproto.Text.factory, 133, null, 0, 0);
-      }
-      public final void setReleaseDate(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 133, value);
-      }
-      public final void setReleaseDate(String value) {
-        _setPointerField(org.capnproto.Text.factory, 133, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initReleaseDate(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 133, size);
-      }
-      public final boolean getIphoneAccessory() {
-        return _getBooleanField(1054);
-      }
-      public final void setIphoneAccessory(boolean value) {
-        _setBooleanField(1054, value);
-      }
-
-      public final boolean hasDepartment() {
-        return !_pointerFieldIsNull(134);
-      }
-      public final org.capnproto.Text.Builder getDepartment() {
-        return _getPointerField(org.capnproto.Text.factory, 134, null, 0, 0);
-      }
-      public final void setDepartment(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 134, value);
-      }
-      public final void setDepartment(String value) {
-        _setPointerField(org.capnproto.Text.factory, 134, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initDepartment(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 134, size);
-      }
-      public final boolean getParentalAdvisory() {
-        return _getBooleanField(1055);
-      }
-      public final void setParentalAdvisory(boolean value) {
-        _setBooleanField(1055, value);
+        _setBooleanField(430, value);
       }
 
       public final boolean hasLargeImage() {
-        return !_pointerFieldIsNull(135);
+        return !_pointerFieldIsNull(79);
       }
       public final org.capnproto.Text.Builder getLargeImage() {
-        return _getPointerField(org.capnproto.Text.factory, 135, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 79, null, 0, 0);
       }
       public final void setLargeImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 135, value);
+        _setPointerField(org.capnproto.Text.factory, 79, value);
       }
       public final void setLargeImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 135, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 79, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initLargeImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 135, size);
+        return _initPointerField(org.capnproto.Text.factory, 79, size);
       }
-      public final boolean hasSellerId() {
-        return !_pointerFieldIsNull(136);
+      public final boolean hasProtectionPlanHighPrice() {
+        return !_pointerFieldIsNull(80);
       }
-      public final org.capnproto.Text.Builder getSellerId() {
-        return _getPointerField(org.capnproto.Text.factory, 136, null, 0, 0);
+      public final org.capnproto.Text.Builder getProtectionPlanHighPrice() {
+        return _getPointerField(org.capnproto.Text.factory, 80, null, 0, 0);
       }
-      public final void setSellerId(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 136, value);
+      public final void setProtectionPlanHighPrice(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 80, value);
       }
-      public final void setSellerId(String value) {
-        _setPointerField(org.capnproto.Text.factory, 136, new org.capnproto.Text.Reader(value));
+      public final void setProtectionPlanHighPrice(String value) {
+        _setPointerField(org.capnproto.Text.factory, 80, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initSellerId(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 136, size);
+      public final org.capnproto.Text.Builder initProtectionPlanHighPrice(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 80, size);
       }
-      public final int getScreenRefreshRateHz() {
-        return _getIntField(61);
+      public final boolean hasWarrantyParts() {
+        return !_pointerFieldIsNull(81);
       }
-      public final void setScreenRefreshRateHz(int value) {
-        _setIntField(61, value);
+      public final org.capnproto.Text.Builder getWarrantyParts() {
+        return _getPointerField(org.capnproto.Text.factory, 81, null, 0, 0);
       }
-
-      public final boolean hasMinutePrice() {
-        return !_pointerFieldIsNull(137);
+      public final void setWarrantyParts(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 81, value);
       }
-      public final org.capnproto.Text.Builder getMinutePrice() {
-        return _getPointerField(org.capnproto.Text.factory, 137, null, 0, 0);
+      public final void setWarrantyParts(String value) {
+        _setPointerField(org.capnproto.Text.factory, 81, new org.capnproto.Text.Reader(value));
       }
-      public final void setMinutePrice(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 137, value);
+      public final org.capnproto.Text.Builder initWarrantyParts(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 81, size);
       }
-      public final void setMinutePrice(String value) {
-        _setPointerField(org.capnproto.Text.factory, 137, new org.capnproto.Text.Reader(value));
+      public final boolean hasDispenserColor() {
+        return !_pointerFieldIsNull(82);
       }
-      public final org.capnproto.Text.Builder initMinutePrice(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 137, size);
+      public final org.capnproto.Text.Builder getDispenserColor() {
+        return _getPointerField(org.capnproto.Text.factory, 82, null, 0, 0);
       }
-      public final boolean getRearFacingCamera() {
-        return _getBooleanField(1984);
+      public final void setDispenserColor(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 82, value);
       }
-      public final void setRearFacingCamera(boolean value) {
-        _setBooleanField(1984, value);
+      public final void setDispenserColor(String value) {
+        _setPointerField(org.capnproto.Text.factory, 82, new org.capnproto.Text.Reader(value));
       }
-
-      public final boolean hasDevices() {
-        return !_pointerFieldIsNull(138);
+      public final org.capnproto.Text.Builder initDispenserColor(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 82, size);
       }
-      public final org.capnproto.TextList.Builder getDevices() {
-        return _getPointerField(org.capnproto.TextList.factory, 138, null, 0);
+      public final boolean hasProtectionPlanLowPrice() {
+        return !_pointerFieldIsNull(83);
       }
-      public final void setDevices(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 138, value);
+      public final org.capnproto.Text.Builder getProtectionPlanLowPrice() {
+        return _getPointerField(org.capnproto.Text.factory, 83, null, 0, 0);
       }
-      public final org.capnproto.TextList.Builder initDevices(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 138, size);
+      public final void setProtectionPlanLowPrice(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 83, value);
       }
-      public final int getEnergyConsumptionKwhPerYear() {
-        return _getIntField(63);
+      public final void setProtectionPlanLowPrice(String value) {
+        _setPointerField(org.capnproto.Text.factory, 83, new org.capnproto.Text.Reader(value));
       }
-      public final void setEnergyConsumptionKwhPerYear(int value) {
-        _setIntField(63, value);
+      public final org.capnproto.Text.Builder initProtectionPlanLowPrice(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 83, size);
       }
-
-      public final boolean hasAspectRatio() {
-        return !_pointerFieldIsNull(139);
+      public final boolean hasProductTemplate() {
+        return !_pointerFieldIsNull(84);
       }
-      public final org.capnproto.Text.Builder getAspectRatio() {
-        return _getPointerField(org.capnproto.Text.factory, 139, null, 0, 0);
+      public final org.capnproto.Text.Builder getProductTemplate() {
+        return _getPointerField(org.capnproto.Text.factory, 84, null, 0, 0);
       }
-      public final void setAspectRatio(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 139, value);
+      public final void setProductTemplate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 84, value);
       }
-      public final void setAspectRatio(String value) {
-        _setPointerField(org.capnproto.Text.factory, 139, new org.capnproto.Text.Reader(value));
+      public final void setProductTemplate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 84, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initAspectRatio(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 139, size);
+      public final org.capnproto.Text.Builder initProductTemplate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 84, size);
       }
-      public final boolean hasTotalHarmonicDistortion() {
-        return !_pointerFieldIsNull(140);
+      public final boolean hasAlternateViewsImage() {
+        return !_pointerFieldIsNull(85);
       }
-      public final org.capnproto.Text.Builder getTotalHarmonicDistortion() {
-        return _getPointerField(org.capnproto.Text.factory, 140, null, 0, 0);
+      public final org.capnproto.Text.Builder getAlternateViewsImage() {
+        return _getPointerField(org.capnproto.Text.factory, 85, null, 0, 0);
       }
-      public final void setTotalHarmonicDistortion(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 140, value);
+      public final void setAlternateViewsImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 85, value);
       }
-      public final void setTotalHarmonicDistortion(String value) {
-        _setPointerField(org.capnproto.Text.factory, 140, new org.capnproto.Text.Reader(value));
+      public final void setAlternateViewsImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 85, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initTotalHarmonicDistortion(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 140, size);
+      public final org.capnproto.Text.Builder initAlternateViewsImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 85, size);
       }
-      public final boolean getThreeDReady() {
-        return _getBooleanField(1985);
+      public final int getNumberOfCycles() {
+        return _getIntField(31);
       }
-      public final void setThreeDReady(boolean value) {
-        _setBooleanField(1985, value);
+      public final void setNumberOfCycles(int value) {
+        _setIntField(31, value);
       }
 
-      public final boolean hasShelfConstruction() {
-        return !_pointerFieldIsNull(141);
+      public final boolean hasVideoChapters() {
+        return !_pointerFieldIsNull(86);
       }
-      public final org.capnproto.Text.Builder getShelfConstruction() {
-        return _getPointerField(org.capnproto.Text.factory, 141, null, 0, 0);
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Builder> getVideoChapters() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 86, null, 0);
       }
-      public final void setShelfConstruction(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 141, value);
+      public final void setVideoChapters(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 86, value);
       }
-      public final void setShelfConstruction(String value) {
-        _setPointerField(org.capnproto.Text.factory, 141, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Builder> initVideoChapters(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 86, size);
       }
-      public final org.capnproto.Text.Builder initShelfConstruction(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 141, size);
+      public final double getCapacityRefrigeratorCuFt() {
+        return _getDoubleField(16);
       }
-      public final boolean getGallonDoorStorage() {
-        return _getBooleanField(1986);
-      }
-      public final void setGallonDoorStorage(boolean value) {
-        _setBooleanField(1986, value);
+      public final void setCapacityRefrigeratorCuFt(double value) {
+        _setDoubleField(16, value);
       }
 
-      public final int getMaximumPowerHandling() {
-        return _getIntField(64);
+      public final boolean hasMediumImage() {
+        return !_pointerFieldIsNull(87);
       }
-      public final void setMaximumPowerHandling(int value) {
-        _setIntField(64, value);
+      public final org.capnproto.Text.Builder getMediumImage() {
+        return _getPointerField(org.capnproto.Text.factory, 87, null, 0, 0);
       }
-
-      public final long getProductId() {
-        return _getLongField(33);
+      public final void setMediumImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 87, value);
       }
-      public final void setProductId(long value) {
-        _setLongField(33, value);
+      public final void setMediumImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 87, new org.capnproto.Text.Reader(value));
       }
-
-      public final boolean hasBackViewImage() {
-        return !_pointerFieldIsNull(142);
+      public final org.capnproto.Text.Builder initMediumImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 87, size);
       }
-      public final org.capnproto.Text.Builder getBackViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 142, null, 0, 0);
+      public final boolean hasControlLocation() {
+        return !_pointerFieldIsNull(88);
       }
-      public final void setBackViewImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 142, value);
+      public final org.capnproto.Text.Builder getControlLocation() {
+        return _getPointerField(org.capnproto.Text.factory, 88, null, 0, 0);
       }
-      public final void setBackViewImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 142, new org.capnproto.Text.Reader(value));
+      public final void setControlLocation(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 88, value);
       }
-      public final org.capnproto.Text.Builder initBackViewImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 142, size);
+      public final void setControlLocation(String value) {
+        _setPointerField(org.capnproto.Text.factory, 88, new org.capnproto.Text.Reader(value));
       }
-      public final boolean hasAffiliateUrl() {
-        return !_pointerFieldIsNull(143);
+      public final org.capnproto.Text.Builder initControlLocation(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 88, size);
       }
-      public final org.capnproto.Text.Builder getAffiliateUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 143, null, 0, 0);
+      public final boolean hasLinkShareAffiliateUrl() {
+        return !_pointerFieldIsNull(89);
       }
-      public final void setAffiliateUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 143, value);
+      public final org.capnproto.Text.Builder getLinkShareAffiliateUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 89, null, 0, 0);
       }
-      public final void setAffiliateUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 143, new org.capnproto.Text.Reader(value));
+      public final void setLinkShareAffiliateUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 89, value);
       }
-      public final org.capnproto.Text.Builder initAffiliateUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 143, size);
+      public final void setLinkShareAffiliateUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 89, new org.capnproto.Text.Reader(value));
       }
-      public final boolean getPermanentPressCycle() {
-        return _getBooleanField(1987);
+      public final org.capnproto.Text.Builder initLinkShareAffiliateUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 89, size);
       }
-      public final void setPermanentPressCycle(boolean value) {
-        _setBooleanField(1987, value);
+      public final boolean hasMobileOperatingSystem() {
+        return !_pointerFieldIsNull(90);
       }
-
-      public final boolean hasColor() {
-        return !_pointerFieldIsNull(144);
+      public final org.capnproto.Text.Builder getMobileOperatingSystem() {
+        return _getPointerField(org.capnproto.Text.factory, 90, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder getColor() {
-        return _getPointerField(org.capnproto.Text.factory, 144, null, 0, 0);
+      public final void setMobileOperatingSystem(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 90, value);
       }
-      public final void setColor(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 144, value);
+      public final void setMobileOperatingSystem(String value) {
+        _setPointerField(org.capnproto.Text.factory, 90, new org.capnproto.Text.Reader(value));
       }
-      public final void setColor(String value) {
-        _setPointerField(org.capnproto.Text.factory, 144, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder initMobileOperatingSystem(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 90, size);
       }
-      public final org.capnproto.Text.Builder initColor(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 144, size);
+      public final boolean hasValidUntil() {
+        return !_pointerFieldIsNull(91);
       }
-      public final boolean hasIncludedItemList() {
-        return !_pointerFieldIsNull(145);
+      public final org.capnproto.Text.Builder getValidUntil() {
+        return _getPointerField(org.capnproto.Text.factory, 91, null, 0, 0);
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Builder> getIncludedItemList() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 145, null, 0);
+      public final void setValidUntil(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 91, value);
       }
-      public final void setIncludedItemList(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 145, value);
+      public final void setValidUntil(String value) {
+        _setPointerField(org.capnproto.Text.factory, 91, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Builder> initIncludedItemList(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 145, size);
+      public final org.capnproto.Text.Builder initValidUntil(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 91, size);
       }
-      public final int getSubclassId() {
-        return _getIntField(65);
+      public final boolean getIphoneAccessory() {
+        return _getBooleanField(431);
       }
-      public final void setSubclassId(int value) {
-        _setIntField(65, value);
+      public final void setIphoneAccessory(boolean value) {
+        _setBooleanField(431, value);
       }
 
-      public final double getStandHeightIn() {
-        return _getDoubleField(34);
+      public final boolean getHighEfficiency() {
+        return _getBooleanField(432);
       }
-      public final void setStandHeightIn(double value) {
-        _setDoubleField(34, value);
-      }
-
-      public final boolean getSabbathMode() {
-        return _getBooleanField(1988);
-      }
-      public final void setSabbathMode(boolean value) {
-        _setBooleanField(1988, value);
+      public final void setHighEfficiency(boolean value) {
+        _setBooleanField(432, value);
       }
 
-      public final int getNumberOfChannels() {
-        return _getIntField(70);
+      public final boolean hasEsrbRating() {
+        return !_pointerFieldIsNull(92);
       }
-      public final void setNumberOfChannels(int value) {
-        _setIntField(70, value);
+      public final org.capnproto.Text.Builder getEsrbRating() {
+        return _getPointerField(org.capnproto.Text.factory, 92, null, 0, 0);
       }
-
-      public final boolean hasCollection() {
-        return !_pointerFieldIsNull(146);
+      public final void setEsrbRating(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 92, value);
       }
-      public final org.capnproto.Text.Builder getCollection() {
-        return _getPointerField(org.capnproto.Text.factory, 146, null, 0, 0);
+      public final void setEsrbRating(String value) {
+        _setPointerField(org.capnproto.Text.factory, 92, new org.capnproto.Text.Reader(value));
       }
-      public final void setCollection(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 146, value);
+      public final org.capnproto.Text.Builder initEsrbRating(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 92, size);
       }
-      public final void setCollection(String value) {
-        _setPointerField(org.capnproto.Text.factory, 146, new org.capnproto.Text.Reader(value));
+      public final double getSalePrice() {
+        return _getDoubleField(17);
       }
-      public final org.capnproto.Text.Builder initCollection(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 146, size);
-      }
-      public final boolean hasListingId() {
-        return !_pointerFieldIsNull(147);
-      }
-      public final org.capnproto.Text.Builder getListingId() {
-        return _getPointerField(org.capnproto.Text.factory, 147, null, 0, 0);
-      }
-      public final void setListingId(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 147, value);
-      }
-      public final void setListingId(String value) {
-        _setPointerField(org.capnproto.Text.factory, 147, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initListingId(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 147, size);
-      }
-      public final boolean hasProtectionPlanDetails() {
-        return !_pointerFieldIsNull(148);
-      }
-      public final org.capnproto.TextList.Builder getProtectionPlanDetails() {
-        return _getPointerField(org.capnproto.TextList.factory, 148, null, 0);
-      }
-      public final void setProtectionPlanDetails(org.capnproto.TextList.Reader value) {
-        _setPointerField(org.capnproto.TextList.factory, 148, value);
-      }
-      public final org.capnproto.TextList.Builder initProtectionPlanDetails(int size) {
-        return _initPointerField(org.capnproto.TextList.factory, 148, size);
-      }
-      public final boolean hasPlaybackFormats() {
-        return !_pointerFieldIsNull(149);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Builder> getPlaybackFormats() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 149, null, 0);
-      }
-      public final void setPlaybackFormats(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 149, value);
-      }
-      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Builder> initPlaybackFormats(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 149, size);
-      }
-      public final int getBestSellingRank() {
-        return _getIntField(71);
-      }
-      public final void setBestSellingRank(int value) {
-        _setIntField(71, value);
+      public final void setSalePrice(double value) {
+        _setDoubleField(17, value);
       }
 
-      public final boolean hasArtistName() {
-        return !_pointerFieldIsNull(150);
-      }
-      public final org.capnproto.Text.Builder getArtistName() {
-        return _getPointerField(org.capnproto.Text.factory, 150, null, 0, 0);
-      }
-      public final void setArtistName(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 150, value);
-      }
-      public final void setArtistName(String value) {
-        _setPointerField(org.capnproto.Text.factory, 150, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initArtistName(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 150, size);
-      }
       public final boolean hasSoftwareGrade() {
-        return !_pointerFieldIsNull(151);
+        return !_pointerFieldIsNull(93);
       }
       public final org.capnproto.Text.Builder getSoftwareGrade() {
-        return _getPointerField(org.capnproto.Text.factory, 151, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 93, null, 0, 0);
       }
       public final void setSoftwareGrade(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 151, value);
+        _setPointerField(org.capnproto.Text.factory, 93, value);
       }
       public final void setSoftwareGrade(String value) {
-        _setPointerField(org.capnproto.Text.factory, 151, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 93, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initSoftwareGrade(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 151, size);
+        return _initPointerField(org.capnproto.Text.factory, 93, size);
       }
-      public final boolean getIpodConnection() {
-        return _getBooleanField(1989);
+      public final int getNumberOfWashCycles() {
+        return _getIntField(36);
       }
-      public final void setIpodConnection(boolean value) {
-        _setBooleanField(1989, value);
+      public final void setNumberOfWashCycles(int value) {
+        _setIntField(36, value);
+      }
+
+      public final boolean getActive() {
+        return _getBooleanField(433);
+      }
+      public final void setActive(boolean value) {
+        _setBooleanField(433, value);
+      }
+
+      public final boolean hasProductFamilies() {
+        return !_pointerFieldIsNull(94);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Builder> getProductFamilies() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 94, null, 0);
+      }
+      public final void setProductFamilies(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 94, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Builder> initProductFamilies(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 94, size);
+      }
+      public final boolean hasPriceWithPlan() {
+        return !_pointerFieldIsNull(95);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Builder> getPriceWithPlan() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 95, null, 0);
+      }
+      public final void setPriceWithPlan(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 95, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Builder> initPriceWithPlan(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 95, size);
+      }
+      public final boolean hasMobileUrl() {
+        return !_pointerFieldIsNull(96);
+      }
+      public final org.capnproto.Text.Builder getMobileUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 96, null, 0, 0);
+      }
+      public final void setMobileUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 96, value);
+      }
+      public final void setMobileUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 96, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initMobileUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 96, size);
+      }
+      public final double getCapacityFreshFoodCuFt() {
+        return _getDoubleField(19);
+      }
+      public final void setCapacityFreshFoodCuFt(double value) {
+        _setDoubleField(19, value);
+      }
+
+      public final boolean hasDepartment() {
+        return !_pointerFieldIsNull(97);
+      }
+      public final org.capnproto.Text.Builder getDepartment() {
+        return _getPointerField(org.capnproto.Text.factory, 97, null, 0, 0);
+      }
+      public final void setDepartment(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 97, value);
+      }
+      public final void setDepartment(String value) {
+        _setPointerField(org.capnproto.Text.factory, 97, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initDepartment(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 97, size);
+      }
+      public final boolean getNuw() {
+        return _getBooleanField(434);
+      }
+      public final void setNuw(boolean value) {
+        _setBooleanField(434, value);
+      }
+
+      public final int getClassId() {
+        return _getIntField(37);
+      }
+      public final void setClassId(int value) {
+        _setIntField(37, value);
+      }
+
+      public final double getWattsPerChannel() {
+        return _getDoubleField(20);
+      }
+      public final void setWattsPerChannel(double value) {
+        _setDoubleField(20, value);
+      }
+
+      public final double getHeightToTopOfDoorHingeIn() {
+        return _getDoubleField(21);
+      }
+      public final void setHeightToTopOfDoorHingeIn(double value) {
+        _setDoubleField(21, value);
+      }
+
+      public final boolean hasPercentSavings() {
+        return !_pointerFieldIsNull(98);
+      }
+      public final org.capnproto.Text.Builder getPercentSavings() {
+        return _getPointerField(org.capnproto.Text.factory, 98, null, 0, 0);
+      }
+      public final void setPercentSavings(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 98, value);
+      }
+      public final void setPercentSavings(String value) {
+        _setPointerField(org.capnproto.Text.factory, 98, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPercentSavings(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 98, size);
+      }
+      public final boolean hasSoftwareNumberOfPlayers() {
+        return !_pointerFieldIsNull(99);
+      }
+      public final org.capnproto.Text.Builder getSoftwareNumberOfPlayers() {
+        return _getPointerField(org.capnproto.Text.factory, 99, null, 0, 0);
+      }
+      public final void setSoftwareNumberOfPlayers(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 99, value);
+      }
+      public final void setSoftwareNumberOfPlayers(String value) {
+        _setPointerField(org.capnproto.Text.factory, 99, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSoftwareNumberOfPlayers(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 99, size);
+      }
+      public final boolean hasStudio() {
+        return !_pointerFieldIsNull(100);
+      }
+      public final org.capnproto.Text.Builder getStudio() {
+        return _getPointerField(org.capnproto.Text.factory, 100, null, 0, 0);
+      }
+      public final void setStudio(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 100, value);
+      }
+      public final void setStudio(String value) {
+        _setPointerField(org.capnproto.Text.factory, 100, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initStudio(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 100, size);
+      }
+      public final boolean hasMpaaRating() {
+        return !_pointerFieldIsNull(101);
+      }
+      public final org.capnproto.Text.Builder getMpaaRating() {
+        return _getPointerField(org.capnproto.Text.factory, 101, null, 0, 0);
+      }
+      public final void setMpaaRating(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 101, value);
+      }
+      public final void setMpaaRating(String value) {
+        _setPointerField(org.capnproto.Text.factory, 101, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initMpaaRating(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 101, size);
+      }
+      public final double getDollarSavings() {
+        return _getDoubleField(22);
+      }
+      public final void setDollarSavings(double value) {
+        _setDoubleField(22, value);
+      }
+
+      public final boolean hasArtistId() {
+        return !_pointerFieldIsNull(102);
+      }
+      public final org.capnproto.Text.Builder getArtistId() {
+        return _getPointerField(org.capnproto.Text.factory, 102, null, 0, 0);
+      }
+      public final void setArtistId(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 102, value);
+      }
+      public final void setArtistId(String value) {
+        _setPointerField(org.capnproto.Text.factory, 102, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initArtistId(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 102, size);
+      }
+      public final boolean hasCarriers() {
+        return !_pointerFieldIsNull(103);
+      }
+      public final org.capnproto.TextList.Builder getCarriers() {
+        return _getPointerField(org.capnproto.TextList.factory, 103, null, 0);
+      }
+      public final void setCarriers(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 103, value);
+      }
+      public final org.capnproto.TextList.Builder initCarriers(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 103, size);
+      }
+      public final boolean getPreowned() {
+        return _getBooleanField(435);
+      }
+      public final void setPreowned(boolean value) {
+        _setBooleanField(435, value);
+      }
+
+      public final int getEnergyConsumptionKwhPerYear() {
+        return _getIntField(46);
+      }
+      public final void setEnergyConsumptionKwhPerYear(int value) {
+        _setIntField(46, value);
+      }
+
+      public final boolean hasTechSupportPlans() {
+        return !_pointerFieldIsNull(104);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getTechSupportPlans() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 104, null, 0);
+      }
+      public final void setTechSupportPlans(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 104, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initTechSupportPlans(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 104, size);
+      }
+      public final int getTotalSystemPowerWatts() {
+        return _getIntField(47);
+      }
+      public final void setTotalSystemPowerWatts(int value) {
+        _setIntField(47, value);
       }
 
       public final boolean hasMonthlyRecurringCharge() {
-        return !_pointerFieldIsNull(152);
+        return !_pointerFieldIsNull(105);
       }
       public final org.capnproto.Text.Builder getMonthlyRecurringCharge() {
-        return _getPointerField(org.capnproto.Text.factory, 152, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 105, null, 0, 0);
       }
       public final void setMonthlyRecurringCharge(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 152, value);
+        _setPointerField(org.capnproto.Text.factory, 105, value);
       }
       public final void setMonthlyRecurringCharge(String value) {
-        _setPointerField(org.capnproto.Text.factory, 152, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 105, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initMonthlyRecurringCharge(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 152, size);
+        return _initPointerField(org.capnproto.Text.factory, 105, size);
       }
-      public final boolean hasMobileUrl() {
-        return !_pointerFieldIsNull(153);
+      public final boolean hasScreenFormat() {
+        return !_pointerFieldIsNull(106);
       }
-      public final org.capnproto.Text.Builder getMobileUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 153, null, 0, 0);
+      public final org.capnproto.Text.Builder getScreenFormat() {
+        return _getPointerField(org.capnproto.Text.factory, 106, null, 0, 0);
       }
-      public final void setMobileUrl(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 153, value);
+      public final void setScreenFormat(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 106, value);
       }
-      public final void setMobileUrl(String value) {
-        _setPointerField(org.capnproto.Text.factory, 153, new org.capnproto.Text.Reader(value));
+      public final void setScreenFormat(String value) {
+        _setPointerField(org.capnproto.Text.factory, 106, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initMobileUrl(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 153, size);
+      public final org.capnproto.Text.Builder initScreenFormat(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 106, size);
       }
-      public final boolean hasSubclass() {
-        return !_pointerFieldIsNull(154);
+      public final boolean hasReleaseDate() {
+        return !_pointerFieldIsNull(107);
       }
-      public final org.capnproto.Text.Builder getSubclass() {
-        return _getPointerField(org.capnproto.Text.factory, 154, null, 0, 0);
+      public final org.capnproto.Text.Builder getReleaseDate() {
+        return _getPointerField(org.capnproto.Text.factory, 107, null, 0, 0);
       }
-      public final void setSubclass(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 154, value);
+      public final void setReleaseDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 107, value);
       }
-      public final void setSubclass(String value) {
-        _setPointerField(org.capnproto.Text.factory, 154, new org.capnproto.Text.Reader(value));
+      public final void setReleaseDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 107, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initSubclass(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 154, size);
+      public final org.capnproto.Text.Builder initReleaseDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 107, size);
+      }
+      public final int getSalesRankShortTerm() {
+        return _getIntField(48);
+      }
+      public final void setSalesRankShortTerm(int value) {
+        _setIntField(48, value);
+      }
+
+      public final int getBatteryLifeMin() {
+        return _getIntField(49);
+      }
+      public final void setBatteryLifeMin(int value) {
+        _setIntField(49, value);
+      }
+
+      public final boolean hasProtectionPlanTerm() {
+        return !_pointerFieldIsNull(108);
+      }
+      public final org.capnproto.Text.Builder getProtectionPlanTerm() {
+        return _getPointerField(org.capnproto.Text.factory, 108, null, 0, 0);
+      }
+      public final void setProtectionPlanTerm(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 108, value);
+      }
+      public final void setProtectionPlanTerm(String value) {
+        _setPointerField(org.capnproto.Text.factory, 108, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initProtectionPlanTerm(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 108, size);
+      }
+      public final boolean hasEarlyTerminationFees() {
+        return !_pointerFieldIsNull(109);
+      }
+      public final org.capnproto.TextList.Builder getEarlyTerminationFees() {
+        return _getPointerField(org.capnproto.TextList.factory, 109, null, 0);
+      }
+      public final void setEarlyTerminationFees(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 109, value);
+      }
+      public final org.capnproto.TextList.Builder initEarlyTerminationFees(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 109, size);
+      }
+      public final boolean getFabricDispenser() {
+        return _getBooleanField(436);
+      }
+      public final void setFabricDispenser(boolean value) {
+        _setBooleanField(436, value);
+      }
+
+      public final boolean hasColor() {
+        return !_pointerFieldIsNull(110);
+      }
+      public final org.capnproto.Text.Builder getColor() {
+        return _getPointerField(org.capnproto.Text.factory, 110, null, 0, 0);
+      }
+      public final void setColor(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 110, value);
+      }
+      public final void setColor(String value) {
+        _setPointerField(org.capnproto.Text.factory, 110, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initColor(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 110, size);
+      }
+      public final boolean getMarketplace() {
+        return _getBooleanField(437);
+      }
+      public final void setMarketplace(boolean value) {
+        _setBooleanField(437, value);
+      }
+
+      public final boolean hasAspectRatio() {
+        return !_pointerFieldIsNull(111);
+      }
+      public final org.capnproto.Text.Builder getAspectRatio() {
+        return _getPointerField(org.capnproto.Text.factory, 111, null, 0, 0);
+      }
+      public final void setAspectRatio(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 111, value);
+      }
+      public final void setAspectRatio(String value) {
+        _setPointerField(org.capnproto.Text.factory, 111, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAspectRatio(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 111, size);
+      }
+      public final boolean hasAgitatorType() {
+        return !_pointerFieldIsNull(112);
+      }
+      public final org.capnproto.Text.Builder getAgitatorType() {
+        return _getPointerField(org.capnproto.Text.factory, 112, null, 0, 0);
+      }
+      public final void setAgitatorType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 112, value);
+      }
+      public final void setAgitatorType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 112, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAgitatorType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 112, size);
       }
       public final boolean hasPlatform() {
-        return !_pointerFieldIsNull(155);
+        return !_pointerFieldIsNull(113);
       }
       public final org.capnproto.Text.Builder getPlatform() {
-        return _getPointerField(org.capnproto.Text.factory, 155, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 113, null, 0, 0);
       }
       public final void setPlatform(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 155, value);
+        _setPointerField(org.capnproto.Text.factory, 113, value);
       }
       public final void setPlatform(String value) {
-        _setPointerField(org.capnproto.Text.factory, 155, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 113, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initPlatform(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 155, size);
+        return _initPointerField(org.capnproto.Text.factory, 113, size);
       }
+      public final boolean hasIncludedItemList() {
+        return !_pointerFieldIsNull(114);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Builder> getIncludedItemList() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 114, null, 0);
+      }
+      public final void setIncludedItemList(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 114, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Builder> initIncludedItemList(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 114, size);
+      }
+      public final boolean getFriendsAndFamilyPickup() {
+        return _getBooleanField(438);
+      }
+      public final void setFriendsAndFamilyPickup(boolean value) {
+        _setBooleanField(438, value);
+      }
+
+      public final boolean hasDescription() {
+        return !_pointerFieldIsNull(115);
+      }
+      public final org.capnproto.Text.Builder getDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 115, null, 0, 0);
+      }
+      public final void setDescription(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 115, value);
+      }
+      public final void setDescription(String value) {
+        _setPointerField(org.capnproto.Text.factory, 115, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initDescription(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 115, size);
+      }
+      public final boolean hasDriveConnectivity() {
+        return !_pointerFieldIsNull(116);
+      }
+      public final org.capnproto.Text.Builder getDriveConnectivity() {
+        return _getPointerField(org.capnproto.Text.factory, 116, null, 0, 0);
+      }
+      public final void setDriveConnectivity(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 116, value);
+      }
+      public final void setDriveConnectivity(String value) {
+        _setPointerField(org.capnproto.Text.factory, 116, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initDriveConnectivity(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 116, size);
+      }
+      public final double getStandHeightIn() {
+        return _getDoubleField(25);
+      }
+      public final void setStandHeightIn(double value) {
+        _setDoubleField(25, value);
+      }
+
+      public final boolean hasSoftwareAge() {
+        return !_pointerFieldIsNull(117);
+      }
+      public final org.capnproto.Text.Builder getSoftwareAge() {
+        return _getPointerField(org.capnproto.Text.factory, 117, null, 0, 0);
+      }
+      public final void setSoftwareAge(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 117, value);
+      }
+      public final void setSoftwareAge(String value) {
+        _setPointerField(org.capnproto.Text.factory, 117, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSoftwareAge(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 117, size);
+      }
+      public final boolean hasGenre() {
+        return !_pointerFieldIsNull(118);
+      }
+      public final org.capnproto.Text.Builder getGenre() {
+        return _getPointerField(org.capnproto.Text.factory, 118, null, 0, 0);
+      }
+      public final void setGenre(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 118, value);
+      }
+      public final void setGenre(String value) {
+        _setPointerField(org.capnproto.Text.factory, 118, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initGenre(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 118, size);
+      }
+      public final boolean hasArtistName() {
+        return !_pointerFieldIsNull(119);
+      }
+      public final org.capnproto.Text.Builder getArtistName() {
+        return _getPointerField(org.capnproto.Text.factory, 119, null, 0, 0);
+      }
+      public final void setArtistName(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 119, value);
+      }
+      public final void setArtistName(String value) {
+        _setPointerField(org.capnproto.Text.factory, 119, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initArtistName(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 119, size);
+      }
+      public final boolean hasStyle() {
+        return !_pointerFieldIsNull(120);
+      }
+      public final org.capnproto.Text.Builder getStyle() {
+        return _getPointerField(org.capnproto.Text.factory, 120, null, 0, 0);
+      }
+      public final void setStyle(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 120, value);
+      }
+      public final void setStyle(String value) {
+        _setPointerField(org.capnproto.Text.factory, 120, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initStyle(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 120, size);
+      }
+      public final boolean hasCondition() {
+        return !_pointerFieldIsNull(121);
+      }
+      public final org.capnproto.Text.Builder getCondition() {
+        return _getPointerField(org.capnproto.Text.factory, 121, null, 0, 0);
+      }
+      public final void setCondition(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 121, value);
+      }
+      public final void setCondition(String value) {
+        _setPointerField(org.capnproto.Text.factory, 121, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initCondition(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 121, size);
+      }
+      public final boolean hasRemoteControlImage() {
+        return !_pointerFieldIsNull(122);
+      }
+      public final org.capnproto.Text.Builder getRemoteControlImage() {
+        return _getPointerField(org.capnproto.Text.factory, 122, null, 0, 0);
+      }
+      public final void setRemoteControlImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 122, value);
+      }
+      public final void setRemoteControlImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 122, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initRemoteControlImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 122, size);
+      }
+      public final boolean hasValidFrom() {
+        return !_pointerFieldIsNull(123);
+      }
+      public final org.capnproto.Text.Builder getValidFrom() {
+        return _getPointerField(org.capnproto.Text.factory, 123, null, 0, 0);
+      }
+      public final void setValidFrom(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 123, value);
+      }
+      public final void setValidFrom(String value) {
+        _setPointerField(org.capnproto.Text.factory, 123, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initValidFrom(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 123, size);
+      }
+      public final boolean hasCategoryPath() {
+        return !_pointerFieldIsNull(124);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Builder> getCategoryPath() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 124, null, 0);
+      }
+      public final void setCategoryPath(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 124, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Builder> initCategoryPath(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 124, size);
+      }
+      public final double getDepthIncludingHandlesIn() {
+        return _getDoubleField(26);
+      }
+      public final void setDepthIncludingHandlesIn(double value) {
+        _setDoubleField(26, value);
+      }
+
+      public final boolean hasAffiliateUrl() {
+        return !_pointerFieldIsNull(125);
+      }
+      public final org.capnproto.Text.Builder getAffiliateUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 125, null, 0, 0);
+      }
+      public final void setAffiliateUrl(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 125, value);
+      }
+      public final void setAffiliateUrl(String value) {
+        _setPointerField(org.capnproto.Text.factory, 125, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAffiliateUrl(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 125, size);
+      }
+      public final int getStationPresets() {
+        return _getIntField(54);
+      }
+      public final void setStationPresets(int value) {
+        _setIntField(54, value);
+      }
+
+      public final boolean getDigital() {
+        return _getBooleanField(439);
+      }
+      public final void setDigital(boolean value) {
+        _setBooleanField(439, value);
+      }
+
+      public final boolean hasPlot() {
+        return !_pointerFieldIsNull(126);
+      }
+      public final org.capnproto.Text.Builder getPlot() {
+        return _getPointerField(org.capnproto.Text.factory, 126, null, 0, 0);
+      }
+      public final void setPlot(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 126, value);
+      }
+      public final void setPlot(String value) {
+        _setPointerField(org.capnproto.Text.factory, 126, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPlot(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 126, size);
+      }
+      public final int getDepartmentId() {
+        return _getIntField(55);
+      }
+      public final void setDepartmentId(int value) {
+        _setIntField(55, value);
+      }
+
+      public final boolean hasModelNumber() {
+        return !_pointerFieldIsNull(127);
+      }
+      public final org.capnproto.Text.Builder getModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 127, null, 0, 0);
+      }
+      public final void setModelNumber(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 127, value);
+      }
+      public final void setModelNumber(String value) {
+        _setPointerField(org.capnproto.Text.factory, 127, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initModelNumber(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 127, size);
+      }
+      public final boolean hasDevices() {
+        return !_pointerFieldIsNull(128);
+      }
+      public final org.capnproto.TextList.Builder getDevices() {
+        return _getPointerField(org.capnproto.TextList.factory, 128, null, 0);
+      }
+      public final void setDevices(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 128, value);
+      }
+      public final org.capnproto.TextList.Builder initDevices(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 128, size);
+      }
+      public final boolean hasAlbumTitle() {
+        return !_pointerFieldIsNull(129);
+      }
+      public final org.capnproto.Text.Builder getAlbumTitle() {
+        return _getPointerField(org.capnproto.Text.factory, 129, null, 0, 0);
+      }
+      public final void setAlbumTitle(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 129, value);
+      }
+      public final void setAlbumTitle(String value) {
+        _setPointerField(org.capnproto.Text.factory, 129, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAlbumTitle(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 129, size);
+      }
+      public final boolean hasCarrierModelNumber() {
+        return !_pointerFieldIsNull(130);
+      }
+      public final org.capnproto.Text.Builder getCarrierModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 130, null, 0, 0);
+      }
+      public final void setCarrierModelNumber(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 130, value);
+      }
+      public final void setCarrierModelNumber(String value) {
+        _setPointerField(org.capnproto.Text.factory, 130, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initCarrierModelNumber(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 130, size);
+      }
+      public final double getPlanPrice() {
+        return _getDoubleField(28);
+      }
+      public final void setPlanPrice(double value) {
+        _setDoubleField(28, value);
+      }
+
+      public final boolean getCounterDepth() {
+        return _getBooleanField(440);
+      }
+      public final void setCounterDepth(boolean value) {
+        _setBooleanField(440, value);
+      }
+
       public final boolean hasVideoLanguages() {
-        return !_pointerFieldIsNull(156);
+        return !_pointerFieldIsNull(131);
       }
       public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Builder> getVideoLanguages() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 156, null, 0);
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 131, null, 0);
       }
       public final void setVideoLanguages(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 156, value);
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 131, value);
       }
       public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Builder> initVideoLanguages(int size) {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 156, size);
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 131, size);
       }
+      public final boolean hasProtectionPlanDetails() {
+        return !_pointerFieldIsNull(132);
+      }
+      public final org.capnproto.TextList.Builder getProtectionPlanDetails() {
+        return _getPointerField(org.capnproto.TextList.factory, 132, null, 0);
+      }
+      public final void setProtectionPlanDetails(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 132, value);
+      }
+      public final org.capnproto.TextList.Builder initProtectionPlanDetails(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 132, size);
+      }
+      public final boolean getStackable() {
+        return _getBooleanField(441);
+      }
+      public final void setStackable(boolean value) {
+        _setBooleanField(441, value);
+      }
+
+      public final double getDepthWithStandIn() {
+        return _getDoubleField(29);
+      }
+      public final void setDepthWithStandIn(double value) {
+        _setDoubleField(29, value);
+      }
+
+      public final boolean getAllergyCycle() {
+        return _getBooleanField(442);
+      }
+      public final void setAllergyCycle(boolean value) {
+        _setBooleanField(442, value);
+      }
+
+      public final boolean hasSpin360Url() {
+        return !_pointerFieldIsNull(133);
+      }
+      public final org.capnproto.Text.Builder getSpin360Url() {
+        return _getPointerField(org.capnproto.Text.factory, 133, null, 0, 0);
+      }
+      public final void setSpin360Url(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 133, value);
+      }
+      public final void setSpin360Url(String value) {
+        _setPointerField(org.capnproto.Text.factory, 133, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSpin360Url(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 133, size);
+      }
+      public final boolean getIpodReady() {
+        return _getBooleanField(443);
+      }
+      public final void setIpodReady(boolean value) {
+        _setBooleanField(443, value);
+      }
+
+      public final boolean getReversibleDoorHinge() {
+        return _getBooleanField(444);
+      }
+      public final void setReversibleDoorHinge(boolean value) {
+        _setBooleanField(444, value);
+      }
+
+      public final boolean hasWaterFilterModelNumber() {
+        return !_pointerFieldIsNull(134);
+      }
+      public final org.capnproto.Text.Builder getWaterFilterModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 134, null, 0, 0);
+      }
+      public final void setWaterFilterModelNumber(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 134, value);
+      }
+      public final void setWaterFilterModelNumber(String value) {
+        _setPointerField(org.capnproto.Text.factory, 134, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initWaterFilterModelNumber(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 134, size);
+      }
+      public final boolean getEthernetPort() {
+        return _getBooleanField(445);
+      }
+      public final void setEthernetPort(boolean value) {
+        _setBooleanField(445, value);
+      }
+
+      public final int getHdmiOutputs() {
+        return _getIntField(60);
+      }
+      public final void setHdmiOutputs(int value) {
+        _setIntField(60, value);
+      }
+
+      public final int getStationPresetsFm() {
+        return _getIntField(61);
+      }
+      public final void setStationPresetsFm(int value) {
+        _setIntField(61, value);
+      }
+
+      public final boolean getOnlinePlay() {
+        return _getBooleanField(446);
+      }
+      public final void setOnlinePlay(boolean value) {
+        _setBooleanField(446, value);
+      }
+
+      public final boolean hasAccessories() {
+        return !_pointerFieldIsNull(135);
+      }
+      public final org.capnproto.TextList.Builder getAccessories() {
+        return _getPointerField(org.capnproto.TextList.factory, 135, null, 0);
+      }
+      public final void setAccessories(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 135, value);
+      }
+      public final org.capnproto.TextList.Builder initAccessories(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 135, size);
+      }
+      public final boolean hasEstimatedYearlyOperatingCosts() {
+        return !_pointerFieldIsNull(136);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Builder> getEstimatedYearlyOperatingCosts() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 136, null, 0);
+      }
+      public final void setEstimatedYearlyOperatingCosts(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 136, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Builder> initEstimatedYearlyOperatingCosts(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 136, size);
+      }
+      public final boolean getDryingRack() {
+        return _getBooleanField(447);
+      }
+      public final void setDryingRack(boolean value) {
+        _setBooleanField(447, value);
+      }
+
+      public final boolean hasCarrierPlans() {
+        return !_pointerFieldIsNull(137);
+      }
+      public final org.capnproto.TextList.Builder getCarrierPlans() {
+        return _getPointerField(org.capnproto.TextList.factory, 137, null, 0);
+      }
+      public final void setCarrierPlans(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 137, value);
+      }
+      public final org.capnproto.TextList.Builder initCarrierPlans(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 137, size);
+      }
+      public final double getRegularPrice() {
+        return _getDoubleField(31);
+      }
+      public final void setRegularPrice(double value) {
+        _setDoubleField(31, value);
+      }
+
+      public final boolean hasUpc() {
+        return !_pointerFieldIsNull(138);
+      }
+      public final org.capnproto.Text.Builder getUpc() {
+        return _getPointerField(org.capnproto.Text.factory, 138, null, 0, 0);
+      }
+      public final void setUpc(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 138, value);
+      }
+      public final void setUpc(String value) {
+        _setPointerField(org.capnproto.Text.factory, 138, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initUpc(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 138, size);
+      }
+      public final boolean getWaterEfficiency() {
+        return _getBooleanField(2048);
+      }
+      public final void setWaterEfficiency(boolean value) {
+        _setBooleanField(2048, value);
+      }
+
+      public final boolean hasCustomerReviewAverage() {
+        return !_pointerFieldIsNull(139);
+      }
+      public final org.capnproto.Text.Builder getCustomerReviewAverage() {
+        return _getPointerField(org.capnproto.Text.factory, 139, null, 0, 0);
+      }
+      public final void setCustomerReviewAverage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 139, value);
+      }
+      public final void setCustomerReviewAverage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 139, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initCustomerReviewAverage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 139, size);
+      }
+      public final boolean hasTemperatureControlType() {
+        return !_pointerFieldIsNull(140);
+      }
+      public final org.capnproto.Text.Builder getTemperatureControlType() {
+        return _getPointerField(org.capnproto.Text.factory, 140, null, 0, 0);
+      }
+      public final void setTemperatureControlType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 140, value);
+      }
+      public final void setTemperatureControlType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 140, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initTemperatureControlType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 140, size);
+      }
+      public final boolean getSanitationCycle() {
+        return _getBooleanField(2049);
+      }
+      public final void setSanitationCycle(boolean value) {
+        _setBooleanField(2049, value);
+      }
+
+      public final boolean hasProductAspectRatio() {
+        return !_pointerFieldIsNull(141);
+      }
+      public final org.capnproto.Text.Builder getProductAspectRatio() {
+        return _getPointerField(org.capnproto.Text.factory, 141, null, 0, 0);
+      }
+      public final void setProductAspectRatio(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 141, value);
+      }
+      public final void setProductAspectRatio(String value) {
+        _setPointerField(org.capnproto.Text.factory, 141, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initProductAspectRatio(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 141, size);
+      }
+      public final boolean getWaterFiltration() {
+        return _getBooleanField(2050);
+      }
+      public final void setWaterFiltration(boolean value) {
+        _setBooleanField(2050, value);
+      }
+
+      public final int getPeakPowerHandling() {
+        return _getIntField(65);
+      }
+      public final void setPeakPowerHandling(int value) {
+        _setIntField(65, value);
+      }
+
+      public final boolean getMediaCardSlot() {
+        return _getBooleanField(2051);
+      }
+      public final void setMediaCardSlot(boolean value) {
+        _setBooleanField(2051, value);
+      }
+
+      public final boolean hasTheatricalReleaseDate() {
+        return !_pointerFieldIsNull(142);
+      }
+      public final org.capnproto.Text.Builder getTheatricalReleaseDate() {
+        return _getPointerField(org.capnproto.Text.factory, 142, null, 0, 0);
+      }
+      public final void setTheatricalReleaseDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 142, value);
+      }
+      public final void setTheatricalReleaseDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 142, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initTheatricalReleaseDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 142, size);
+      }
+      public final boolean getSmartCapable() {
+        return _getBooleanField(2052);
+      }
+      public final void setSmartCapable(boolean value) {
+        _setBooleanField(2052, value);
+      }
+
+      public final boolean hasProtectionPlanType() {
+        return !_pointerFieldIsNull(143);
+      }
+      public final org.capnproto.Text.Builder getProtectionPlanType() {
+        return _getPointerField(org.capnproto.Text.factory, 143, null, 0, 0);
+      }
+      public final void setProtectionPlanType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 143, value);
+      }
+      public final void setProtectionPlanType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 143, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initProtectionPlanType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 143, size);
+      }
+      public final boolean getSteam() {
+        return _getBooleanField(2053);
+      }
+      public final void setSteam(boolean value) {
+        _setBooleanField(2053, value);
+      }
+
+      public final boolean hasActiveUpdateDate() {
+        return !_pointerFieldIsNull(144);
+      }
+      public final org.capnproto.Text.Builder getActiveUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 144, null, 0, 0);
+      }
+      public final void setActiveUpdateDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 144, value);
+      }
+      public final void setActiveUpdateDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 144, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initActiveUpdateDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 144, size);
+      }
+      public final boolean hasPlanType() {
+        return !_pointerFieldIsNull(145);
+      }
+      public final org.capnproto.Text.Builder getPlanType() {
+        return _getPointerField(org.capnproto.Text.factory, 145, null, 0, 0);
+      }
+      public final void setPlanType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 145, value);
+      }
+      public final void setPlanType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 145, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPlanType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 145, size);
+      }
+      public final boolean hasSubclass() {
+        return !_pointerFieldIsNull(146);
+      }
+      public final org.capnproto.Text.Builder getSubclass() {
+        return _getPointerField(org.capnproto.Text.factory, 146, null, 0, 0);
+      }
+      public final void setSubclass(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 146, value);
+      }
+      public final void setSubclass(String value) {
+        _setPointerField(org.capnproto.Text.factory, 146, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSubclass(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 146, size);
+      }
+      public final boolean getHomeDelivery() {
+        return _getBooleanField(2054);
+      }
+      public final void setHomeDelivery(boolean value) {
+        _setBooleanField(2054, value);
+      }
+
+      public final int getSalesRankMediumTerm() {
+        return _getIntField(66);
+      }
+      public final void setSalesRankMediumTerm(int value) {
+        _setIntField(66, value);
+      }
+
+      public final boolean getChildLock() {
+        return _getBooleanField(2055);
+      }
+      public final void setChildLock(boolean value) {
+        _setBooleanField(2055, value);
+      }
+
+      public final boolean hasFrequentlyPurchasedWith() {
+        return !_pointerFieldIsNull(147);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> getFrequentlyPurchasedWith() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 147, null, 0);
+      }
+      public final void setFrequentlyPurchasedWith(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 147, value);
+      }
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Builder> initFrequentlyPurchasedWith(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 147, size);
+      }
+      public final boolean getGallonDoorStorage() {
+        return _getBooleanField(2056);
+      }
+      public final void setGallonDoorStorage(boolean value) {
+        _setBooleanField(2056, value);
+      }
+
+      public final boolean hasDisplayType() {
+        return !_pointerFieldIsNull(148);
+      }
+      public final org.capnproto.Text.Builder getDisplayType() {
+        return _getPointerField(org.capnproto.Text.factory, 148, null, 0, 0);
+      }
+      public final void setDisplayType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 148, value);
+      }
+      public final void setDisplayType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 148, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initDisplayType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 148, size);
+      }
+      public final boolean hasVerticalResolution() {
+        return !_pointerFieldIsNull(149);
+      }
+      public final org.capnproto.Text.Builder getVerticalResolution() {
+        return _getPointerField(org.capnproto.Text.factory, 149, null, 0, 0);
+      }
+      public final void setVerticalResolution(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 149, value);
+      }
+      public final void setVerticalResolution(String value) {
+        _setPointerField(org.capnproto.Text.factory, 149, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initVerticalResolution(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 149, size);
+      }
+      public final boolean getIpodConnection() {
+        return _getBooleanField(2057);
+      }
+      public final void setIpodConnection(boolean value) {
+        _setBooleanField(2057, value);
+      }
+
       public final int getNumberOfSpeakers() {
-        return _getIntField(72);
+        return _getIntField(67);
       }
       public final void setNumberOfSpeakers(int value) {
+        _setIntField(67, value);
+      }
+
+      public final double getCapacityFreezerCuFt() {
+        return _getDoubleField(34);
+      }
+      public final void setCapacityFreezerCuFt(double value) {
+        _setDoubleField(34, value);
+      }
+
+      public final boolean hasPriceUpdateDate() {
+        return !_pointerFieldIsNull(150);
+      }
+      public final org.capnproto.Text.Builder getPriceUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 150, null, 0, 0);
+      }
+      public final void setPriceUpdateDate(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 150, value);
+      }
+      public final void setPriceUpdateDate(String value) {
+        _setPointerField(org.capnproto.Text.factory, 150, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initPriceUpdateDate(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 150, size);
+      }
+      public final boolean hasControlType() {
+        return !_pointerFieldIsNull(151);
+      }
+      public final org.capnproto.Text.Builder getControlType() {
+        return _getPointerField(org.capnproto.Text.factory, 151, null, 0, 0);
+      }
+      public final void setControlType(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 151, value);
+      }
+      public final void setControlType(String value) {
+        _setPointerField(org.capnproto.Text.factory, 151, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initControlType(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 151, size);
+      }
+      public final boolean hasDoorHandleColor() {
+        return !_pointerFieldIsNull(152);
+      }
+      public final org.capnproto.Text.Builder getDoorHandleColor() {
+        return _getPointerField(org.capnproto.Text.factory, 152, null, 0, 0);
+      }
+      public final void setDoorHandleColor(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 152, value);
+      }
+      public final void setDoorHandleColor(String value) {
+        _setPointerField(org.capnproto.Text.factory, 152, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initDoorHandleColor(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 152, size);
+      }
+      public final boolean hasSource() {
+        return !_pointerFieldIsNull(153);
+      }
+      public final org.capnproto.Text.Builder getSource() {
+        return _getPointerField(org.capnproto.Text.factory, 153, null, 0, 0);
+      }
+      public final void setSource(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 153, value);
+      }
+      public final void setSource(String value) {
+        _setPointerField(org.capnproto.Text.factory, 153, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSource(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 153, size);
+      }
+      public final long getProductId() {
+        return _getLongField(35);
+      }
+      public final void setProductId(long value) {
+        _setLongField(35, value);
+      }
+
+      public final int getMediaCount() {
+        return _getIntField(72);
+      }
+      public final void setMediaCount(int value) {
         _setIntField(72, value);
       }
 
-      public final boolean hasItemUpdateDate() {
+      public final boolean hasAccessoriesImage() {
+        return !_pointerFieldIsNull(154);
+      }
+      public final org.capnproto.Text.Builder getAccessoriesImage() {
+        return _getPointerField(org.capnproto.Text.factory, 154, null, 0, 0);
+      }
+      public final void setAccessoriesImage(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 154, value);
+      }
+      public final void setAccessoriesImage(String value) {
+        _setPointerField(org.capnproto.Text.factory, 154, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initAccessoriesImage(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 154, size);
+      }
+      public final boolean hasProtectionPlans() {
+        return !_pointerFieldIsNull(155);
+      }
+      public final org.capnproto.TextList.Builder getProtectionPlans() {
+        return _getPointerField(org.capnproto.TextList.factory, 155, null, 0);
+      }
+      public final void setProtectionPlans(org.capnproto.TextList.Reader value) {
+        _setPointerField(org.capnproto.TextList.factory, 155, value);
+      }
+      public final org.capnproto.TextList.Builder initProtectionPlans(int size) {
+        return _initPointerField(org.capnproto.TextList.factory, 155, size);
+      }
+      public final boolean hasWarrantyLabor() {
+        return !_pointerFieldIsNull(156);
+      }
+      public final org.capnproto.Text.Builder getWarrantyLabor() {
+        return _getPointerField(org.capnproto.Text.factory, 156, null, 0, 0);
+      }
+      public final void setWarrantyLabor(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 156, value);
+      }
+      public final void setWarrantyLabor(String value) {
+        _setPointerField(org.capnproto.Text.factory, 156, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initWarrantyLabor(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 156, size);
+      }
+      public final boolean getBuiltInDigitalCamera() {
+        return _getBooleanField(2058);
+      }
+      public final void setBuiltInDigitalCamera(boolean value) {
+        _setBooleanField(2058, value);
+      }
+
+      public final boolean hasServiceProvider() {
         return !_pointerFieldIsNull(157);
       }
-      public final org.capnproto.Text.Builder getItemUpdateDate() {
+      public final org.capnproto.Text.Builder getServiceProvider() {
         return _getPointerField(org.capnproto.Text.factory, 157, null, 0, 0);
       }
-      public final void setItemUpdateDate(org.capnproto.Text.Reader value) {
+      public final void setServiceProvider(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 157, value);
       }
-      public final void setItemUpdateDate(String value) {
+      public final void setServiceProvider(String value) {
         _setPointerField(org.capnproto.Text.factory, 157, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initItemUpdateDate(int size) {
+      public final org.capnproto.Text.Builder initServiceProvider(int size) {
         return _initPointerField(org.capnproto.Text.factory, 157, size);
       }
-      public final boolean getNuw() {
-        return _getBooleanField(1990);
-      }
-      public final void setNuw(boolean value) {
-        _setBooleanField(1990, value);
-      }
-
-      public final boolean getSteam() {
-        return _getBooleanField(1991);
-      }
-      public final void setSteam(boolean value) {
-        _setBooleanField(1991, value);
-      }
-
-      public final boolean getCompactDesign() {
-        return _getBooleanField(1992);
-      }
-      public final void setCompactDesign(boolean value) {
-        _setBooleanField(1992, value);
-      }
-
-      public final boolean hasThumbnailImage() {
+      public final boolean hasInstantContent() {
         return !_pointerFieldIsNull(158);
       }
-      public final org.capnproto.Text.Builder getThumbnailImage() {
-        return _getPointerField(org.capnproto.Text.factory, 158, null, 0, 0);
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Builder> getInstantContent() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 158, null, 0);
       }
-      public final void setThumbnailImage(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 158, value);
+      public final void setInstantContent(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Reader> value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 158, value);
       }
-      public final void setThumbnailImage(String value) {
-        _setPointerField(org.capnproto.Text.factory, 158, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Builder> initInstantContent(int size) {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 158, size);
       }
-      public final org.capnproto.Text.Builder initThumbnailImage(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 158, size);
-      }
-      public final boolean getLintFilterLight() {
-        return _getBooleanField(1993);
-      }
-      public final void setLintFilterLight(boolean value) {
-        _setBooleanField(1993, value);
-      }
-
-      public final boolean getHandWashCycle() {
-        return _getBooleanField(1994);
-      }
-      public final void setHandWashCycle(boolean value) {
-        _setBooleanField(1994, value);
-      }
-
     }
 
     public static final class Reader extends org.capnproto.StructReader {
@@ -3212,1617 +3212,1617 @@ public final class BestbuyCapnp {
         super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
       }
 
-      public boolean hasFulfilledBy() {
+      public boolean hasTechnologyCode() {
         return !_pointerFieldIsNull(0);
       }
-      public org.capnproto.Text.Reader getFulfilledBy() {
+      public org.capnproto.Text.Reader getTechnologyCode() {
         return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
       }
 
-      public boolean hasActivationCharge() {
+      public boolean hasLongDescription() {
         return !_pointerFieldIsNull(1);
       }
-      public org.capnproto.Text.Reader getActivationCharge() {
+      public org.capnproto.Text.Reader getLongDescription() {
         return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
       }
 
-      public final int getClassId() {
+      public final int getHdmiInputs() {
         return _getIntField(0);
       }
 
-      public final boolean getOutletCenter() {
-        return _getBooleanField(32);
-      }
-
-      public final double getRegularPrice() {
-        return _getDoubleField(1);
-      }
-
-      public boolean hasProtectionPlanHighPrice() {
+      public boolean hasStartDate() {
         return !_pointerFieldIsNull(2);
       }
-      public org.capnproto.Text.Reader getProtectionPlanHighPrice() {
+      public org.capnproto.Text.Reader getStartDate() {
         return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
       }
 
-      public final double getCapacityFreshFoodCuFt() {
-        return _getDoubleField(2);
-      }
-
-      public final boolean getHomeDelivery() {
-        return _getBooleanField(33);
-      }
-
-      public boolean hasMediumImage() {
+      public boolean hasWeight() {
         return !_pointerFieldIsNull(3);
       }
-      public org.capnproto.Text.Reader getMediumImage() {
+      public org.capnproto.Text.Reader getWeight() {
         return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
       }
 
-      public final boolean getWifiBuiltIn() {
-        return _getBooleanField(34);
+      public final double getCapacityCuFt() {
+        return _getDoubleField(1);
       }
 
-      public boolean hasValidUntil() {
+      public boolean hasType() {
         return !_pointerFieldIsNull(4);
       }
-      public org.capnproto.Text.Reader getValidUntil() {
+      public org.capnproto.Text.Reader getType() {
         return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
       }
 
-      public final boolean hasMembers() {
+      public boolean hasScannerType() {
         return !_pointerFieldIsNull(5);
       }
-      public final org.capnproto.TextList.Reader getMembers() {
-        return _getPointerField(org.capnproto.TextList.factory, 5, null, 0);
+      public org.capnproto.Text.Reader getScannerType() {
+        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
       }
 
-      public boolean hasCabinetSideColor() {
+      public boolean hasCollection() {
         return !_pointerFieldIsNull(6);
       }
-      public org.capnproto.Text.Reader getCabinetSideColor() {
+      public org.capnproto.Text.Reader getCollection() {
         return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
       }
 
-      public final double getDepthLessDoorIn() {
-        return _getDoubleField(3);
-      }
-
-      public final boolean getDigital() {
-        return _getBooleanField(35);
-      }
-
-      public boolean hasGenre() {
-        return !_pointerFieldIsNull(7);
-      }
-      public org.capnproto.Text.Reader getGenre() {
-        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
-      }
-
-      public final boolean hasBuybackPlans() {
-        return !_pointerFieldIsNull(8);
-      }
-      public final org.capnproto.TextList.Reader getBuybackPlans() {
-        return _getPointerField(org.capnproto.TextList.factory, 8, null, 0);
-      }
-
-      public final boolean getSecondRinse() {
-        return _getBooleanField(36);
-      }
-
-      public boolean hasImage() {
-        return !_pointerFieldIsNull(9);
-      }
-      public org.capnproto.Text.Reader getImage() {
-        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-      }
-
-      public boolean hasLargeFrontImage() {
-        return !_pointerFieldIsNull(10);
-      }
-      public org.capnproto.Text.Reader getLargeFrontImage() {
-        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-      }
-
-      public boolean hasAngleImage() {
-        return !_pointerFieldIsNull(11);
-      }
-      public org.capnproto.Text.Reader getAngleImage() {
-        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
-      }
-
-      public boolean hasDriveConnectivity() {
-        return !_pointerFieldIsNull(12);
-      }
-      public org.capnproto.Text.Reader getDriveConnectivity() {
-        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
-      }
-
-      public final boolean getSmartCapable() {
-        return _getBooleanField(37);
-      }
-
-      public boolean hasValidFrom() {
-        return !_pointerFieldIsNull(13);
-      }
-      public org.capnproto.Text.Reader getValidFrom() {
-        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
-      }
-
-      public final int getMediaCount() {
-        return _getIntField(8);
-      }
-
-      public final boolean getUsbPort() {
-        return _getBooleanField(38);
-      }
-
-      public boolean hasHeight() {
-        return !_pointerFieldIsNull(14);
-      }
-      public org.capnproto.Text.Reader getHeight() {
-        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-      }
-
-      public final int getCustomerReviewCount() {
-        return _getIntField(9);
-      }
-
-      public boolean hasRemoteControlImage() {
-        return !_pointerFieldIsNull(15);
-      }
-      public org.capnproto.Text.Reader getRemoteControlImage() {
-        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
-      }
-
-      public boolean hasTopViewImage() {
-        return !_pointerFieldIsNull(16);
-      }
-      public org.capnproto.Text.Reader getTopViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
-      }
-
-      public final boolean hasProductFamilies() {
-        return !_pointerFieldIsNull(17);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Reader> getProductFamilies() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 17, null, 0);
-      }
-
-      public final double getDepthWithDoorOpenIn() {
-        return _getDoubleField(5);
-      }
-
-      public boolean hasLinkShareAffiliateAddToCartUrl() {
-        return !_pointerFieldIsNull(18);
-      }
-      public org.capnproto.Text.Reader getLinkShareAffiliateAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
-      }
-
-      public final boolean getBluetoothEnabled() {
-        return _getBooleanField(39);
-      }
-
-      public final boolean getDelicateCycle() {
-        return _getBooleanField(40);
-      }
-
-      public boolean hasPlanType() {
-        return !_pointerFieldIsNull(19);
-      }
-      public org.capnproto.Text.Reader getPlanType() {
-        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
-      }
-
-      public final boolean hasFrequentlyPurchasedWith() {
-        return !_pointerFieldIsNull(20);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getFrequentlyPurchasedWith() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 20, null, 0);
-      }
-
-      public boolean hasShippingCost() {
-        return !_pointerFieldIsNull(21);
-      }
-      public org.capnproto.Text.Reader getShippingCost() {
-        return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
-      }
-
-      public boolean hasWaterFilterLocation() {
-        return !_pointerFieldIsNull(22);
-      }
-      public org.capnproto.Text.Reader getWaterFilterLocation() {
-        return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
-      }
-
-      public final boolean getOnlinePlay() {
-        return _getBooleanField(41);
+      public final int getSalesRankLongTerm() {
+        return _getIntField(1);
       }
 
       public final boolean getDelayedStart() {
-        return _getBooleanField(42);
-      }
-
-      public final boolean getSleepTimer() {
-        return _getBooleanField(43);
-      }
-
-      public boolean hasCarrierModelNumber() {
-        return !_pointerFieldIsNull(23);
-      }
-      public org.capnproto.Text.Reader getCarrierModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
-      }
-
-      public boolean hasLoadAccess() {
-        return !_pointerFieldIsNull(24);
-      }
-      public org.capnproto.Text.Reader getLoadAccess() {
-        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
-      }
-
-      public boolean hasStudioLive() {
-        return !_pointerFieldIsNull(25);
-      }
-      public org.capnproto.Text.Reader getStudioLive() {
-        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
-      }
-
-      public boolean hasTemperatureControlType() {
-        return !_pointerFieldIsNull(26);
-      }
-      public org.capnproto.Text.Reader getTemperatureControlType() {
-        return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
-      }
-
-      public final double getEstimatedYearlyOperatingCostsUsd() {
-        return _getDoubleField(6);
-      }
-
-      public boolean hasAlternateViewsImage() {
-        return !_pointerFieldIsNull(27);
-      }
-      public org.capnproto.Text.Reader getAlternateViewsImage() {
-        return _getPointerField(org.capnproto.Text.factory, 27, null, 0, 0);
-      }
-
-      public boolean hasLinkShareAffiliateUrl() {
-        return !_pointerFieldIsNull(28);
-      }
-      public org.capnproto.Text.Reader getLinkShareAffiliateUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 28, null, 0, 0);
-      }
-
-      public boolean hasModelNumber() {
-        return !_pointerFieldIsNull(29);
-      }
-      public org.capnproto.Text.Reader getModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 29, null, 0, 0);
-      }
-
-      public final int getStationPresetsFm() {
-        return _getIntField(14);
-      }
-
-      public final int getDepartmentId() {
-        return _getIntField(15);
-      }
-
-      public final double getHeightToTopOfDoorHingeIn() {
-        return _getDoubleField(8);
-      }
-
-      public boolean hasDrumAndInteriorFinish() {
-        return !_pointerFieldIsNull(30);
-      }
-      public org.capnproto.Text.Reader getDrumAndInteriorFinish() {
-        return _getPointerField(org.capnproto.Text.factory, 30, null, 0, 0);
-      }
-
-      public boolean hasEnergyGuideImage() {
-        return !_pointerFieldIsNull(31);
-      }
-      public org.capnproto.Text.Reader getEnergyGuideImage() {
-        return _getPointerField(org.capnproto.Text.factory, 31, null, 0, 0);
-      }
-
-      public final boolean getWaterFiltration() {
-        return _getBooleanField(44);
-      }
-
-      public boolean hasProtectionPlanLowPrice() {
-        return !_pointerFieldIsNull(32);
-      }
-      public org.capnproto.Text.Reader getProtectionPlanLowPrice() {
-        return _getPointerField(org.capnproto.Text.factory, 32, null, 0, 0);
-      }
-
-      public boolean hasProtectionPlanType() {
-        return !_pointerFieldIsNull(33);
-      }
-      public org.capnproto.Text.Reader getProtectionPlanType() {
-        return _getPointerField(org.capnproto.Text.factory, 33, null, 0, 0);
-      }
-
-      public boolean hasDisplayType() {
-        return !_pointerFieldIsNull(34);
-      }
-      public org.capnproto.Text.Reader getDisplayType() {
-        return _getPointerField(org.capnproto.Text.factory, 34, null, 0, 0);
-      }
-
-      public final int getSalesRankShortTerm() {
-        return _getIntField(18);
-      }
-
-      public final double getDollarSavings() {
-        return _getDoubleField(10);
-      }
-
-      public boolean hasAffiliateAddToCartUrl() {
-        return !_pointerFieldIsNull(35);
-      }
-      public org.capnproto.Text.Reader getAffiliateAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 35, null, 0, 0);
-      }
-
-      public final boolean getInteriorLight() {
-        return _getBooleanField(45);
-      }
-
-      public boolean hasOnlineAvailabilityUpdateDate() {
-        return !_pointerFieldIsNull(36);
-      }
-      public org.capnproto.Text.Reader getOnlineAvailabilityUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 36, null, 0, 0);
-      }
-
-      public final boolean getCounterDepth() {
-        return _getBooleanField(46);
-      }
-
-      public boolean hasInStoreAvailabilityText() {
-        return !_pointerFieldIsNull(37);
-      }
-      public org.capnproto.Text.Reader getInStoreAvailabilityText() {
-        return _getPointerField(org.capnproto.Text.factory, 37, null, 0, 0);
-      }
-
-      public boolean hasServiceProvider() {
-        return !_pointerFieldIsNull(38);
-      }
-      public org.capnproto.Text.Reader getServiceProvider() {
-        return _getPointerField(org.capnproto.Text.factory, 38, null, 0, 0);
-      }
-
-      public final boolean getPreWashDispenser() {
-        return _getBooleanField(47);
-      }
-
-      public boolean hasRightViewImage() {
-        return !_pointerFieldIsNull(39);
-      }
-      public org.capnproto.Text.Reader getRightViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 39, null, 0, 0);
-      }
-
-      public boolean hasDepth() {
-        return !_pointerFieldIsNull(40);
-      }
-      public org.capnproto.Text.Reader getDepth() {
-        return _getPointerField(org.capnproto.Text.factory, 40, null, 0, 0);
+        return _getBooleanField(128);
       }
 
       public boolean hasShippingWeight() {
-        return !_pointerFieldIsNull(41);
+        return !_pointerFieldIsNull(7);
       }
       public org.capnproto.Text.Reader getShippingWeight() {
-        return _getPointerField(org.capnproto.Text.factory, 41, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
       }
 
-      public final int getAudioOutputs() {
-        return _getIntField(19);
+      public boolean hasPriceRestriction() {
+        return !_pointerFieldIsNull(8);
+      }
+      public org.capnproto.Text.Reader getPriceRestriction() {
+        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
       }
 
-      public final boolean getChildLock() {
-        return _getBooleanField(48);
+      public boolean hasLeftViewImage() {
+        return !_pointerFieldIsNull(9);
+      }
+      public org.capnproto.Text.Reader getLeftViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
       }
 
-      public final int getHdmiOutputs() {
-        return _getIntField(22);
-      }
-
-      public boolean hasProtectionPlanTerm() {
-        return !_pointerFieldIsNull(42);
-      }
-      public org.capnproto.Text.Reader getProtectionPlanTerm() {
-        return _getPointerField(org.capnproto.Text.factory, 42, null, 0, 0);
-      }
-
-      public boolean hasAccessoriesImage() {
-        return !_pointerFieldIsNull(43);
-      }
-      public org.capnproto.Text.Reader getAccessoriesImage() {
-        return _getPointerField(org.capnproto.Text.factory, 43, null, 0, 0);
-      }
-
-      public final boolean getEthernetPort() {
-        return _getBooleanField(49);
-      }
-
-      public final boolean getLowPriceGuarantee() {
-        return _getBooleanField(50);
-      }
-
-      public final boolean hasProtectionPlans() {
-        return !_pointerFieldIsNull(44);
-      }
-      public final org.capnproto.TextList.Reader getProtectionPlans() {
-        return _getPointerField(org.capnproto.TextList.factory, 44, null, 0);
-      }
-
-      public boolean hasDoorHandleColor() {
-        return !_pointerFieldIsNull(45);
-      }
-      public org.capnproto.Text.Reader getDoorHandleColor() {
-        return _getPointerField(org.capnproto.Text.factory, 45, null, 0, 0);
-      }
-
-      public boolean hasTheatricalReleaseDate() {
-        return !_pointerFieldIsNull(46);
-      }
-      public org.capnproto.Text.Reader getTheatricalReleaseDate() {
-        return _getPointerField(org.capnproto.Text.factory, 46, null, 0, 0);
+      public final boolean getOnScreenDisplay() {
+        return _getBooleanField(129);
       }
 
       public boolean hasFormat() {
-        return !_pointerFieldIsNull(47);
+        return !_pointerFieldIsNull(10);
       }
       public org.capnproto.Text.Reader getFormat() {
-        return _getPointerField(org.capnproto.Text.factory, 47, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
       }
 
-      public boolean hasSoftwareAge() {
-        return !_pointerFieldIsNull(48);
+      public final int getNumberOfChannels() {
+        return _getIntField(5);
       }
-      public org.capnproto.Text.Reader getSoftwareAge() {
-        return _getPointerField(org.capnproto.Text.factory, 48, null, 0, 0);
+
+      public boolean hasThumbnailImage() {
+        return !_pointerFieldIsNull(11);
+      }
+      public org.capnproto.Text.Reader getThumbnailImage() {
+        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+      }
+
+      public boolean hasShippingCost() {
+        return !_pointerFieldIsNull(12);
+      }
+      public org.capnproto.Text.Reader getShippingCost() {
+        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+      }
+
+      public boolean hasContrastRatio() {
+        return !_pointerFieldIsNull(13);
+      }
+      public org.capnproto.Text.Reader getContrastRatio() {
+        return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+      }
+
+      public boolean hasOnlineAvailabilityText() {
+        return !_pointerFieldIsNull(14);
+      }
+      public org.capnproto.Text.Reader getOnlineAvailabilityText() {
+        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+      }
+
+      public final double getHeightToTopOfRefrigeratorIn() {
+        return _getDoubleField(3);
+      }
+
+      public final boolean hasRelatedProducts() {
+        return !_pointerFieldIsNull(15);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getRelatedProducts() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 15, null, 0);
+      }
+
+      public final boolean getUsbPort() {
+        return _getBooleanField(130);
+      }
+
+      public final boolean hasThruTheDoorDispenser() {
+        return !_pointerFieldIsNull(16);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Reader> getThruTheDoorDispenser() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 16, null, 0);
+      }
+
+      public boolean hasTopViewImage() {
+        return !_pointerFieldIsNull(17);
+      }
+      public org.capnproto.Text.Reader getTopViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+      }
+
+      public boolean hasWidth() {
+        return !_pointerFieldIsNull(18);
+      }
+      public org.capnproto.Text.Reader getWidth() {
+        return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
+      }
+
+      public final boolean getInternetConnectable() {
+        return _getBooleanField(131);
+      }
+
+      public boolean hasStudioLive() {
+        return !_pointerFieldIsNull(19);
+      }
+      public org.capnproto.Text.Reader getStudioLive() {
+        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+      }
+
+      public final int getQuantityLimit() {
+        return _getIntField(8);
+      }
+
+      public final boolean getDoorOpenAlarm() {
+        return _getBooleanField(132);
+      }
+
+      public final boolean getParentalAdvisory() {
+        return _getBooleanField(133);
+      }
+
+      public boolean hasHeight() {
+        return !_pointerFieldIsNull(20);
+      }
+      public org.capnproto.Text.Reader getHeight() {
+        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+      }
+
+      public final boolean hasPlanFeatures() {
+        return !_pointerFieldIsNull(21);
+      }
+      public final org.capnproto.TextList.Reader getPlanFeatures() {
+        return _getPointerField(org.capnproto.TextList.factory, 21, null, 0);
+      }
+
+      public final int getLengthInMinutes() {
+        return _getIntField(9);
+      }
+
+      public final boolean hasBundledIn() {
+        return !_pointerFieldIsNull(22);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getBundledIn() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 22, null, 0);
+      }
+
+      public final boolean getHandWashCycle() {
+        return _getBooleanField(134);
+      }
+
+      public final boolean getCompactDesign() {
+        return _getBooleanField(135);
+      }
+
+      public final boolean getEndOfCycleSignal() {
+        return _getBooleanField(136);
+      }
+
+      public final boolean getSecondaryMarket() {
+        return _getBooleanField(137);
+      }
+
+      public boolean hasLargeFrontImage() {
+        return !_pointerFieldIsNull(23);
+      }
+      public org.capnproto.Text.Reader getLargeFrontImage() {
+        return _getPointerField(org.capnproto.Text.factory, 23, null, 0, 0);
       }
 
       public final boolean getExtraDelicateCycle() {
-        return _getBooleanField(51);
+        return _getBooleanField(138);
       }
 
-      public boolean hasDispenserColor() {
+      public boolean hasNumberOfPlayers() {
+        return !_pointerFieldIsNull(24);
+      }
+      public org.capnproto.Text.Reader getNumberOfPlayers() {
+        return _getPointerField(org.capnproto.Text.factory, 24, null, 0, 0);
+      }
+
+      public final boolean getCustomerTopRated() {
+        return _getBooleanField(139);
+      }
+
+      public boolean hasFulfilledBy() {
+        return !_pointerFieldIsNull(25);
+      }
+      public org.capnproto.Text.Reader getFulfilledBy() {
+        return _getPointerField(org.capnproto.Text.factory, 25, null, 0, 0);
+      }
+
+      public boolean hasActivationCharge() {
+        return !_pointerFieldIsNull(26);
+      }
+      public org.capnproto.Text.Reader getActivationCharge() {
+        return _getPointerField(org.capnproto.Text.factory, 26, null, 0, 0);
+      }
+
+      public boolean hasOriginalReleaseDate() {
+        return !_pointerFieldIsNull(27);
+      }
+      public org.capnproto.Text.Reader getOriginalReleaseDate() {
+        return _getPointerField(org.capnproto.Text.factory, 27, null, 0, 0);
+      }
+
+      public boolean hasLoadAccess() {
+        return !_pointerFieldIsNull(28);
+      }
+      public org.capnproto.Text.Reader getLoadAccess() {
+        return _getPointerField(org.capnproto.Text.factory, 28, null, 0, 0);
+      }
+
+      public final int getStationPresetsAm() {
+        return _getIntField(10);
+      }
+
+      public boolean hasDepth() {
+        return !_pointerFieldIsNull(29);
+      }
+      public org.capnproto.Text.Reader getDepth() {
+        return _getPointerField(org.capnproto.Text.factory, 29, null, 0, 0);
+      }
+
+      public final boolean getSleepTimer() {
+        return _getBooleanField(140);
+      }
+
+      public boolean hasMonoStereo() {
+        return !_pointerFieldIsNull(30);
+      }
+      public org.capnproto.Text.Reader getMonoStereo() {
+        return _getPointerField(org.capnproto.Text.factory, 30, null, 0, 0);
+      }
+
+      public boolean hasWaterFilterLocation() {
+        return !_pointerFieldIsNull(31);
+      }
+      public org.capnproto.Text.Reader getWaterFilterLocation() {
+        return _getPointerField(org.capnproto.Text.factory, 31, null, 0, 0);
+      }
+
+      public boolean hasCabinetSideColor() {
+        return !_pointerFieldIsNull(32);
+      }
+      public org.capnproto.Text.Reader getCabinetSideColor() {
+        return _getPointerField(org.capnproto.Text.factory, 32, null, 0, 0);
+      }
+
+      public final boolean hasAdditionalFeatures() {
+        return !_pointerFieldIsNull(33);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Reader> getAdditionalFeatures() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 33, null, 0);
+      }
+
+      public final boolean getFrontFacingCamera() {
+        return _getBooleanField(141);
+      }
+
+      public final boolean hasMembers() {
+        return !_pointerFieldIsNull(34);
+      }
+      public final org.capnproto.TextList.Reader getMembers() {
+        return _getPointerField(org.capnproto.TextList.factory, 34, null, 0);
+      }
+
+      public boolean hasListingId() {
+        return !_pointerFieldIsNull(35);
+      }
+      public org.capnproto.Text.Reader getListingId() {
+        return _getPointerField(org.capnproto.Text.factory, 35, null, 0, 0);
+      }
+
+      public boolean hasPowerSource() {
+        return !_pointerFieldIsNull(36);
+      }
+      public org.capnproto.Text.Reader getPowerSource() {
+        return _getPointerField(org.capnproto.Text.factory, 36, null, 0, 0);
+      }
+
+      public boolean hasUrl() {
+        return !_pointerFieldIsNull(37);
+      }
+      public org.capnproto.Text.Reader getUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 37, null, 0, 0);
+      }
+
+      public boolean hasSellerId() {
+        return !_pointerFieldIsNull(38);
+      }
+      public org.capnproto.Text.Reader getSellerId() {
+        return _getPointerField(org.capnproto.Text.factory, 38, null, 0, 0);
+      }
+
+      public boolean hasAlbumLabel() {
+        return !_pointerFieldIsNull(39);
+      }
+      public org.capnproto.Text.Reader getAlbumLabel() {
+        return _getPointerField(org.capnproto.Text.factory, 39, null, 0, 0);
+      }
+
+      public boolean hasMountBracketVesaPattern() {
+        return !_pointerFieldIsNull(40);
+      }
+      public org.capnproto.Text.Reader getMountBracketVesaPattern() {
+        return _getPointerField(org.capnproto.Text.factory, 40, null, 0, 0);
+      }
+
+      public final boolean getSpecialOrder() {
+        return _getBooleanField(142);
+      }
+
+      public final boolean getWifiReady() {
+        return _getBooleanField(143);
+      }
+
+      public final boolean getClearance() {
+        return _getBooleanField(144);
+      }
+
+      public boolean hasInStoreAvailabilityUpdateDate() {
+        return !_pointerFieldIsNull(41);
+      }
+      public org.capnproto.Text.Reader getInStoreAvailabilityUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 41, null, 0, 0);
+      }
+
+      public final boolean getFreeShippingEligible() {
+        return _getBooleanField(145);
+      }
+
+      public boolean hasFamilyIndividualCode() {
+        return !_pointerFieldIsNull(42);
+      }
+      public org.capnproto.Text.Reader getFamilyIndividualCode() {
+        return _getPointerField(org.capnproto.Text.factory, 42, null, 0, 0);
+      }
+
+      public boolean hasImage() {
+        return !_pointerFieldIsNull(43);
+      }
+      public org.capnproto.Text.Reader getImage() {
+        return _getPointerField(org.capnproto.Text.factory, 43, null, 0, 0);
+      }
+
+      public final boolean getWifiBuiltIn() {
+        return _getBooleanField(146);
+      }
+
+      public final boolean getInStoreAvailability() {
+        return _getBooleanField(147);
+      }
+
+      public boolean hasAddToCartUrl() {
+        return !_pointerFieldIsNull(44);
+      }
+      public org.capnproto.Text.Reader getAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 44, null, 0, 0);
+      }
+
+      public final int getSku() {
+        return _getIntField(11);
+      }
+
+      public final boolean getBleachDispenser() {
+        return _getBooleanField(148);
+      }
+
+      public boolean hasMinutePrice() {
+        return !_pointerFieldIsNull(45);
+      }
+      public org.capnproto.Text.Reader getMinutePrice() {
+        return _getPointerField(org.capnproto.Text.factory, 45, null, 0, 0);
+      }
+
+      public final boolean getPreWashDispenser() {
+        return _getBooleanField(149);
+      }
+
+      public final boolean getFreeShipping() {
+        return _getBooleanField(150);
+      }
+
+      public final boolean getPermanentPressCycle() {
+        return _getBooleanField(151);
+      }
+
+      public boolean hasOnlineAvailabilityUpdateDate() {
+        return !_pointerFieldIsNull(46);
+      }
+      public org.capnproto.Text.Reader getOnlineAvailabilityUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 46, null, 0, 0);
+      }
+
+      public final boolean getOnlineAvailability() {
+        return _getBooleanField(152);
+      }
+
+      public final boolean getCdRRwCompatible() {
+        return _getBooleanField(153);
+      }
+
+      public final boolean getRearFacingCamera() {
+        return _getBooleanField(154);
+      }
+
+      public final int getCustomerReviewCount() {
+        return _getIntField(12);
+      }
+
+      public boolean hasAngleImage() {
+        return !_pointerFieldIsNull(47);
+      }
+      public org.capnproto.Text.Reader getAngleImage() {
+        return _getPointerField(org.capnproto.Text.factory, 47, null, 0, 0);
+      }
+
+      public final boolean hasShippingLevelsOfService() {
+        return !_pointerFieldIsNull(48);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Reader> getShippingLevelsOfService() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 48, null, 0);
+      }
+
+      public final double getEstimatedYearlyOperatingCostsUsd() {
+        return _getDoubleField(7);
+      }
+
+      public final boolean getBluetoothEnabled() {
+        return _getBooleanField(155);
+      }
+
+      public final boolean getSecondRinse() {
+        return _getBooleanField(156);
+      }
+
+      public boolean hasLinkShareAffiliateAddToCartUrl() {
         return !_pointerFieldIsNull(49);
       }
-      public org.capnproto.Text.Reader getDispenserColor() {
+      public org.capnproto.Text.Reader getLinkShareAffiliateAddToCartUrl() {
         return _getPointerField(org.capnproto.Text.factory, 49, null, 0, 0);
       }
 
-      public boolean hasControlType() {
+      public boolean hasScore() {
         return !_pointerFieldIsNull(50);
       }
-      public org.capnproto.Text.Reader getControlType() {
+      public org.capnproto.Text.Reader getScore() {
         return _getPointerField(org.capnproto.Text.factory, 50, null, 0, 0);
       }
 
-      public final boolean getInStorePickup() {
-        return _getBooleanField(52);
+      public final boolean getThreeDReady() {
+        return _getBooleanField(157);
       }
 
-      public final boolean getStackable() {
-        return _getBooleanField(53);
-      }
-
-      public final boolean hasEarlyTerminationFees() {
+      public boolean hasManufacturer() {
         return !_pointerFieldIsNull(51);
       }
-      public final org.capnproto.TextList.Reader getEarlyTerminationFees() {
-        return _getPointerField(org.capnproto.TextList.factory, 51, null, 0);
+      public org.capnproto.Text.Reader getManufacturer() {
+        return _getPointerField(org.capnproto.Text.factory, 51, null, 0, 0);
+      }
+
+      public boolean hasInStoreAvailabilityText() {
+        return !_pointerFieldIsNull(52);
+      }
+      public org.capnproto.Text.Reader getInStoreAvailabilityText() {
+        return _getPointerField(org.capnproto.Text.factory, 52, null, 0, 0);
+      }
+
+      public final boolean getOutletCenter() {
+        return _getBooleanField(158);
+      }
+
+      public boolean hasTotalHarmonicDistortion() {
+        return !_pointerFieldIsNull(53);
+      }
+      public org.capnproto.Text.Reader getTotalHarmonicDistortion() {
+        return _getPointerField(org.capnproto.Text.factory, 53, null, 0, 0);
       }
 
       public final double getScreenSizeIn() {
+        return _getDoubleField(8);
+      }
+
+      public boolean hasTradeInValue() {
+        return !_pointerFieldIsNull(54);
+      }
+      public org.capnproto.Text.Reader getTradeInValue() {
+        return _getPointerField(org.capnproto.Text.factory, 54, null, 0, 0);
+      }
+
+      public final boolean getHeadphoneJacks() {
+        return _getBooleanField(159);
+      }
+
+      public final double getDepthLessDoorIn() {
+        return _getDoubleField(9);
+      }
+
+      public final boolean getMoistureSensor() {
+        return _getBooleanField(416);
+      }
+
+      public boolean hasBackViewImage() {
+        return !_pointerFieldIsNull(55);
+      }
+      public org.capnproto.Text.Reader getBackViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 55, null, 0, 0);
+      }
+
+      public boolean hasItemUpdateDate() {
+        return !_pointerFieldIsNull(56);
+      }
+      public org.capnproto.Text.Reader getItemUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 56, null, 0, 0);
+      }
+
+      public final boolean hasSubtitleLanguages() {
+        return !_pointerFieldIsNull(57);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> getSubtitleLanguages() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 57, null, 0);
+      }
+
+      public final boolean hasPlaybackFormats() {
+        return !_pointerFieldIsNull(58);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Reader> getPlaybackFormats() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 58, null, 0);
+      }
+
+      public final boolean getInStorePickup() {
+        return _getBooleanField(417);
+      }
+
+      public final boolean hasBuybackPlans() {
+        return !_pointerFieldIsNull(59);
+      }
+      public final org.capnproto.TextList.Reader getBuybackPlans() {
+        return _getPointerField(org.capnproto.TextList.factory, 59, null, 0);
+      }
+
+      public boolean hasShippingRestrictions() {
+        return !_pointerFieldIsNull(60);
+      }
+      public org.capnproto.Text.Reader getShippingRestrictions() {
+        return _getPointerField(org.capnproto.Text.factory, 60, null, 0, 0);
+      }
+
+      public boolean hasShortDescription() {
+        return !_pointerFieldIsNull(61);
+      }
+      public org.capnproto.Text.Reader getShortDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 61, null, 0, 0);
+      }
+
+      public final int getDiscCapacity() {
+        return _getIntField(20);
+      }
+
+      public final boolean getFactoryInstalledIceMaker() {
+        return _getBooleanField(418);
+      }
+
+      public final boolean getSabbathMode() {
+        return _getBooleanField(419);
+      }
+
+      public final boolean getLowPriceGuarantee() {
+        return _getBooleanField(420);
+      }
+
+      public boolean hasClazz() {
+        return !_pointerFieldIsNull(62);
+      }
+      public org.capnproto.Text.Reader getClazz() {
+        return _getPointerField(org.capnproto.Text.factory, 62, null, 0, 0);
+      }
+
+      public boolean hasDrumAndInteriorFinish() {
+        return !_pointerFieldIsNull(63);
+      }
+      public org.capnproto.Text.Reader getDrumAndInteriorFinish() {
+        return _getPointerField(org.capnproto.Text.factory, 63, null, 0, 0);
+      }
+
+      public final int getAudioOutputs() {
+        return _getIntField(21);
+      }
+
+      public final boolean getVibrationReduction() {
+        return _getBooleanField(421);
+      }
+
+      public final int getMaximumPowerHandling() {
+        return _getIntField(22);
+      }
+
+      public boolean hasEnergyGuideImage() {
+        return !_pointerFieldIsNull(64);
+      }
+      public org.capnproto.Text.Reader getEnergyGuideImage() {
+        return _getPointerField(org.capnproto.Text.factory, 64, null, 0, 0);
+      }
+
+      public final int getSubclassId() {
+        return _getIntField(23);
+      }
+
+      public final boolean getOnSale() {
+        return _getBooleanField(422);
+      }
+
+      public boolean hasRightViewImage() {
+        return !_pointerFieldIsNull(65);
+      }
+      public org.capnproto.Text.Reader getRightViewImage() {
+        return _getPointerField(org.capnproto.Text.factory, 65, null, 0, 0);
+      }
+
+      public final boolean getAutomaticTemperatureControl() {
+        return _getBooleanField(423);
+      }
+
+      public boolean hasShelfConstruction() {
+        return !_pointerFieldIsNull(66);
+      }
+      public org.capnproto.Text.Reader getShelfConstruction() {
+        return _getPointerField(org.capnproto.Text.factory, 66, null, 0, 0);
+      }
+
+      public final boolean hasLists() {
+        return !_pointerFieldIsNull(67);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Reader> getLists() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 67, null, 0);
+      }
+
+      public final boolean getInteriorLight() {
+        return _getBooleanField(424);
+      }
+
+      public final boolean getLintFilterLight() {
+        return _getBooleanField(425);
+      }
+
+      public final double getDepthWithDoorOpenIn() {
         return _getDoubleField(12);
+      }
+
+      public boolean hasBrightnessCdPerSqM() {
+        return !_pointerFieldIsNull(68);
+      }
+      public org.capnproto.Text.Reader getBrightnessCdPerSqM() {
+        return _getPointerField(org.capnproto.Text.factory, 68, null, 0, 0);
+      }
+
+      public final boolean getHumidityControlledCrisper() {
+        return _getBooleanField(426);
+      }
+
+      public boolean hasOrderable() {
+        return !_pointerFieldIsNull(69);
+      }
+      public org.capnproto.Text.Reader getOrderable() {
+        return _getPointerField(org.capnproto.Text.factory, 69, null, 0, 0);
+      }
+
+      public final boolean hasShipping() {
+        return !_pointerFieldIsNull(70);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Reader> getShipping() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 70, null, 0);
+      }
+
+      public final boolean getNoiseReduction() {
+        return _getBooleanField(427);
+      }
+
+      public final boolean getDelicateCycle() {
+        return _getBooleanField(428);
+      }
+
+      public boolean hasPlanCategory() {
+        return !_pointerFieldIsNull(71);
+      }
+      public org.capnproto.Text.Reader getPlanCategory() {
+        return _getPointerField(org.capnproto.Text.factory, 71, null, 0, 0);
+      }
+
+      public boolean hasSurfaceFinish() {
+        return !_pointerFieldIsNull(72);
+      }
+      public org.capnproto.Text.Reader getSurfaceFinish() {
+        return _getPointerField(org.capnproto.Text.factory, 72, null, 0, 0);
+      }
+
+      public boolean hasDeviceManufacturer() {
+        return !_pointerFieldIsNull(73);
+      }
+      public org.capnproto.Text.Reader getDeviceManufacturer() {
+        return _getPointerField(org.capnproto.Text.factory, 73, null, 0, 0);
+      }
+
+      public boolean hasName() {
+        return !_pointerFieldIsNull(74);
+      }
+      public org.capnproto.Text.Reader getName() {
+        return _getPointerField(org.capnproto.Text.factory, 74, null, 0, 0);
+      }
+
+      public final boolean getDvdPlayer() {
+        return _getBooleanField(429);
+      }
+
+      public boolean hasCarrierPlan() {
+        return !_pointerFieldIsNull(75);
+      }
+      public org.capnproto.Text.Reader getCarrierPlan() {
+        return _getPointerField(org.capnproto.Text.factory, 75, null, 0, 0);
+      }
+
+      public boolean hasBluRayPlayer() {
+        return !_pointerFieldIsNull(76);
+      }
+      public org.capnproto.Text.Reader getBluRayPlayer() {
+        return _getPointerField(org.capnproto.Text.factory, 76, null, 0, 0);
       }
 
       public final double getDepthWithoutHandlesIn() {
         return _getDoubleField(13);
       }
 
-      public final boolean getOnSale() {
-        return _getBooleanField(54);
-      }
-
-      public boolean hasSurfaceFinish() {
-        return !_pointerFieldIsNull(52);
-      }
-      public org.capnproto.Text.Reader getSurfaceFinish() {
-        return _getPointerField(org.capnproto.Text.factory, 52, null, 0, 0);
-      }
-
-      public final boolean getSanitationCycle() {
-        return _getBooleanField(55);
-      }
-
-      public boolean hasLeftViewImage() {
-        return !_pointerFieldIsNull(53);
-      }
-      public org.capnproto.Text.Reader getLeftViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 53, null, 0, 0);
-      }
-
-      public final boolean getClearance() {
-        return _getBooleanField(56);
-      }
-
-      public boolean hasLongDescription() {
-        return !_pointerFieldIsNull(54);
-      }
-      public org.capnproto.Text.Reader getLongDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 54, null, 0, 0);
-      }
-
-      public boolean hasControlLocation() {
-        return !_pointerFieldIsNull(55);
-      }
-      public org.capnproto.Text.Reader getControlLocation() {
-        return _getPointerField(org.capnproto.Text.factory, 55, null, 0, 0);
-      }
-
-      public final boolean hasRelatedProducts() {
-        return !_pointerFieldIsNull(56);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getRelatedProducts() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 56, null, 0);
-      }
-
-      public final boolean getSpecialOrder() {
-        return _getBooleanField(57);
-      }
-
-      public boolean hasPowerSource() {
-        return !_pointerFieldIsNull(57);
-      }
-      public org.capnproto.Text.Reader getPowerSource() {
-        return _getPointerField(org.capnproto.Text.factory, 57, null, 0, 0);
-      }
-
-      public final boolean hasAccessories() {
-        return !_pointerFieldIsNull(58);
-      }
-      public final org.capnproto.TextList.Reader getAccessories() {
-        return _getPointerField(org.capnproto.TextList.factory, 58, null, 0);
-      }
-
-      public boolean hasWarrantyParts() {
-        return !_pointerFieldIsNull(59);
-      }
-      public org.capnproto.Text.Reader getWarrantyParts() {
-        return _getPointerField(org.capnproto.Text.factory, 59, null, 0, 0);
-      }
-
-      public final boolean getBuiltInDigitalCamera() {
-        return _getBooleanField(58);
-      }
-
-      public final boolean getOnlineAvailability() {
-        return _getBooleanField(59);
-      }
-
-      public final boolean hasPriceWithPlan() {
-        return !_pointerFieldIsNull(60);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Reader> getPriceWithPlan() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 60, null, 0);
-      }
-
-      public final double getSalePrice() {
-        return _getDoubleField(14);
-      }
-
-      public final int getLengthInMinutes() {
-        return _getIntField(23);
-      }
-
-      public boolean hasProductAspectRatio() {
-        return !_pointerFieldIsNull(61);
-      }
-      public org.capnproto.Text.Reader getProductAspectRatio() {
-        return _getPointerField(org.capnproto.Text.factory, 61, null, 0, 0);
-      }
-
-      public final boolean getPreowned() {
-        return _getBooleanField(60);
-      }
-
-      public boolean hasPriceRestriction() {
-        return !_pointerFieldIsNull(62);
-      }
-      public org.capnproto.Text.Reader getPriceRestriction() {
-        return _getPointerField(org.capnproto.Text.factory, 62, null, 0, 0);
-      }
-
-      public final boolean getNoiseReduction() {
-        return _getBooleanField(61);
-      }
-
-      public boolean hasSource() {
-        return !_pointerFieldIsNull(63);
-      }
-      public org.capnproto.Text.Reader getSource() {
-        return _getPointerField(org.capnproto.Text.factory, 63, null, 0, 0);
-      }
-
-      public final boolean getFreeShippingEligible() {
-        return _getBooleanField(62);
-      }
-
-      public boolean hasOriginalReleaseDate() {
-        return !_pointerFieldIsNull(64);
-      }
-      public org.capnproto.Text.Reader getOriginalReleaseDate() {
-        return _getPointerField(org.capnproto.Text.factory, 64, null, 0, 0);
-      }
-
-      public final boolean getBleachDispenser() {
-        return _getBooleanField(63);
-      }
-
-      public final int getBatteryLifeMin() {
-        return _getIntField(30);
-      }
-
-      public final boolean hasEstimatedYearlyOperatingCosts() {
-        return !_pointerFieldIsNull(65);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Reader> getEstimatedYearlyOperatingCosts() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 65, null, 0);
-      }
-
-      public final int getTotalSystemPowerWatts() {
-        return _getIntField(31);
-      }
-
-      public boolean hasTechnologyCode() {
-        return !_pointerFieldIsNull(66);
-      }
-      public org.capnproto.Text.Reader getTechnologyCode() {
-        return _getPointerField(org.capnproto.Text.factory, 66, null, 0, 0);
-      }
-
-      public final boolean getCustomerTopRated() {
-        return _getBooleanField(1024);
-      }
-
-      public boolean hasPercentSavings() {
-        return !_pointerFieldIsNull(67);
-      }
-      public org.capnproto.Text.Reader getPercentSavings() {
-        return _getPointerField(org.capnproto.Text.factory, 67, null, 0, 0);
-      }
-
-      public boolean hasShippingRestrictions() {
-        return !_pointerFieldIsNull(68);
-      }
-      public org.capnproto.Text.Reader getShippingRestrictions() {
-        return _getPointerField(org.capnproto.Text.factory, 68, null, 0, 0);
-      }
-
-      public boolean hasStudio() {
-        return !_pointerFieldIsNull(69);
-      }
-      public org.capnproto.Text.Reader getStudio() {
-        return _getPointerField(org.capnproto.Text.factory, 69, null, 0, 0);
-      }
-
-      public final boolean getMoistureSensor() {
-        return _getBooleanField(1025);
-      }
-
-      public final int getQuantityLimit() {
-        return _getIntField(33);
-      }
-
-      public boolean hasScore() {
-        return !_pointerFieldIsNull(70);
-      }
-      public org.capnproto.Text.Reader getScore() {
-        return _getPointerField(org.capnproto.Text.factory, 70, null, 0, 0);
-      }
-
-      public final boolean getActive() {
-        return _getBooleanField(1026);
+      public final int getBestSellingRank() {
+        return _getIntField(28);
       }
 
       public final int getDriveCapacityGb() {
-        return _getIntField(34);
-      }
-
-      public final double getCapacityRefrigeratorCuFt() {
-        return _getDoubleField(18);
-      }
-
-      public final boolean getFrontFacingCamera() {
-        return _getBooleanField(1027);
-      }
-
-      public boolean hasWeight() {
-        return !_pointerFieldIsNull(71);
-      }
-      public org.capnproto.Text.Reader getWeight() {
-        return _getPointerField(org.capnproto.Text.factory, 71, null, 0, 0);
-      }
-
-      public boolean hasPriceUpdateDate() {
-        return !_pointerFieldIsNull(72);
-      }
-      public org.capnproto.Text.Reader getPriceUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 72, null, 0, 0);
-      }
-
-      public final boolean hasTechSupportPlans() {
-        return !_pointerFieldIsNull(73);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getTechSupportPlans() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 73, null, 0);
-      }
-
-      public boolean hasUrl() {
-        return !_pointerFieldIsNull(74);
-      }
-      public org.capnproto.Text.Reader getUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 74, null, 0, 0);
-      }
-
-      public final boolean getAllergyCycle() {
-        return _getBooleanField(1028);
-      }
-
-      public final boolean hasThruTheDoorDispenser() {
-        return !_pointerFieldIsNull(75);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.Reader> getThruTheDoorDispenser() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ThruTheDoorDispenser.listFactory, 75, null, 0);
-      }
-
-      public final boolean getSecondaryMarket() {
-        return _getBooleanField(1029);
-      }
-
-      public final boolean getEndOfCycleSignal() {
-        return _getBooleanField(1030);
-      }
-
-      public boolean hasType() {
-        return !_pointerFieldIsNull(76);
-      }
-      public org.capnproto.Text.Reader getType() {
-        return _getPointerField(org.capnproto.Text.factory, 76, null, 0, 0);
-      }
-
-      public final boolean hasVideoChapters() {
-        return !_pointerFieldIsNull(77);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Reader> getVideoChapters() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 77, null, 0);
-      }
-
-      public boolean hasTradeInValue() {
-        return !_pointerFieldIsNull(78);
-      }
-      public org.capnproto.Text.Reader getTradeInValue() {
-        return _getPointerField(org.capnproto.Text.factory, 78, null, 0, 0);
-      }
-
-      public final boolean getMarketplace() {
-        return _getBooleanField(1031);
-      }
-
-      public final boolean hasAdditionalFeatures() {
-        return !_pointerFieldIsNull(79);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.Reader> getAdditionalFeatures() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.AdditionalFeatures.listFactory, 79, null, 0);
-      }
-
-      public boolean hasUpc() {
-        return !_pointerFieldIsNull(80);
-      }
-      public org.capnproto.Text.Reader getUpc() {
-        return _getPointerField(org.capnproto.Text.factory, 80, null, 0, 0);
-      }
-
-      public final boolean getHumidityControlledCrisper() {
-        return _getBooleanField(1032);
-      }
-
-      public final int getDiscCapacity() {
-        return _getIntField(35);
-      }
-
-      public boolean hasWidth() {
-        return !_pointerFieldIsNull(81);
-      }
-      public org.capnproto.Text.Reader getWidth() {
-        return _getPointerField(org.capnproto.Text.factory, 81, null, 0, 0);
-      }
-
-      public boolean hasDescription() {
-        return !_pointerFieldIsNull(82);
-      }
-      public org.capnproto.Text.Reader getDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 82, null, 0, 0);
-      }
-
-      public boolean hasDeviceManufacturer() {
-        return !_pointerFieldIsNull(83);
-      }
-      public org.capnproto.Text.Reader getDeviceManufacturer() {
-        return _getPointerField(org.capnproto.Text.factory, 83, null, 0, 0);
-      }
-
-      public boolean hasOrderable() {
-        return !_pointerFieldIsNull(84);
-      }
-      public org.capnproto.Text.Reader getOrderable() {
-        return _getPointerField(org.capnproto.Text.factory, 84, null, 0, 0);
-      }
-
-      public boolean hasBrightnessCdPerSqM() {
-        return !_pointerFieldIsNull(85);
-      }
-      public org.capnproto.Text.Reader getBrightnessCdPerSqM() {
-        return _getPointerField(org.capnproto.Text.factory, 85, null, 0, 0);
-      }
-
-      public final double getDepthIncludingHandlesIn() {
-        return _getDoubleField(19);
-      }
-
-      public final boolean getInStoreAvailability() {
-        return _getBooleanField(1033);
-      }
-
-      public final double getDepthWithStandIn() {
-        return _getDoubleField(20);
-      }
-
-      public final boolean hasBundledIn() {
-        return !_pointerFieldIsNull(86);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getBundledIn() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 86, null, 0);
-      }
-
-      public final double getHeightToTopOfRefrigeratorIn() {
-        return _getDoubleField(21);
-      }
-
-      public final boolean hasInstantContent() {
-        return !_pointerFieldIsNull(87);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Reader> getInstantContent() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 87, null, 0);
+        return _getIntField(29);
       }
 
       public boolean hasMonthlyRecurringChargeGrandTotal() {
-        return !_pointerFieldIsNull(88);
+        return !_pointerFieldIsNull(77);
       }
       public org.capnproto.Text.Reader getMonthlyRecurringChargeGrandTotal() {
-        return _getPointerField(org.capnproto.Text.factory, 88, null, 0, 0);
-      }
-
-      public final boolean getCdRRwCompatible() {
-        return _getBooleanField(1034);
-      }
-
-      public final boolean getDvdPlayer() {
-        return _getBooleanField(1035);
-      }
-
-      public final boolean getFabricDispenser() {
-        return _getBooleanField(1036);
-      }
-
-      public final boolean hasShippingLevelsOfService() {
-        return !_pointerFieldIsNull(89);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.Reader> getShippingLevelsOfService() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ShippingLevelsOfService.listFactory, 89, null, 0);
-      }
-
-      public boolean hasStartDate() {
-        return !_pointerFieldIsNull(90);
-      }
-      public org.capnproto.Text.Reader getStartDate() {
-        return _getPointerField(org.capnproto.Text.factory, 90, null, 0, 0);
-      }
-
-      public boolean hasShortDescription() {
-        return !_pointerFieldIsNull(91);
-      }
-      public org.capnproto.Text.Reader getShortDescription() {
-        return _getPointerField(org.capnproto.Text.factory, 91, null, 0, 0);
-      }
-
-      public final boolean getOnScreenDisplay() {
-        return _getBooleanField(1037);
-      }
-
-      public boolean hasArtistId() {
-        return !_pointerFieldIsNull(92);
-      }
-      public org.capnproto.Text.Reader getArtistId() {
-        return _getPointerField(org.capnproto.Text.factory, 92, null, 0, 0);
-      }
-
-      public final boolean getFriendsAndFamilyPickup() {
-        return _getBooleanField(1038);
-      }
-
-      public final boolean getInternetConnectable() {
-        return _getBooleanField(1039);
-      }
-
-      public final int getSalesRankLongTerm() {
-        return _getIntField(44);
-      }
-
-      public final boolean getEnergyStarQualified() {
-        return _getBooleanField(1040);
-      }
-
-      public final boolean getHeadphoneJacks() {
-        return _getBooleanField(1041);
-      }
-
-      public boolean hasScannerType() {
-        return !_pointerFieldIsNull(93);
-      }
-      public org.capnproto.Text.Reader getScannerType() {
-        return _getPointerField(org.capnproto.Text.factory, 93, null, 0, 0);
-      }
-
-      public boolean hasCarrierPlan() {
-        return !_pointerFieldIsNull(94);
-      }
-      public org.capnproto.Text.Reader getCarrierPlan() {
-        return _getPointerField(org.capnproto.Text.factory, 94, null, 0, 0);
-      }
-
-      public boolean hasInStoreAvailabilityUpdateDate() {
-        return !_pointerFieldIsNull(95);
-      }
-      public org.capnproto.Text.Reader getInStoreAvailabilityUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 95, null, 0, 0);
-      }
-
-      public boolean hasAlbumTitle() {
-        return !_pointerFieldIsNull(96);
-      }
-      public org.capnproto.Text.Reader getAlbumTitle() {
-        return _getPointerField(org.capnproto.Text.factory, 96, null, 0, 0);
-      }
-
-      public boolean hasScreenFormat() {
-        return !_pointerFieldIsNull(97);
-      }
-      public org.capnproto.Text.Reader getScreenFormat() {
-        return _getPointerField(org.capnproto.Text.factory, 97, null, 0, 0);
-      }
-
-      public boolean hasAgitatorType() {
-        return !_pointerFieldIsNull(98);
-      }
-      public org.capnproto.Text.Reader getAgitatorType() {
-        return _getPointerField(org.capnproto.Text.factory, 98, null, 0, 0);
-      }
-
-      public boolean hasManufacturer() {
-        return !_pointerFieldIsNull(99);
-      }
-      public org.capnproto.Text.Reader getManufacturer() {
-        return _getPointerField(org.capnproto.Text.factory, 99, null, 0, 0);
-      }
-
-      public final boolean getIpodReady() {
-        return _getBooleanField(1042);
-      }
-
-      public boolean hasContrastRatio() {
-        return !_pointerFieldIsNull(100);
-      }
-      public org.capnproto.Text.Reader getContrastRatio() {
-        return _getPointerField(org.capnproto.Text.factory, 100, null, 0, 0);
-      }
-
-      public final boolean getHighEfficiency() {
-        return _getBooleanField(1043);
-      }
-
-      public final boolean getDryingRack() {
-        return _getBooleanField(1044);
-      }
-
-      public boolean hasFamilyIndividualCode() {
-        return !_pointerFieldIsNull(101);
-      }
-      public org.capnproto.Text.Reader getFamilyIndividualCode() {
-        return _getPointerField(org.capnproto.Text.factory, 101, null, 0, 0);
-      }
-
-      public boolean hasAlbumLabel() {
-        return !_pointerFieldIsNull(102);
-      }
-      public org.capnproto.Text.Reader getAlbumLabel() {
-        return _getPointerField(org.capnproto.Text.factory, 102, null, 0, 0);
-      }
-
-      public boolean hasPlot() {
-        return !_pointerFieldIsNull(103);
-      }
-      public org.capnproto.Text.Reader getPlot() {
-        return _getPointerField(org.capnproto.Text.factory, 103, null, 0, 0);
-      }
-
-      public boolean hasCondition() {
-        return !_pointerFieldIsNull(104);
-      }
-      public org.capnproto.Text.Reader getCondition() {
-        return _getPointerField(org.capnproto.Text.factory, 104, null, 0, 0);
-      }
-
-      public boolean hasActiveUpdateDate() {
-        return !_pointerFieldIsNull(105);
-      }
-      public org.capnproto.Text.Reader getActiveUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 105, null, 0, 0);
-      }
-
-      public final boolean getVibrationReduction() {
-        return _getBooleanField(1045);
-      }
-
-      public boolean hasName() {
-        return !_pointerFieldIsNull(106);
-      }
-      public org.capnproto.Text.Reader getName() {
-        return _getPointerField(org.capnproto.Text.factory, 106, null, 0, 0);
-      }
-
-      public boolean hasMonoStereo() {
-        return !_pointerFieldIsNull(107);
-      }
-      public org.capnproto.Text.Reader getMonoStereo() {
-        return _getPointerField(org.capnproto.Text.factory, 107, null, 0, 0);
-      }
-
-      public final boolean hasCategoryPath() {
-        return !_pointerFieldIsNull(108);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Reader> getCategoryPath() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 108, null, 0);
-      }
-
-      public final boolean hasPlanFeatures() {
-        return !_pointerFieldIsNull(109);
-      }
-      public final org.capnproto.TextList.Reader getPlanFeatures() {
-        return _getPointerField(org.capnproto.TextList.factory, 109, null, 0);
-      }
-
-      public boolean hasAddToCartUrl() {
-        return !_pointerFieldIsNull(110);
-      }
-      public org.capnproto.Text.Reader getAddToCartUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 110, null, 0, 0);
-      }
-
-      public final boolean getFreeShipping() {
-        return _getBooleanField(1046);
-      }
-
-      public final int getNumberOfCycles() {
-        return _getIntField(45);
-      }
-
-      public final boolean getDoorOpenAlarm() {
-        return _getBooleanField(1047);
-      }
-
-      public final boolean getWifiReady() {
-        return _getBooleanField(1048);
-      }
-
-      public boolean hasEsrbRating() {
-        return !_pointerFieldIsNull(111);
-      }
-      public org.capnproto.Text.Reader getEsrbRating() {
-        return _getPointerField(org.capnproto.Text.factory, 111, null, 0, 0);
-      }
-
-      public boolean hasWaterFilterModelNumber() {
-        return !_pointerFieldIsNull(112);
-      }
-      public org.capnproto.Text.Reader getWaterFilterModelNumber() {
-        return _getPointerField(org.capnproto.Text.factory, 112, null, 0, 0);
-      }
-
-      public final double getPlanPrice() {
-        return _getDoubleField(23);
-      }
-
-      public boolean hasOnlineAvailabilityText() {
-        return !_pointerFieldIsNull(113);
-      }
-      public org.capnproto.Text.Reader getOnlineAvailabilityText() {
-        return _getPointerField(org.capnproto.Text.factory, 113, null, 0, 0);
-      }
-
-      public boolean hasMountBracketVesaPattern() {
-        return !_pointerFieldIsNull(114);
-      }
-      public org.capnproto.Text.Reader getMountBracketVesaPattern() {
-        return _getPointerField(org.capnproto.Text.factory, 114, null, 0, 0);
-      }
-
-      public boolean hasNumberOfPlayers() {
-        return !_pointerFieldIsNull(115);
-      }
-      public org.capnproto.Text.Reader getNumberOfPlayers() {
-        return _getPointerField(org.capnproto.Text.factory, 115, null, 0, 0);
-      }
-
-      public final double getWattsPerChannel() {
-        return _getDoubleField(24);
-      }
-
-      public boolean hasPlanCategory() {
-        return !_pointerFieldIsNull(116);
-      }
-      public org.capnproto.Text.Reader getPlanCategory() {
-        return _getPointerField(org.capnproto.Text.factory, 116, null, 0, 0);
-      }
-
-      public final boolean hasLists() {
-        return !_pointerFieldIsNull(117);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.Reader> getLists() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Lists.listFactory, 117, null, 0);
-      }
-
-      public boolean hasVerticalResolution() {
-        return !_pointerFieldIsNull(118);
-      }
-      public org.capnproto.Text.Reader getVerticalResolution() {
-        return _getPointerField(org.capnproto.Text.factory, 118, null, 0, 0);
-      }
-
-      public final int getNumberOfWashCycles() {
-        return _getIntField(50);
-      }
-
-      public final boolean hasSubtitleLanguages() {
-        return !_pointerFieldIsNull(119);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> getSubtitleLanguages() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 119, null, 0);
-      }
-
-      public final boolean getMediaCardSlot() {
-        return _getBooleanField(1049);
-      }
-
-      public final boolean getAutomaticTemperatureControl() {
-        return _getBooleanField(1050);
-      }
-
-      public final boolean getWaterEfficiency() {
-        return _getBooleanField(1051);
-      }
-
-      public final boolean getReversibleDoorHinge() {
-        return _getBooleanField(1052);
-      }
-
-      public final int getStationPresets() {
-        return _getIntField(51);
-      }
-
-      public final boolean getFactoryInstalledIceMaker() {
-        return _getBooleanField(1053);
-      }
-
-      public final double getCapacityCuFt() {
-        return _getDoubleField(26);
-      }
-
-      public boolean hasSpin360Url() {
-        return !_pointerFieldIsNull(120);
-      }
-      public org.capnproto.Text.Reader getSpin360Url() {
-        return _getPointerField(org.capnproto.Text.factory, 120, null, 0, 0);
-      }
-
-      public final double getCapacityFreezerCuFt() {
-        return _getDoubleField(27);
-      }
-
-      public final int getPeakPowerHandling() {
-        return _getIntField(56);
-      }
-
-      public final boolean hasCarriers() {
-        return !_pointerFieldIsNull(121);
-      }
-      public final org.capnproto.TextList.Reader getCarriers() {
-        return _getPointerField(org.capnproto.TextList.factory, 121, null, 0);
-      }
-
-      public boolean hasMpaaRating() {
-        return !_pointerFieldIsNull(122);
-      }
-      public org.capnproto.Text.Reader getMpaaRating() {
-        return _getPointerField(org.capnproto.Text.factory, 122, null, 0, 0);
-      }
-
-      public boolean hasSoftwareNumberOfPlayers() {
-        return !_pointerFieldIsNull(123);
-      }
-      public org.capnproto.Text.Reader getSoftwareNumberOfPlayers() {
-        return _getPointerField(org.capnproto.Text.factory, 123, null, 0, 0);
-      }
-
-      public boolean hasCustomerReviewAverage() {
-        return !_pointerFieldIsNull(124);
-      }
-      public org.capnproto.Text.Reader getCustomerReviewAverage() {
-        return _getPointerField(org.capnproto.Text.factory, 124, null, 0, 0);
-      }
-
-      public boolean hasWarrantyLabor() {
-        return !_pointerFieldIsNull(125);
-      }
-      public org.capnproto.Text.Reader getWarrantyLabor() {
-        return _getPointerField(org.capnproto.Text.factory, 125, null, 0, 0);
-      }
-
-      public boolean hasClazz() {
-        return !_pointerFieldIsNull(126);
-      }
-      public org.capnproto.Text.Reader getClazz() {
-        return _getPointerField(org.capnproto.Text.factory, 126, null, 0, 0);
-      }
-
-      public final boolean hasShipping() {
-        return !_pointerFieldIsNull(127);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.Reader> getShipping() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Shipping.listFactory, 127, null, 0);
-      }
-
-      public final boolean hasCarrierPlans() {
-        return !_pointerFieldIsNull(128);
-      }
-      public final org.capnproto.TextList.Reader getCarrierPlans() {
-        return _getPointerField(org.capnproto.TextList.factory, 128, null, 0);
-      }
-
-      public final int getStationPresetsAm() {
-        return _getIntField(57);
-      }
-
-      public boolean hasProductTemplate() {
-        return !_pointerFieldIsNull(129);
-      }
-      public org.capnproto.Text.Reader getProductTemplate() {
-        return _getPointerField(org.capnproto.Text.factory, 129, null, 0, 0);
-      }
-
-      public boolean hasMobileOperatingSystem() {
-        return !_pointerFieldIsNull(130);
-      }
-      public org.capnproto.Text.Reader getMobileOperatingSystem() {
-        return _getPointerField(org.capnproto.Text.factory, 130, null, 0, 0);
-      }
-
-      public final int getSalesRankMediumTerm() {
-        return _getIntField(58);
-      }
-
-      public final int getHdmiInputs() {
-        return _getIntField(59);
-      }
-
-      public boolean hasStyle() {
-        return !_pointerFieldIsNull(131);
-      }
-      public org.capnproto.Text.Reader getStyle() {
-        return _getPointerField(org.capnproto.Text.factory, 131, null, 0, 0);
-      }
-
-      public boolean hasBluRayPlayer() {
-        return !_pointerFieldIsNull(132);
-      }
-      public org.capnproto.Text.Reader getBluRayPlayer() {
-        return _getPointerField(org.capnproto.Text.factory, 132, null, 0, 0);
-      }
-
-      public final int getSku() {
-        return _getIntField(60);
-      }
-
-      public boolean hasReleaseDate() {
-        return !_pointerFieldIsNull(133);
-      }
-      public org.capnproto.Text.Reader getReleaseDate() {
-        return _getPointerField(org.capnproto.Text.factory, 133, null, 0, 0);
-      }
-
-      public final boolean getIphoneAccessory() {
-        return _getBooleanField(1054);
-      }
-
-      public boolean hasDepartment() {
-        return !_pointerFieldIsNull(134);
-      }
-      public org.capnproto.Text.Reader getDepartment() {
-        return _getPointerField(org.capnproto.Text.factory, 134, null, 0, 0);
-      }
-
-      public final boolean getParentalAdvisory() {
-        return _getBooleanField(1055);
-      }
-
-      public boolean hasLargeImage() {
-        return !_pointerFieldIsNull(135);
-      }
-      public org.capnproto.Text.Reader getLargeImage() {
-        return _getPointerField(org.capnproto.Text.factory, 135, null, 0, 0);
-      }
-
-      public boolean hasSellerId() {
-        return !_pointerFieldIsNull(136);
-      }
-      public org.capnproto.Text.Reader getSellerId() {
-        return _getPointerField(org.capnproto.Text.factory, 136, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 77, null, 0, 0);
       }
 
       public final int getScreenRefreshRateHz() {
-        return _getIntField(61);
+        return _getIntField(30);
       }
 
-      public boolean hasMinutePrice() {
-        return !_pointerFieldIsNull(137);
+      public boolean hasAffiliateAddToCartUrl() {
+        return !_pointerFieldIsNull(78);
       }
-      public org.capnproto.Text.Reader getMinutePrice() {
-        return _getPointerField(org.capnproto.Text.factory, 137, null, 0, 0);
-      }
-
-      public final boolean getRearFacingCamera() {
-        return _getBooleanField(1984);
+      public org.capnproto.Text.Reader getAffiliateAddToCartUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 78, null, 0, 0);
       }
 
-      public final boolean hasDevices() {
-        return !_pointerFieldIsNull(138);
-      }
-      public final org.capnproto.TextList.Reader getDevices() {
-        return _getPointerField(org.capnproto.TextList.factory, 138, null, 0);
+      public final boolean getEnergyStarQualified() {
+        return _getBooleanField(430);
       }
 
-      public final int getEnergyConsumptionKwhPerYear() {
-        return _getIntField(63);
+      public boolean hasLargeImage() {
+        return !_pointerFieldIsNull(79);
+      }
+      public org.capnproto.Text.Reader getLargeImage() {
+        return _getPointerField(org.capnproto.Text.factory, 79, null, 0, 0);
       }
 
-      public boolean hasAspectRatio() {
-        return !_pointerFieldIsNull(139);
+      public boolean hasProtectionPlanHighPrice() {
+        return !_pointerFieldIsNull(80);
       }
-      public org.capnproto.Text.Reader getAspectRatio() {
-        return _getPointerField(org.capnproto.Text.factory, 139, null, 0, 0);
-      }
-
-      public boolean hasTotalHarmonicDistortion() {
-        return !_pointerFieldIsNull(140);
-      }
-      public org.capnproto.Text.Reader getTotalHarmonicDistortion() {
-        return _getPointerField(org.capnproto.Text.factory, 140, null, 0, 0);
+      public org.capnproto.Text.Reader getProtectionPlanHighPrice() {
+        return _getPointerField(org.capnproto.Text.factory, 80, null, 0, 0);
       }
 
-      public final boolean getThreeDReady() {
-        return _getBooleanField(1985);
+      public boolean hasWarrantyParts() {
+        return !_pointerFieldIsNull(81);
+      }
+      public org.capnproto.Text.Reader getWarrantyParts() {
+        return _getPointerField(org.capnproto.Text.factory, 81, null, 0, 0);
       }
 
-      public boolean hasShelfConstruction() {
-        return !_pointerFieldIsNull(141);
+      public boolean hasDispenserColor() {
+        return !_pointerFieldIsNull(82);
       }
-      public org.capnproto.Text.Reader getShelfConstruction() {
-        return _getPointerField(org.capnproto.Text.factory, 141, null, 0, 0);
-      }
-
-      public final boolean getGallonDoorStorage() {
-        return _getBooleanField(1986);
+      public org.capnproto.Text.Reader getDispenserColor() {
+        return _getPointerField(org.capnproto.Text.factory, 82, null, 0, 0);
       }
 
-      public final int getMaximumPowerHandling() {
-        return _getIntField(64);
+      public boolean hasProtectionPlanLowPrice() {
+        return !_pointerFieldIsNull(83);
+      }
+      public org.capnproto.Text.Reader getProtectionPlanLowPrice() {
+        return _getPointerField(org.capnproto.Text.factory, 83, null, 0, 0);
       }
 
-      public final long getProductId() {
-        return _getLongField(33);
+      public boolean hasProductTemplate() {
+        return !_pointerFieldIsNull(84);
+      }
+      public org.capnproto.Text.Reader getProductTemplate() {
+        return _getPointerField(org.capnproto.Text.factory, 84, null, 0, 0);
       }
 
-      public boolean hasBackViewImage() {
-        return !_pointerFieldIsNull(142);
+      public boolean hasAlternateViewsImage() {
+        return !_pointerFieldIsNull(85);
       }
-      public org.capnproto.Text.Reader getBackViewImage() {
-        return _getPointerField(org.capnproto.Text.factory, 142, null, 0, 0);
-      }
-
-      public boolean hasAffiliateUrl() {
-        return !_pointerFieldIsNull(143);
-      }
-      public org.capnproto.Text.Reader getAffiliateUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 143, null, 0, 0);
+      public org.capnproto.Text.Reader getAlternateViewsImage() {
+        return _getPointerField(org.capnproto.Text.factory, 85, null, 0, 0);
       }
 
-      public final boolean getPermanentPressCycle() {
-        return _getBooleanField(1987);
+      public final int getNumberOfCycles() {
+        return _getIntField(31);
       }
 
-      public boolean hasColor() {
-        return !_pointerFieldIsNull(144);
+      public final boolean hasVideoChapters() {
+        return !_pointerFieldIsNull(86);
       }
-      public org.capnproto.Text.Reader getColor() {
-        return _getPointerField(org.capnproto.Text.factory, 144, null, 0, 0);
-      }
-
-      public final boolean hasIncludedItemList() {
-        return !_pointerFieldIsNull(145);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Reader> getIncludedItemList() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 145, null, 0);
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.Reader> getVideoChapters() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoChapters.listFactory, 86, null, 0);
       }
 
-      public final int getSubclassId() {
-        return _getIntField(65);
+      public final double getCapacityRefrigeratorCuFt() {
+        return _getDoubleField(16);
       }
 
-      public final double getStandHeightIn() {
-        return _getDoubleField(34);
+      public boolean hasMediumImage() {
+        return !_pointerFieldIsNull(87);
+      }
+      public org.capnproto.Text.Reader getMediumImage() {
+        return _getPointerField(org.capnproto.Text.factory, 87, null, 0, 0);
       }
 
-      public final boolean getSabbathMode() {
-        return _getBooleanField(1988);
+      public boolean hasControlLocation() {
+        return !_pointerFieldIsNull(88);
+      }
+      public org.capnproto.Text.Reader getControlLocation() {
+        return _getPointerField(org.capnproto.Text.factory, 88, null, 0, 0);
       }
 
-      public final int getNumberOfChannels() {
-        return _getIntField(70);
+      public boolean hasLinkShareAffiliateUrl() {
+        return !_pointerFieldIsNull(89);
+      }
+      public org.capnproto.Text.Reader getLinkShareAffiliateUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 89, null, 0, 0);
       }
 
-      public boolean hasCollection() {
-        return !_pointerFieldIsNull(146);
+      public boolean hasMobileOperatingSystem() {
+        return !_pointerFieldIsNull(90);
       }
-      public org.capnproto.Text.Reader getCollection() {
-        return _getPointerField(org.capnproto.Text.factory, 146, null, 0, 0);
-      }
-
-      public boolean hasListingId() {
-        return !_pointerFieldIsNull(147);
-      }
-      public org.capnproto.Text.Reader getListingId() {
-        return _getPointerField(org.capnproto.Text.factory, 147, null, 0, 0);
+      public org.capnproto.Text.Reader getMobileOperatingSystem() {
+        return _getPointerField(org.capnproto.Text.factory, 90, null, 0, 0);
       }
 
-      public final boolean hasProtectionPlanDetails() {
-        return !_pointerFieldIsNull(148);
+      public boolean hasValidUntil() {
+        return !_pointerFieldIsNull(91);
       }
-      public final org.capnproto.TextList.Reader getProtectionPlanDetails() {
-        return _getPointerField(org.capnproto.TextList.factory, 148, null, 0);
-      }
-
-      public final boolean hasPlaybackFormats() {
-        return !_pointerFieldIsNull(149);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.Reader> getPlaybackFormats() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PlaybackFormats.listFactory, 149, null, 0);
+      public org.capnproto.Text.Reader getValidUntil() {
+        return _getPointerField(org.capnproto.Text.factory, 91, null, 0, 0);
       }
 
-      public final int getBestSellingRank() {
-        return _getIntField(71);
+      public final boolean getIphoneAccessory() {
+        return _getBooleanField(431);
       }
 
-      public boolean hasArtistName() {
-        return !_pointerFieldIsNull(150);
+      public final boolean getHighEfficiency() {
+        return _getBooleanField(432);
       }
-      public org.capnproto.Text.Reader getArtistName() {
-        return _getPointerField(org.capnproto.Text.factory, 150, null, 0, 0);
+
+      public boolean hasEsrbRating() {
+        return !_pointerFieldIsNull(92);
+      }
+      public org.capnproto.Text.Reader getEsrbRating() {
+        return _getPointerField(org.capnproto.Text.factory, 92, null, 0, 0);
+      }
+
+      public final double getSalePrice() {
+        return _getDoubleField(17);
       }
 
       public boolean hasSoftwareGrade() {
-        return !_pointerFieldIsNull(151);
+        return !_pointerFieldIsNull(93);
       }
       public org.capnproto.Text.Reader getSoftwareGrade() {
-        return _getPointerField(org.capnproto.Text.factory, 151, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 93, null, 0, 0);
       }
 
-      public final boolean getIpodConnection() {
-        return _getBooleanField(1989);
+      public final int getNumberOfWashCycles() {
+        return _getIntField(36);
       }
 
-      public boolean hasMonthlyRecurringCharge() {
-        return !_pointerFieldIsNull(152);
+      public final boolean getActive() {
+        return _getBooleanField(433);
       }
-      public org.capnproto.Text.Reader getMonthlyRecurringCharge() {
-        return _getPointerField(org.capnproto.Text.factory, 152, null, 0, 0);
+
+      public final boolean hasProductFamilies() {
+        return !_pointerFieldIsNull(94);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.Reader> getProductFamilies() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.ProductFamilies.listFactory, 94, null, 0);
+      }
+
+      public final boolean hasPriceWithPlan() {
+        return !_pointerFieldIsNull(95);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.Reader> getPriceWithPlan() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.PriceWithPlan.listFactory, 95, null, 0);
       }
 
       public boolean hasMobileUrl() {
-        return !_pointerFieldIsNull(153);
+        return !_pointerFieldIsNull(96);
       }
       public org.capnproto.Text.Reader getMobileUrl() {
-        return _getPointerField(org.capnproto.Text.factory, 153, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 96, null, 0, 0);
       }
 
-      public boolean hasSubclass() {
-        return !_pointerFieldIsNull(154);
-      }
-      public org.capnproto.Text.Reader getSubclass() {
-        return _getPointerField(org.capnproto.Text.factory, 154, null, 0, 0);
+      public final double getCapacityFreshFoodCuFt() {
+        return _getDoubleField(19);
       }
 
-      public boolean hasPlatform() {
-        return !_pointerFieldIsNull(155);
+      public boolean hasDepartment() {
+        return !_pointerFieldIsNull(97);
       }
-      public org.capnproto.Text.Reader getPlatform() {
-        return _getPointerField(org.capnproto.Text.factory, 155, null, 0, 0);
-      }
-
-      public final boolean hasVideoLanguages() {
-        return !_pointerFieldIsNull(156);
-      }
-      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> getVideoLanguages() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 156, null, 0);
-      }
-
-      public final int getNumberOfSpeakers() {
-        return _getIntField(72);
-      }
-
-      public boolean hasItemUpdateDate() {
-        return !_pointerFieldIsNull(157);
-      }
-      public org.capnproto.Text.Reader getItemUpdateDate() {
-        return _getPointerField(org.capnproto.Text.factory, 157, null, 0, 0);
+      public org.capnproto.Text.Reader getDepartment() {
+        return _getPointerField(org.capnproto.Text.factory, 97, null, 0, 0);
       }
 
       public final boolean getNuw() {
-        return _getBooleanField(1990);
+        return _getBooleanField(434);
+      }
+
+      public final int getClassId() {
+        return _getIntField(37);
+      }
+
+      public final double getWattsPerChannel() {
+        return _getDoubleField(20);
+      }
+
+      public final double getHeightToTopOfDoorHingeIn() {
+        return _getDoubleField(21);
+      }
+
+      public boolean hasPercentSavings() {
+        return !_pointerFieldIsNull(98);
+      }
+      public org.capnproto.Text.Reader getPercentSavings() {
+        return _getPointerField(org.capnproto.Text.factory, 98, null, 0, 0);
+      }
+
+      public boolean hasSoftwareNumberOfPlayers() {
+        return !_pointerFieldIsNull(99);
+      }
+      public org.capnproto.Text.Reader getSoftwareNumberOfPlayers() {
+        return _getPointerField(org.capnproto.Text.factory, 99, null, 0, 0);
+      }
+
+      public boolean hasStudio() {
+        return !_pointerFieldIsNull(100);
+      }
+      public org.capnproto.Text.Reader getStudio() {
+        return _getPointerField(org.capnproto.Text.factory, 100, null, 0, 0);
+      }
+
+      public boolean hasMpaaRating() {
+        return !_pointerFieldIsNull(101);
+      }
+      public org.capnproto.Text.Reader getMpaaRating() {
+        return _getPointerField(org.capnproto.Text.factory, 101, null, 0, 0);
+      }
+
+      public final double getDollarSavings() {
+        return _getDoubleField(22);
+      }
+
+      public boolean hasArtistId() {
+        return !_pointerFieldIsNull(102);
+      }
+      public org.capnproto.Text.Reader getArtistId() {
+        return _getPointerField(org.capnproto.Text.factory, 102, null, 0, 0);
+      }
+
+      public final boolean hasCarriers() {
+        return !_pointerFieldIsNull(103);
+      }
+      public final org.capnproto.TextList.Reader getCarriers() {
+        return _getPointerField(org.capnproto.TextList.factory, 103, null, 0);
+      }
+
+      public final boolean getPreowned() {
+        return _getBooleanField(435);
+      }
+
+      public final int getEnergyConsumptionKwhPerYear() {
+        return _getIntField(46);
+      }
+
+      public final boolean hasTechSupportPlans() {
+        return !_pointerFieldIsNull(104);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getTechSupportPlans() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 104, null, 0);
+      }
+
+      public final int getTotalSystemPowerWatts() {
+        return _getIntField(47);
+      }
+
+      public boolean hasMonthlyRecurringCharge() {
+        return !_pointerFieldIsNull(105);
+      }
+      public org.capnproto.Text.Reader getMonthlyRecurringCharge() {
+        return _getPointerField(org.capnproto.Text.factory, 105, null, 0, 0);
+      }
+
+      public boolean hasScreenFormat() {
+        return !_pointerFieldIsNull(106);
+      }
+      public org.capnproto.Text.Reader getScreenFormat() {
+        return _getPointerField(org.capnproto.Text.factory, 106, null, 0, 0);
+      }
+
+      public boolean hasReleaseDate() {
+        return !_pointerFieldIsNull(107);
+      }
+      public org.capnproto.Text.Reader getReleaseDate() {
+        return _getPointerField(org.capnproto.Text.factory, 107, null, 0, 0);
+      }
+
+      public final int getSalesRankShortTerm() {
+        return _getIntField(48);
+      }
+
+      public final int getBatteryLifeMin() {
+        return _getIntField(49);
+      }
+
+      public boolean hasProtectionPlanTerm() {
+        return !_pointerFieldIsNull(108);
+      }
+      public org.capnproto.Text.Reader getProtectionPlanTerm() {
+        return _getPointerField(org.capnproto.Text.factory, 108, null, 0, 0);
+      }
+
+      public final boolean hasEarlyTerminationFees() {
+        return !_pointerFieldIsNull(109);
+      }
+      public final org.capnproto.TextList.Reader getEarlyTerminationFees() {
+        return _getPointerField(org.capnproto.TextList.factory, 109, null, 0);
+      }
+
+      public final boolean getFabricDispenser() {
+        return _getBooleanField(436);
+      }
+
+      public boolean hasColor() {
+        return !_pointerFieldIsNull(110);
+      }
+      public org.capnproto.Text.Reader getColor() {
+        return _getPointerField(org.capnproto.Text.factory, 110, null, 0, 0);
+      }
+
+      public final boolean getMarketplace() {
+        return _getBooleanField(437);
+      }
+
+      public boolean hasAspectRatio() {
+        return !_pointerFieldIsNull(111);
+      }
+      public org.capnproto.Text.Reader getAspectRatio() {
+        return _getPointerField(org.capnproto.Text.factory, 111, null, 0, 0);
+      }
+
+      public boolean hasAgitatorType() {
+        return !_pointerFieldIsNull(112);
+      }
+      public org.capnproto.Text.Reader getAgitatorType() {
+        return _getPointerField(org.capnproto.Text.factory, 112, null, 0, 0);
+      }
+
+      public boolean hasPlatform() {
+        return !_pointerFieldIsNull(113);
+      }
+      public org.capnproto.Text.Reader getPlatform() {
+        return _getPointerField(org.capnproto.Text.factory, 113, null, 0, 0);
+      }
+
+      public final boolean hasIncludedItemList() {
+        return !_pointerFieldIsNull(114);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.Reader> getIncludedItemList() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.IncludedItemList.listFactory, 114, null, 0);
+      }
+
+      public final boolean getFriendsAndFamilyPickup() {
+        return _getBooleanField(438);
+      }
+
+      public boolean hasDescription() {
+        return !_pointerFieldIsNull(115);
+      }
+      public org.capnproto.Text.Reader getDescription() {
+        return _getPointerField(org.capnproto.Text.factory, 115, null, 0, 0);
+      }
+
+      public boolean hasDriveConnectivity() {
+        return !_pointerFieldIsNull(116);
+      }
+      public org.capnproto.Text.Reader getDriveConnectivity() {
+        return _getPointerField(org.capnproto.Text.factory, 116, null, 0, 0);
+      }
+
+      public final double getStandHeightIn() {
+        return _getDoubleField(25);
+      }
+
+      public boolean hasSoftwareAge() {
+        return !_pointerFieldIsNull(117);
+      }
+      public org.capnproto.Text.Reader getSoftwareAge() {
+        return _getPointerField(org.capnproto.Text.factory, 117, null, 0, 0);
+      }
+
+      public boolean hasGenre() {
+        return !_pointerFieldIsNull(118);
+      }
+      public org.capnproto.Text.Reader getGenre() {
+        return _getPointerField(org.capnproto.Text.factory, 118, null, 0, 0);
+      }
+
+      public boolean hasArtistName() {
+        return !_pointerFieldIsNull(119);
+      }
+      public org.capnproto.Text.Reader getArtistName() {
+        return _getPointerField(org.capnproto.Text.factory, 119, null, 0, 0);
+      }
+
+      public boolean hasStyle() {
+        return !_pointerFieldIsNull(120);
+      }
+      public org.capnproto.Text.Reader getStyle() {
+        return _getPointerField(org.capnproto.Text.factory, 120, null, 0, 0);
+      }
+
+      public boolean hasCondition() {
+        return !_pointerFieldIsNull(121);
+      }
+      public org.capnproto.Text.Reader getCondition() {
+        return _getPointerField(org.capnproto.Text.factory, 121, null, 0, 0);
+      }
+
+      public boolean hasRemoteControlImage() {
+        return !_pointerFieldIsNull(122);
+      }
+      public org.capnproto.Text.Reader getRemoteControlImage() {
+        return _getPointerField(org.capnproto.Text.factory, 122, null, 0, 0);
+      }
+
+      public boolean hasValidFrom() {
+        return !_pointerFieldIsNull(123);
+      }
+      public org.capnproto.Text.Reader getValidFrom() {
+        return _getPointerField(org.capnproto.Text.factory, 123, null, 0, 0);
+      }
+
+      public final boolean hasCategoryPath() {
+        return !_pointerFieldIsNull(124);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.Reader> getCategoryPath() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.CategoryPath.listFactory, 124, null, 0);
+      }
+
+      public final double getDepthIncludingHandlesIn() {
+        return _getDoubleField(26);
+      }
+
+      public boolean hasAffiliateUrl() {
+        return !_pointerFieldIsNull(125);
+      }
+      public org.capnproto.Text.Reader getAffiliateUrl() {
+        return _getPointerField(org.capnproto.Text.factory, 125, null, 0, 0);
+      }
+
+      public final int getStationPresets() {
+        return _getIntField(54);
+      }
+
+      public final boolean getDigital() {
+        return _getBooleanField(439);
+      }
+
+      public boolean hasPlot() {
+        return !_pointerFieldIsNull(126);
+      }
+      public org.capnproto.Text.Reader getPlot() {
+        return _getPointerField(org.capnproto.Text.factory, 126, null, 0, 0);
+      }
+
+      public final int getDepartmentId() {
+        return _getIntField(55);
+      }
+
+      public boolean hasModelNumber() {
+        return !_pointerFieldIsNull(127);
+      }
+      public org.capnproto.Text.Reader getModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 127, null, 0, 0);
+      }
+
+      public final boolean hasDevices() {
+        return !_pointerFieldIsNull(128);
+      }
+      public final org.capnproto.TextList.Reader getDevices() {
+        return _getPointerField(org.capnproto.TextList.factory, 128, null, 0);
+      }
+
+      public boolean hasAlbumTitle() {
+        return !_pointerFieldIsNull(129);
+      }
+      public org.capnproto.Text.Reader getAlbumTitle() {
+        return _getPointerField(org.capnproto.Text.factory, 129, null, 0, 0);
+      }
+
+      public boolean hasCarrierModelNumber() {
+        return !_pointerFieldIsNull(130);
+      }
+      public org.capnproto.Text.Reader getCarrierModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 130, null, 0, 0);
+      }
+
+      public final double getPlanPrice() {
+        return _getDoubleField(28);
+      }
+
+      public final boolean getCounterDepth() {
+        return _getBooleanField(440);
+      }
+
+      public final boolean hasVideoLanguages() {
+        return !_pointerFieldIsNull(131);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.Reader> getVideoLanguages() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.VideoLanguages.listFactory, 131, null, 0);
+      }
+
+      public final boolean hasProtectionPlanDetails() {
+        return !_pointerFieldIsNull(132);
+      }
+      public final org.capnproto.TextList.Reader getProtectionPlanDetails() {
+        return _getPointerField(org.capnproto.TextList.factory, 132, null, 0);
+      }
+
+      public final boolean getStackable() {
+        return _getBooleanField(441);
+      }
+
+      public final double getDepthWithStandIn() {
+        return _getDoubleField(29);
+      }
+
+      public final boolean getAllergyCycle() {
+        return _getBooleanField(442);
+      }
+
+      public boolean hasSpin360Url() {
+        return !_pointerFieldIsNull(133);
+      }
+      public org.capnproto.Text.Reader getSpin360Url() {
+        return _getPointerField(org.capnproto.Text.factory, 133, null, 0, 0);
+      }
+
+      public final boolean getIpodReady() {
+        return _getBooleanField(443);
+      }
+
+      public final boolean getReversibleDoorHinge() {
+        return _getBooleanField(444);
+      }
+
+      public boolean hasWaterFilterModelNumber() {
+        return !_pointerFieldIsNull(134);
+      }
+      public org.capnproto.Text.Reader getWaterFilterModelNumber() {
+        return _getPointerField(org.capnproto.Text.factory, 134, null, 0, 0);
+      }
+
+      public final boolean getEthernetPort() {
+        return _getBooleanField(445);
+      }
+
+      public final int getHdmiOutputs() {
+        return _getIntField(60);
+      }
+
+      public final int getStationPresetsFm() {
+        return _getIntField(61);
+      }
+
+      public final boolean getOnlinePlay() {
+        return _getBooleanField(446);
+      }
+
+      public final boolean hasAccessories() {
+        return !_pointerFieldIsNull(135);
+      }
+      public final org.capnproto.TextList.Reader getAccessories() {
+        return _getPointerField(org.capnproto.TextList.factory, 135, null, 0);
+      }
+
+      public final boolean hasEstimatedYearlyOperatingCosts() {
+        return !_pointerFieldIsNull(136);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.Reader> getEstimatedYearlyOperatingCosts() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.EstimatedYearlyOperatingCosts.listFactory, 136, null, 0);
+      }
+
+      public final boolean getDryingRack() {
+        return _getBooleanField(447);
+      }
+
+      public final boolean hasCarrierPlans() {
+        return !_pointerFieldIsNull(137);
+      }
+      public final org.capnproto.TextList.Reader getCarrierPlans() {
+        return _getPointerField(org.capnproto.TextList.factory, 137, null, 0);
+      }
+
+      public final double getRegularPrice() {
+        return _getDoubleField(31);
+      }
+
+      public boolean hasUpc() {
+        return !_pointerFieldIsNull(138);
+      }
+      public org.capnproto.Text.Reader getUpc() {
+        return _getPointerField(org.capnproto.Text.factory, 138, null, 0, 0);
+      }
+
+      public final boolean getWaterEfficiency() {
+        return _getBooleanField(2048);
+      }
+
+      public boolean hasCustomerReviewAverage() {
+        return !_pointerFieldIsNull(139);
+      }
+      public org.capnproto.Text.Reader getCustomerReviewAverage() {
+        return _getPointerField(org.capnproto.Text.factory, 139, null, 0, 0);
+      }
+
+      public boolean hasTemperatureControlType() {
+        return !_pointerFieldIsNull(140);
+      }
+      public org.capnproto.Text.Reader getTemperatureControlType() {
+        return _getPointerField(org.capnproto.Text.factory, 140, null, 0, 0);
+      }
+
+      public final boolean getSanitationCycle() {
+        return _getBooleanField(2049);
+      }
+
+      public boolean hasProductAspectRatio() {
+        return !_pointerFieldIsNull(141);
+      }
+      public org.capnproto.Text.Reader getProductAspectRatio() {
+        return _getPointerField(org.capnproto.Text.factory, 141, null, 0, 0);
+      }
+
+      public final boolean getWaterFiltration() {
+        return _getBooleanField(2050);
+      }
+
+      public final int getPeakPowerHandling() {
+        return _getIntField(65);
+      }
+
+      public final boolean getMediaCardSlot() {
+        return _getBooleanField(2051);
+      }
+
+      public boolean hasTheatricalReleaseDate() {
+        return !_pointerFieldIsNull(142);
+      }
+      public org.capnproto.Text.Reader getTheatricalReleaseDate() {
+        return _getPointerField(org.capnproto.Text.factory, 142, null, 0, 0);
+      }
+
+      public final boolean getSmartCapable() {
+        return _getBooleanField(2052);
+      }
+
+      public boolean hasProtectionPlanType() {
+        return !_pointerFieldIsNull(143);
+      }
+      public org.capnproto.Text.Reader getProtectionPlanType() {
+        return _getPointerField(org.capnproto.Text.factory, 143, null, 0, 0);
       }
 
       public final boolean getSteam() {
-        return _getBooleanField(1991);
+        return _getBooleanField(2053);
       }
 
-      public final boolean getCompactDesign() {
-        return _getBooleanField(1992);
+      public boolean hasActiveUpdateDate() {
+        return !_pointerFieldIsNull(144);
+      }
+      public org.capnproto.Text.Reader getActiveUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 144, null, 0, 0);
       }
 
-      public boolean hasThumbnailImage() {
+      public boolean hasPlanType() {
+        return !_pointerFieldIsNull(145);
+      }
+      public org.capnproto.Text.Reader getPlanType() {
+        return _getPointerField(org.capnproto.Text.factory, 145, null, 0, 0);
+      }
+
+      public boolean hasSubclass() {
+        return !_pointerFieldIsNull(146);
+      }
+      public org.capnproto.Text.Reader getSubclass() {
+        return _getPointerField(org.capnproto.Text.factory, 146, null, 0, 0);
+      }
+
+      public final boolean getHomeDelivery() {
+        return _getBooleanField(2054);
+      }
+
+      public final int getSalesRankMediumTerm() {
+        return _getIntField(66);
+      }
+
+      public final boolean getChildLock() {
+        return _getBooleanField(2055);
+      }
+
+      public final boolean hasFrequentlyPurchasedWith() {
+        return !_pointerFieldIsNull(147);
+      }
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.Reader> getFrequentlyPurchasedWith() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.RelatedProducts.listFactory, 147, null, 0);
+      }
+
+      public final boolean getGallonDoorStorage() {
+        return _getBooleanField(2056);
+      }
+
+      public boolean hasDisplayType() {
+        return !_pointerFieldIsNull(148);
+      }
+      public org.capnproto.Text.Reader getDisplayType() {
+        return _getPointerField(org.capnproto.Text.factory, 148, null, 0, 0);
+      }
+
+      public boolean hasVerticalResolution() {
+        return !_pointerFieldIsNull(149);
+      }
+      public org.capnproto.Text.Reader getVerticalResolution() {
+        return _getPointerField(org.capnproto.Text.factory, 149, null, 0, 0);
+      }
+
+      public final boolean getIpodConnection() {
+        return _getBooleanField(2057);
+      }
+
+      public final int getNumberOfSpeakers() {
+        return _getIntField(67);
+      }
+
+      public final double getCapacityFreezerCuFt() {
+        return _getDoubleField(34);
+      }
+
+      public boolean hasPriceUpdateDate() {
+        return !_pointerFieldIsNull(150);
+      }
+      public org.capnproto.Text.Reader getPriceUpdateDate() {
+        return _getPointerField(org.capnproto.Text.factory, 150, null, 0, 0);
+      }
+
+      public boolean hasControlType() {
+        return !_pointerFieldIsNull(151);
+      }
+      public org.capnproto.Text.Reader getControlType() {
+        return _getPointerField(org.capnproto.Text.factory, 151, null, 0, 0);
+      }
+
+      public boolean hasDoorHandleColor() {
+        return !_pointerFieldIsNull(152);
+      }
+      public org.capnproto.Text.Reader getDoorHandleColor() {
+        return _getPointerField(org.capnproto.Text.factory, 152, null, 0, 0);
+      }
+
+      public boolean hasSource() {
+        return !_pointerFieldIsNull(153);
+      }
+      public org.capnproto.Text.Reader getSource() {
+        return _getPointerField(org.capnproto.Text.factory, 153, null, 0, 0);
+      }
+
+      public final long getProductId() {
+        return _getLongField(35);
+      }
+
+      public final int getMediaCount() {
+        return _getIntField(72);
+      }
+
+      public boolean hasAccessoriesImage() {
+        return !_pointerFieldIsNull(154);
+      }
+      public org.capnproto.Text.Reader getAccessoriesImage() {
+        return _getPointerField(org.capnproto.Text.factory, 154, null, 0, 0);
+      }
+
+      public final boolean hasProtectionPlans() {
+        return !_pointerFieldIsNull(155);
+      }
+      public final org.capnproto.TextList.Reader getProtectionPlans() {
+        return _getPointerField(org.capnproto.TextList.factory, 155, null, 0);
+      }
+
+      public boolean hasWarrantyLabor() {
+        return !_pointerFieldIsNull(156);
+      }
+      public org.capnproto.Text.Reader getWarrantyLabor() {
+        return _getPointerField(org.capnproto.Text.factory, 156, null, 0, 0);
+      }
+
+      public final boolean getBuiltInDigitalCamera() {
+        return _getBooleanField(2058);
+      }
+
+      public boolean hasServiceProvider() {
+        return !_pointerFieldIsNull(157);
+      }
+      public org.capnproto.Text.Reader getServiceProvider() {
+        return _getPointerField(org.capnproto.Text.factory, 157, null, 0, 0);
+      }
+
+      public final boolean hasInstantContent() {
         return !_pointerFieldIsNull(158);
       }
-      public org.capnproto.Text.Reader getThumbnailImage() {
-        return _getPointerField(org.capnproto.Text.factory, 158, null, 0, 0);
-      }
-
-      public final boolean getLintFilterLight() {
-        return _getBooleanField(1993);
-      }
-
-      public final boolean getHandWashCycle() {
-        return _getBooleanField(1994);
+      public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.Reader> getInstantContent() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.InstantContent.listFactory, 158, null, 0);
       }
 
     }
@@ -4855,34 +4855,34 @@ public final class BestbuyCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasId() {
+        public final boolean hasName() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getId() {
+        public final org.capnproto.Text.Builder getName() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
-        public final void setId(org.capnproto.Text.Reader value) {
+        public final void setName(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 0, value);
         }
-        public final void setId(String value) {
+        public final void setName(String value) {
           _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initId(int size) {
+        public final org.capnproto.Text.Builder initName(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final boolean hasName() {
+        public final boolean hasId() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.Text.Builder getName() {
+        public final org.capnproto.Text.Builder getId() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
-        public final void setName(org.capnproto.Text.Reader value) {
+        public final void setId(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 1, value);
         }
-        public final void setName(String value) {
+        public final void setId(String value) {
           _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initName(int size) {
+        public final org.capnproto.Text.Builder initId(int size) {
           return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
       }
@@ -4892,17 +4892,17 @@ public final class BestbuyCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasId() {
+        public boolean hasName() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getId() {
+        public org.capnproto.Text.Reader getName() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasName() {
+        public boolean hasId() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getName() {
+        public org.capnproto.Text.Reader getId() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
@@ -4939,64 +4939,64 @@ public final class BestbuyCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasSecondDay() {
+        public final boolean hasVendorDelivery() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getSecondDay() {
+        public final org.capnproto.Text.Builder getVendorDelivery() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
-        public final void setSecondDay(org.capnproto.Text.Reader value) {
+        public final void setVendorDelivery(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 0, value);
         }
-        public final void setSecondDay(String value) {
+        public final void setVendorDelivery(String value) {
           _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSecondDay(int size) {
+        public final org.capnproto.Text.Builder initVendorDelivery(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final boolean hasVendorDelivery() {
+        public final boolean hasSecondDay() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.Text.Builder getVendorDelivery() {
+        public final org.capnproto.Text.Builder getSecondDay() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
-        public final void setVendorDelivery(org.capnproto.Text.Reader value) {
+        public final void setSecondDay(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 1, value);
         }
-        public final void setVendorDelivery(String value) {
+        public final void setSecondDay(String value) {
           _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initVendorDelivery(int size) {
+        public final org.capnproto.Text.Builder initSecondDay(int size) {
           return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
-        public final boolean hasNextDay() {
+        public final boolean hasGround() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.Text.Builder getNextDay() {
+        public final org.capnproto.Text.Builder getGround() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final void setNextDay(org.capnproto.Text.Reader value) {
+        public final void setGround(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 2, value);
         }
-        public final void setNextDay(String value) {
+        public final void setGround(String value) {
           _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initNextDay(int size) {
+        public final org.capnproto.Text.Builder initGround(int size) {
           return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
-        public final boolean hasGround() {
+        public final boolean hasNextDay() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.Text.Builder getGround() {
+        public final org.capnproto.Text.Builder getNextDay() {
           return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
-        public final void setGround(org.capnproto.Text.Reader value) {
+        public final void setNextDay(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 3, value);
         }
-        public final void setGround(String value) {
+        public final void setNextDay(String value) {
           _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initGround(int size) {
+        public final org.capnproto.Text.Builder initNextDay(int size) {
           return _initPointerField(org.capnproto.Text.factory, 3, size);
         }
       }
@@ -5006,31 +5006,31 @@ public final class BestbuyCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasSecondDay() {
+        public boolean hasVendorDelivery() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getSecondDay() {
+        public org.capnproto.Text.Reader getVendorDelivery() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasVendorDelivery() {
+        public boolean hasSecondDay() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getVendorDelivery() {
+        public org.capnproto.Text.Reader getSecondDay() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
-        public boolean hasNextDay() {
+        public boolean hasGround() {
           return !_pointerFieldIsNull(2);
         }
-        public org.capnproto.Text.Reader getNextDay() {
+        public org.capnproto.Text.Reader getGround() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
-        public boolean hasGround() {
+        public boolean hasNextDay() {
           return !_pointerFieldIsNull(3);
         }
-        public org.capnproto.Text.Reader getGround() {
+        public org.capnproto.Text.Reader getNextDay() {
           return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
 
@@ -5636,32 +5636,32 @@ public final class BestbuyCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasSkus() {
+        public final boolean hasName() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Builder> getSkus() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 0, null, 0);
-        }
-        public final void setSkus(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 0, value);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Builder> initSkus(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 0, size);
-        }
-        public final boolean hasName() {
-          return !_pointerFieldIsNull(1);
-        }
         public final org.capnproto.Text.Builder getName() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
         public final void setName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
+          _setPointerField(org.capnproto.Text.factory, 0, value);
         }
         public final void setName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
         public final org.capnproto.Text.Builder initName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
+          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        }
+        public final boolean hasSkus() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Builder> getSkus() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 1, null, 0);
+        }
+        public final void setSkus(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Reader> value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 1, value);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Builder> initSkus(int size) {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 1, size);
         }
       }
 
@@ -5670,18 +5670,18 @@ public final class BestbuyCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final boolean hasSkus() {
+        public boolean hasName() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Reader> getSkus() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 0, null, 0);
+        public org.capnproto.Text.Reader getName() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasName() {
+        public final boolean hasSkus() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getName() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.Reader> getSkus() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.BestbuyCapnp.Bestbuy.Skus.listFactory, 1, null, 0);
         }
 
       }
@@ -5779,64 +5779,64 @@ public final class BestbuyCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final double getUpgradeTwoYearPlan() {
+        public final double getUpgradeTwoYearPlanSalePrice() {
           return _getDoubleField(0);
         }
-        public final void setUpgradeTwoYearPlan(double value) {
+        public final void setUpgradeTwoYearPlanSalePrice(double value) {
           _setDoubleField(0, value);
         }
 
-        public final double getNewTwoYearPlan() {
+        public final double getUpgradeTwoYearPlan() {
           return _getDoubleField(1);
         }
-        public final void setNewTwoYearPlan(double value) {
+        public final void setUpgradeTwoYearPlan(double value) {
           _setDoubleField(1, value);
         }
 
-        public final boolean hasNewTwoYearPlanSalePrice() {
-          return !_pointerFieldIsNull(0);
-        }
-        public final org.capnproto.Text.Builder getNewTwoYearPlanSalePrice() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setNewTwoYearPlanSalePrice(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setNewTwoYearPlanSalePrice(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initNewTwoYearPlanSalePrice(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean hasNewTwoYearPlanRegularPrice() {
-          return !_pointerFieldIsNull(1);
-        }
-        public final org.capnproto.Text.Builder getNewTwoYearPlanRegularPrice() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-        public final void setNewTwoYearPlanRegularPrice(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
-        }
-        public final void setNewTwoYearPlanRegularPrice(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initNewTwoYearPlanRegularPrice(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
-        public final double getUpgradeTwoYearPlanSalePrice() {
+        public final double getUpgradeTwoYearPlanRegularPrice() {
           return _getDoubleField(2);
         }
-        public final void setUpgradeTwoYearPlanSalePrice(double value) {
+        public final void setUpgradeTwoYearPlanRegularPrice(double value) {
           _setDoubleField(2, value);
         }
 
-        public final double getUpgradeTwoYearPlanRegularPrice() {
+        public final double getNewTwoYearPlan() {
           return _getDoubleField(3);
         }
-        public final void setUpgradeTwoYearPlanRegularPrice(double value) {
+        public final void setNewTwoYearPlan(double value) {
           _setDoubleField(3, value);
         }
 
+        public final boolean hasNewTwoYearPlanRegularPrice() {
+          return !_pointerFieldIsNull(0);
+        }
+        public final org.capnproto.Text.Builder getNewTwoYearPlanRegularPrice() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+        public final void setNewTwoYearPlanRegularPrice(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 0, value);
+        }
+        public final void setNewTwoYearPlanRegularPrice(String value) {
+          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initNewTwoYearPlanRegularPrice(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        }
+        public final boolean hasNewTwoYearPlanSalePrice() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getNewTwoYearPlanSalePrice() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setNewTwoYearPlanSalePrice(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setNewTwoYearPlanSalePrice(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initNewTwoYearPlanSalePrice(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
+        }
       }
 
       public static final class Reader extends org.capnproto.StructReader {
@@ -5844,34 +5844,34 @@ public final class BestbuyCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final double getUpgradeTwoYearPlan() {
+        public final double getUpgradeTwoYearPlanSalePrice() {
           return _getDoubleField(0);
         }
 
-        public final double getNewTwoYearPlan() {
+        public final double getUpgradeTwoYearPlan() {
           return _getDoubleField(1);
         }
 
-        public boolean hasNewTwoYearPlanSalePrice() {
-          return !_pointerFieldIsNull(0);
-        }
-        public org.capnproto.Text.Reader getNewTwoYearPlanSalePrice() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public boolean hasNewTwoYearPlanRegularPrice() {
-          return !_pointerFieldIsNull(1);
-        }
-        public org.capnproto.Text.Reader getNewTwoYearPlanRegularPrice() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-
-        public final double getUpgradeTwoYearPlanSalePrice() {
+        public final double getUpgradeTwoYearPlanRegularPrice() {
           return _getDoubleField(2);
         }
 
-        public final double getUpgradeTwoYearPlanRegularPrice() {
+        public final double getNewTwoYearPlan() {
           return _getDoubleField(3);
+        }
+
+        public boolean hasNewTwoYearPlanRegularPrice() {
+          return !_pointerFieldIsNull(0);
+        }
+        public org.capnproto.Text.Reader getNewTwoYearPlanRegularPrice() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+
+        public boolean hasNewTwoYearPlanSalePrice() {
+          return !_pointerFieldIsNull(1);
+        }
+        public org.capnproto.Text.Reader getNewTwoYearPlanSalePrice() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
       }
@@ -5969,34 +5969,34 @@ public final class BestbuyCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasEndDate() {
+        public final boolean hasStartDate() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getEndDate() {
+        public final org.capnproto.Text.Builder getStartDate() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
-        public final void setEndDate(org.capnproto.Text.Reader value) {
+        public final void setStartDate(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 0, value);
         }
-        public final void setEndDate(String value) {
+        public final void setStartDate(String value) {
           _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initEndDate(int size) {
+        public final org.capnproto.Text.Builder initStartDate(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final boolean hasStartDate() {
+        public final boolean hasEndDate() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.Text.Builder getStartDate() {
+        public final org.capnproto.Text.Builder getEndDate() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
-        public final void setStartDate(org.capnproto.Text.Reader value) {
+        public final void setEndDate(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 1, value);
         }
-        public final void setStartDate(String value) {
+        public final void setEndDate(String value) {
           _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initStartDate(int size) {
+        public final org.capnproto.Text.Builder initEndDate(int size) {
           return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
         public final boolean hasListId() {
@@ -6021,17 +6021,17 @@ public final class BestbuyCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasEndDate() {
+        public boolean hasStartDate() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getEndDate() {
+        public org.capnproto.Text.Reader getStartDate() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasStartDate() {
+        public boolean hasEndDate() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getStartDate() {
+        public org.capnproto.Text.Reader getEndDate() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 

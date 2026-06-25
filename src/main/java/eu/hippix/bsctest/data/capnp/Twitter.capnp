@@ -1,246 +1,246 @@
-@0xd6317da505811901;
+@0xd6317da505811902;
 using Java = import "java.capnp";
 $Java.package("eu.hippix.bsctest.data.capnp");
 $Java.outerClassname("TwitterCapnp");
 struct Twitter {
-	id @0 :Int64;
-	isQuoteStatus @1 :Bool;
-	quotedStatusIdStr @2 :Text;
-	inReplyToUserId @3 :Int64;
-	limit @4 :Limit;
-	source @5 :Text;
-	extendedTweet @6 :ExtendedTweet;
-	filterLevel @7 :Text;
-	inReplyToUserIdStr @8 :Text;
-	truncated @9 :Bool;
-	possiblySensitive @10 :Bool;
-	favoriteCount @11 :Int32;
-	entities @12 :Entities;
-	lang @13 :Text;
-	extendedEntities @14 :ExtendedEntities;
-	retweeted @15 :Bool;
-	idStr @16 :Text;
-	favorited @17 :Bool;
-	contributors @18 :Text;
-	retweetedStatus @19 :RetweetedStatus;
-	quotedStatusId @20 :Int64;
-	inReplyToScreenName @21 :Text;
-	place @22 :Place;
-	coordinates @23 :Geo;
-	inReplyToStatusIdStr @24 :Text;
-	geo @25 :Geo;
-	timestampMs @26 :Text;
-	displayTextRange @27 :List(Int32);
-	quotedStatus @28 :QuotedStatus;
-	inReplyToStatusId @29 :Int64;
-	retweetCount @30 :Int32;
-	createdAt @31 :Text;
-	text @32 :Text;
-	user @33 :User;
+	coordinates @0 :Geo;
+	extendedEntities @1 :ExtendedEntities;
+	inReplyToScreenName @2 :Text;
+	contributors @3 :Text;
+	createdAt @4 :Text;
+	retweetedStatus @5 :RetweetedStatus;
+	place @6 :Place;
+	truncated @7 :Bool;
+	inReplyToUserId @8 :Int64;
+	favoriteCount @9 :Int32;
+	id @10 :Int64;
+	retweetCount @11 :Int32;
+	possiblySensitive @12 :Bool;
+	quotedStatusIdStr @13 :Text;
+	favorited @14 :Bool;
+	idStr @15 :Text;
+	inReplyToStatusIdStr @16 :Text;
+	lang @17 :Text;
+	text @18 :Text;
+	user @19 :User;
+	retweeted @20 :Bool;
+	extendedTweet @21 :ExtendedTweet;
+	isQuoteStatus @22 :Bool;
+	inReplyToStatusId @23 :Int64;
+	source @24 :Text;
+	filterLevel @25 :Text;
+	quotedStatus @26 :QuotedStatus;
+	quotedStatusId @27 :Int64;
+	displayTextRange @28 :List(Int32);
+	limit @29 :Limit;
+	inReplyToUserIdStr @30 :Text;
+	geo @31 :Geo;
+	entities @32 :Entities;
+	timestampMs @33 :Text;
 	struct User {
-		profileUseBackgroundImage @0 :Bool;
-		id @1 :Int64;
-		verified @2 :Bool;
-		screenName @3 :Text;
-		statusesCount @4 :Int32;
-		profileBackgroundTile @5 :Bool;
-		utcOffset @6 :Int32;
-		following @7 :Text;
-		name @8 :Text;
-		profileSidebarFillColor @9 :Text;
-		isTranslator @10 :Bool;
-		profileImageUrl @11 :Text;
-		profileImageUrlHttps @12 :Text;
-		profileTextColor @13 :Text;
-		profileBackgroundImageUrl @14 :Text;
-		profileSidebarBorderColor @15 :Text;
-		followRequestSent @16 :Text;
-		contributorsEnabled @17 :Bool;
-		lang @18 :Text;
-		favouritesCount @19 :Int32;
-		profileBackgroundColor @20 :Text;
-		profileBackgroundImageUrlHttps @21 :Text;
-		profileLinkColor @22 :Text;
-		geoEnabled @23 :Bool;
-		idStr @24 :Text;
-		url @25 :Text;
-		protec @26 :Bool;
-		friendsCount @27 :Int32;
-		location @28 :Text;
-		defaultProfile @29 :Bool;
-		followersCount @30 :Int32;
-		description @31 :Text;
-		defaultProfileImage @32 :Bool;
-		createdAt @33 :Text;
-		timeZone @34 :Text;
-		notifications @35 :Text;
-		listedCount @36 :Int32;
-		profileBannerUrl @37 :Text;
+		profileTextColor @0 :Text;
+		createdAt @1 :Text;
+		geoEnabled @2 :Bool;
+		favouritesCount @3 :Int32;
+		description @4 :Text;
+		profileBackgroundImageUrl @5 :Text;
+		profileBackgroundImageUrlHttps @6 :Text;
+		verified @7 :Bool;
+		followRequestSent @8 :Text;
+		utcOffset @9 :Int32;
+		id @10 :Int64;
+		listedCount @11 :Int32;
+		defaultProfile @12 :Bool;
+		idStr @13 :Text;
+		protec @14 :Bool;
+		timeZone @15 :Text;
+		profileSidebarFillColor @16 :Text;
+		statusesCount @17 :Int32;
+		profileLinkColor @18 :Text;
+		lang @19 :Text;
+		profileImageUrl @20 :Text;
+		screenName @21 :Text;
+		profileBackgroundColor @22 :Text;
+		contributorsEnabled @23 :Bool;
+		profileUseBackgroundImage @24 :Bool;
+		followersCount @25 :Int32;
+		location @26 :Text;
+		profileBannerUrl @27 :Text;
+		friendsCount @28 :Int32;
+		profileSidebarBorderColor @29 :Text;
+		profileBackgroundTile @30 :Bool;
+		name @31 :Text;
+		url @32 :Text;
+		isTranslator @33 :Bool;
+		notifications @34 :Text;
+		profileImageUrlHttps @35 :Text;
+		following @36 :Text;
+		defaultProfileImage @37 :Bool;
 	}
 	struct Urls {
 		url @0 :Text;
-		displayUrl @1 :Text;
-		indices @2 :List(Int32);
+		indices @1 :List(Int32);
+		displayUrl @2 :Text;
 		expandedUrl @3 :Text;
 	}
 	struct Entities {
-		symbols @0 :List(Hashtags);
-		hashtags @1 :List(Hashtags);
-		media @2 :List(Media);
-		userMentions @3 :List(UserMentions);
+		hashtags @0 :List(Hashtags);
+		userMentions @1 :List(UserMentions);
+		symbols @2 :List(Hashtags);
+		media @3 :List(Media);
 		urls @4 :List(Urls);
 	}
 	struct RetweetedStatus {
-		id @0 :Int64;
-		isQuoteStatus @1 :Bool;
-		quotedStatusIdStr @2 :Text;
-		inReplyToUserId @3 :Int64;
-		source @4 :Text;
-		extendedTweet @5 :ExtendedTweet;
-		filterLevel @6 :Text;
-		inReplyToUserIdStr @7 :Text;
-		truncated @8 :Bool;
-		possiblySensitive @9 :Bool;
-		favoriteCount @10 :Int32;
-		entities @11 :Entities;
-		lang @12 :Text;
-		scopes @13 :Scopes;
-		extendedEntities @14 :ExtendedEntities;
-		retweeted @15 :Bool;
-		idStr @16 :Text;
-		favorited @17 :Bool;
-		contributors @18 :Text;
-		quotedStatusId @19 :Int64;
-		inReplyToScreenName @20 :Text;
-		place @21 :Place;
-		coordinates @22 :Geo;
-		inReplyToStatusIdStr @23 :Text;
-		geo @24 :Geo;
-		displayTextRange @25 :List(Int32);
+		coordinates @0 :Geo;
+		extendedEntities @1 :ExtendedEntities;
+		inReplyToScreenName @2 :Text;
+		contributors @3 :Text;
+		createdAt @4 :Text;
+		place @5 :Place;
+		truncated @6 :Bool;
+		inReplyToUserId @7 :Int64;
+		favoriteCount @8 :Int32;
+		scopes @9 :Scopes;
+		id @10 :Int64;
+		retweetCount @11 :Int32;
+		possiblySensitive @12 :Bool;
+		quotedStatusIdStr @13 :Text;
+		favorited @14 :Bool;
+		idStr @15 :Text;
+		inReplyToStatusIdStr @16 :Text;
+		lang @17 :Text;
+		text @18 :Text;
+		user @19 :User;
+		retweeted @20 :Bool;
+		extendedTweet @21 :ExtendedTweet;
+		isQuoteStatus @22 :Bool;
+		inReplyToStatusId @23 :Int64;
+		source @24 :Text;
+		filterLevel @25 :Text;
 		quotedStatus @26 :QuotedStatus;
-		inReplyToStatusId @27 :Int64;
-		retweetCount @28 :Int32;
-		createdAt @29 :Text;
-		text @30 :Text;
-		user @31 :User;
+		displayTextRange @27 :List(Int32);
+		quotedStatusId @28 :Int64;
+		inReplyToUserIdStr @29 :Text;
+		geo @30 :Geo;
+		entities @31 :Entities;
 	}
 	struct UserMentions {
-		id @0 :Int64;
-		screenName @1 :Text;
-		name @2 :Text;
+		name @0 :Text;
+		indices @1 :List(Int32);
+		id @2 :Int64;
 		idStr @3 :Text;
-		indices @4 :List(Int32);
+		screenName @4 :Text;
 	}
 	struct Hashtags {
-		text @0 :Text;
-		indices @1 :List(Int32);
+		indices @0 :List(Int32);
+		text @1 :Text;
 	}
 	struct QuotedStatus {
-		id @0 :Int64;
-		isQuoteStatus @1 :Bool;
-		quotedStatusIdStr @2 :Text;
-		retweeted @3 :Bool;
-		idStr @4 :Text;
-		inReplyToUserId @5 :Int64;
-		favorited @6 :Bool;
-		source @7 :Text;
-		extendedTweet @8 :ExtendedTweet;
-		contributors @9 :List(Int64);
-		filterLevel @10 :Text;
-		quotedStatusId @11 :Int64;
-		inReplyToScreenName @12 :Text;
-		place @13 :Place;
-		inReplyToUserIdStr @14 :Text;
-		coordinates @15 :Geo;
-		inReplyToStatusIdStr @16 :Text;
-		geo @17 :Geo;
-		truncated @18 :Bool;
-		displayTextRange @19 :List(Int32);
-		possiblySensitive @20 :Bool;
-		favoriteCount @21 :Int32;
-		entities @22 :Entities;
-		lang @23 :Text;
-		inReplyToStatusId @24 :Int64;
-		retweetCount @25 :Int32;
-		scopes @26 :Scopes;
-		createdAt @27 :Text;
-		text @28 :Text;
-		extendedEntities @29 :ExtendedEntities;
-		user @30 :User;
+		coordinates @0 :Geo;
+		inReplyToStatusIdStr @1 :Text;
+		lang @2 :Text;
+		text @3 :Text;
+		extendedEntities @4 :ExtendedEntities;
+		inReplyToScreenName @5 :Text;
+		user @6 :User;
+		contributors @7 :List(Int64);
+		createdAt @8 :Text;
+		place @9 :Place;
+		truncated @10 :Bool;
+		inReplyToUserId @11 :Int64;
+		retweeted @12 :Bool;
+		favoriteCount @13 :Int32;
+		extendedTweet @14 :ExtendedTweet;
+		isQuoteStatus @15 :Bool;
+		scopes @16 :Scopes;
+		inReplyToStatusId @17 :Int64;
+		source @18 :Text;
+		id @19 :Int64;
+		filterLevel @20 :Text;
+		retweetCount @21 :Int32;
+		displayTextRange @22 :List(Int32);
+		quotedStatusId @23 :Int64;
+		possiblySensitive @24 :Bool;
+		quotedStatusIdStr @25 :Text;
+		inReplyToUserIdStr @26 :Text;
+		geo @27 :Geo;
+		entities @28 :Entities;
+		favorited @29 :Bool;
+		idStr @30 :Text;
 	}
 	struct ExtendedTweet {
-		fullText @0 :Text;
-		entities @1 :Entities;
-		displayTextRange @2 :List(Int32);
+		displayTextRange @0 :List(Int32);
+		fullText @1 :Text;
+		entities @2 :Entities;
 		extendedEntities @3 :ExtendedEntities;
 	}
 	struct Thumb {
-		h @0 :Int32;
-		resize @1 :Text;
+		resize @0 :Text;
+		h @1 :Int32;
 		w @2 :Int32;
 	}
 	struct Sizes {
-		large @0 :Thumb;
-		medium @1 :Thumb;
+		medium @0 :Thumb;
+		large @1 :Thumb;
 		small @2 :Thumb;
 		thumb @3 :Thumb;
 	}
 	struct Media {
-		id @0 :Int64;
-		displayUrl @1 :Text;
-		sourceStatusIdStr @2 :Text;
-		sourceUserIdStr @3 :Text;
-		idStr @4 :Text;
+		videoInfo @0 :VideoInfo;
+		sourceUserIdStr @1 :Text;
+		id @2 :Int64;
+		displayUrl @3 :Text;
+		indices @4 :List(Int32);
 		url @5 :Text;
-		mediaUrlHttps @6 :Text;
-		type @7 :Text;
-		sizes @8 :Sizes;
-		videoInfo @9 :VideoInfo;
-		mediaUrl @10 :Text;
-		sourceStatusId @11 :Int64;
-		sourceUserId @12 :Int64;
-		indices @13 :List(Int32);
-		expandedUrl @14 :Text;
+		sourceStatusId @6 :Int64;
+		mediaUrl @7 :Text;
+		idStr @8 :Text;
+		expandedUrl @9 :Text;
+		sizes @10 :Sizes;
+		sourceUserId @11 :Int64;
+		type @12 :Text;
+		sourceStatusIdStr @13 :Text;
+		mediaUrlHttps @14 :Text;
 	}
 	struct ExtendedEntities {
 		media @0 :List(Media);
 	}
 	struct Variants {
-		url @0 :Text;
-		bitrate @1 :Int32;
+		bitrate @0 :Int32;
+		url @1 :Text;
 		contentType @2 :Text;
 	}
 	struct VideoInfo {
-		variants @0 :List(Variants);
+		durationMillis @0 :Int32;
 		aspectRatio @1 :List(Int32);
-		durationMillis @2 :Int32;
+		variants @2 :List(Variants);
 	}
 	struct BoundingBox {
-		type @0 :Text;
-		coordinates @1 :List(List(List(Float64)));
+		coordinates @0 :List(List(List(Float64)));
+		type @1 :Text;
 	}
 	struct Attributes {
 	}
 	struct Place {
-		id @0 :Text;
-		fullName @1 :Text;
-		url @2 :Text;
-		boundingBox @3 :BoundingBox;
-		country @4 :Text;
-		placeType @5 :Text;
-		name @6 :Text;
-		countryCode @7 :Text;
-		attributes @8 :Attributes;
+		countryCode @0 :Text;
+		country @1 :Text;
+		id @2 :Text;
+		attributes @3 :Attributes;
+		name @4 :Text;
+		boundingBox @5 :BoundingBox;
+		url @6 :Text;
+		placeType @7 :Text;
+		fullName @8 :Text;
 	}
 	struct Limit {
-		timestampMs @0 :Text;
-		track @1 :Int32;
+		track @0 :Int32;
+		timestampMs @1 :Text;
 	}
 	struct Scopes {
 		followers @0 :Bool;
 	}
 	struct Geo {
-		type @0 :Text;
-		coordinates @1 :List(Float64);
+		coordinates @0 :List(Float64);
+		type @1 :Text;
 	}
 }

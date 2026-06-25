@@ -32,312 +32,243 @@ public final class TwitterCapnp {
       public final Reader asReader() {
         return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
       }
-      public final long getId() {
-        return _getLongField(0);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getCoordinates() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 0, null, 0);
       }
-      public final void setId(long value) {
-        _setLongField(0, value);
+      public final void setCoordinates(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0, value);
       }
-
-      public final boolean getIsQuoteStatus() {
-        return _getBooleanField(64);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initCoordinates() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0, 0);
       }
-      public final void setIsQuoteStatus(boolean value) {
-        _setBooleanField(64, value);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 1, null, 0);
       }
-
-      public final boolean hasQuotedStatusIdStr() {
-        return !_pointerFieldIsNull(0);
+      public final void setExtendedEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,1, value);
       }
-      public final org.capnproto.Text.Builder getQuotedStatusIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder initExtendedEntities() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,1, 0);
       }
-      public final void setQuotedStatusIdStr(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 0, value);
-      }
-      public final void setQuotedStatusIdStr(String value) {
-        _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initQuotedStatusIdStr(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 0, size);
-      }
-      public final long getInReplyToUserId() {
-        return _getLongField(2);
-      }
-      public final void setInReplyToUserId(long value) {
-        _setLongField(2, value);
-      }
-
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Builder getLimit() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory, 1, null, 0);
-      }
-      public final void setLimit(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory,1, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Builder initLimit() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory,1, 0);
-      }
-      public final boolean hasSource() {
+      public final boolean hasInReplyToScreenName() {
         return !_pointerFieldIsNull(2);
       }
-      public final org.capnproto.Text.Builder getSource() {
+      public final org.capnproto.Text.Builder getInReplyToScreenName() {
         return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
       }
-      public final void setSource(org.capnproto.Text.Reader value) {
+      public final void setInReplyToScreenName(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 2, value);
       }
-      public final void setSource(String value) {
+      public final void setInReplyToScreenName(String value) {
         _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initSource(int size) {
+      public final org.capnproto.Text.Builder initInReplyToScreenName(int size) {
         return _initPointerField(org.capnproto.Text.factory, 2, size);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder getExtendedTweet() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory, 3, null, 0);
+      public final boolean hasContributors() {
+        return !_pointerFieldIsNull(3);
       }
-      public final void setExtendedTweet(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,3, value);
+      public final org.capnproto.Text.Builder getContributors() {
+        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder initExtendedTweet() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,3, 0);
+      public final void setContributors(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 3, value);
       }
-      public final boolean hasFilterLevel() {
+      public final void setContributors(String value) {
+        _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initContributors(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 3, size);
+      }
+      public final boolean hasCreatedAt() {
         return !_pointerFieldIsNull(4);
       }
-      public final org.capnproto.Text.Builder getFilterLevel() {
+      public final org.capnproto.Text.Builder getCreatedAt() {
         return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
       }
-      public final void setFilterLevel(org.capnproto.Text.Reader value) {
+      public final void setCreatedAt(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 4, value);
       }
-      public final void setFilterLevel(String value) {
+      public final void setCreatedAt(String value) {
         _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initFilterLevel(int size) {
+      public final org.capnproto.Text.Builder initCreatedAt(int size) {
         return _initPointerField(org.capnproto.Text.factory, 4, size);
       }
-      public final boolean hasInReplyToUserIdStr() {
-        return !_pointerFieldIsNull(5);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Builder getRetweetedStatus() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory, 5, null, 0);
       }
-      public final org.capnproto.Text.Builder getInReplyToUserIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+      public final void setRetweetedStatus(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory,5, value);
       }
-      public final void setInReplyToUserIdStr(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 5, value);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Builder initRetweetedStatus() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory,5, 0);
       }
-      public final void setInReplyToUserIdStr(String value) {
-        _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder getPlace() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory, 6, null, 0);
       }
-      public final org.capnproto.Text.Builder initInReplyToUserIdStr(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 5, size);
+      public final void setPlace(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,6, value);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder initPlace() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,6, 0);
       }
       public final boolean getTruncated() {
-        return _getBooleanField(65);
+        return _getBooleanField(0);
       }
       public final void setTruncated(boolean value) {
-        _setBooleanField(65, value);
+        _setBooleanField(0, value);
       }
 
-      public final boolean getPossiblySensitive() {
-        return _getBooleanField(66);
+      public final long getInReplyToUserId() {
+        return _getLongField(1);
       }
-      public final void setPossiblySensitive(boolean value) {
-        _setBooleanField(66, value);
+      public final void setInReplyToUserId(long value) {
+        _setLongField(1, value);
       }
 
       public final int getFavoriteCount() {
-        return _getIntField(3);
+        return _getIntField(1);
       }
       public final void setFavoriteCount(int value) {
-        _setIntField(3, value);
+        _setIntField(1, value);
       }
 
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 6, null, 0);
+      public final long getId() {
+        return _getLongField(2);
       }
-      public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,6, value);
+      public final void setId(long value) {
+        _setLongField(2, value);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,6, 0);
+
+      public final int getRetweetCount() {
+        return _getIntField(6);
       }
-      public final boolean hasLang() {
+      public final void setRetweetCount(int value) {
+        _setIntField(6, value);
+      }
+
+      public final boolean getPossiblySensitive() {
+        return _getBooleanField(1);
+      }
+      public final void setPossiblySensitive(boolean value) {
+        _setBooleanField(1, value);
+      }
+
+      public final boolean hasQuotedStatusIdStr() {
         return !_pointerFieldIsNull(7);
       }
-      public final org.capnproto.Text.Builder getLang() {
+      public final org.capnproto.Text.Builder getQuotedStatusIdStr() {
         return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
       }
-      public final void setLang(org.capnproto.Text.Reader value) {
+      public final void setQuotedStatusIdStr(org.capnproto.Text.Reader value) {
         _setPointerField(org.capnproto.Text.factory, 7, value);
       }
-      public final void setLang(String value) {
+      public final void setQuotedStatusIdStr(String value) {
         _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder initLang(int size) {
+      public final org.capnproto.Text.Builder initQuotedStatusIdStr(int size) {
         return _initPointerField(org.capnproto.Text.factory, 7, size);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 8, null, 0);
+      public final boolean getFavorited() {
+        return _getBooleanField(2);
       }
-      public final void setExtendedEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,8, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder initExtendedEntities() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,8, 0);
-      }
-      public final boolean getRetweeted() {
-        return _getBooleanField(67);
-      }
-      public final void setRetweeted(boolean value) {
-        _setBooleanField(67, value);
+      public final void setFavorited(boolean value) {
+        _setBooleanField(2, value);
       }
 
       public final boolean hasIdStr() {
-        return !_pointerFieldIsNull(9);
+        return !_pointerFieldIsNull(8);
       }
       public final org.capnproto.Text.Builder getIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
       }
       public final void setIdStr(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 9, value);
+        _setPointerField(org.capnproto.Text.factory, 8, value);
       }
       public final void setIdStr(String value) {
-        _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initIdStr(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 9, size);
-      }
-      public final boolean getFavorited() {
-        return _getBooleanField(68);
-      }
-      public final void setFavorited(boolean value) {
-        _setBooleanField(68, value);
-      }
-
-      public final boolean hasContributors() {
-        return !_pointerFieldIsNull(10);
-      }
-      public final org.capnproto.Text.Builder getContributors() {
-        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-      }
-      public final void setContributors(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 10, value);
-      }
-      public final void setContributors(String value) {
-        _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initContributors(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 10, size);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Builder getRetweetedStatus() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory, 11, null, 0);
-      }
-      public final void setRetweetedStatus(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory,11, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Builder initRetweetedStatus() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory,11, 0);
-      }
-      public final long getQuotedStatusId() {
-        return _getLongField(3);
-      }
-      public final void setQuotedStatusId(long value) {
-        _setLongField(3, value);
-      }
-
-      public final boolean hasInReplyToScreenName() {
-        return !_pointerFieldIsNull(12);
-      }
-      public final org.capnproto.Text.Builder getInReplyToScreenName() {
-        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
-      }
-      public final void setInReplyToScreenName(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 12, value);
-      }
-      public final void setInReplyToScreenName(String value) {
-        _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
-      }
-      public final org.capnproto.Text.Builder initInReplyToScreenName(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 12, size);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder getPlace() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory, 13, null, 0);
-      }
-      public final void setPlace(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,13, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder initPlace() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,13, 0);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getCoordinates() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 14, null, 0);
-      }
-      public final void setCoordinates(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,14, value);
-      }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initCoordinates() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,14, 0);
+        return _initPointerField(org.capnproto.Text.factory, 8, size);
       }
       public final boolean hasInReplyToStatusIdStr() {
-        return !_pointerFieldIsNull(15);
+        return !_pointerFieldIsNull(9);
       }
       public final org.capnproto.Text.Builder getInReplyToStatusIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
       }
       public final void setInReplyToStatusIdStr(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 15, value);
+        _setPointerField(org.capnproto.Text.factory, 9, value);
       }
       public final void setInReplyToStatusIdStr(String value) {
-        _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
+        _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
       }
       public final org.capnproto.Text.Builder initInReplyToStatusIdStr(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 15, size);
+        return _initPointerField(org.capnproto.Text.factory, 9, size);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getGeo() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 16, null, 0);
+      public final boolean hasLang() {
+        return !_pointerFieldIsNull(10);
       }
-      public final void setGeo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,16, value);
+      public final org.capnproto.Text.Builder getLang() {
+        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initGeo() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,16, 0);
+      public final void setLang(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 10, value);
       }
-      public final boolean hasTimestampMs() {
-        return !_pointerFieldIsNull(17);
+      public final void setLang(String value) {
+        _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.Text.Builder getTimestampMs() {
-        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+      public final org.capnproto.Text.Builder initLang(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 10, size);
       }
-      public final void setTimestampMs(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 17, value);
+      public final boolean hasText() {
+        return !_pointerFieldIsNull(11);
       }
-      public final void setTimestampMs(String value) {
-        _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder getText() {
+        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder initTimestampMs(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 17, size);
+      public final void setText(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 11, value);
       }
-      public final boolean hasDisplayTextRange() {
-        return !_pointerFieldIsNull(18);
+      public final void setText(String value) {
+        _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
       }
-      public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
-        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 18, null, 0);
+      public final org.capnproto.Text.Builder initText(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 11, size);
       }
-      public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
-        _setPointerField(org.capnproto.PrimitiveList.Int.factory, 18, value);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder getUser() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory, 12, null, 0);
       }
-      public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
-        return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 18, size);
+      public final void setUser(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,12, value);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder getQuotedStatus() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory, 19, null, 0);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder initUser() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,12, 0);
       }
-      public final void setQuotedStatus(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,19, value);
+      public final boolean getRetweeted() {
+        return _getBooleanField(3);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder initQuotedStatus() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,19, 0);
+      public final void setRetweeted(boolean value) {
+        _setBooleanField(3, value);
       }
+
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder getExtendedTweet() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory, 13, null, 0);
+      }
+      public final void setExtendedTweet(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,13, value);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder initExtendedTweet() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,13, 0);
+      }
+      public final boolean getIsQuoteStatus() {
+        return _getBooleanField(4);
+      }
+      public final void setIsQuoteStatus(boolean value) {
+        _setBooleanField(4, value);
+      }
+
       public final long getInReplyToStatusId() {
         return _getLongField(4);
       }
@@ -345,51 +276,120 @@ public final class TwitterCapnp {
         _setLongField(4, value);
       }
 
-      public final int getRetweetCount() {
-        return _getIntField(10);
+      public final boolean hasSource() {
+        return !_pointerFieldIsNull(14);
       }
-      public final void setRetweetCount(int value) {
-        _setIntField(10, value);
+      public final org.capnproto.Text.Builder getSource() {
+        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+      }
+      public final void setSource(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 14, value);
+      }
+      public final void setSource(String value) {
+        _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initSource(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 14, size);
+      }
+      public final boolean hasFilterLevel() {
+        return !_pointerFieldIsNull(15);
+      }
+      public final org.capnproto.Text.Builder getFilterLevel() {
+        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+      }
+      public final void setFilterLevel(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 15, value);
+      }
+      public final void setFilterLevel(String value) {
+        _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initFilterLevel(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 15, size);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder getQuotedStatus() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory, 16, null, 0);
+      }
+      public final void setQuotedStatus(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,16, value);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder initQuotedStatus() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,16, 0);
+      }
+      public final long getQuotedStatusId() {
+        return _getLongField(5);
+      }
+      public final void setQuotedStatusId(long value) {
+        _setLongField(5, value);
       }
 
-      public final boolean hasCreatedAt() {
-        return !_pointerFieldIsNull(20);
+      public final boolean hasDisplayTextRange() {
+        return !_pointerFieldIsNull(17);
       }
-      public final org.capnproto.Text.Builder getCreatedAt() {
-        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+      public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
+        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 17, null, 0);
       }
-      public final void setCreatedAt(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 20, value);
+      public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
+        _setPointerField(org.capnproto.PrimitiveList.Int.factory, 17, value);
       }
-      public final void setCreatedAt(String value) {
-        _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
+        return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 17, size);
       }
-      public final org.capnproto.Text.Builder initCreatedAt(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 20, size);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Builder getLimit() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory, 18, null, 0);
       }
-      public final boolean hasText() {
-        return !_pointerFieldIsNull(21);
+      public final void setLimit(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory,18, value);
       }
-      public final org.capnproto.Text.Builder getText() {
-        return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Builder initLimit() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory,18, 0);
       }
-      public final void setText(org.capnproto.Text.Reader value) {
-        _setPointerField(org.capnproto.Text.factory, 21, value);
+      public final boolean hasInReplyToUserIdStr() {
+        return !_pointerFieldIsNull(19);
       }
-      public final void setText(String value) {
-        _setPointerField(org.capnproto.Text.factory, 21, new org.capnproto.Text.Reader(value));
+      public final org.capnproto.Text.Builder getInReplyToUserIdStr() {
+        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
       }
-      public final org.capnproto.Text.Builder initText(int size) {
-        return _initPointerField(org.capnproto.Text.factory, 21, size);
+      public final void setInReplyToUserIdStr(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 19, value);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder getUser() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory, 22, null, 0);
+      public final void setInReplyToUserIdStr(String value) {
+        _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
       }
-      public final void setUser(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader value) {
-        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,22, value);
+      public final org.capnproto.Text.Builder initInReplyToUserIdStr(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 19, size);
       }
-      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder initUser() {
-        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,22, 0);
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getGeo() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 20, null, 0);
+      }
+      public final void setGeo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,20, value);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initGeo() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,20, 0);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 21, null, 0);
+      }
+      public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
+        _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,21, value);
+      }
+      public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
+        return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,21, 0);
+      }
+      public final boolean hasTimestampMs() {
+        return !_pointerFieldIsNull(22);
+      }
+      public final org.capnproto.Text.Builder getTimestampMs() {
+        return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
+      }
+      public final void setTimestampMs(org.capnproto.Text.Reader value) {
+        _setPointerField(org.capnproto.Text.factory, 22, value);
+      }
+      public final void setTimestampMs(String value) {
+        _setPointerField(org.capnproto.Text.factory, 22, new org.capnproto.Text.Reader(value));
+      }
+      public final org.capnproto.Text.Builder initTimestampMs(int size) {
+        return _initPointerField(org.capnproto.Text.factory, 22, size);
       }
     }
 
@@ -398,209 +398,209 @@ public final class TwitterCapnp {
         super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
       }
 
-      public final long getId() {
-        return _getLongField(0);
-      }
-
-      public final boolean getIsQuoteStatus() {
-        return _getBooleanField(64);
-      }
-
-      public boolean hasQuotedStatusIdStr() {
+      public boolean hasCoordinates() {
         return !_pointerFieldIsNull(0);
       }
-      public org.capnproto.Text.Reader getQuotedStatusIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-      }
-
-      public final long getInReplyToUserId() {
-        return _getLongField(2);
-      }
-
-      public boolean hasLimit() {
-        return !_pointerFieldIsNull(1);
-      }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Reader getLimit() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory,1,null, 0);
-      }
-
-      public boolean hasSource() {
-        return !_pointerFieldIsNull(2);
-      }
-      public org.capnproto.Text.Reader getSource() {
-        return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
-      }
-
-      public boolean hasExtendedTweet() {
-        return !_pointerFieldIsNull(3);
-      }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader getExtendedTweet() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,3,null, 0);
-      }
-
-      public boolean hasFilterLevel() {
-        return !_pointerFieldIsNull(4);
-      }
-      public org.capnproto.Text.Reader getFilterLevel() {
-        return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-      }
-
-      public boolean hasInReplyToUserIdStr() {
-        return !_pointerFieldIsNull(5);
-      }
-      public org.capnproto.Text.Reader getInReplyToUserIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-      }
-
-      public final boolean getTruncated() {
-        return _getBooleanField(65);
-      }
-
-      public final boolean getPossiblySensitive() {
-        return _getBooleanField(66);
-      }
-
-      public final int getFavoriteCount() {
-        return _getIntField(3);
-      }
-
-      public boolean hasEntities() {
-        return !_pointerFieldIsNull(6);
-      }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,6,null, 0);
-      }
-
-      public boolean hasLang() {
-        return !_pointerFieldIsNull(7);
-      }
-      public org.capnproto.Text.Reader getLang() {
-        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getCoordinates() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0,null, 0);
       }
 
       public boolean hasExtendedEntities() {
-        return !_pointerFieldIsNull(8);
+        return !_pointerFieldIsNull(1);
       }
       public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader getExtendedEntities() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,8,null, 0);
-      }
-
-      public final boolean getRetweeted() {
-        return _getBooleanField(67);
-      }
-
-      public boolean hasIdStr() {
-        return !_pointerFieldIsNull(9);
-      }
-      public org.capnproto.Text.Reader getIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-      }
-
-      public final boolean getFavorited() {
-        return _getBooleanField(68);
-      }
-
-      public boolean hasContributors() {
-        return !_pointerFieldIsNull(10);
-      }
-      public org.capnproto.Text.Reader getContributors() {
-        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-      }
-
-      public boolean hasRetweetedStatus() {
-        return !_pointerFieldIsNull(11);
-      }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Reader getRetweetedStatus() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory,11,null, 0);
-      }
-
-      public final long getQuotedStatusId() {
-        return _getLongField(3);
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,1,null, 0);
       }
 
       public boolean hasInReplyToScreenName() {
-        return !_pointerFieldIsNull(12);
+        return !_pointerFieldIsNull(2);
       }
       public org.capnproto.Text.Reader getInReplyToScreenName() {
-        return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
+      }
+
+      public boolean hasContributors() {
+        return !_pointerFieldIsNull(3);
+      }
+      public org.capnproto.Text.Reader getContributors() {
+        return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+      }
+
+      public boolean hasCreatedAt() {
+        return !_pointerFieldIsNull(4);
+      }
+      public org.capnproto.Text.Reader getCreatedAt() {
+        return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+      }
+
+      public boolean hasRetweetedStatus() {
+        return !_pointerFieldIsNull(5);
+      }
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.Reader getRetweetedStatus() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.RetweetedStatus.factory,5,null, 0);
       }
 
       public boolean hasPlace() {
-        return !_pointerFieldIsNull(13);
+        return !_pointerFieldIsNull(6);
       }
       public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader getPlace() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,13,null, 0);
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,6,null, 0);
       }
 
-      public boolean hasCoordinates() {
-        return !_pointerFieldIsNull(14);
+      public final boolean getTruncated() {
+        return _getBooleanField(0);
       }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getCoordinates() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,14,null, 0);
+
+      public final long getInReplyToUserId() {
+        return _getLongField(1);
+      }
+
+      public final int getFavoriteCount() {
+        return _getIntField(1);
+      }
+
+      public final long getId() {
+        return _getLongField(2);
+      }
+
+      public final int getRetweetCount() {
+        return _getIntField(6);
+      }
+
+      public final boolean getPossiblySensitive() {
+        return _getBooleanField(1);
+      }
+
+      public boolean hasQuotedStatusIdStr() {
+        return !_pointerFieldIsNull(7);
+      }
+      public org.capnproto.Text.Reader getQuotedStatusIdStr() {
+        return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+      }
+
+      public final boolean getFavorited() {
+        return _getBooleanField(2);
+      }
+
+      public boolean hasIdStr() {
+        return !_pointerFieldIsNull(8);
+      }
+      public org.capnproto.Text.Reader getIdStr() {
+        return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
       }
 
       public boolean hasInReplyToStatusIdStr() {
-        return !_pointerFieldIsNull(15);
+        return !_pointerFieldIsNull(9);
       }
       public org.capnproto.Text.Reader getInReplyToStatusIdStr() {
-        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
       }
 
-      public boolean hasGeo() {
-        return !_pointerFieldIsNull(16);
+      public boolean hasLang() {
+        return !_pointerFieldIsNull(10);
       }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getGeo() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,16,null, 0);
-      }
-
-      public boolean hasTimestampMs() {
-        return !_pointerFieldIsNull(17);
-      }
-      public org.capnproto.Text.Reader getTimestampMs() {
-        return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+      public org.capnproto.Text.Reader getLang() {
+        return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
       }
 
-      public final boolean hasDisplayTextRange() {
-        return !_pointerFieldIsNull(18);
+      public boolean hasText() {
+        return !_pointerFieldIsNull(11);
       }
-      public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
-        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 18, null, 0);
+      public org.capnproto.Text.Reader getText() {
+        return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
       }
 
-      public boolean hasQuotedStatus() {
-        return !_pointerFieldIsNull(19);
+      public boolean hasUser() {
+        return !_pointerFieldIsNull(12);
       }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader getQuotedStatus() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,19,null, 0);
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader getUser() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,12,null, 0);
+      }
+
+      public final boolean getRetweeted() {
+        return _getBooleanField(3);
+      }
+
+      public boolean hasExtendedTweet() {
+        return !_pointerFieldIsNull(13);
+      }
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader getExtendedTweet() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,13,null, 0);
+      }
+
+      public final boolean getIsQuoteStatus() {
+        return _getBooleanField(4);
       }
 
       public final long getInReplyToStatusId() {
         return _getLongField(4);
       }
 
-      public final int getRetweetCount() {
-        return _getIntField(10);
+      public boolean hasSource() {
+        return !_pointerFieldIsNull(14);
+      }
+      public org.capnproto.Text.Reader getSource() {
+        return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
       }
 
-      public boolean hasCreatedAt() {
+      public boolean hasFilterLevel() {
+        return !_pointerFieldIsNull(15);
+      }
+      public org.capnproto.Text.Reader getFilterLevel() {
+        return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+      }
+
+      public boolean hasQuotedStatus() {
+        return !_pointerFieldIsNull(16);
+      }
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader getQuotedStatus() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,16,null, 0);
+      }
+
+      public final long getQuotedStatusId() {
+        return _getLongField(5);
+      }
+
+      public final boolean hasDisplayTextRange() {
+        return !_pointerFieldIsNull(17);
+      }
+      public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
+        return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 17, null, 0);
+      }
+
+      public boolean hasLimit() {
+        return !_pointerFieldIsNull(18);
+      }
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.Reader getLimit() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Limit.factory,18,null, 0);
+      }
+
+      public boolean hasInReplyToUserIdStr() {
+        return !_pointerFieldIsNull(19);
+      }
+      public org.capnproto.Text.Reader getInReplyToUserIdStr() {
+        return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+      }
+
+      public boolean hasGeo() {
         return !_pointerFieldIsNull(20);
       }
-      public org.capnproto.Text.Reader getCreatedAt() {
-        return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getGeo() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,20,null, 0);
       }
 
-      public boolean hasText() {
+      public boolean hasEntities() {
         return !_pointerFieldIsNull(21);
       }
-      public org.capnproto.Text.Reader getText() {
-        return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
+      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
+        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,21,null, 0);
       }
 
-      public boolean hasUser() {
+      public boolean hasTimestampMs() {
         return !_pointerFieldIsNull(22);
       }
-      public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader getUser() {
-        return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,22,null, 0);
+      public org.capnproto.Text.Reader getTimestampMs() {
+        return _getPointerField(org.capnproto.Text.factory, 22, null, 0, 0);
       }
 
     }
@@ -633,20 +633,95 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean getProfileUseBackgroundImage() {
+        public final boolean hasProfileTextColor() {
+          return !_pointerFieldIsNull(0);
+        }
+        public final org.capnproto.Text.Builder getProfileTextColor() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+        public final void setProfileTextColor(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 0, value);
+        }
+        public final void setProfileTextColor(String value) {
+          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileTextColor(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        }
+        public final boolean hasCreatedAt() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getCreatedAt() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setCreatedAt(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setCreatedAt(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initCreatedAt(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
+        }
+        public final boolean getGeoEnabled() {
           return _getBooleanField(0);
         }
-        public final void setProfileUseBackgroundImage(boolean value) {
+        public final void setGeoEnabled(boolean value) {
           _setBooleanField(0, value);
         }
 
-        public final long getId() {
-          return _getLongField(1);
+        public final int getFavouritesCount() {
+          return _getIntField(1);
         }
-        public final void setId(long value) {
-          _setLongField(1, value);
+        public final void setFavouritesCount(int value) {
+          _setIntField(1, value);
         }
 
+        public final boolean hasDescription() {
+          return !_pointerFieldIsNull(2);
+        }
+        public final org.capnproto.Text.Builder getDescription() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
+        }
+        public final void setDescription(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 2, value);
+        }
+        public final void setDescription(String value) {
+          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initDescription(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 2, size);
+        }
+        public final boolean hasProfileBackgroundImageUrl() {
+          return !_pointerFieldIsNull(3);
+        }
+        public final org.capnproto.Text.Builder getProfileBackgroundImageUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+        }
+        public final void setProfileBackgroundImageUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 3, value);
+        }
+        public final void setProfileBackgroundImageUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileBackgroundImageUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 3, size);
+        }
+        public final boolean hasProfileBackgroundImageUrlHttps() {
+          return !_pointerFieldIsNull(4);
+        }
+        public final org.capnproto.Text.Builder getProfileBackgroundImageUrlHttps() {
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+        }
+        public final void setProfileBackgroundImageUrlHttps(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 4, value);
+        }
+        public final void setProfileBackgroundImageUrlHttps(String value) {
+          _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileBackgroundImageUrlHttps(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 4, size);
+        }
         public final boolean getVerified() {
           return _getBooleanField(1);
         }
@@ -654,191 +729,123 @@ public final class TwitterCapnp {
           _setBooleanField(1, value);
         }
 
-        public final boolean hasScreenName() {
-          return !_pointerFieldIsNull(0);
+        public final boolean hasFollowRequestSent() {
+          return !_pointerFieldIsNull(5);
         }
-        public final org.capnproto.Text.Builder getScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final org.capnproto.Text.Builder getFollowRequestSent() {
+          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
-        public final void setScreenName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
+        public final void setFollowRequestSent(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 5, value);
         }
-        public final void setScreenName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
+        public final void setFollowRequestSent(String value) {
+          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initScreenName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        public final org.capnproto.Text.Builder initFollowRequestSent(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 5, size);
         }
-        public final int getStatusesCount() {
-          return _getIntField(1);
+        public final int getUtcOffset() {
+          return _getIntField(2);
         }
-        public final void setStatusesCount(int value) {
-          _setIntField(1, value);
+        public final void setUtcOffset(int value) {
+          _setIntField(2, value);
         }
 
-        public final boolean getProfileBackgroundTile() {
+        public final long getId() {
+          return _getLongField(2);
+        }
+        public final void setId(long value) {
+          _setLongField(2, value);
+        }
+
+        public final int getListedCount() {
+          return _getIntField(3);
+        }
+        public final void setListedCount(int value) {
+          _setIntField(3, value);
+        }
+
+        public final boolean getDefaultProfile() {
           return _getBooleanField(2);
         }
-        public final void setProfileBackgroundTile(boolean value) {
+        public final void setDefaultProfile(boolean value) {
           _setBooleanField(2, value);
         }
 
-        public final int getUtcOffset() {
-          return _getIntField(4);
+        public final boolean hasIdStr() {
+          return !_pointerFieldIsNull(6);
         }
-        public final void setUtcOffset(int value) {
-          _setIntField(4, value);
+        public final org.capnproto.Text.Builder getIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
         }
-
-        public final boolean hasFollowing() {
-          return !_pointerFieldIsNull(1);
+        public final void setIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 6, value);
         }
-        public final org.capnproto.Text.Builder getFollowing() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        public final void setIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
         }
-        public final void setFollowing(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
+        public final org.capnproto.Text.Builder initIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 6, size);
         }
-        public final void setFollowing(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initFollowing(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
-        public final boolean hasName() {
-          return !_pointerFieldIsNull(2);
-        }
-        public final org.capnproto.Text.Builder getName() {
-          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
-        }
-        public final void setName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 2, value);
-        }
-        public final void setName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 2, size);
-        }
-        public final boolean hasProfileSidebarFillColor() {
-          return !_pointerFieldIsNull(3);
-        }
-        public final org.capnproto.Text.Builder getProfileSidebarFillColor() {
-          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
-        }
-        public final void setProfileSidebarFillColor(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 3, value);
-        }
-        public final void setProfileSidebarFillColor(String value) {
-          _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initProfileSidebarFillColor(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 3, size);
-        }
-        public final boolean getIsTranslator() {
+        public final boolean getProtec() {
           return _getBooleanField(3);
         }
-        public final void setIsTranslator(boolean value) {
+        public final void setProtec(boolean value) {
           _setBooleanField(3, value);
         }
 
-        public final boolean hasProfileImageUrl() {
-          return !_pointerFieldIsNull(4);
-        }
-        public final org.capnproto.Text.Builder getProfileImageUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-        }
-        public final void setProfileImageUrl(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 4, value);
-        }
-        public final void setProfileImageUrl(String value) {
-          _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initProfileImageUrl(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 4, size);
-        }
-        public final boolean hasProfileImageUrlHttps() {
-          return !_pointerFieldIsNull(5);
-        }
-        public final org.capnproto.Text.Builder getProfileImageUrlHttps() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-        }
-        public final void setProfileImageUrlHttps(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 5, value);
-        }
-        public final void setProfileImageUrlHttps(String value) {
-          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initProfileImageUrlHttps(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 5, size);
-        }
-        public final boolean hasProfileTextColor() {
-          return !_pointerFieldIsNull(6);
-        }
-        public final org.capnproto.Text.Builder getProfileTextColor() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-        public final void setProfileTextColor(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
-        }
-        public final void setProfileTextColor(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initProfileTextColor(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
-        }
-        public final boolean hasProfileBackgroundImageUrl() {
+        public final boolean hasTimeZone() {
           return !_pointerFieldIsNull(7);
         }
-        public final org.capnproto.Text.Builder getProfileBackgroundImageUrl() {
+        public final org.capnproto.Text.Builder getTimeZone() {
           return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
         }
-        public final void setProfileBackgroundImageUrl(org.capnproto.Text.Reader value) {
+        public final void setTimeZone(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 7, value);
         }
-        public final void setProfileBackgroundImageUrl(String value) {
+        public final void setTimeZone(String value) {
           _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProfileBackgroundImageUrl(int size) {
+        public final org.capnproto.Text.Builder initTimeZone(int size) {
           return _initPointerField(org.capnproto.Text.factory, 7, size);
         }
-        public final boolean hasProfileSidebarBorderColor() {
+        public final boolean hasProfileSidebarFillColor() {
           return !_pointerFieldIsNull(8);
         }
-        public final org.capnproto.Text.Builder getProfileSidebarBorderColor() {
+        public final org.capnproto.Text.Builder getProfileSidebarFillColor() {
           return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
-        public final void setProfileSidebarBorderColor(org.capnproto.Text.Reader value) {
+        public final void setProfileSidebarFillColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 8, value);
         }
-        public final void setProfileSidebarBorderColor(String value) {
+        public final void setProfileSidebarFillColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProfileSidebarBorderColor(int size) {
+        public final org.capnproto.Text.Builder initProfileSidebarFillColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 8, size);
         }
-        public final boolean hasFollowRequestSent() {
-          return !_pointerFieldIsNull(9);
+        public final int getStatusesCount() {
+          return _getIntField(6);
         }
-        public final org.capnproto.Text.Builder getFollowRequestSent() {
-          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-        }
-        public final void setFollowRequestSent(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 9, value);
-        }
-        public final void setFollowRequestSent(String value) {
-          _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initFollowRequestSent(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 9, size);
-        }
-        public final boolean getContributorsEnabled() {
-          return _getBooleanField(4);
-        }
-        public final void setContributorsEnabled(boolean value) {
-          _setBooleanField(4, value);
+        public final void setStatusesCount(int value) {
+          _setIntField(6, value);
         }
 
+        public final boolean hasProfileLinkColor() {
+          return !_pointerFieldIsNull(9);
+        }
+        public final org.capnproto.Text.Builder getProfileLinkColor() {
+          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+        }
+        public final void setProfileLinkColor(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 9, value);
+        }
+        public final void setProfileLinkColor(String value) {
+          _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileLinkColor(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 9, size);
+        }
         public final boolean hasLang() {
           return !_pointerFieldIsNull(10);
         }
@@ -854,129 +861,63 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initLang(int size) {
           return _initPointerField(org.capnproto.Text.factory, 10, size);
         }
-        public final int getFavouritesCount() {
-          return _getIntField(5);
-        }
-        public final void setFavouritesCount(int value) {
-          _setIntField(5, value);
-        }
-
-        public final boolean hasProfileBackgroundColor() {
+        public final boolean hasProfileImageUrl() {
           return !_pointerFieldIsNull(11);
         }
-        public final org.capnproto.Text.Builder getProfileBackgroundColor() {
+        public final org.capnproto.Text.Builder getProfileImageUrl() {
           return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
-        public final void setProfileBackgroundColor(org.capnproto.Text.Reader value) {
+        public final void setProfileImageUrl(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 11, value);
         }
-        public final void setProfileBackgroundColor(String value) {
+        public final void setProfileImageUrl(String value) {
           _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProfileBackgroundColor(int size) {
+        public final org.capnproto.Text.Builder initProfileImageUrl(int size) {
           return _initPointerField(org.capnproto.Text.factory, 11, size);
         }
-        public final boolean hasProfileBackgroundImageUrlHttps() {
+        public final boolean hasScreenName() {
           return !_pointerFieldIsNull(12);
         }
-        public final org.capnproto.Text.Builder getProfileBackgroundImageUrlHttps() {
+        public final org.capnproto.Text.Builder getScreenName() {
           return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
         }
-        public final void setProfileBackgroundImageUrlHttps(org.capnproto.Text.Reader value) {
+        public final void setScreenName(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 12, value);
         }
-        public final void setProfileBackgroundImageUrlHttps(String value) {
+        public final void setScreenName(String value) {
           _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProfileBackgroundImageUrlHttps(int size) {
+        public final org.capnproto.Text.Builder initScreenName(int size) {
           return _initPointerField(org.capnproto.Text.factory, 12, size);
         }
-        public final boolean hasProfileLinkColor() {
+        public final boolean hasProfileBackgroundColor() {
           return !_pointerFieldIsNull(13);
         }
-        public final org.capnproto.Text.Builder getProfileLinkColor() {
+        public final org.capnproto.Text.Builder getProfileBackgroundColor() {
           return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
         }
-        public final void setProfileLinkColor(org.capnproto.Text.Reader value) {
+        public final void setProfileBackgroundColor(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 13, value);
         }
-        public final void setProfileLinkColor(String value) {
+        public final void setProfileBackgroundColor(String value) {
           _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initProfileLinkColor(int size) {
+        public final org.capnproto.Text.Builder initProfileBackgroundColor(int size) {
           return _initPointerField(org.capnproto.Text.factory, 13, size);
         }
-        public final boolean getGeoEnabled() {
+        public final boolean getContributorsEnabled() {
+          return _getBooleanField(4);
+        }
+        public final void setContributorsEnabled(boolean value) {
+          _setBooleanField(4, value);
+        }
+
+        public final boolean getProfileUseBackgroundImage() {
           return _getBooleanField(5);
         }
-        public final void setGeoEnabled(boolean value) {
+        public final void setProfileUseBackgroundImage(boolean value) {
           _setBooleanField(5, value);
-        }
-
-        public final boolean hasIdStr() {
-          return !_pointerFieldIsNull(14);
-        }
-        public final org.capnproto.Text.Builder getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-        }
-        public final void setIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 14, value);
-        }
-        public final void setIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 14, size);
-        }
-        public final boolean hasUrl() {
-          return !_pointerFieldIsNull(15);
-        }
-        public final org.capnproto.Text.Builder getUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
-        }
-        public final void setUrl(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 15, value);
-        }
-        public final void setUrl(String value) {
-          _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initUrl(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 15, size);
-        }
-        public final boolean getProtec() {
-          return _getBooleanField(6);
-        }
-        public final void setProtec(boolean value) {
-          _setBooleanField(6, value);
-        }
-
-        public final int getFriendsCount() {
-          return _getIntField(6);
-        }
-        public final void setFriendsCount(int value) {
-          _setIntField(6, value);
-        }
-
-        public final boolean hasLocation() {
-          return !_pointerFieldIsNull(16);
-        }
-        public final org.capnproto.Text.Builder getLocation() {
-          return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
-        }
-        public final void setLocation(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 16, value);
-        }
-        public final void setLocation(String value) {
-          _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initLocation(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 16, size);
-        }
-        public final boolean getDefaultProfile() {
-          return _getBooleanField(7);
-        }
-        public final void setDefaultProfile(boolean value) {
-          _setBooleanField(7, value);
         }
 
         public final int getFollowersCount() {
@@ -986,20 +927,146 @@ public final class TwitterCapnp {
           _setIntField(7, value);
         }
 
-        public final boolean hasDescription() {
+        public final boolean hasLocation() {
+          return !_pointerFieldIsNull(14);
+        }
+        public final org.capnproto.Text.Builder getLocation() {
+          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+        }
+        public final void setLocation(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 14, value);
+        }
+        public final void setLocation(String value) {
+          _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initLocation(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 14, size);
+        }
+        public final boolean hasProfileBannerUrl() {
+          return !_pointerFieldIsNull(15);
+        }
+        public final org.capnproto.Text.Builder getProfileBannerUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        }
+        public final void setProfileBannerUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 15, value);
+        }
+        public final void setProfileBannerUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileBannerUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 15, size);
+        }
+        public final int getFriendsCount() {
+          return _getIntField(8);
+        }
+        public final void setFriendsCount(int value) {
+          _setIntField(8, value);
+        }
+
+        public final boolean hasProfileSidebarBorderColor() {
+          return !_pointerFieldIsNull(16);
+        }
+        public final org.capnproto.Text.Builder getProfileSidebarBorderColor() {
+          return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
+        }
+        public final void setProfileSidebarBorderColor(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 16, value);
+        }
+        public final void setProfileSidebarBorderColor(String value) {
+          _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileSidebarBorderColor(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 16, size);
+        }
+        public final boolean getProfileBackgroundTile() {
+          return _getBooleanField(6);
+        }
+        public final void setProfileBackgroundTile(boolean value) {
+          _setBooleanField(6, value);
+        }
+
+        public final boolean hasName() {
           return !_pointerFieldIsNull(17);
         }
-        public final org.capnproto.Text.Builder getDescription() {
+        public final org.capnproto.Text.Builder getName() {
           return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
         }
-        public final void setDescription(org.capnproto.Text.Reader value) {
+        public final void setName(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 17, value);
         }
-        public final void setDescription(String value) {
+        public final void setName(String value) {
           _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initDescription(int size) {
+        public final org.capnproto.Text.Builder initName(int size) {
           return _initPointerField(org.capnproto.Text.factory, 17, size);
+        }
+        public final boolean hasUrl() {
+          return !_pointerFieldIsNull(18);
+        }
+        public final org.capnproto.Text.Builder getUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
+        }
+        public final void setUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 18, value);
+        }
+        public final void setUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 18, size);
+        }
+        public final boolean getIsTranslator() {
+          return _getBooleanField(7);
+        }
+        public final void setIsTranslator(boolean value) {
+          _setBooleanField(7, value);
+        }
+
+        public final boolean hasNotifications() {
+          return !_pointerFieldIsNull(19);
+        }
+        public final org.capnproto.Text.Builder getNotifications() {
+          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+        }
+        public final void setNotifications(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 19, value);
+        }
+        public final void setNotifications(String value) {
+          _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initNotifications(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 19, size);
+        }
+        public final boolean hasProfileImageUrlHttps() {
+          return !_pointerFieldIsNull(20);
+        }
+        public final org.capnproto.Text.Builder getProfileImageUrlHttps() {
+          return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+        }
+        public final void setProfileImageUrlHttps(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 20, value);
+        }
+        public final void setProfileImageUrlHttps(String value) {
+          _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initProfileImageUrlHttps(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 20, size);
+        }
+        public final boolean hasFollowing() {
+          return !_pointerFieldIsNull(21);
+        }
+        public final org.capnproto.Text.Builder getFollowing() {
+          return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
+        }
+        public final void setFollowing(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 21, value);
+        }
+        public final void setFollowing(String value) {
+          _setPointerField(org.capnproto.Text.factory, 21, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initFollowing(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 21, size);
         }
         public final boolean getDefaultProfileImage() {
           return _getBooleanField(8);
@@ -1008,73 +1075,6 @@ public final class TwitterCapnp {
           _setBooleanField(8, value);
         }
 
-        public final boolean hasCreatedAt() {
-          return !_pointerFieldIsNull(18);
-        }
-        public final org.capnproto.Text.Builder getCreatedAt() {
-          return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
-        }
-        public final void setCreatedAt(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 18, value);
-        }
-        public final void setCreatedAt(String value) {
-          _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initCreatedAt(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 18, size);
-        }
-        public final boolean hasTimeZone() {
-          return !_pointerFieldIsNull(19);
-        }
-        public final org.capnproto.Text.Builder getTimeZone() {
-          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
-        }
-        public final void setTimeZone(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 19, value);
-        }
-        public final void setTimeZone(String value) {
-          _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initTimeZone(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 19, size);
-        }
-        public final boolean hasNotifications() {
-          return !_pointerFieldIsNull(20);
-        }
-        public final org.capnproto.Text.Builder getNotifications() {
-          return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
-        }
-        public final void setNotifications(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 20, value);
-        }
-        public final void setNotifications(String value) {
-          _setPointerField(org.capnproto.Text.factory, 20, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initNotifications(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 20, size);
-        }
-        public final int getListedCount() {
-          return _getIntField(8);
-        }
-        public final void setListedCount(int value) {
-          _setIntField(8, value);
-        }
-
-        public final boolean hasProfileBannerUrl() {
-          return !_pointerFieldIsNull(21);
-        }
-        public final org.capnproto.Text.Builder getProfileBannerUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
-        }
-        public final void setProfileBannerUrl(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 21, value);
-        }
-        public final void setProfileBannerUrl(String value) {
-          _setPointerField(org.capnproto.Text.factory, 21, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initProfileBannerUrl(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 21, size);
-        }
       }
 
       public static final class Reader extends org.capnproto.StructReader {
@@ -1082,106 +1082,110 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final boolean getProfileUseBackgroundImage() {
+        public boolean hasProfileTextColor() {
+          return !_pointerFieldIsNull(0);
+        }
+        public org.capnproto.Text.Reader getProfileTextColor() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+
+        public boolean hasCreatedAt() {
+          return !_pointerFieldIsNull(1);
+        }
+        public org.capnproto.Text.Reader getCreatedAt() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+
+        public final boolean getGeoEnabled() {
           return _getBooleanField(0);
         }
 
-        public final long getId() {
-          return _getLongField(1);
+        public final int getFavouritesCount() {
+          return _getIntField(1);
+        }
+
+        public boolean hasDescription() {
+          return !_pointerFieldIsNull(2);
+        }
+        public org.capnproto.Text.Reader getDescription() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
+        }
+
+        public boolean hasProfileBackgroundImageUrl() {
+          return !_pointerFieldIsNull(3);
+        }
+        public org.capnproto.Text.Reader getProfileBackgroundImageUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+        }
+
+        public boolean hasProfileBackgroundImageUrlHttps() {
+          return !_pointerFieldIsNull(4);
+        }
+        public org.capnproto.Text.Reader getProfileBackgroundImageUrlHttps() {
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
 
         public final boolean getVerified() {
           return _getBooleanField(1);
         }
 
-        public boolean hasScreenName() {
-          return !_pointerFieldIsNull(0);
-        }
-        public org.capnproto.Text.Reader getScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public final int getStatusesCount() {
-          return _getIntField(1);
-        }
-
-        public final boolean getProfileBackgroundTile() {
-          return _getBooleanField(2);
-        }
-
-        public final int getUtcOffset() {
-          return _getIntField(4);
-        }
-
-        public boolean hasFollowing() {
-          return !_pointerFieldIsNull(1);
-        }
-        public org.capnproto.Text.Reader getFollowing() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-
-        public boolean hasName() {
-          return !_pointerFieldIsNull(2);
-        }
-        public org.capnproto.Text.Reader getName() {
-          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
-        }
-
-        public boolean hasProfileSidebarFillColor() {
-          return !_pointerFieldIsNull(3);
-        }
-        public org.capnproto.Text.Reader getProfileSidebarFillColor() {
-          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
-        }
-
-        public final boolean getIsTranslator() {
-          return _getBooleanField(3);
-        }
-
-        public boolean hasProfileImageUrl() {
-          return !_pointerFieldIsNull(4);
-        }
-        public org.capnproto.Text.Reader getProfileImageUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-        }
-
-        public boolean hasProfileImageUrlHttps() {
+        public boolean hasFollowRequestSent() {
           return !_pointerFieldIsNull(5);
         }
-        public org.capnproto.Text.Reader getProfileImageUrlHttps() {
+        public org.capnproto.Text.Reader getFollowRequestSent() {
           return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
 
-        public boolean hasProfileTextColor() {
+        public final int getUtcOffset() {
+          return _getIntField(2);
+        }
+
+        public final long getId() {
+          return _getLongField(2);
+        }
+
+        public final int getListedCount() {
+          return _getIntField(3);
+        }
+
+        public final boolean getDefaultProfile() {
+          return _getBooleanField(2);
+        }
+
+        public boolean hasIdStr() {
           return !_pointerFieldIsNull(6);
         }
-        public org.capnproto.Text.Reader getProfileTextColor() {
+        public org.capnproto.Text.Reader getIdStr() {
           return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
         }
 
-        public boolean hasProfileBackgroundImageUrl() {
+        public final boolean getProtec() {
+          return _getBooleanField(3);
+        }
+
+        public boolean hasTimeZone() {
           return !_pointerFieldIsNull(7);
         }
-        public org.capnproto.Text.Reader getProfileBackgroundImageUrl() {
+        public org.capnproto.Text.Reader getTimeZone() {
           return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
         }
 
-        public boolean hasProfileSidebarBorderColor() {
+        public boolean hasProfileSidebarFillColor() {
           return !_pointerFieldIsNull(8);
         }
-        public org.capnproto.Text.Reader getProfileSidebarBorderColor() {
+        public org.capnproto.Text.Reader getProfileSidebarFillColor() {
           return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
 
-        public boolean hasFollowRequestSent() {
-          return !_pointerFieldIsNull(9);
-        }
-        public org.capnproto.Text.Reader getFollowRequestSent() {
-          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+        public final int getStatusesCount() {
+          return _getIntField(6);
         }
 
-        public final boolean getContributorsEnabled() {
-          return _getBooleanField(4);
+        public boolean hasProfileLinkColor() {
+          return !_pointerFieldIsNull(9);
+        }
+        public org.capnproto.Text.Reader getProfileLinkColor() {
+          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
         }
 
         public boolean hasLang() {
@@ -1191,113 +1195,109 @@ public final class TwitterCapnp {
           return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
         }
 
-        public final int getFavouritesCount() {
-          return _getIntField(5);
-        }
-
-        public boolean hasProfileBackgroundColor() {
+        public boolean hasProfileImageUrl() {
           return !_pointerFieldIsNull(11);
         }
-        public org.capnproto.Text.Reader getProfileBackgroundColor() {
+        public org.capnproto.Text.Reader getProfileImageUrl() {
           return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
 
-        public boolean hasProfileBackgroundImageUrlHttps() {
+        public boolean hasScreenName() {
           return !_pointerFieldIsNull(12);
         }
-        public org.capnproto.Text.Reader getProfileBackgroundImageUrlHttps() {
+        public org.capnproto.Text.Reader getScreenName() {
           return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
         }
 
-        public boolean hasProfileLinkColor() {
+        public boolean hasProfileBackgroundColor() {
           return !_pointerFieldIsNull(13);
         }
-        public org.capnproto.Text.Reader getProfileLinkColor() {
+        public org.capnproto.Text.Reader getProfileBackgroundColor() {
           return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
         }
 
-        public final boolean getGeoEnabled() {
+        public final boolean getContributorsEnabled() {
+          return _getBooleanField(4);
+        }
+
+        public final boolean getProfileUseBackgroundImage() {
           return _getBooleanField(5);
-        }
-
-        public boolean hasIdStr() {
-          return !_pointerFieldIsNull(14);
-        }
-        public org.capnproto.Text.Reader getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-        }
-
-        public boolean hasUrl() {
-          return !_pointerFieldIsNull(15);
-        }
-        public org.capnproto.Text.Reader getUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
-        }
-
-        public final boolean getProtec() {
-          return _getBooleanField(6);
-        }
-
-        public final int getFriendsCount() {
-          return _getIntField(6);
-        }
-
-        public boolean hasLocation() {
-          return !_pointerFieldIsNull(16);
-        }
-        public org.capnproto.Text.Reader getLocation() {
-          return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
-        }
-
-        public final boolean getDefaultProfile() {
-          return _getBooleanField(7);
         }
 
         public final int getFollowersCount() {
           return _getIntField(7);
         }
 
-        public boolean hasDescription() {
+        public boolean hasLocation() {
+          return !_pointerFieldIsNull(14);
+        }
+        public org.capnproto.Text.Reader getLocation() {
+          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+        }
+
+        public boolean hasProfileBannerUrl() {
+          return !_pointerFieldIsNull(15);
+        }
+        public org.capnproto.Text.Reader getProfileBannerUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        }
+
+        public final int getFriendsCount() {
+          return _getIntField(8);
+        }
+
+        public boolean hasProfileSidebarBorderColor() {
+          return !_pointerFieldIsNull(16);
+        }
+        public org.capnproto.Text.Reader getProfileSidebarBorderColor() {
+          return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
+        }
+
+        public final boolean getProfileBackgroundTile() {
+          return _getBooleanField(6);
+        }
+
+        public boolean hasName() {
           return !_pointerFieldIsNull(17);
         }
-        public org.capnproto.Text.Reader getDescription() {
+        public org.capnproto.Text.Reader getName() {
           return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+        }
+
+        public boolean hasUrl() {
+          return !_pointerFieldIsNull(18);
+        }
+        public org.capnproto.Text.Reader getUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
+        }
+
+        public final boolean getIsTranslator() {
+          return _getBooleanField(7);
+        }
+
+        public boolean hasNotifications() {
+          return !_pointerFieldIsNull(19);
+        }
+        public org.capnproto.Text.Reader getNotifications() {
+          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+        }
+
+        public boolean hasProfileImageUrlHttps() {
+          return !_pointerFieldIsNull(20);
+        }
+        public org.capnproto.Text.Reader getProfileImageUrlHttps() {
+          return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
+        }
+
+        public boolean hasFollowing() {
+          return !_pointerFieldIsNull(21);
+        }
+        public org.capnproto.Text.Reader getFollowing() {
+          return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
         }
 
         public final boolean getDefaultProfileImage() {
           return _getBooleanField(8);
-        }
-
-        public boolean hasCreatedAt() {
-          return !_pointerFieldIsNull(18);
-        }
-        public org.capnproto.Text.Reader getCreatedAt() {
-          return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
-        }
-
-        public boolean hasTimeZone() {
-          return !_pointerFieldIsNull(19);
-        }
-        public org.capnproto.Text.Reader getTimeZone() {
-          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
-        }
-
-        public boolean hasNotifications() {
-          return !_pointerFieldIsNull(20);
-        }
-        public org.capnproto.Text.Reader getNotifications() {
-          return _getPointerField(org.capnproto.Text.factory, 20, null, 0, 0);
-        }
-
-        public final int getListedCount() {
-          return _getIntField(8);
-        }
-
-        public boolean hasProfileBannerUrl() {
-          return !_pointerFieldIsNull(21);
-        }
-        public org.capnproto.Text.Reader getProfileBannerUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 21, null, 0, 0);
         }
 
       }
@@ -1348,32 +1348,32 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initUrl(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final boolean hasDisplayUrl() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.Text.Builder getDisplayUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-        public final void setDisplayUrl(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
-        }
-        public final void setDisplayUrl(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initDisplayUrl(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
-        public final boolean hasIndices() {
-          return !_pointerFieldIsNull(2);
-        }
         public final org.capnproto.PrimitiveList.Int.Builder getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 2, null, 0);
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
         }
         public final void setIndices(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 2, value);
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 1, value);
         }
         public final org.capnproto.PrimitiveList.Int.Builder initIndices(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 2, size);
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 1, size);
+        }
+        public final boolean hasDisplayUrl() {
+          return !_pointerFieldIsNull(2);
+        }
+        public final org.capnproto.Text.Builder getDisplayUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
+        }
+        public final void setDisplayUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 2, value);
+        }
+        public final void setDisplayUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initDisplayUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
         public final boolean hasExpandedUrl() {
           return !_pointerFieldIsNull(3);
@@ -1404,18 +1404,18 @@ public final class TwitterCapnp {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasDisplayUrl() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getDisplayUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
         }
 
-        public final boolean hasIndices() {
+        public boolean hasDisplayUrl() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 2, null, 0);
+        public org.capnproto.Text.Reader getDisplayUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
         public boolean hasExpandedUrl() {
@@ -1458,53 +1458,53 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasSymbols() {
+        public final boolean hasHashtags() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> getSymbols() {
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> getHashtags() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 0, null, 0);
         }
-        public final void setSymbols(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> value) {
+        public final void setHashtags(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> value) {
           _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 0, value);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> initSymbols(int size) {
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> initHashtags(int size) {
           return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 0, size);
         }
-        public final boolean hasHashtags() {
+        public final boolean hasUserMentions() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> getHashtags() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 1, null, 0);
-        }
-        public final void setHashtags(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 1, value);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> initHashtags(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 1, size);
-        }
-        public final boolean hasMedia() {
-          return !_pointerFieldIsNull(2);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Builder> getMedia() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 2, null, 0);
-        }
-        public final void setMedia(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 2, value);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Builder> initMedia(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 2, size);
-        }
-        public final boolean hasUserMentions() {
-          return !_pointerFieldIsNull(3);
-        }
         public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.Builder> getUserMentions() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 3, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 1, null, 0);
         }
         public final void setUserMentions(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 3, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 1, value);
         }
         public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.Builder> initUserMentions(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 3, size);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 1, size);
+        }
+        public final boolean hasSymbols() {
+          return !_pointerFieldIsNull(2);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> getSymbols() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 2, null, 0);
+        }
+        public final void setSymbols(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 2, value);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Builder> initSymbols(int size) {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 2, size);
+        }
+        public final boolean hasMedia() {
+          return !_pointerFieldIsNull(3);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Builder> getMedia() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 3, null, 0);
+        }
+        public final void setMedia(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Reader> value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 3, value);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Builder> initMedia(int size) {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 3, size);
         }
         public final boolean hasUrls() {
           return !_pointerFieldIsNull(4);
@@ -1525,32 +1525,32 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final boolean hasSymbols() {
+        public final boolean hasHashtags() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> getSymbols() {
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> getHashtags() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 0, null, 0);
         }
 
-        public final boolean hasHashtags() {
+        public final boolean hasUserMentions() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> getHashtags() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 1, null, 0);
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.Reader> getUserMentions() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 1, null, 0);
+        }
+
+        public final boolean hasSymbols() {
+          return !_pointerFieldIsNull(2);
+        }
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.Reader> getSymbols() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Hashtags.listFactory, 2, null, 0);
         }
 
         public final boolean hasMedia() {
-          return !_pointerFieldIsNull(2);
-        }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Reader> getMedia() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 2, null, 0);
-        }
-
-        public final boolean hasUserMentions() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.Reader> getUserMentions() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.UserMentions.listFactory, 3, null, 0);
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.Reader> getMedia() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Media.listFactory, 3, null, 0);
         }
 
         public final boolean hasUrls() {
@@ -1593,288 +1593,243 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final long getId() {
-          return _getLongField(0);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getCoordinates() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 0, null, 0);
         }
-        public final void setId(long value) {
-          _setLongField(0, value);
+        public final void setCoordinates(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0, value);
         }
-
-        public final boolean getIsQuoteStatus() {
-          return _getBooleanField(64);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initCoordinates() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0, 0);
         }
-        public final void setIsQuoteStatus(boolean value) {
-          _setBooleanField(64, value);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 1, null, 0);
         }
-
-        public final boolean hasQuotedStatusIdStr() {
-          return !_pointerFieldIsNull(0);
+        public final void setExtendedEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,1, value);
         }
-        public final org.capnproto.Text.Builder getQuotedStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder initExtendedEntities() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,1, 0);
         }
-        public final void setQuotedStatusIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
+        public final boolean hasInReplyToScreenName() {
+          return !_pointerFieldIsNull(2);
         }
-        public final void setQuotedStatusIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
+        public final org.capnproto.Text.Builder getInReplyToScreenName() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final org.capnproto.Text.Builder initQuotedStatusIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        public final void setInReplyToScreenName(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 2, value);
         }
-        public final long getInReplyToUserId() {
-          return _getLongField(2);
+        public final void setInReplyToScreenName(String value) {
+          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
         }
-        public final void setInReplyToUserId(long value) {
-          _setLongField(2, value);
+        public final org.capnproto.Text.Builder initInReplyToScreenName(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
-
-        public final boolean hasSource() {
-          return !_pointerFieldIsNull(1);
-        }
-        public final org.capnproto.Text.Builder getSource() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-        public final void setSource(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
-        }
-        public final void setSource(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initSource(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder getExtendedTweet() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory, 2, null, 0);
-        }
-        public final void setExtendedTweet(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,2, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder initExtendedTweet() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,2, 0);
-        }
-        public final boolean hasFilterLevel() {
+        public final boolean hasContributors() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.Text.Builder getFilterLevel() {
+        public final org.capnproto.Text.Builder getContributors() {
           return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
-        public final void setFilterLevel(org.capnproto.Text.Reader value) {
+        public final void setContributors(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 3, value);
         }
-        public final void setFilterLevel(String value) {
+        public final void setContributors(String value) {
           _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFilterLevel(int size) {
+        public final org.capnproto.Text.Builder initContributors(int size) {
           return _initPointerField(org.capnproto.Text.factory, 3, size);
         }
-        public final boolean hasInReplyToUserIdStr() {
+        public final boolean hasCreatedAt() {
           return !_pointerFieldIsNull(4);
         }
-        public final org.capnproto.Text.Builder getInReplyToUserIdStr() {
+        public final org.capnproto.Text.Builder getCreatedAt() {
           return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
-        public final void setInReplyToUserIdStr(org.capnproto.Text.Reader value) {
+        public final void setCreatedAt(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 4, value);
         }
-        public final void setInReplyToUserIdStr(String value) {
+        public final void setCreatedAt(String value) {
           _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initInReplyToUserIdStr(int size) {
+        public final org.capnproto.Text.Builder initCreatedAt(int size) {
           return _initPointerField(org.capnproto.Text.factory, 4, size);
         }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder getPlace() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory, 5, null, 0);
+        }
+        public final void setPlace(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,5, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder initPlace() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,5, 0);
+        }
         public final boolean getTruncated() {
-          return _getBooleanField(65);
+          return _getBooleanField(0);
         }
         public final void setTruncated(boolean value) {
-          _setBooleanField(65, value);
+          _setBooleanField(0, value);
         }
 
-        public final boolean getPossiblySensitive() {
-          return _getBooleanField(66);
+        public final long getInReplyToUserId() {
+          return _getLongField(1);
         }
-        public final void setPossiblySensitive(boolean value) {
-          _setBooleanField(66, value);
+        public final void setInReplyToUserId(long value) {
+          _setLongField(1, value);
         }
 
         public final int getFavoriteCount() {
-          return _getIntField(3);
+          return _getIntField(1);
         }
         public final void setFavoriteCount(int value) {
-          _setIntField(3, value);
+          _setIntField(1, value);
         }
 
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 5, null, 0);
-        }
-        public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,5, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,5, 0);
-        }
-        public final boolean hasLang() {
-          return !_pointerFieldIsNull(6);
-        }
-        public final org.capnproto.Text.Builder getLang() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-        public final void setLang(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
-        }
-        public final void setLang(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initLang(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
-        }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Builder getScopes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory, 7, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory, 6, null, 0);
         }
         public final void setScopes(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,7, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,6, value);
         }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Builder initScopes() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,7, 0);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,6, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 8, null, 0);
+        public final long getId() {
+          return _getLongField(2);
         }
-        public final void setExtendedEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,8, value);
+        public final void setId(long value) {
+          _setLongField(2, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder initExtendedEntities() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,8, 0);
+
+        public final int getRetweetCount() {
+          return _getIntField(6);
         }
-        public final boolean getRetweeted() {
-          return _getBooleanField(67);
+        public final void setRetweetCount(int value) {
+          _setIntField(6, value);
         }
-        public final void setRetweeted(boolean value) {
-          _setBooleanField(67, value);
+
+        public final boolean getPossiblySensitive() {
+          return _getBooleanField(1);
+        }
+        public final void setPossiblySensitive(boolean value) {
+          _setBooleanField(1, value);
+        }
+
+        public final boolean hasQuotedStatusIdStr() {
+          return !_pointerFieldIsNull(7);
+        }
+        public final org.capnproto.Text.Builder getQuotedStatusIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+        }
+        public final void setQuotedStatusIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 7, value);
+        }
+        public final void setQuotedStatusIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initQuotedStatusIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 7, size);
+        }
+        public final boolean getFavorited() {
+          return _getBooleanField(2);
+        }
+        public final void setFavorited(boolean value) {
+          _setBooleanField(2, value);
         }
 
         public final boolean hasIdStr() {
-          return !_pointerFieldIsNull(9);
+          return !_pointerFieldIsNull(8);
         }
         public final org.capnproto.Text.Builder getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
         public final void setIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 9, value);
+          _setPointerField(org.capnproto.Text.factory, 8, value);
         }
         public final void setIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
+          _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
         }
         public final org.capnproto.Text.Builder initIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 9, size);
-        }
-        public final boolean getFavorited() {
-          return _getBooleanField(68);
-        }
-        public final void setFavorited(boolean value) {
-          _setBooleanField(68, value);
-        }
-
-        public final boolean hasContributors() {
-          return !_pointerFieldIsNull(10);
-        }
-        public final org.capnproto.Text.Builder getContributors() {
-          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-        }
-        public final void setContributors(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 10, value);
-        }
-        public final void setContributors(String value) {
-          _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initContributors(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 10, size);
-        }
-        public final long getQuotedStatusId() {
-          return _getLongField(3);
-        }
-        public final void setQuotedStatusId(long value) {
-          _setLongField(3, value);
-        }
-
-        public final boolean hasInReplyToScreenName() {
-          return !_pointerFieldIsNull(11);
-        }
-        public final org.capnproto.Text.Builder getInReplyToScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
-        }
-        public final void setInReplyToScreenName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 11, value);
-        }
-        public final void setInReplyToScreenName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initInReplyToScreenName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 11, size);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder getPlace() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory, 12, null, 0);
-        }
-        public final void setPlace(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,12, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder initPlace() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,12, 0);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getCoordinates() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 13, null, 0);
-        }
-        public final void setCoordinates(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,13, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initCoordinates() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,13, 0);
+          return _initPointerField(org.capnproto.Text.factory, 8, size);
         }
         public final boolean hasInReplyToStatusIdStr() {
-          return !_pointerFieldIsNull(14);
+          return !_pointerFieldIsNull(9);
         }
         public final org.capnproto.Text.Builder getInReplyToStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
         }
         public final void setInReplyToStatusIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 14, value);
+          _setPointerField(org.capnproto.Text.factory, 9, value);
         }
         public final void setInReplyToStatusIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
+          _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
         }
         public final org.capnproto.Text.Builder initInReplyToStatusIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 14, size);
+          return _initPointerField(org.capnproto.Text.factory, 9, size);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getGeo() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 15, null, 0);
+        public final boolean hasLang() {
+          return !_pointerFieldIsNull(10);
         }
-        public final void setGeo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,15, value);
+        public final org.capnproto.Text.Builder getLang() {
+          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initGeo() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,15, 0);
+        public final void setLang(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 10, value);
         }
-        public final boolean hasDisplayTextRange() {
-          return !_pointerFieldIsNull(16);
+        public final void setLang(String value) {
+          _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 16, null, 0);
+        public final org.capnproto.Text.Builder initLang(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 10, size);
         }
-        public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 16, value);
+        public final boolean hasText() {
+          return !_pointerFieldIsNull(11);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 16, size);
+        public final org.capnproto.Text.Builder getText() {
+          return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder getQuotedStatus() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory, 17, null, 0);
+        public final void setText(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 11, value);
         }
-        public final void setQuotedStatus(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,17, value);
+        public final void setText(String value) {
+          _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder initQuotedStatus() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,17, 0);
+        public final org.capnproto.Text.Builder initText(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 11, size);
         }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder getUser() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory, 12, null, 0);
+        }
+        public final void setUser(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,12, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder initUser() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,12, 0);
+        }
+        public final boolean getRetweeted() {
+          return _getBooleanField(3);
+        }
+        public final void setRetweeted(boolean value) {
+          _setBooleanField(3, value);
+        }
+
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder getExtendedTweet() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory, 13, null, 0);
+        }
+        public final void setExtendedTweet(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,13, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder initExtendedTweet() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,13, 0);
+        }
+        public final boolean getIsQuoteStatus() {
+          return _getBooleanField(4);
+        }
+        public final void setIsQuoteStatus(boolean value) {
+          _setBooleanField(4, value);
+        }
+
         public final long getInReplyToStatusId() {
           return _getLongField(4);
         }
@@ -1882,51 +1837,96 @@ public final class TwitterCapnp {
           _setLongField(4, value);
         }
 
-        public final int getRetweetCount() {
-          return _getIntField(10);
+        public final boolean hasSource() {
+          return !_pointerFieldIsNull(14);
         }
-        public final void setRetweetCount(int value) {
-          _setIntField(10, value);
+        public final org.capnproto.Text.Builder getSource() {
+          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+        }
+        public final void setSource(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 14, value);
+        }
+        public final void setSource(String value) {
+          _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initSource(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 14, size);
+        }
+        public final boolean hasFilterLevel() {
+          return !_pointerFieldIsNull(15);
+        }
+        public final org.capnproto.Text.Builder getFilterLevel() {
+          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        }
+        public final void setFilterLevel(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 15, value);
+        }
+        public final void setFilterLevel(String value) {
+          _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initFilterLevel(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 15, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder getQuotedStatus() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory, 16, null, 0);
+        }
+        public final void setQuotedStatus(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,16, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Builder initQuotedStatus() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,16, 0);
+        }
+        public final boolean hasDisplayTextRange() {
+          return !_pointerFieldIsNull(17);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 17, null, 0);
+        }
+        public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 17, value);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 17, size);
+        }
+        public final long getQuotedStatusId() {
+          return _getLongField(5);
+        }
+        public final void setQuotedStatusId(long value) {
+          _setLongField(5, value);
         }
 
-        public final boolean hasCreatedAt() {
+        public final boolean hasInReplyToUserIdStr() {
           return !_pointerFieldIsNull(18);
         }
-        public final org.capnproto.Text.Builder getCreatedAt() {
+        public final org.capnproto.Text.Builder getInReplyToUserIdStr() {
           return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
         }
-        public final void setCreatedAt(org.capnproto.Text.Reader value) {
+        public final void setInReplyToUserIdStr(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 18, value);
         }
-        public final void setCreatedAt(String value) {
+        public final void setInReplyToUserIdStr(String value) {
           _setPointerField(org.capnproto.Text.factory, 18, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCreatedAt(int size) {
+        public final org.capnproto.Text.Builder initInReplyToUserIdStr(int size) {
           return _initPointerField(org.capnproto.Text.factory, 18, size);
         }
-        public final boolean hasText() {
-          return !_pointerFieldIsNull(19);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getGeo() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 19, null, 0);
         }
-        public final org.capnproto.Text.Builder getText() {
-          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+        public final void setGeo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,19, value);
         }
-        public final void setText(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 19, value);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initGeo() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,19, 0);
         }
-        public final void setText(String value) {
-          _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 20, null, 0);
         }
-        public final org.capnproto.Text.Builder initText(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 19, size);
+        public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,20, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder getUser() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory, 20, null, 0);
-        }
-        public final void setUser(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,20, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder initUser() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,20, 0);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,20, 0);
         }
       }
 
@@ -1935,195 +1935,195 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final long getId() {
-          return _getLongField(0);
-        }
-
-        public final boolean getIsQuoteStatus() {
-          return _getBooleanField(64);
-        }
-
-        public boolean hasQuotedStatusIdStr() {
+        public boolean hasCoordinates() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getQuotedStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public final long getInReplyToUserId() {
-          return _getLongField(2);
-        }
-
-        public boolean hasSource() {
-          return !_pointerFieldIsNull(1);
-        }
-        public org.capnproto.Text.Reader getSource() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-
-        public boolean hasExtendedTweet() {
-          return !_pointerFieldIsNull(2);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader getExtendedTweet() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,2,null, 0);
-        }
-
-        public boolean hasFilterLevel() {
-          return !_pointerFieldIsNull(3);
-        }
-        public org.capnproto.Text.Reader getFilterLevel() {
-          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
-        }
-
-        public boolean hasInReplyToUserIdStr() {
-          return !_pointerFieldIsNull(4);
-        }
-        public org.capnproto.Text.Reader getInReplyToUserIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-        }
-
-        public final boolean getTruncated() {
-          return _getBooleanField(65);
-        }
-
-        public final boolean getPossiblySensitive() {
-          return _getBooleanField(66);
-        }
-
-        public final int getFavoriteCount() {
-          return _getIntField(3);
-        }
-
-        public boolean hasEntities() {
-          return !_pointerFieldIsNull(5);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,5,null, 0);
-        }
-
-        public boolean hasLang() {
-          return !_pointerFieldIsNull(6);
-        }
-        public org.capnproto.Text.Reader getLang() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-
-        public boolean hasScopes() {
-          return !_pointerFieldIsNull(7);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Reader getScopes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,7,null, 0);
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getCoordinates() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0,null, 0);
         }
 
         public boolean hasExtendedEntities() {
-          return !_pointerFieldIsNull(8);
+          return !_pointerFieldIsNull(1);
         }
         public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader getExtendedEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,8,null, 0);
-        }
-
-        public final boolean getRetweeted() {
-          return _getBooleanField(67);
-        }
-
-        public boolean hasIdStr() {
-          return !_pointerFieldIsNull(9);
-        }
-        public org.capnproto.Text.Reader getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-        }
-
-        public final boolean getFavorited() {
-          return _getBooleanField(68);
-        }
-
-        public boolean hasContributors() {
-          return !_pointerFieldIsNull(10);
-        }
-        public org.capnproto.Text.Reader getContributors() {
-          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-        }
-
-        public final long getQuotedStatusId() {
-          return _getLongField(3);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,1,null, 0);
         }
 
         public boolean hasInReplyToScreenName() {
-          return !_pointerFieldIsNull(11);
+          return !_pointerFieldIsNull(2);
         }
         public org.capnproto.Text.Reader getInReplyToScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
+        }
+
+        public boolean hasContributors() {
+          return !_pointerFieldIsNull(3);
+        }
+        public org.capnproto.Text.Reader getContributors() {
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+        }
+
+        public boolean hasCreatedAt() {
+          return !_pointerFieldIsNull(4);
+        }
+        public org.capnproto.Text.Reader getCreatedAt() {
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
 
         public boolean hasPlace() {
-          return !_pointerFieldIsNull(12);
+          return !_pointerFieldIsNull(5);
         }
         public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader getPlace() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,12,null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,5,null, 0);
         }
 
-        public boolean hasCoordinates() {
-          return !_pointerFieldIsNull(13);
+        public final boolean getTruncated() {
+          return _getBooleanField(0);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getCoordinates() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,13,null, 0);
+
+        public final long getInReplyToUserId() {
+          return _getLongField(1);
+        }
+
+        public final int getFavoriteCount() {
+          return _getIntField(1);
+        }
+
+        public boolean hasScopes() {
+          return !_pointerFieldIsNull(6);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Reader getScopes() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,6,null, 0);
+        }
+
+        public final long getId() {
+          return _getLongField(2);
+        }
+
+        public final int getRetweetCount() {
+          return _getIntField(6);
+        }
+
+        public final boolean getPossiblySensitive() {
+          return _getBooleanField(1);
+        }
+
+        public boolean hasQuotedStatusIdStr() {
+          return !_pointerFieldIsNull(7);
+        }
+        public org.capnproto.Text.Reader getQuotedStatusIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+        }
+
+        public final boolean getFavorited() {
+          return _getBooleanField(2);
+        }
+
+        public boolean hasIdStr() {
+          return !_pointerFieldIsNull(8);
+        }
+        public org.capnproto.Text.Reader getIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
 
         public boolean hasInReplyToStatusIdStr() {
-          return !_pointerFieldIsNull(14);
+          return !_pointerFieldIsNull(9);
         }
         public org.capnproto.Text.Reader getInReplyToStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
         }
 
-        public boolean hasGeo() {
-          return !_pointerFieldIsNull(15);
+        public boolean hasLang() {
+          return !_pointerFieldIsNull(10);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getGeo() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,15,null, 0);
-        }
-
-        public final boolean hasDisplayTextRange() {
-          return !_pointerFieldIsNull(16);
-        }
-        public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 16, null, 0);
+        public org.capnproto.Text.Reader getLang() {
+          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
         }
 
-        public boolean hasQuotedStatus() {
-          return !_pointerFieldIsNull(17);
+        public boolean hasText() {
+          return !_pointerFieldIsNull(11);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader getQuotedStatus() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,17,null, 0);
+        public org.capnproto.Text.Reader getText() {
+          return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
+        }
+
+        public boolean hasUser() {
+          return !_pointerFieldIsNull(12);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader getUser() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,12,null, 0);
+        }
+
+        public final boolean getRetweeted() {
+          return _getBooleanField(3);
+        }
+
+        public boolean hasExtendedTweet() {
+          return !_pointerFieldIsNull(13);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader getExtendedTweet() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,13,null, 0);
+        }
+
+        public final boolean getIsQuoteStatus() {
+          return _getBooleanField(4);
         }
 
         public final long getInReplyToStatusId() {
           return _getLongField(4);
         }
 
-        public final int getRetweetCount() {
-          return _getIntField(10);
+        public boolean hasSource() {
+          return !_pointerFieldIsNull(14);
+        }
+        public org.capnproto.Text.Reader getSource() {
+          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
         }
 
-        public boolean hasCreatedAt() {
+        public boolean hasFilterLevel() {
+          return !_pointerFieldIsNull(15);
+        }
+        public org.capnproto.Text.Reader getFilterLevel() {
+          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        }
+
+        public boolean hasQuotedStatus() {
+          return !_pointerFieldIsNull(16);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.Reader getQuotedStatus() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.QuotedStatus.factory,16,null, 0);
+        }
+
+        public final boolean hasDisplayTextRange() {
+          return !_pointerFieldIsNull(17);
+        }
+        public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 17, null, 0);
+        }
+
+        public final long getQuotedStatusId() {
+          return _getLongField(5);
+        }
+
+        public boolean hasInReplyToUserIdStr() {
           return !_pointerFieldIsNull(18);
         }
-        public org.capnproto.Text.Reader getCreatedAt() {
+        public org.capnproto.Text.Reader getInReplyToUserIdStr() {
           return _getPointerField(org.capnproto.Text.factory, 18, null, 0, 0);
         }
 
-        public boolean hasText() {
+        public boolean hasGeo() {
           return !_pointerFieldIsNull(19);
         }
-        public org.capnproto.Text.Reader getText() {
-          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getGeo() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,19,null, 0);
         }
 
-        public boolean hasUser() {
+        public boolean hasEntities() {
           return !_pointerFieldIsNull(20);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader getUser() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,20,null, 0);
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,20,null, 0);
         }
 
       }
@@ -2159,6 +2159,33 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
+        public final boolean hasName() {
+          return !_pointerFieldIsNull(0);
+        }
+        public final org.capnproto.Text.Builder getName() {
+          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+        public final void setName(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 0, value);
+        }
+        public final void setName(String value) {
+          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initName(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 0, size);
+        }
+        public final boolean hasIndices() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder getIndices() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
+        }
+        public final void setIndices(org.capnproto.PrimitiveList.Int.Reader value) {
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 1, value);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder initIndices(int size) {
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 1, size);
+        }
         public final long getId() {
           return _getLongField(0);
         }
@@ -2166,36 +2193,6 @@ public final class TwitterCapnp {
           _setLongField(0, value);
         }
 
-        public final boolean hasScreenName() {
-          return !_pointerFieldIsNull(0);
-        }
-        public final org.capnproto.Text.Builder getScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setScreenName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setScreenName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initScreenName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean hasName() {
-          return !_pointerFieldIsNull(1);
-        }
-        public final org.capnproto.Text.Builder getName() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-        public final void setName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
-        }
-        public final void setName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
         public final boolean hasIdStr() {
           return !_pointerFieldIsNull(2);
         }
@@ -2211,17 +2208,20 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initIdStr(int size) {
           return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
-        public final boolean hasIndices() {
+        public final boolean hasScreenName() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 3, null, 0);
+        public final org.capnproto.Text.Builder getScreenName() {
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
-        public final void setIndices(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 3, value);
+        public final void setScreenName(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 3, value);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder initIndices(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 3, size);
+        public final void setScreenName(String value) {
+          _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initScreenName(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 3, size);
         }
       }
 
@@ -2230,22 +2230,22 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final long getId() {
-          return _getLongField(0);
-        }
-
-        public boolean hasScreenName() {
+        public boolean hasName() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getScreenName() {
+        public org.capnproto.Text.Reader getName() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasName() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getName() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
+        }
+
+        public final long getId() {
+          return _getLongField(0);
         }
 
         public boolean hasIdStr() {
@@ -2255,11 +2255,11 @@ public final class TwitterCapnp {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
-        public final boolean hasIndices() {
+        public boolean hasScreenName() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 3, null, 0);
+        public org.capnproto.Text.Reader getScreenName() {
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
 
       }
@@ -2295,32 +2295,32 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasText() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getText() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setText(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setText(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initText(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean hasIndices() {
-          return !_pointerFieldIsNull(1);
-        }
         public final org.capnproto.PrimitiveList.Int.Builder getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 0, null, 0);
         }
         public final void setIndices(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 1, value);
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 0, value);
         }
         public final org.capnproto.PrimitiveList.Int.Builder initIndices(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 1, size);
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 0, size);
+        }
+        public final boolean hasText() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getText() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setText(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setText(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initText(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
       }
 
@@ -2329,18 +2329,18 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasText() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getText() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 0, null, 0);
         }
 
-        public final boolean hasIndices() {
+        public boolean hasText() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
+        public org.capnproto.Text.Reader getText() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
       }
@@ -2376,328 +2376,328 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final long getId() {
-          return _getLongField(0);
-        }
-        public final void setId(long value) {
-          _setLongField(0, value);
-        }
-
-        public final boolean getIsQuoteStatus() {
-          return _getBooleanField(64);
-        }
-        public final void setIsQuoteStatus(boolean value) {
-          _setBooleanField(64, value);
-        }
-
-        public final boolean hasQuotedStatusIdStr() {
-          return !_pointerFieldIsNull(0);
-        }
-        public final org.capnproto.Text.Builder getQuotedStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setQuotedStatusIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setQuotedStatusIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initQuotedStatusIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean getRetweeted() {
-          return _getBooleanField(65);
-        }
-        public final void setRetweeted(boolean value) {
-          _setBooleanField(65, value);
-        }
-
-        public final boolean hasIdStr() {
-          return !_pointerFieldIsNull(1);
-        }
-        public final org.capnproto.Text.Builder getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-        public final void setIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
-        }
-        public final void setIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
-        public final long getInReplyToUserId() {
-          return _getLongField(2);
-        }
-        public final void setInReplyToUserId(long value) {
-          _setLongField(2, value);
-        }
-
-        public final boolean getFavorited() {
-          return _getBooleanField(66);
-        }
-        public final void setFavorited(boolean value) {
-          _setBooleanField(66, value);
-        }
-
-        public final boolean hasSource() {
-          return !_pointerFieldIsNull(2);
-        }
-        public final org.capnproto.Text.Builder getSource() {
-          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
-        }
-        public final void setSource(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 2, value);
-        }
-        public final void setSource(String value) {
-          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initSource(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 2, size);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder getExtendedTweet() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory, 3, null, 0);
-        }
-        public final void setExtendedTweet(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,3, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder initExtendedTweet() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,3, 0);
-        }
-        public final boolean hasContributors() {
-          return !_pointerFieldIsNull(4);
-        }
-        public final org.capnproto.PrimitiveList.Long.Builder getContributors() {
-          return _getPointerField(org.capnproto.PrimitiveList.Long.factory, 4, null, 0);
-        }
-        public final void setContributors(org.capnproto.PrimitiveList.Long.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Long.factory, 4, value);
-        }
-        public final org.capnproto.PrimitiveList.Long.Builder initContributors(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Long.factory, 4, size);
-        }
-        public final boolean hasFilterLevel() {
-          return !_pointerFieldIsNull(5);
-        }
-        public final org.capnproto.Text.Builder getFilterLevel() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-        }
-        public final void setFilterLevel(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 5, value);
-        }
-        public final void setFilterLevel(String value) {
-          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initFilterLevel(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 5, size);
-        }
-        public final long getQuotedStatusId() {
-          return _getLongField(3);
-        }
-        public final void setQuotedStatusId(long value) {
-          _setLongField(3, value);
-        }
-
-        public final boolean hasInReplyToScreenName() {
-          return !_pointerFieldIsNull(6);
-        }
-        public final org.capnproto.Text.Builder getInReplyToScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-        public final void setInReplyToScreenName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
-        }
-        public final void setInReplyToScreenName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initInReplyToScreenName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder getPlace() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory, 7, null, 0);
-        }
-        public final void setPlace(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,7, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder initPlace() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,7, 0);
-        }
-        public final boolean hasInReplyToUserIdStr() {
-          return !_pointerFieldIsNull(8);
-        }
-        public final org.capnproto.Text.Builder getInReplyToUserIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
-        }
-        public final void setInReplyToUserIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 8, value);
-        }
-        public final void setInReplyToUserIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initInReplyToUserIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 8, size);
-        }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getCoordinates() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 9, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 0, null, 0);
         }
         public final void setCoordinates(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,9, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0, value);
         }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initCoordinates() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,9, 0);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0, 0);
         }
         public final boolean hasInReplyToStatusIdStr() {
-          return !_pointerFieldIsNull(10);
+          return !_pointerFieldIsNull(1);
         }
         public final org.capnproto.Text.Builder getInReplyToStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
         public final void setInReplyToStatusIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 10, value);
+          _setPointerField(org.capnproto.Text.factory, 1, value);
         }
         public final void setInReplyToStatusIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
         }
         public final org.capnproto.Text.Builder initInReplyToStatusIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 10, size);
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getGeo() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 11, null, 0);
+        public final boolean hasLang() {
+          return !_pointerFieldIsNull(2);
         }
-        public final void setGeo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,11, value);
+        public final org.capnproto.Text.Builder getLang() {
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initGeo() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,11, 0);
+        public final void setLang(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 2, value);
+        }
+        public final void setLang(String value) {
+          _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initLang(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 2, size);
+        }
+        public final boolean hasText() {
+          return !_pointerFieldIsNull(3);
+        }
+        public final org.capnproto.Text.Builder getText() {
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+        }
+        public final void setText(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 3, value);
+        }
+        public final void setText(String value) {
+          _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initText(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 3, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 4, null, 0);
+        }
+        public final void setExtendedEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,4, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder initExtendedEntities() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,4, 0);
+        }
+        public final boolean hasInReplyToScreenName() {
+          return !_pointerFieldIsNull(5);
+        }
+        public final org.capnproto.Text.Builder getInReplyToScreenName() {
+          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+        }
+        public final void setInReplyToScreenName(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 5, value);
+        }
+        public final void setInReplyToScreenName(String value) {
+          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initInReplyToScreenName(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 5, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder getUser() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory, 6, null, 0);
+        }
+        public final void setUser(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,6, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder initUser() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,6, 0);
+        }
+        public final boolean hasContributors() {
+          return !_pointerFieldIsNull(7);
+        }
+        public final org.capnproto.PrimitiveList.Long.Builder getContributors() {
+          return _getPointerField(org.capnproto.PrimitiveList.Long.factory, 7, null, 0);
+        }
+        public final void setContributors(org.capnproto.PrimitiveList.Long.Reader value) {
+          _setPointerField(org.capnproto.PrimitiveList.Long.factory, 7, value);
+        }
+        public final org.capnproto.PrimitiveList.Long.Builder initContributors(int size) {
+          return _initPointerField(org.capnproto.PrimitiveList.Long.factory, 7, size);
+        }
+        public final boolean hasCreatedAt() {
+          return !_pointerFieldIsNull(8);
+        }
+        public final org.capnproto.Text.Builder getCreatedAt() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
+        }
+        public final void setCreatedAt(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 8, value);
+        }
+        public final void setCreatedAt(String value) {
+          _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initCreatedAt(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 8, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder getPlace() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory, 9, null, 0);
+        }
+        public final void setPlace(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,9, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Builder initPlace() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,9, 0);
         }
         public final boolean getTruncated() {
-          return _getBooleanField(67);
+          return _getBooleanField(0);
         }
         public final void setTruncated(boolean value) {
-          _setBooleanField(67, value);
+          _setBooleanField(0, value);
         }
 
-        public final boolean hasDisplayTextRange() {
-          return !_pointerFieldIsNull(12);
+        public final long getInReplyToUserId() {
+          return _getLongField(1);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 12, null, 0);
+        public final void setInReplyToUserId(long value) {
+          _setLongField(1, value);
         }
-        public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 12, value);
+
+        public final boolean getRetweeted() {
+          return _getBooleanField(1);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 12, size);
-        }
-        public final boolean getPossiblySensitive() {
-          return _getBooleanField(68);
-        }
-        public final void setPossiblySensitive(boolean value) {
-          _setBooleanField(68, value);
+        public final void setRetweeted(boolean value) {
+          _setBooleanField(1, value);
         }
 
         public final int getFavoriteCount() {
-          return _getIntField(3);
+          return _getIntField(1);
         }
         public final void setFavoriteCount(int value) {
-          _setIntField(3, value);
+          _setIntField(1, value);
         }
 
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 13, null, 0);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder getExtendedTweet() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory, 10, null, 0);
         }
-        public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,13, value);
+        public final void setExtendedTweet(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,10, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,13, 0);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Builder initExtendedTweet() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,10, 0);
         }
-        public final boolean hasLang() {
-          return !_pointerFieldIsNull(14);
+        public final boolean getIsQuoteStatus() {
+          return _getBooleanField(2);
         }
-        public final org.capnproto.Text.Builder getLang() {
-          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-        }
-        public final void setLang(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 14, value);
-        }
-        public final void setLang(String value) {
-          _setPointerField(org.capnproto.Text.factory, 14, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initLang(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 14, size);
-        }
-        public final long getInReplyToStatusId() {
-          return _getLongField(4);
-        }
-        public final void setInReplyToStatusId(long value) {
-          _setLongField(4, value);
-        }
-
-        public final int getRetweetCount() {
-          return _getIntField(10);
-        }
-        public final void setRetweetCount(int value) {
-          _setIntField(10, value);
+        public final void setIsQuoteStatus(boolean value) {
+          _setBooleanField(2, value);
         }
 
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Builder getScopes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory, 15, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory, 11, null, 0);
         }
         public final void setScopes(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,15, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,11, value);
         }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Builder initScopes() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,15, 0);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,11, 0);
         }
-        public final boolean hasCreatedAt() {
+        public final long getInReplyToStatusId() {
+          return _getLongField(2);
+        }
+        public final void setInReplyToStatusId(long value) {
+          _setLongField(2, value);
+        }
+
+        public final boolean hasSource() {
+          return !_pointerFieldIsNull(12);
+        }
+        public final org.capnproto.Text.Builder getSource() {
+          return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+        }
+        public final void setSource(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 12, value);
+        }
+        public final void setSource(String value) {
+          _setPointerField(org.capnproto.Text.factory, 12, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initSource(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 12, size);
+        }
+        public final long getId() {
+          return _getLongField(3);
+        }
+        public final void setId(long value) {
+          _setLongField(3, value);
+        }
+
+        public final boolean hasFilterLevel() {
+          return !_pointerFieldIsNull(13);
+        }
+        public final org.capnproto.Text.Builder getFilterLevel() {
+          return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+        }
+        public final void setFilterLevel(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 13, value);
+        }
+        public final void setFilterLevel(String value) {
+          _setPointerField(org.capnproto.Text.factory, 13, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initFilterLevel(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 13, size);
+        }
+        public final int getRetweetCount() {
+          return _getIntField(8);
+        }
+        public final void setRetweetCount(int value) {
+          _setIntField(8, value);
+        }
+
+        public final boolean hasDisplayTextRange() {
+          return !_pointerFieldIsNull(14);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 14, null, 0);
+        }
+        public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 14, value);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 14, size);
+        }
+        public final long getQuotedStatusId() {
+          return _getLongField(5);
+        }
+        public final void setQuotedStatusId(long value) {
+          _setLongField(5, value);
+        }
+
+        public final boolean getPossiblySensitive() {
+          return _getBooleanField(3);
+        }
+        public final void setPossiblySensitive(boolean value) {
+          _setBooleanField(3, value);
+        }
+
+        public final boolean hasQuotedStatusIdStr() {
+          return !_pointerFieldIsNull(15);
+        }
+        public final org.capnproto.Text.Builder getQuotedStatusIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        }
+        public final void setQuotedStatusIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 15, value);
+        }
+        public final void setQuotedStatusIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 15, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initQuotedStatusIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 15, size);
+        }
+        public final boolean hasInReplyToUserIdStr() {
           return !_pointerFieldIsNull(16);
         }
-        public final org.capnproto.Text.Builder getCreatedAt() {
+        public final org.capnproto.Text.Builder getInReplyToUserIdStr() {
           return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
         }
-        public final void setCreatedAt(org.capnproto.Text.Reader value) {
+        public final void setInReplyToUserIdStr(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 16, value);
         }
-        public final void setCreatedAt(String value) {
+        public final void setInReplyToUserIdStr(String value) {
           _setPointerField(org.capnproto.Text.factory, 16, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initCreatedAt(int size) {
+        public final org.capnproto.Text.Builder initInReplyToUserIdStr(int size) {
           return _initPointerField(org.capnproto.Text.factory, 16, size);
         }
-        public final boolean hasText() {
-          return !_pointerFieldIsNull(17);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder getGeo() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory, 17, null, 0);
         }
-        public final org.capnproto.Text.Builder getText() {
-          return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+        public final void setGeo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,17, value);
         }
-        public final void setText(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 17, value);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Builder initGeo() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,17, 0);
         }
-        public final void setText(String value) {
-          _setPointerField(org.capnproto.Text.factory, 17, new org.capnproto.Text.Reader(value));
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 18, null, 0);
         }
-        public final org.capnproto.Text.Builder initText(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 17, size);
+        public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,18, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 18, null, 0);
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,18, 0);
         }
-        public final void setExtendedEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,18, value);
+        public final boolean getFavorited() {
+          return _getBooleanField(4);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder initExtendedEntities() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,18, 0);
+        public final void setFavorited(boolean value) {
+          _setBooleanField(4, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder getUser() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory, 19, null, 0);
+
+        public final boolean hasIdStr() {
+          return !_pointerFieldIsNull(19);
         }
-        public final void setUser(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,19, value);
+        public final org.capnproto.Text.Builder getIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Builder initUser() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,19, 0);
+        public final void setIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 19, value);
+        }
+        public final void setIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 19, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 19, size);
         }
       }
 
@@ -2706,188 +2706,188 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final long getId() {
-          return _getLongField(0);
-        }
-
-        public final boolean getIsQuoteStatus() {
-          return _getBooleanField(64);
-        }
-
-        public boolean hasQuotedStatusIdStr() {
+        public boolean hasCoordinates() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getQuotedStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public final boolean getRetweeted() {
-          return _getBooleanField(65);
-        }
-
-        public boolean hasIdStr() {
-          return !_pointerFieldIsNull(1);
-        }
-        public org.capnproto.Text.Reader getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-
-        public final long getInReplyToUserId() {
-          return _getLongField(2);
-        }
-
-        public final boolean getFavorited() {
-          return _getBooleanField(66);
-        }
-
-        public boolean hasSource() {
-          return !_pointerFieldIsNull(2);
-        }
-        public org.capnproto.Text.Reader getSource() {
-          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
-        }
-
-        public boolean hasExtendedTweet() {
-          return !_pointerFieldIsNull(3);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader getExtendedTweet() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,3,null, 0);
-        }
-
-        public final boolean hasContributors() {
-          return !_pointerFieldIsNull(4);
-        }
-        public final org.capnproto.PrimitiveList.Long.Reader getContributors() {
-          return _getPointerField(org.capnproto.PrimitiveList.Long.factory, 4, null, 0);
-        }
-
-        public boolean hasFilterLevel() {
-          return !_pointerFieldIsNull(5);
-        }
-        public org.capnproto.Text.Reader getFilterLevel() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-        }
-
-        public final long getQuotedStatusId() {
-          return _getLongField(3);
-        }
-
-        public boolean hasInReplyToScreenName() {
-          return !_pointerFieldIsNull(6);
-        }
-        public org.capnproto.Text.Reader getInReplyToScreenName() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-
-        public boolean hasPlace() {
-          return !_pointerFieldIsNull(7);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader getPlace() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,7,null, 0);
-        }
-
-        public boolean hasInReplyToUserIdStr() {
-          return !_pointerFieldIsNull(8);
-        }
-        public org.capnproto.Text.Reader getInReplyToUserIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
-        }
-
-        public boolean hasCoordinates() {
-          return !_pointerFieldIsNull(9);
-        }
         public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getCoordinates() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,9,null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,0,null, 0);
         }
 
         public boolean hasInReplyToStatusIdStr() {
-          return !_pointerFieldIsNull(10);
+          return !_pointerFieldIsNull(1);
         }
         public org.capnproto.Text.Reader getInReplyToStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
-        }
-
-        public boolean hasGeo() {
-          return !_pointerFieldIsNull(11);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getGeo() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,11,null, 0);
-        }
-
-        public final boolean getTruncated() {
-          return _getBooleanField(67);
-        }
-
-        public final boolean hasDisplayTextRange() {
-          return !_pointerFieldIsNull(12);
-        }
-        public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 12, null, 0);
-        }
-
-        public final boolean getPossiblySensitive() {
-          return _getBooleanField(68);
-        }
-
-        public final int getFavoriteCount() {
-          return _getIntField(3);
-        }
-
-        public boolean hasEntities() {
-          return !_pointerFieldIsNull(13);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,13,null, 0);
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
         public boolean hasLang() {
-          return !_pointerFieldIsNull(14);
+          return !_pointerFieldIsNull(2);
         }
         public org.capnproto.Text.Reader getLang() {
-          return _getPointerField(org.capnproto.Text.factory, 14, null, 0, 0);
-        }
-
-        public final long getInReplyToStatusId() {
-          return _getLongField(4);
-        }
-
-        public final int getRetweetCount() {
-          return _getIntField(10);
-        }
-
-        public boolean hasScopes() {
-          return !_pointerFieldIsNull(15);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Reader getScopes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,15,null, 0);
-        }
-
-        public boolean hasCreatedAt() {
-          return !_pointerFieldIsNull(16);
-        }
-        public org.capnproto.Text.Reader getCreatedAt() {
-          return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
         public boolean hasText() {
-          return !_pointerFieldIsNull(17);
+          return !_pointerFieldIsNull(3);
         }
         public org.capnproto.Text.Reader getText() {
-          return _getPointerField(org.capnproto.Text.factory, 17, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
         }
 
         public boolean hasExtendedEntities() {
-          return !_pointerFieldIsNull(18);
+          return !_pointerFieldIsNull(4);
         }
         public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Reader getExtendedEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,18,null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory,4,null, 0);
+        }
+
+        public boolean hasInReplyToScreenName() {
+          return !_pointerFieldIsNull(5);
+        }
+        public org.capnproto.Text.Reader getInReplyToScreenName() {
+          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
 
         public boolean hasUser() {
-          return !_pointerFieldIsNull(19);
+          return !_pointerFieldIsNull(6);
         }
         public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.Reader getUser() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,19,null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.User.factory,6,null, 0);
+        }
+
+        public final boolean hasContributors() {
+          return !_pointerFieldIsNull(7);
+        }
+        public final org.capnproto.PrimitiveList.Long.Reader getContributors() {
+          return _getPointerField(org.capnproto.PrimitiveList.Long.factory, 7, null, 0);
+        }
+
+        public boolean hasCreatedAt() {
+          return !_pointerFieldIsNull(8);
+        }
+        public org.capnproto.Text.Reader getCreatedAt() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
+        }
+
+        public boolean hasPlace() {
+          return !_pointerFieldIsNull(9);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.Reader getPlace() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Place.factory,9,null, 0);
+        }
+
+        public final boolean getTruncated() {
+          return _getBooleanField(0);
+        }
+
+        public final long getInReplyToUserId() {
+          return _getLongField(1);
+        }
+
+        public final boolean getRetweeted() {
+          return _getBooleanField(1);
+        }
+
+        public final int getFavoriteCount() {
+          return _getIntField(1);
+        }
+
+        public boolean hasExtendedTweet() {
+          return !_pointerFieldIsNull(10);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.Reader getExtendedTweet() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedTweet.factory,10,null, 0);
+        }
+
+        public final boolean getIsQuoteStatus() {
+          return _getBooleanField(2);
+        }
+
+        public boolean hasScopes() {
+          return !_pointerFieldIsNull(11);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.Reader getScopes() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Scopes.factory,11,null, 0);
+        }
+
+        public final long getInReplyToStatusId() {
+          return _getLongField(2);
+        }
+
+        public boolean hasSource() {
+          return !_pointerFieldIsNull(12);
+        }
+        public org.capnproto.Text.Reader getSource() {
+          return _getPointerField(org.capnproto.Text.factory, 12, null, 0, 0);
+        }
+
+        public final long getId() {
+          return _getLongField(3);
+        }
+
+        public boolean hasFilterLevel() {
+          return !_pointerFieldIsNull(13);
+        }
+        public org.capnproto.Text.Reader getFilterLevel() {
+          return _getPointerField(org.capnproto.Text.factory, 13, null, 0, 0);
+        }
+
+        public final int getRetweetCount() {
+          return _getIntField(8);
+        }
+
+        public final boolean hasDisplayTextRange() {
+          return !_pointerFieldIsNull(14);
+        }
+        public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 14, null, 0);
+        }
+
+        public final long getQuotedStatusId() {
+          return _getLongField(5);
+        }
+
+        public final boolean getPossiblySensitive() {
+          return _getBooleanField(3);
+        }
+
+        public boolean hasQuotedStatusIdStr() {
+          return !_pointerFieldIsNull(15);
+        }
+        public org.capnproto.Text.Reader getQuotedStatusIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 15, null, 0, 0);
+        }
+
+        public boolean hasInReplyToUserIdStr() {
+          return !_pointerFieldIsNull(16);
+        }
+        public org.capnproto.Text.Reader getInReplyToUserIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 16, null, 0, 0);
+        }
+
+        public boolean hasGeo() {
+          return !_pointerFieldIsNull(17);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.Reader getGeo() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Geo.factory,17,null, 0);
+        }
+
+        public boolean hasEntities() {
+          return !_pointerFieldIsNull(18);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,18,null, 0);
+        }
+
+        public final boolean getFavorited() {
+          return _getBooleanField(4);
+        }
+
+        public boolean hasIdStr() {
+          return !_pointerFieldIsNull(19);
+        }
+        public org.capnproto.Text.Reader getIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 19, null, 0, 0);
         }
 
       }
@@ -2923,41 +2923,41 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasFullText() {
+        public final boolean hasDisplayTextRange() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getFullText() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setFullText(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setFullText(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initFullText(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 1, null, 0);
-        }
-        public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,1, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,1, 0);
-        }
-        public final boolean hasDisplayTextRange() {
-          return !_pointerFieldIsNull(2);
-        }
         public final org.capnproto.PrimitiveList.Int.Builder getDisplayTextRange() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 2, null, 0);
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 0, null, 0);
         }
         public final void setDisplayTextRange(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 2, value);
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 0, value);
         }
         public final org.capnproto.PrimitiveList.Int.Builder initDisplayTextRange(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 2, size);
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 0, size);
+        }
+        public final boolean hasFullText() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getFullText() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setFullText(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setFullText(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initFullText(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder getEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory, 2, null, 0);
+        }
+        public final void setEntities(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,2, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Builder initEntities() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,2, 0);
         }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.Builder getExtendedEntities() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.ExtendedEntities.factory, 3, null, 0);
@@ -2975,25 +2975,25 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasFullText() {
+        public final boolean hasDisplayTextRange() {
           return !_pointerFieldIsNull(0);
         }
+        public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 0, null, 0);
+        }
+
+        public boolean hasFullText() {
+          return !_pointerFieldIsNull(1);
+        }
         public org.capnproto.Text.Reader getFullText() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
         public boolean hasEntities() {
-          return !_pointerFieldIsNull(1);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,1,null, 0);
-        }
-
-        public final boolean hasDisplayTextRange() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.PrimitiveList.Int.Reader getDisplayTextRange() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 2, null, 0);
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.Reader getEntities() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Entities.factory,2,null, 0);
         }
 
         public boolean hasExtendedEntities() {
@@ -3036,13 +3036,6 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final int getH() {
-          return _getIntField(0);
-        }
-        public final void setH(int value) {
-          _setIntField(0, value);
-        }
-
         public final boolean hasResize() {
           return !_pointerFieldIsNull(0);
         }
@@ -3058,6 +3051,13 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initResize(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
+        public final int getH() {
+          return _getIntField(0);
+        }
+        public final void setH(int value) {
+          _setIntField(0, value);
+        }
+
         public final int getW() {
           return _getIntField(1);
         }
@@ -3072,15 +3072,15 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final int getH() {
-          return _getIntField(0);
-        }
-
         public boolean hasResize() {
           return !_pointerFieldIsNull(0);
         }
         public org.capnproto.Text.Reader getResize() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        }
+
+        public final int getH() {
+          return _getIntField(0);
         }
 
         public final int getW() {
@@ -3120,22 +3120,22 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder getLarge() {
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder getMedium() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory, 0, null, 0);
         }
-        public final void setLarge(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader value) {
+        public final void setMedium(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader value) {
           _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory,0, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder initLarge() {
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder initMedium() {
           return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory,0, 0);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder getMedium() {
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder getLarge() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory, 1, null, 0);
         }
-        public final void setMedium(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader value) {
+        public final void setLarge(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader value) {
           _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory,1, value);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder initMedium() {
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder initLarge() {
           return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory,1, 0);
         }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Builder getSmall() {
@@ -3163,17 +3163,17 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasLarge() {
+        public boolean hasMedium() {
           return !_pointerFieldIsNull(0);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader getLarge() {
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader getMedium() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory,0,null, 0);
         }
 
-        public boolean hasMedium() {
+        public boolean hasLarge() {
           return !_pointerFieldIsNull(1);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader getMedium() {
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.Reader getLarge() {
           return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Thumb.factory,1,null, 0);
         }
 
@@ -3224,6 +3224,30 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Builder getVideoInfo() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory, 0, null, 0);
+        }
+        public final void setVideoInfo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory,0, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Builder initVideoInfo() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory,0, 0);
+        }
+        public final boolean hasSourceUserIdStr() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getSourceUserIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setSourceUserIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setSourceUserIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initSourceUserIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
+        }
         public final long getId() {
           return _getLongField(0);
         }
@@ -3232,64 +3256,31 @@ public final class TwitterCapnp {
         }
 
         public final boolean hasDisplayUrl() {
-          return !_pointerFieldIsNull(0);
-        }
-        public final org.capnproto.Text.Builder getDisplayUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setDisplayUrl(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setDisplayUrl(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initDisplayUrl(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean hasSourceStatusIdStr() {
-          return !_pointerFieldIsNull(1);
-        }
-        public final org.capnproto.Text.Builder getSourceStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-        public final void setSourceStatusIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 1, value);
-        }
-        public final void setSourceStatusIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initSourceStatusIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 1, size);
-        }
-        public final boolean hasSourceUserIdStr() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.Text.Builder getSourceUserIdStr() {
+        public final org.capnproto.Text.Builder getDisplayUrl() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final void setSourceUserIdStr(org.capnproto.Text.Reader value) {
+        public final void setDisplayUrl(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 2, value);
         }
-        public final void setSourceUserIdStr(String value) {
+        public final void setDisplayUrl(String value) {
           _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initSourceUserIdStr(int size) {
+        public final org.capnproto.Text.Builder initDisplayUrl(int size) {
           return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
-        public final boolean hasIdStr() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(3);
         }
-        public final org.capnproto.Text.Builder getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+        public final org.capnproto.PrimitiveList.Int.Builder getIndices() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 3, null, 0);
         }
-        public final void setIdStr(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 3, value);
+        public final void setIndices(org.capnproto.PrimitiveList.Int.Reader value) {
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 3, value);
         }
-        public final void setIdStr(String value) {
-          _setPointerField(org.capnproto.Text.factory, 3, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initIdStr(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 3, size);
+        public final org.capnproto.PrimitiveList.Int.Builder initIndices(int size) {
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 3, size);
         }
         public final boolean hasUrl() {
           return !_pointerFieldIsNull(4);
@@ -3306,69 +3297,6 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initUrl(int size) {
           return _initPointerField(org.capnproto.Text.factory, 4, size);
         }
-        public final boolean hasMediaUrlHttps() {
-          return !_pointerFieldIsNull(5);
-        }
-        public final org.capnproto.Text.Builder getMediaUrlHttps() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-        }
-        public final void setMediaUrlHttps(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 5, value);
-        }
-        public final void setMediaUrlHttps(String value) {
-          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initMediaUrlHttps(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 5, size);
-        }
-        public final boolean hasType() {
-          return !_pointerFieldIsNull(6);
-        }
-        public final org.capnproto.Text.Builder getType() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-        public final void setType(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
-        }
-        public final void setType(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initType(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Builder getSizes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory, 7, null, 0);
-        }
-        public final void setSizes(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory,7, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Builder initSizes() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory,7, 0);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Builder getVideoInfo() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory, 8, null, 0);
-        }
-        public final void setVideoInfo(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory,8, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Builder initVideoInfo() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory,8, 0);
-        }
-        public final boolean hasMediaUrl() {
-          return !_pointerFieldIsNull(9);
-        }
-        public final org.capnproto.Text.Builder getMediaUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
-        }
-        public final void setMediaUrl(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 9, value);
-        }
-        public final void setMediaUrl(String value) {
-          _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initMediaUrl(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 9, size);
-        }
         public final long getSourceStatusId() {
           return _getLongField(1);
         }
@@ -3376,6 +3304,60 @@ public final class TwitterCapnp {
           _setLongField(1, value);
         }
 
+        public final boolean hasMediaUrl() {
+          return !_pointerFieldIsNull(5);
+        }
+        public final org.capnproto.Text.Builder getMediaUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+        }
+        public final void setMediaUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 5, value);
+        }
+        public final void setMediaUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initMediaUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 5, size);
+        }
+        public final boolean hasIdStr() {
+          return !_pointerFieldIsNull(6);
+        }
+        public final org.capnproto.Text.Builder getIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+        }
+        public final void setIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 6, value);
+        }
+        public final void setIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 6, size);
+        }
+        public final boolean hasExpandedUrl() {
+          return !_pointerFieldIsNull(7);
+        }
+        public final org.capnproto.Text.Builder getExpandedUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+        }
+        public final void setExpandedUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 7, value);
+        }
+        public final void setExpandedUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initExpandedUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 7, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Builder getSizes() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory, 8, null, 0);
+        }
+        public final void setSizes(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory,8, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Builder initSizes() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory,8, 0);
+        }
         public final long getSourceUserId() {
           return _getLongField(2);
         }
@@ -3383,31 +3365,49 @@ public final class TwitterCapnp {
           _setLongField(2, value);
         }
 
-        public final boolean hasIndices() {
+        public final boolean hasType() {
+          return !_pointerFieldIsNull(9);
+        }
+        public final org.capnproto.Text.Builder getType() {
+          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+        }
+        public final void setType(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 9, value);
+        }
+        public final void setType(String value) {
+          _setPointerField(org.capnproto.Text.factory, 9, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initType(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 9, size);
+        }
+        public final boolean hasSourceStatusIdStr() {
           return !_pointerFieldIsNull(10);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 10, null, 0);
+        public final org.capnproto.Text.Builder getSourceStatusIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
         }
-        public final void setIndices(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 10, value);
+        public final void setSourceStatusIdStr(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 10, value);
         }
-        public final org.capnproto.PrimitiveList.Int.Builder initIndices(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 10, size);
+        public final void setSourceStatusIdStr(String value) {
+          _setPointerField(org.capnproto.Text.factory, 10, new org.capnproto.Text.Reader(value));
         }
-        public final boolean hasExpandedUrl() {
+        public final org.capnproto.Text.Builder initSourceStatusIdStr(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 10, size);
+        }
+        public final boolean hasMediaUrlHttps() {
           return !_pointerFieldIsNull(11);
         }
-        public final org.capnproto.Text.Builder getExpandedUrl() {
+        public final org.capnproto.Text.Builder getMediaUrlHttps() {
           return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
-        public final void setExpandedUrl(org.capnproto.Text.Reader value) {
+        public final void setMediaUrlHttps(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 11, value);
         }
-        public final void setExpandedUrl(String value) {
+        public final void setMediaUrlHttps(String value) {
           _setPointerField(org.capnproto.Text.factory, 11, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initExpandedUrl(int size) {
+        public final org.capnproto.Text.Builder initMediaUrlHttps(int size) {
           return _initPointerField(org.capnproto.Text.factory, 11, size);
         }
       }
@@ -3417,36 +3417,36 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
+        public boolean hasVideoInfo() {
+          return !_pointerFieldIsNull(0);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Reader getVideoInfo() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory,0,null, 0);
+        }
+
+        public boolean hasSourceUserIdStr() {
+          return !_pointerFieldIsNull(1);
+        }
+        public org.capnproto.Text.Reader getSourceUserIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+
         public final long getId() {
           return _getLongField(0);
         }
 
         public boolean hasDisplayUrl() {
-          return !_pointerFieldIsNull(0);
-        }
-        public org.capnproto.Text.Reader getDisplayUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public boolean hasSourceStatusIdStr() {
-          return !_pointerFieldIsNull(1);
-        }
-        public org.capnproto.Text.Reader getSourceStatusIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
-        }
-
-        public boolean hasSourceUserIdStr() {
           return !_pointerFieldIsNull(2);
         }
-        public org.capnproto.Text.Reader getSourceUserIdStr() {
+        public org.capnproto.Text.Reader getDisplayUrl() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
-        public boolean hasIdStr() {
+        public final boolean hasIndices() {
           return !_pointerFieldIsNull(3);
         }
-        public org.capnproto.Text.Reader getIdStr() {
-          return _getPointerField(org.capnproto.Text.factory, 3, null, 0, 0);
+        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 3, null, 0);
         }
 
         public boolean hasUrl() {
@@ -3456,60 +3456,60 @@ public final class TwitterCapnp {
           return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
         }
 
-        public boolean hasMediaUrlHttps() {
-          return !_pointerFieldIsNull(5);
-        }
-        public org.capnproto.Text.Reader getMediaUrlHttps() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-        }
-
-        public boolean hasType() {
-          return !_pointerFieldIsNull(6);
-        }
-        public org.capnproto.Text.Reader getType() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-
-        public boolean hasSizes() {
-          return !_pointerFieldIsNull(7);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Reader getSizes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory,7,null, 0);
-        }
-
-        public boolean hasVideoInfo() {
-          return !_pointerFieldIsNull(8);
-        }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.Reader getVideoInfo() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.VideoInfo.factory,8,null, 0);
+        public final long getSourceStatusId() {
+          return _getLongField(1);
         }
 
         public boolean hasMediaUrl() {
-          return !_pointerFieldIsNull(9);
+          return !_pointerFieldIsNull(5);
         }
         public org.capnproto.Text.Reader getMediaUrl() {
-          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
+          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
         }
 
-        public final long getSourceStatusId() {
-          return _getLongField(1);
+        public boolean hasIdStr() {
+          return !_pointerFieldIsNull(6);
+        }
+        public org.capnproto.Text.Reader getIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+        }
+
+        public boolean hasExpandedUrl() {
+          return !_pointerFieldIsNull(7);
+        }
+        public org.capnproto.Text.Reader getExpandedUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+        }
+
+        public boolean hasSizes() {
+          return !_pointerFieldIsNull(8);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.Reader getSizes() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Sizes.factory,8,null, 0);
         }
 
         public final long getSourceUserId() {
           return _getLongField(2);
         }
 
-        public final boolean hasIndices() {
-          return !_pointerFieldIsNull(10);
+        public boolean hasType() {
+          return !_pointerFieldIsNull(9);
         }
-        public final org.capnproto.PrimitiveList.Int.Reader getIndices() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 10, null, 0);
+        public org.capnproto.Text.Reader getType() {
+          return _getPointerField(org.capnproto.Text.factory, 9, null, 0, 0);
         }
 
-        public boolean hasExpandedUrl() {
+        public boolean hasSourceStatusIdStr() {
+          return !_pointerFieldIsNull(10);
+        }
+        public org.capnproto.Text.Reader getSourceStatusIdStr() {
+          return _getPointerField(org.capnproto.Text.factory, 10, null, 0, 0);
+        }
+
+        public boolean hasMediaUrlHttps() {
           return !_pointerFieldIsNull(11);
         }
-        public org.capnproto.Text.Reader getExpandedUrl() {
+        public org.capnproto.Text.Reader getMediaUrlHttps() {
           return _getPointerField(org.capnproto.Text.factory, 11, null, 0, 0);
         }
 
@@ -3605,6 +3605,13 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
+        public final int getBitrate() {
+          return _getIntField(0);
+        }
+        public final void setBitrate(int value) {
+          _setIntField(0, value);
+        }
+
         public final boolean hasUrl() {
           return !_pointerFieldIsNull(0);
         }
@@ -3620,13 +3627,6 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initUrl(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final int getBitrate() {
-          return _getIntField(0);
-        }
-        public final void setBitrate(int value) {
-          _setIntField(0, value);
-        }
-
         public final boolean hasContentType() {
           return !_pointerFieldIsNull(1);
         }
@@ -3649,15 +3649,15 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
+        public final int getBitrate() {
+          return _getIntField(0);
+        }
+
         public boolean hasUrl() {
           return !_pointerFieldIsNull(0);
         }
         public org.capnproto.Text.Reader getUrl() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public final int getBitrate() {
-          return _getIntField(0);
         }
 
         public boolean hasContentType() {
@@ -3700,30 +3700,6 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasVariants() {
-          return !_pointerFieldIsNull(0);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Builder> getVariants() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 0, null, 0);
-        }
-        public final void setVariants(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Reader> value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 0, value);
-        }
-        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Builder> initVariants(int size) {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 0, size);
-        }
-        public final boolean hasAspectRatio() {
-          return !_pointerFieldIsNull(1);
-        }
-        public final org.capnproto.PrimitiveList.Int.Builder getAspectRatio() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
-        }
-        public final void setAspectRatio(org.capnproto.PrimitiveList.Int.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 1, value);
-        }
-        public final org.capnproto.PrimitiveList.Int.Builder initAspectRatio(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 1, size);
-        }
         public final int getDurationMillis() {
           return _getIntField(0);
         }
@@ -3731,6 +3707,30 @@ public final class TwitterCapnp {
           _setIntField(0, value);
         }
 
+        public final boolean hasAspectRatio() {
+          return !_pointerFieldIsNull(0);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder getAspectRatio() {
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 0, null, 0);
+        }
+        public final void setAspectRatio(org.capnproto.PrimitiveList.Int.Reader value) {
+          _setPointerField(org.capnproto.PrimitiveList.Int.factory, 0, value);
+        }
+        public final org.capnproto.PrimitiveList.Int.Builder initAspectRatio(int size) {
+          return _initPointerField(org.capnproto.PrimitiveList.Int.factory, 0, size);
+        }
+        public final boolean hasVariants() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Builder> getVariants() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 1, null, 0);
+        }
+        public final void setVariants(org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Reader> value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 1, value);
+        }
+        public final org.capnproto.StructList.Builder<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Builder> initVariants(int size) {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 1, size);
+        }
       }
 
       public static final class Reader extends org.capnproto.StructReader {
@@ -3738,22 +3738,22 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public final boolean hasVariants() {
-          return !_pointerFieldIsNull(0);
-        }
-        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Reader> getVariants() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 0, null, 0);
+        public final int getDurationMillis() {
+          return _getIntField(0);
         }
 
         public final boolean hasAspectRatio() {
-          return !_pointerFieldIsNull(1);
+          return !_pointerFieldIsNull(0);
         }
         public final org.capnproto.PrimitiveList.Int.Reader getAspectRatio() {
-          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 1, null, 0);
+          return _getPointerField(org.capnproto.PrimitiveList.Int.factory, 0, null, 0);
         }
 
-        public final int getDurationMillis() {
-          return _getIntField(0);
+        public final boolean hasVariants() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.StructList.Reader<eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.Reader> getVariants() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Variants.listFactory, 1, null, 0);
         }
 
       }
@@ -3789,32 +3789,32 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasType() {
+        public final boolean hasCoordinates() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getType() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setType(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setType(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initType(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean hasCoordinates() {
-          return !_pointerFieldIsNull(1);
-        }
         public final org.capnproto.ListList.Builder<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>> getCoordinates() {
-          return _getPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 1, null, 0);
+          return _getPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 0, null, 0);
         }
         public final void setCoordinates(org.capnproto.ListList.Reader<org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>> value) {
-          _setPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 1, value);
+          _setPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 0, value);
         }
         public final org.capnproto.ListList.Builder<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>> initCoordinates(int size) {
-          return _initPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 1, size);
+          return _initPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 0, size);
+        }
+        public final boolean hasType() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getType() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setType(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setType(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initType(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
       }
 
@@ -3823,18 +3823,18 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasType() {
+        public final boolean hasCoordinates() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getType() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final org.capnproto.ListList.Reader<org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>> getCoordinates() {
+          return _getPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 0, null, 0);
         }
 
-        public final boolean hasCoordinates() {
+        public boolean hasType() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.ListList.Reader<org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>> getCoordinates() {
-          return _getPointerField(new org.capnproto.ListList.Factory<org.capnproto.ListList.Builder<org.capnproto.PrimitiveList.Double.Builder>, org.capnproto.ListList.Reader<org.capnproto.PrimitiveList.Double.Reader>>(new org.capnproto.ListList.Factory<org.capnproto.PrimitiveList.Double.Builder, org.capnproto.PrimitiveList.Double.Reader>(org.capnproto.PrimitiveList.Double.factory)), 1, null, 0);
+        public org.capnproto.Text.Reader getType() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
       }
@@ -3910,128 +3910,128 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasId() {
+        public final boolean hasCountryCode() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getId() {
+        public final org.capnproto.Text.Builder getCountryCode() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
-        public final void setId(org.capnproto.Text.Reader value) {
+        public final void setCountryCode(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 0, value);
         }
-        public final void setId(String value) {
+        public final void setCountryCode(String value) {
           _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initId(int size) {
+        public final org.capnproto.Text.Builder initCountryCode(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final boolean hasFullName() {
+        public final boolean hasCountry() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.Text.Builder getFullName() {
+        public final org.capnproto.Text.Builder getCountry() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
-        public final void setFullName(org.capnproto.Text.Reader value) {
+        public final void setCountry(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 1, value);
         }
-        public final void setFullName(String value) {
+        public final void setCountry(String value) {
           _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initFullName(int size) {
+        public final org.capnproto.Text.Builder initCountry(int size) {
           return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
-        public final boolean hasUrl() {
+        public final boolean hasId() {
           return !_pointerFieldIsNull(2);
         }
-        public final org.capnproto.Text.Builder getUrl() {
+        public final org.capnproto.Text.Builder getId() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
-        public final void setUrl(org.capnproto.Text.Reader value) {
+        public final void setId(org.capnproto.Text.Reader value) {
           _setPointerField(org.capnproto.Text.factory, 2, value);
         }
-        public final void setUrl(String value) {
+        public final void setId(String value) {
           _setPointerField(org.capnproto.Text.factory, 2, new org.capnproto.Text.Reader(value));
         }
-        public final org.capnproto.Text.Builder initUrl(int size) {
+        public final org.capnproto.Text.Builder initId(int size) {
           return _initPointerField(org.capnproto.Text.factory, 2, size);
         }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Builder getBoundingBox() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory, 3, null, 0);
-        }
-        public final void setBoundingBox(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory,3, value);
-        }
-        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Builder initBoundingBox() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory,3, 0);
-        }
-        public final boolean hasCountry() {
-          return !_pointerFieldIsNull(4);
-        }
-        public final org.capnproto.Text.Builder getCountry() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-        }
-        public final void setCountry(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 4, value);
-        }
-        public final void setCountry(String value) {
-          _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initCountry(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 4, size);
-        }
-        public final boolean hasPlaceType() {
-          return !_pointerFieldIsNull(5);
-        }
-        public final org.capnproto.Text.Builder getPlaceType() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
-        }
-        public final void setPlaceType(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 5, value);
-        }
-        public final void setPlaceType(String value) {
-          _setPointerField(org.capnproto.Text.factory, 5, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initPlaceType(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 5, size);
-        }
-        public final boolean hasName() {
-          return !_pointerFieldIsNull(6);
-        }
-        public final org.capnproto.Text.Builder getName() {
-          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
-        }
-        public final void setName(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 6, value);
-        }
-        public final void setName(String value) {
-          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initName(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 6, size);
-        }
-        public final boolean hasCountryCode() {
-          return !_pointerFieldIsNull(7);
-        }
-        public final org.capnproto.Text.Builder getCountryCode() {
-          return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
-        }
-        public final void setCountryCode(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 7, value);
-        }
-        public final void setCountryCode(String value) {
-          _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initCountryCode(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 7, size);
-        }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.Builder getAttributes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory, 8, null, 0);
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory, 3, null, 0);
         }
         public final void setAttributes(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.Reader value) {
-          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory,8, value);
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory,3, value);
         }
         public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.Builder initAttributes() {
-          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory,8, 0);
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory,3, 0);
+        }
+        public final boolean hasName() {
+          return !_pointerFieldIsNull(4);
+        }
+        public final org.capnproto.Text.Builder getName() {
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+        }
+        public final void setName(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 4, value);
+        }
+        public final void setName(String value) {
+          _setPointerField(org.capnproto.Text.factory, 4, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initName(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 4, size);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Builder getBoundingBox() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory, 5, null, 0);
+        }
+        public final void setBoundingBox(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Reader value) {
+          _setPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory,5, value);
+        }
+        public final eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Builder initBoundingBox() {
+          return _initPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory,5, 0);
+        }
+        public final boolean hasUrl() {
+          return !_pointerFieldIsNull(6);
+        }
+        public final org.capnproto.Text.Builder getUrl() {
+          return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
+        }
+        public final void setUrl(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 6, value);
+        }
+        public final void setUrl(String value) {
+          _setPointerField(org.capnproto.Text.factory, 6, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initUrl(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 6, size);
+        }
+        public final boolean hasPlaceType() {
+          return !_pointerFieldIsNull(7);
+        }
+        public final org.capnproto.Text.Builder getPlaceType() {
+          return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
+        }
+        public final void setPlaceType(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 7, value);
+        }
+        public final void setPlaceType(String value) {
+          _setPointerField(org.capnproto.Text.factory, 7, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initPlaceType(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 7, size);
+        }
+        public final boolean hasFullName() {
+          return !_pointerFieldIsNull(8);
+        }
+        public final org.capnproto.Text.Builder getFullName() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
+        }
+        public final void setFullName(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 8, value);
+        }
+        public final void setFullName(String value) {
+          _setPointerField(org.capnproto.Text.factory, 8, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initFullName(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 8, size);
         }
       }
 
@@ -4040,67 +4040,67 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasId() {
+        public boolean hasCountryCode() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getId() {
+        public org.capnproto.Text.Reader getCountryCode() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
         }
 
-        public boolean hasFullName() {
+        public boolean hasCountry() {
           return !_pointerFieldIsNull(1);
         }
-        public org.capnproto.Text.Reader getFullName() {
+        public org.capnproto.Text.Reader getCountry() {
           return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
-        public boolean hasUrl() {
+        public boolean hasId() {
           return !_pointerFieldIsNull(2);
         }
-        public org.capnproto.Text.Reader getUrl() {
+        public org.capnproto.Text.Reader getId() {
           return _getPointerField(org.capnproto.Text.factory, 2, null, 0, 0);
         }
 
-        public boolean hasBoundingBox() {
+        public boolean hasAttributes() {
           return !_pointerFieldIsNull(3);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Reader getBoundingBox() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory,3,null, 0);
-        }
-
-        public boolean hasCountry() {
-          return !_pointerFieldIsNull(4);
-        }
-        public org.capnproto.Text.Reader getCountry() {
-          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
-        }
-
-        public boolean hasPlaceType() {
-          return !_pointerFieldIsNull(5);
-        }
-        public org.capnproto.Text.Reader getPlaceType() {
-          return _getPointerField(org.capnproto.Text.factory, 5, null, 0, 0);
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.Reader getAttributes() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory,3,null, 0);
         }
 
         public boolean hasName() {
-          return !_pointerFieldIsNull(6);
+          return !_pointerFieldIsNull(4);
         }
         public org.capnproto.Text.Reader getName() {
+          return _getPointerField(org.capnproto.Text.factory, 4, null, 0, 0);
+        }
+
+        public boolean hasBoundingBox() {
+          return !_pointerFieldIsNull(5);
+        }
+        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.Reader getBoundingBox() {
+          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.BoundingBox.factory,5,null, 0);
+        }
+
+        public boolean hasUrl() {
+          return !_pointerFieldIsNull(6);
+        }
+        public org.capnproto.Text.Reader getUrl() {
           return _getPointerField(org.capnproto.Text.factory, 6, null, 0, 0);
         }
 
-        public boolean hasCountryCode() {
+        public boolean hasPlaceType() {
           return !_pointerFieldIsNull(7);
         }
-        public org.capnproto.Text.Reader getCountryCode() {
+        public org.capnproto.Text.Reader getPlaceType() {
           return _getPointerField(org.capnproto.Text.factory, 7, null, 0, 0);
         }
 
-        public boolean hasAttributes() {
+        public boolean hasFullName() {
           return !_pointerFieldIsNull(8);
         }
-        public eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.Reader getAttributes() {
-          return _getPointerField(eu.hippix.bsctest.data.capnp.TwitterCapnp.Twitter.Attributes.factory,8,null, 0);
+        public org.capnproto.Text.Reader getFullName() {
+          return _getPointerField(org.capnproto.Text.factory, 8, null, 0, 0);
         }
 
       }
@@ -4136,6 +4136,13 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
+        public final int getTrack() {
+          return _getIntField(0);
+        }
+        public final void setTrack(int value) {
+          _setIntField(0, value);
+        }
+
         public final boolean hasTimestampMs() {
           return !_pointerFieldIsNull(0);
         }
@@ -4151,13 +4158,6 @@ public final class TwitterCapnp {
         public final org.capnproto.Text.Builder initTimestampMs(int size) {
           return _initPointerField(org.capnproto.Text.factory, 0, size);
         }
-        public final int getTrack() {
-          return _getIntField(0);
-        }
-        public final void setTrack(int value) {
-          _setIntField(0, value);
-        }
-
       }
 
       public static final class Reader extends org.capnproto.StructReader {
@@ -4165,15 +4165,15 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
+        public final int getTrack() {
+          return _getIntField(0);
+        }
+
         public boolean hasTimestampMs() {
           return !_pointerFieldIsNull(0);
         }
         public org.capnproto.Text.Reader getTimestampMs() {
           return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-
-        public final int getTrack() {
-          return _getIntField(0);
         }
 
       }
@@ -4260,32 +4260,32 @@ public final class TwitterCapnp {
         public final Reader asReader() {
           return new Reader(segment, data, pointers, dataSize, pointerCount, 0x7fffffff);
         }
-        public final boolean hasType() {
+        public final boolean hasCoordinates() {
           return !_pointerFieldIsNull(0);
         }
-        public final org.capnproto.Text.Builder getType() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
-        }
-        public final void setType(org.capnproto.Text.Reader value) {
-          _setPointerField(org.capnproto.Text.factory, 0, value);
-        }
-        public final void setType(String value) {
-          _setPointerField(org.capnproto.Text.factory, 0, new org.capnproto.Text.Reader(value));
-        }
-        public final org.capnproto.Text.Builder initType(int size) {
-          return _initPointerField(org.capnproto.Text.factory, 0, size);
-        }
-        public final boolean hasCoordinates() {
-          return !_pointerFieldIsNull(1);
-        }
         public final org.capnproto.PrimitiveList.Double.Builder getCoordinates() {
-          return _getPointerField(org.capnproto.PrimitiveList.Double.factory, 1, null, 0);
+          return _getPointerField(org.capnproto.PrimitiveList.Double.factory, 0, null, 0);
         }
         public final void setCoordinates(org.capnproto.PrimitiveList.Double.Reader value) {
-          _setPointerField(org.capnproto.PrimitiveList.Double.factory, 1, value);
+          _setPointerField(org.capnproto.PrimitiveList.Double.factory, 0, value);
         }
         public final org.capnproto.PrimitiveList.Double.Builder initCoordinates(int size) {
-          return _initPointerField(org.capnproto.PrimitiveList.Double.factory, 1, size);
+          return _initPointerField(org.capnproto.PrimitiveList.Double.factory, 0, size);
+        }
+        public final boolean hasType() {
+          return !_pointerFieldIsNull(1);
+        }
+        public final org.capnproto.Text.Builder getType() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
+        }
+        public final void setType(org.capnproto.Text.Reader value) {
+          _setPointerField(org.capnproto.Text.factory, 1, value);
+        }
+        public final void setType(String value) {
+          _setPointerField(org.capnproto.Text.factory, 1, new org.capnproto.Text.Reader(value));
+        }
+        public final org.capnproto.Text.Builder initType(int size) {
+          return _initPointerField(org.capnproto.Text.factory, 1, size);
         }
       }
 
@@ -4294,18 +4294,18 @@ public final class TwitterCapnp {
           super(segment, data, pointers, dataSize, pointerCount, nestingLimit);
         }
 
-        public boolean hasType() {
+        public final boolean hasCoordinates() {
           return !_pointerFieldIsNull(0);
         }
-        public org.capnproto.Text.Reader getType() {
-          return _getPointerField(org.capnproto.Text.factory, 0, null, 0, 0);
+        public final org.capnproto.PrimitiveList.Double.Reader getCoordinates() {
+          return _getPointerField(org.capnproto.PrimitiveList.Double.factory, 0, null, 0);
         }
 
-        public final boolean hasCoordinates() {
+        public boolean hasType() {
           return !_pointerFieldIsNull(1);
         }
-        public final org.capnproto.PrimitiveList.Double.Reader getCoordinates() {
-          return _getPointerField(org.capnproto.PrimitiveList.Double.factory, 1, null, 0);
+        public org.capnproto.Text.Reader getType() {
+          return _getPointerField(org.capnproto.Text.factory, 1, null, 0, 0);
         }
 
       }
@@ -4318,7 +4318,7 @@ public final class TwitterCapnp {
 
 
 public static final class Schemas {
-public static final org.capnproto.SegmentReader b_ede7d17b1b632656 = loadSchema();
+public static final org.capnproto.SegmentReader b_bac2d7cb2b3d9845 = loadSchema();
 
 private static org.capnproto.SegmentReader loadSchema() {
   try (java.io.InputStream is = BestbuyCapnp.class.getResourceAsStream("/eu/hippix/bsctest/data/capnp/bestbuy.capnp.bin")) {

@@ -1,8 +1,7 @@
-from io import TextIOWrapper
 from os import getcwd, listdir, system
 from os.path import getsize
 from json import JSONDecodeError, loads, dumps
-from typing import IO, Any, Dict, List, Self, Tuple
+from typing import Any, Dict, List, Self, Tuple
 from time import time
 import zipfile
 
@@ -23,7 +22,7 @@ def commonJavaType(a: JavaType, b: JavaType) -> JavaType | bool:
         return "Double"
     return False
 
-# warnings = set()
+warnings = set()
 
 class JavaClass:
     name: str
@@ -48,7 +47,7 @@ class JavaClass:
             newType = commonJavaType(fieldType, fieldType2)
             if (type(newType) == bool):
                 if self.name == other.name:
-                    # warnings.add((fieldName, frozenset({str(fieldType), str(fieldType2)})))
+                    warnings.add((fieldName, frozenset({str(fieldType), str(fieldType2)})))
                     newType = "String"
                 else:
                     return False
@@ -130,25 +129,23 @@ def listTypeToJavaStr(typ: List[JavaType]) -> str:
     if type(_typ) != str: raise Exception("Unreachable")
     return "List<" * i + _typ + ">" * i
 
-def outputClass(fh: TextIOWrapper, clazz: JavaClass, depth=1):
-    fh.write(f"class {clazz.name} " + "{\n")
+def outputClass(clazz: JavaClass, depth=1) -> str:
+    result = f"class {clazz.name} " + "{\n"
     for name, typ in clazz.fields.items():
         if (newName := fixName(name)) != name:
-            fh.write("\t" * depth + f'@SerializedName("{name}")\n')
+            result += "\t" * depth + f'@SerializedName("{name}")\n'
             name = newName
-        fh.write("\t" * depth + f"@Nullable\n")
+        result += "\t" * depth + f"@Nullable\n"
         match typ:
             case str():
-                pass
+                result += "\t" * depth + f"public {typ} {name};\n"
             case list():
                 typ = listTypeToJavaStr(typ)
                 if type(typ) == list: raise Exception("Unreachable")
+                result += "\t" * depth + f"public {typ} {name};\n"
             case _:
-                typ = "String"
-        
-        fh.write("\t" * depth + f"public {typ} {name};\n")
-        fh.write("\t" * depth + f"public {typ} get{capitalize(name)}() " + "{ " + f"return {name}" + "; }\n")
-        fh.write("\t" * depth + f"public void set{capitalize(name)}({typ} {name})" + "{ " + f"this.{name} = {name}" "; }\n")
+                result += "\t" * depth + f"public String {name}; // Always null\n"
+    return result
 
 def javaTypeToCapnp(javaType: JavaType) -> str:
     # void/null is replaced with Text/String because the Void class causes issues with Fory
@@ -171,14 +168,15 @@ def javaTypeToCapnp(javaType: JavaType) -> str:
             return "List(Text)"
     return "Text"
 
-def outputCapnp(fh: TextIOWrapper, clazz: JavaClass, depth=1):
-    fh.write("\t" * (depth - 1) + f"struct {clazz.name}" + " {\n")
+def outputCapnp(clazz: JavaClass, depth=1) -> str:
+    result = "\t" * (depth - 1) + f"struct {clazz.name}" + " {\n"
 
     i = 0
     for name, typ in clazz.fields.items():
         name = fixName(name) or name
-        fh.write("\t" * depth + f"{name} @{i} :{javaTypeToCapnp(typ)};\n")
+        result += "\t" * depth + f"{name} @{i} :{javaTypeToCapnp(typ)};\n"
         i += 1
+    return result
 
 def h(n: int, width: int) -> str:
     return hex(n)[2:].zfill(width)
@@ -192,6 +190,7 @@ with zipfile.ZipFile("Datasets.zip") as datasets:
         if fileInfo.is_dir(): continue
         filename = fileInfo.filename
         if not filename.endswith(".jsonlist"): continue
+        if not "wiki" in filename: continue
 
         className = capitalize(filename.split('/')[-1].split('_', 1)[0])
 
@@ -258,20 +257,16 @@ with zipfile.ZipFile("Datasets.zip") as datasets:
         
         with open(f"src/main/java/eu/hippix/bsctest/data/java/{className}.java", "w+") as fh:
             fh.write("package eu.hippix.bsctest.data.java;\n\nimport java.util.List;\nimport java.lang.Integer;\nimport java.lang.Double;\nimport com.google.gson.annotations.SerializedName;\nimport org.apache.fory.annotation.Nullable;\n\n")
-            fh.write("public ")
-            outputClass(fh, clazz)
+            fh.write("public " + outputClass(clazz))
             for innerClass in classes:
-                fh.write("\tpublic static ")
-                outputClass(fh, innerClass)
-                fh.write("\t}\n")
+                fh.write("\tpublic static " + outputClass(innerClass, 2) + "\t}\n")
             fh.write("}\n")
 
         with open(f"src/main/java/eu/hippix/bsctest/data/capnp/{className}.capnp", "w+") as fh:
             fh.write(f'@0xd6317da5058119{h(i, 2)};\nusing Java = import "java.capnp";\n$Java.package("eu.hippix.bsctest.data.capnp");\n$Java.outerClassname("{className}Capnp");\n')
-            outputCapnp(fh, clazz)
+            fh.write(outputCapnp(clazz))
             for innerClass in classes:
-                outputCapnp(fh, innerClass, 2)
-                fh.write("\t}\n")
+                fh.write(outputCapnp(innerClass, 2) + "\t}\n")
             fh.write("}\n")
 
         system(f"wsl --cd {rootDir}/src/main/java/eu/hippix/bsctest/data/capnp capnp compile -ojava {className}.capnp")
@@ -303,5 +298,5 @@ private static org.capnproto.SegmentReader loadSchema() {
 
         i += 1
 
-        # for w in warnings:
-            # print(f"{w[0]} = " + " | ".join(w[1]))
+        for w in warnings:
+            print(f"{w[0]} = " + " | ".join(w[1]))
