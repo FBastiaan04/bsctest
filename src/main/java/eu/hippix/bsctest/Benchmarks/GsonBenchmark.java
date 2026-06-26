@@ -6,14 +6,12 @@ import eu.hippix.bsctest.BenchmarkState;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import java.io.IOException;
-
 @State(Scope.Benchmark)
 public class GsonBenchmark extends AbstractBenchmark<String> {
     private Gson gson = null;
 
     @Override
-    public void setup(BenchmarkState<String> state) throws IOException {
+    public void setup(BenchmarkState<String> state) {
         gson = new Gson();
     }
 

@@ -7,8 +7,6 @@ import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import java.io.IOException;
-
 @State(Scope.Benchmark)
 public class ForyBenchmark extends AbstractBenchmark<byte[]> {
 
@@ -18,7 +16,7 @@ public class ForyBenchmark extends AbstractBenchmark<byte[]> {
     public boolean enableXLang;
 
     @Override
-    public void setup(BenchmarkState<byte[]> state) throws IOException {
+    public void setup(BenchmarkState<byte[]> state) {
         Class<?> objectClass = state.getObjectClass();
 
         fory = Fory.builder()

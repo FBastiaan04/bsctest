@@ -2,12 +2,10 @@ package eu.hippix.bsctest.Benchmarks;
 
 import eu.hippix.bsctest.AbstractBenchmark;
 import eu.hippix.bsctest.BenchmarkState;
-import eu.hippix.bsctest.data.capnp.BestbuyCapnp;
 import org.capnproto.*;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import java.io.IOException;
 import java.lang.Void;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
@@ -22,8 +20,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// TODO: fix deserialization (don't init to default value on `null`)
-
 @State(Scope.Benchmark)
 public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
 
@@ -36,7 +32,7 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
     private final Map<Class<?>, FieldAccessor> foundClasses = new HashMap<>();
 
     @Override
-    public void setup(BenchmarkState<ByteBuffer[]> state) throws IOException {
+    public void setup(BenchmarkState<ByteBuffer[]> state) {
         Class<?> objectClass = state.getObjectClass();
         String benchmarkName = objectClass.getSimpleName();
         try {
@@ -147,7 +143,7 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
                     primitiveType = long.class;
                 } else if (fieldType == Double.class) {
                     primitiveType = double.class;
-                } else if (fieldType == String.class) { // struct
+                } else if (fieldType == String.class) {
                     primitiveType = String.class;
                 } else {
                     innerBuilder = Class.forName(rootBuilderClass.getDeclaringClass().getName() + "$" + fieldType.getSimpleName() + "$Builder");
@@ -180,10 +176,8 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
 
         private void serialize(Object item, Object builder) throws Throwable {
             if (fieldAccessors == null) return;
-            var fieldIdx = 0;
             for (FieldAccessor acc : fieldAccessors) {
                 Object value = acc.sourceField.get(item);
-                fieldIdx++;
                 switch (value) {
                     case null -> {}
                     case Boolean b -> acc.capnpSetter.invoke(builder, (boolean)b);
@@ -257,7 +251,6 @@ public class CapnpBenchmark extends AbstractBenchmark<ByteBuffer[]> {
             if (capnpChecker != null && !(boolean)capnpChecker.invoke(reader))
                 return;
             sourceField.set(result, deserialize(capnpGetter.invoke(reader)));
-            BestbuyCapnp.Bestbuy.Reader r0 = null;
         }
 
         public Object deserialize(Object capnpValue) throws Throwable {

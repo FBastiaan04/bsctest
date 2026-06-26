@@ -17,7 +17,7 @@ public class MsgPackBenchmark extends AbstractBenchmark<byte[]> {
     ObjectMapper objectMapper;
 
     @Override
-    public void setup(BenchmarkState<byte[]> state) throws IOException {
+    public void setup(BenchmarkState<byte[]> state) {
         objectMapper = new ObjectMapper(new MessagePackFactory());
         objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
     }

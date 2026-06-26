@@ -9,8 +9,6 @@ import io.protostuff.runtime.RuntimeSchema;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
-import java.io.IOException;
-
 @State(Scope.Benchmark)
 public class ProtoBufBenchmark extends AbstractBenchmark<byte[]> {
 
@@ -19,7 +17,7 @@ public class ProtoBufBenchmark extends AbstractBenchmark<byte[]> {
     private Schema schema = null;
 
     @Override
-    public void setup(BenchmarkState<byte[]> state) throws IOException {
+    public void setup(BenchmarkState<byte[]> state) {
         schema = RuntimeSchema.getSchema(state.getObjectClass());
         buffer = LinkedBuffer.allocate(LinkedBuffer.DEFAULT_BUFFER_SIZE);
     }

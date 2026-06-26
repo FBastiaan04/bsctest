@@ -15,7 +15,7 @@ public abstract class AbstractBenchmark<T> {
     protected abstract T serializeItem(Object item);
     protected abstract Object deserializeItem(T encodedItem, Class<?> objectType);
     protected abstract long serialisedSize(T encodedItem);
-    protected void setup(BenchmarkState<T> state) throws IOException {}
+    protected void setup(BenchmarkState<T> state) {}
 
     @Setup(Level.Trial)
     public void _setup(BenchmarkState<T> state) throws IOException {
